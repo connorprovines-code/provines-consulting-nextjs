@@ -114,7 +114,7 @@ export default function Content() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                   >
-                    <Link href={`/guide?slug=${guide.slug}`}>
+                    <Link href={`/guides/${guide.slug}`}>
                       <Card className="group hover:shadow-2xl transition-all duration-300 border-0 h-full bg-gradient-to-br from-white to-slate-50/50 relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[var(--mint)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <CardHeader className="relative">
@@ -173,7 +173,7 @@ export default function Content() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                   >
-                    <Link href={`/blogpost?slug=${post.slug}`}>
+                    <Link href={`/blog/${post.slug}`}>
                       <Card className="group hover:shadow-2xl transition-all duration-300 border-0 h-full bg-gradient-to-br from-white to-slate-50/50 relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[var(--electric-blue)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         {post.featured_image && (
@@ -232,7 +232,7 @@ export default function Content() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                   >
-                    <Link href={`/casestudy?slug=${study.slug}`}>
+                    <Link href={`/case-studies/${study.slug}`}>
                       <Card className="group hover:shadow-2xl transition-all duration-300 border-0 h-full bg-gradient-to-br from-white to-slate-50/50 relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[var(--mint)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         {study.featured_image && (

@@ -5,26 +5,23 @@ import { motion } from "framer-motion";
 
 export default function Schedule() {
   useEffect(() => {
-    // Load Calendly widget script if not already loaded
-    const existingScript = document.querySelector('script[src*="calendly"]');
+    // Load Calendly widget CSS
+    const existingCSS = document.querySelector('link[href*="calendly"]');
+    if (!existingCSS) {
+      const link = document.createElement('link');
+      link.href = 'https://assets.calendly.com/assets/external/widget.css';
+      link.rel = 'stylesheet';
+      document.head.appendChild(link);
+    }
 
+    // Load Calendly widget script
+    const existingScript = document.querySelector('script[src*="calendly"]');
     if (!existingScript) {
       const script = document.createElement('script');
       script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.type = 'text/javascript';
       script.async = true;
-      script.onload = () => {
-        // Script loaded, Calendly widget will initialize automatically
-        console.log('Calendly script loaded successfully');
-      };
-      document.body.appendChild(script);
-    } else {
-      // Script tag exists, but check if Calendly object is loaded
-      if (typeof window.Calendly === 'undefined') {
-        // Wait for the existing script to finish loading
-        existingScript.addEventListener('load', () => {
-          console.log('Calendly script loaded successfully');
-        });
-      }
+      document.head.appendChild(script);
     }
   }, []);
 

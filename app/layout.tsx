@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = 'https://provines.consulting';
+const siteUrl = 'https://www.provinesconsulting.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

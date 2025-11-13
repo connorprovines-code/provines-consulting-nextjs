@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'About Connor Provines – Marketing Leadership & AI Innovation | Provines Consulting',
     description: '10+ years of B2B SaaS marketing leadership meets cutting-edge AI automation.',
     type: 'website',
-    url: 'https://provines.consulting/about',
+    url: 'https://www.provinesconsulting.com/about',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: '10+ years of B2B SaaS marketing leadership meets cutting-edge AI automation.',
   },
   alternates: {
-    canonical: 'https://provines.consulting/about',
+    canonical: 'https://www.provinesconsulting.com/about',
   },
 };
 

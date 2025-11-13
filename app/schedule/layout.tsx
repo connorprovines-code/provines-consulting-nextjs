@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Schedule a Call – Book Your Free Marketing Audit | Provines Consulting',
     description: 'Schedule a free 30-minute consultation and marketing audit.',
     type: 'website',
-    url: 'https://provines.consulting/schedule',
+    url: 'https://www.provinesconsulting.com/schedule',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Schedule a free 30-minute consultation and marketing audit.',
   },
   alternates: {
-    canonical: 'https://provines.consulting/schedule',
+    canonical: 'https://www.provinesconsulting.com/schedule',
   },
 };
 

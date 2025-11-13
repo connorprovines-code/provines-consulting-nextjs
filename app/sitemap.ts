@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { BlogPost, Guide, CaseStudy } from '@/api/entities'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://provines.consulting'
+  const baseUrl = 'https://www.provinesconsulting.com'
 
   // Static routes
   const staticRoutes = [

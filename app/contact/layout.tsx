@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Contact Us – Get Your Free Marketing Audit | Provines Consulting',
     description: 'Get in touch for a free marketing audit and consultation.',
     type: 'website',
-    url: 'https://provines.consulting/contact',
+    url: 'https://www.provinesconsulting.com/contact',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Get in touch for a free marketing audit and consultation.',
   },
   alternates: {
-    canonical: 'https://provines.consulting/contact',
+    canonical: 'https://www.provinesconsulting.com/contact',
   },
 };
 

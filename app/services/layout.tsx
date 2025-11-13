@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Services – AI Automation & Growth Marketing | Provines Consulting',
     description: 'Agentic AI automation, growth marketing strategy, and marketing operations for B2B SaaS.',
     type: 'website',
-    url: 'https://provines.consulting/services',
+    url: 'https://www.provinesconsulting.com/services',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Agentic AI automation, growth marketing strategy, and marketing operations for B2B SaaS.',
   },
   alternates: {
-    canonical: 'https://provines.consulting/services',
+    canonical: 'https://www.provinesconsulting.com/services',
   },
 };
 

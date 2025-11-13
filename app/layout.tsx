@@ -13,15 +13,49 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = 'https://provines.consulting';
+
 export const metadata: Metadata = {
-  title: "Provines Consulting – Strategic Marketing & AI Automation",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Provines Consulting – Strategic Marketing & AI Automation",
+    template: "%s | Provines Consulting"
+  },
   description: "Helping B2B SaaS scale from 0→1 and 1→10 with growth strategy + AI automation. Expert marketing leadership and cutting-edge AI implementation.",
-  keywords: ["marketing automation", "AI automation", "B2B SaaS", "growth marketing", "product-led growth", "GEO", "agentic AI"],
+  keywords: ["marketing automation", "AI automation", "B2B SaaS", "growth marketing", "product-led growth", "GEO", "agentic AI", "marketing strategy", "Connor Provines"],
   authors: [{ name: "Connor Provines" }],
+  creator: "Connor Provines",
+  publisher: "Provines Consulting",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Provines Consulting",
     title: "Provines Consulting – Strategic Marketing & AI Automation",
     description: "Helping B2B SaaS scale from 0→1 and 1→10 with growth strategy + AI automation.",
-    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Provines Consulting – Strategic Marketing & AI Automation",
+    description: "Helping B2B SaaS scale from 0→1 and 1→10 with growth strategy + AI automation.",
+    creator: "@connorprovines",
+  },
+  verification: {
+    google: "google-site-verification-code", // Replace with actual verification code when available
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 

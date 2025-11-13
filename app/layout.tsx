@@ -34,7 +34,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

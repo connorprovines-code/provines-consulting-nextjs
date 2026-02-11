@@ -268,8 +268,11 @@ export default function RebuildOffer() {
             Provines Consulting
           </a>
           , where I specialize in AI automation and marketing systems for service
-          businesses. I started doing preview builds because I got tired of asking people
-          to trust a pitch — and because the work tends to speak for itself.
+          businesses. I spent 12+ years in SaaS marketing leadership before building
+          these tools — so when I rebuild a site, you're getting both the technical
+          infrastructure and the marketing thinking that actually converts. I started
+          doing preview builds because I got tired of asking people to trust a pitch —
+          and because the work tends to speak for itself.
         </p>
 
         <Divider />

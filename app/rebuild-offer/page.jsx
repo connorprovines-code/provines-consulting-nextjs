@@ -46,14 +46,14 @@ function InlineCTA({ compact = false }) {
 
 // ─── Divider ──────────────────────────────────────────────────────────────────
 function Divider() {
-  return <hr className="border-t border-slate-100 my-14" />;
+  return <hr className="border-t border-slate-100 my-11" />;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function RebuildOffer() {
   return (
     <div className="bg-white min-h-screen">
-      <div className="max-w-[640px] mx-auto px-6 py-20 md:py-28">
+      <div className="max-w-[640px] mx-auto px-6 py-16 md:py-20">
 
         {/* ── OPENING HOOK ─────────────────────────────────────────────── */}
         <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-8">
@@ -146,7 +146,7 @@ export default function RebuildOffer() {
           What's included
         </h2>
 
-        <div className="space-y-6">
+        <div className="space-y-5">
           {[
             {
               heading: "Your site — fully rebuilt, fully yours",
@@ -201,7 +201,7 @@ export default function RebuildOffer() {
           Questions I always get
         </h2>
 
-        <div className="space-y-7">
+        <div className="space-y-5">
           <div>
             <p className="font-semibold text-[var(--navy)] mb-2">
               "Why would you rebuild my site before I pay you?"

@@ -36,6 +36,26 @@ export default function ClientLayout({ children }) {
     { name: "FAQ", path: "/faq" },
   ];
 
+  const isStandalone = pathname?.startsWith("/rebuild-offer");
+
+  if (isStandalone) {
+    return (
+      <>
+        <style>{`
+          :root {
+            --navy: #0A1F44;
+            --electric-blue: #0091FF;
+            --mint: #00D9A3;
+            --charcoal: #1A1A1A;
+            --off-white: #F8FAFC;
+          }
+        `}</style>
+        {children}
+        <Toaster />
+      </>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-slate-50">
       <style>{`

@@ -63,7 +63,7 @@ export default function RebuildOffer() {
         <h1 className="text-[2.6rem] md:text-5xl font-bold text-[var(--navy)] leading-[1.15] mb-7" style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
           Own your website.<br />
           Run your own marketing.<br />
-          <span className="text-slate-400 font-normal">No agency. No builder. No one in the way.</span>
+          <span style={{ fontWeight: 400 }}>No agency. No builder. No one in the way.</span>
         </h1>
 
         <p className="text-lg text-slate-700 leading-relaxed mb-4">

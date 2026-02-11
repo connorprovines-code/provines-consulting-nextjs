@@ -60,7 +60,7 @@ export default function RebuildOffer() {
           Provines Consulting
         </p>
 
-        <h1 className="text-[2.6rem] md:text-5xl font-bold text-[var(--navy)] leading-[1.15] mb-7" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
+        <h1 className="text-[2.6rem] md:text-5xl font-bold text-[var(--navy)] leading-[1.15] mb-7" style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
           Own your website.<br />
           Run your own marketing.<br />
           <span className="text-slate-400 font-normal">No agency. No builder. No one in the way.</span>
@@ -84,7 +84,7 @@ export default function RebuildOffer() {
         <Divider />
 
         {/* ── WHY MOST FIXES FAIL ──────────────────────────────────────── */}
-        <h2 style={{ fontFamily: "var(--font-lora), Georgia, serif" }} className="text-2xl font-bold text-[var(--navy)] mb-5">
+        <h2 style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}className="text-2xl font-bold text-[var(--navy)] mb-5">
           Why every other fix doesn't stick
         </h2>
 
@@ -116,7 +116,7 @@ export default function RebuildOffer() {
         <Divider />
 
         {/* ── HOW THIS WORKS ───────────────────────────────────────────── */}
-        <h2 style={{ fontFamily: "var(--font-lora), Georgia, serif" }} className="text-2xl font-bold text-[var(--navy)] mb-5">
+        <h2 style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}className="text-2xl font-bold text-[var(--navy)] mb-5">
           Here's what I actually do
         </h2>
 
@@ -142,7 +142,7 @@ export default function RebuildOffer() {
         <Divider />
 
         {/* ── WHAT YOU WALK AWAY WITH ──────────────────────────────────── */}
-        <h2 style={{ fontFamily: "var(--font-lora), Georgia, serif" }} className="text-2xl font-bold text-[var(--navy)] mb-6">
+        <h2 style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}className="text-2xl font-bold text-[var(--navy)] mb-6">
           What's included
         </h2>
 
@@ -197,7 +197,7 @@ export default function RebuildOffer() {
         <Divider />
 
         {/* ── OBJECTIONS ───────────────────────────────────────────────── */}
-        <h2 style={{ fontFamily: "var(--font-lora), Georgia, serif" }} className="text-2xl font-bold text-[var(--navy)] mb-6">
+        <h2 style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}className="text-2xl font-bold text-[var(--navy)] mb-6">
           Questions I always get
         </h2>
 
@@ -275,7 +275,7 @@ export default function RebuildOffer() {
         <Divider />
 
         {/* ── FINAL CTA ────────────────────────────────────────────────── */}
-        <h2 style={{ fontFamily: "var(--font-lora), Georgia, serif" }} className="text-2xl font-bold text-[var(--navy)] mb-4">
+        <h2 style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}className="text-2xl font-bold text-[var(--navy)] mb-4">
           Want to take a look?
         </h2>
 

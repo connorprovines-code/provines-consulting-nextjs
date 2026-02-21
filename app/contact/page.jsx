@@ -107,7 +107,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Form */}
           <div>
-            <Card className="border-0 shadow-2xl bg-white relative overflow-hidden">
+            <Card className="border-0 shadow-2xl bg-white relative">
               <CardHeader className="relative">
                 <CardTitle className="text-2xl">Send a Message</CardTitle>
               </CardHeader>
@@ -198,20 +198,28 @@ export default function Contact() {
                         <SelectTrigger>
                           <SelectValue placeholder="Select an area" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent position="popper" sideOffset={4}>
+                          <SelectItem value="ai_agents">
+                            AI Agents & Assistants
+                          </SelectItem>
+                          <SelectItem value="process_automation">
+                            Process Automation
+                          </SelectItem>
                           <SelectItem value="website_rebuild">
                             Website Rebuild & Migration
                           </SelectItem>
-                          <SelectItem value="ai_agents">
-                            AI Agent Suite
-                          </SelectItem>
                           <SelectItem value="integrations">
-                            Integrations & Automation
+                            System Integrations
                           </SelectItem>
-                          <SelectItem value="full_transformation">
-                            Full Digital Transformation
+                          <SelectItem value="custom_tools">
+                            Custom Tool Development
                           </SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
+                          <SelectItem value="full_engagement">
+                            Full Engagement (Multiple Services)
+                          </SelectItem>
+                          <SelectItem value="other">
+                            Not Sure / Other
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>

@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Content Library – Marketing Insights & AI Guides | Provines Consulting',
-  description: 'Explore our library of marketing guides, AI automation insights, case studies, and thought leadership content for B2B SaaS growth.',
-  keywords: ['marketing content', 'AI guides', 'case studies', 'blog', 'B2B SaaS resources', 'marketing insights'],
+  title: 'Insights – AI, Automation & Operations for Business Owners | Provines Consulting',
+  description: 'Practical thinking about AI agents, process automation, and operational efficiency — written for business owners, not developers.',
+  keywords: ['AI agents', 'business automation', 'operations', 'small business AI', 'process automation', 'custom tools'],
   openGraph: {
-    title: 'Content Library – Marketing Insights & AI Guides',
-    description: 'Explore our library of marketing guides and AI automation insights.',
+    title: 'Insights – AI, Automation & Operations for Business Owners',
+    description: 'Practical thinking about AI agents, automation, and operations for business owners.',
     type: 'website',
   },
 };

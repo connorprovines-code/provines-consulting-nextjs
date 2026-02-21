@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us – Get Your Free Marketing Audit | Provines Consulting',
-  description: 'Get in touch for a free marketing audit and consultation. Transform your B2B SaaS marketing with strategic guidance and AI automation.',
-  keywords: ['contact', 'free audit', 'marketing consultation', 'get in touch', 'B2B SaaS consulting'],
+  title: 'Contact – Get in Touch | Provines Consulting',
+  description: 'Reach out to discuss website rebuilds, AI agent installations, and digital operations for your business. No pitch, no pressure.',
+  keywords: ['contact', 'website rebuild inquiry', 'AI agents', 'business consultation', 'get in touch'],
   openGraph: {
-    title: 'Contact Us – Get Your Free Marketing Audit',
-    description: 'Get in touch for a free marketing audit and consultation.',
+    title: 'Contact – Get in Touch',
+    description: 'Reach out to discuss website rebuilds, AI agents, and digital operations for your business.',
     type: 'website',
   },
 };

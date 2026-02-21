@@ -1,16 +1,25 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { ContactSubmission, SiteConfig } from "@/api/entities";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, Calendar, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
+
+const CONTACT_EMAIL = "connorprovines@gmail.com";
+const CONTACT_PHONE_HREF = "+14083403265";
+const CONTACT_PHONE_DISPLAY = "+1 (408) 340-3265";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,72 +28,47 @@ export default function Contact() {
     company: "",
     phone: "",
     interest_area: "",
-    message: ""
+    message: "",
   });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [webhookUrl, setWebhookUrl] = useState("https://connorprovines.app.n8n.cloud/webhook/contact-me-consulting");
-
-  useEffect(() => {
-    loadConfig();
-  }, []);
-
-  const loadConfig = async () => {
-    const configs = await SiteConfig.list();
-    if (configs.length > 0) {
-      const siteConfig = configs[0];
-      if (siteConfig.webhook_url) {
-        setWebhookUrl(siteConfig.webhook_url);
-      }
-    }
-  };
+  const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
+    setError(null);
 
     try {
-      const submissionTimestamp = new Date().toISOString();
-
-      await ContactSubmission.create({
-        ...formData,
-        submission_timestamp: submissionTimestamp,
-        internal_notes: `Submitted via contact form at ${new Date(submissionTimestamp).toLocaleString()}`
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
-      if (webhookUrl) {
-        try {
-          await fetch(webhookUrl, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              ...formData,
-              submission_timestamp: submissionTimestamp
-            })
-          });
-        } catch (error) {
-          console.error("Webhook error:", error);
-        }
+      if (res.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          interest_area: "",
+          message: "",
+        });
+      } else {
+        setError("Something went wrong. Please email me directly.");
       }
-
-      setSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        interest_area: "",
-        message: ""
-      });
-    } catch (error) {
-      console.error("Submission error:", error);
+    } catch (err) {
+      console.error("Submission error:", err);
+      setError("Something went wrong. Please email me directly.");
     }
 
     setSubmitting(false);
   };
 
   const handleChange = (field, value) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -103,21 +87,16 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <div className="inline-block mb-4">
-              <span className="px-4 py-1.5 bg-gradient-to-r from-[var(--mint)]/10 to-[var(--electric-blue)]/10 text-[var(--navy)] rounded-full text-sm font-medium border border-[var(--mint)]/20">
-                Get in Touch
-              </span>
-            </div>
-
-            <h1 className="text-5xl md:text-7xl font-bold text-[var(--navy)] mb-6 leading-tight">
-              Unlock Your
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[var(--navy)] mb-6 leading-tight">
+              Let's
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                1→10x Growth
+                talk.
               </span>
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Ready to scale your business and achieve exponential results? Let's discuss how Agentic AI and strategic automation can drive your growth.
+              Whether you have a specific project in mind or just want to
+              explore what's possible — reach out. No pitch, no pressure.
             </p>
           </motion.div>
         </div>
@@ -125,16 +104,10 @@ export default function Contact() {
 
       {/* Contact Form & Info */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-[var(--electric-blue)]/5 to-transparent rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[var(--mint)]/5 to-transparent rounded-full blur-3xl" />
-        </div>
-
         <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Form */}
           <div>
-            <Card className="border-0 shadow-2xl bg-gradient-to-br from-white to-slate-50/30 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/50 to-slate-50/50" />
+            <Card className="border-0 shadow-2xl bg-white relative overflow-hidden">
               <CardHeader className="relative">
                 <CardTitle className="text-2xl">Send a Message</CardTitle>
               </CardHeader>
@@ -152,9 +125,13 @@ export default function Contact() {
                       Message Sent!
                     </h3>
                     <p className="text-slate-600 mb-6">
-                      Thank you for reaching out. I'll get back to you within 24 hours.
+                      Thanks for reaching out. I'll get back to you within 24
+                      hours.
                     </p>
-                    <Button onClick={() => setSubmitted(false)} variant="outline">
+                    <Button
+                      onClick={() => setSubmitted(false)}
+                      variant="outline"
+                    >
                       Send Another Message
                     </Button>
                   </motion.div>
@@ -168,7 +145,7 @@ export default function Contact() {
                           value={formData.name}
                           onChange={(e) => handleChange("name", e.target.value)}
                           required
-                          placeholder="John Doe"
+                          placeholder="Your name"
                         />
                       </div>
                       <div className="space-y-2">
@@ -179,7 +156,7 @@ export default function Contact() {
                           value={formData.email}
                           onChange={(e) => handleChange("email", e.target.value)}
                           required
-                          placeholder="john@company.com"
+                          placeholder="you@company.com"
                         />
                       </div>
                     </div>
@@ -190,8 +167,10 @@ export default function Contact() {
                         <Input
                           id="company"
                           value={formData.company}
-                          onChange={(e) => handleChange("company", e.target.value)}
-                          placeholder="Your Company"
+                          onChange={(e) =>
+                            handleChange("company", e.target.value)
+                          }
+                          placeholder="Your business"
                         />
                       </div>
                       <div className="space-y-2">
@@ -207,19 +186,31 @@ export default function Contact() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="interest">What are you interested in?</Label>
+                      <Label htmlFor="interest">
+                        What are you interested in?
+                      </Label>
                       <Select
                         value={formData.interest_area}
-                        onValueChange={(value) => handleChange("interest_area", value)}
+                        onValueChange={(value) =>
+                          handleChange("interest_area", value)
+                        }
                       >
                         <SelectTrigger>
                           <SelectValue placeholder="Select an area" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="agentic_ai">Agentic AI Automation</SelectItem>
-                          <SelectItem value="marketing_strategy">Marketing Strategy</SelectItem>
-                          <SelectItem value="automation">Marketing Automation</SelectItem>
-                          <SelectItem value="audit">Free Audit</SelectItem>
+                          <SelectItem value="website_rebuild">
+                            Website Rebuild & Migration
+                          </SelectItem>
+                          <SelectItem value="ai_agents">
+                            AI Agent Suite
+                          </SelectItem>
+                          <SelectItem value="integrations">
+                            Integrations & Automation
+                          </SelectItem>
+                          <SelectItem value="full_transformation">
+                            Full Digital Transformation
+                          </SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
@@ -230,12 +221,26 @@ export default function Contact() {
                       <Textarea
                         id="message"
                         value={formData.message}
-                        onChange={(e) => handleChange("message", e.target.value)}
+                        onChange={(e) =>
+                          handleChange("message", e.target.value)
+                        }
                         required
                         rows={6}
-                        placeholder="Tell me about your project or questions..."
+                        placeholder="Tell me about your business and what you're looking for..."
                       />
                     </div>
+
+                    {error && (
+                      <p className="text-sm text-red-600">
+                        {error}{" "}
+                        <a
+                          href={`mailto:${CONTACT_EMAIL}`}
+                          className="underline"
+                        >
+                          {CONTACT_EMAIL}
+                        </a>
+                      </p>
+                    )}
 
                     <Button
                       type="submit"
@@ -253,32 +258,56 @@ export default function Contact() {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <Card className="border-0 shadow-lg bg-gradient-to-br from-white to-slate-50/50">
+            <Card className="border-0 shadow-lg bg-white">
               <CardHeader>
-                <CardTitle className="text-xl">Quick Contact</CardTitle>
+                <CardTitle className="text-xl">Get in Touch Directly</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex items-start gap-3">
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="flex items-start gap-3 group"
+                >
                   <div className="w-10 h-10 rounded-lg bg-[var(--electric-blue)]/10 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-[var(--electric-blue)]" />
                   </div>
                   <div>
                     <p className="font-medium text-[var(--navy)]">Email</p>
-                    <p className="text-sm text-slate-600">connorprovines@gmail.com</p>
+                    <p className="text-sm text-slate-600 group-hover:text-[var(--electric-blue)] transition-colors">
+                      {CONTACT_EMAIL}
+                    </p>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-start gap-3">
+                <a
+                  href={`tel:${CONTACT_PHONE_HREF}`}
+                  className="flex items-start gap-3 group"
+                >
                   <div className="w-10 h-10 rounded-lg bg-[var(--mint)]/10 flex items-center justify-center flex-shrink-0">
-                    <Calendar className="w-5 h-5 text-[var(--mint)]" />
+                    <Phone className="w-5 h-5 text-[var(--mint)]" />
                   </div>
                   <div>
-                    <p className="font-medium text-[var(--navy)]">Schedule a Call</p>
-                    <p className="text-sm text-slate-600 mb-2">Book directly on my calendar</p>
+                    <p className="font-medium text-[var(--navy)]">Phone</p>
+                    <p className="text-sm text-slate-600 group-hover:text-[var(--mint)] transition-colors">
+                      {CONTACT_PHONE_DISPLAY}
+                    </p>
+                  </div>
+                </a>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-[var(--electric-blue)]/10 flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-5 h-5 text-[var(--electric-blue)]" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-[var(--navy)]">
+                      Schedule a Call
+                    </p>
+                    <p className="text-sm text-slate-600 mb-2">
+                      Book directly on my calendar
+                    </p>
                     <Link href="/schedule">
                       <Button
                         size="sm"
-                        className="bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)]"
+                        className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white"
                       >
                         Book Time
                       </Button>
@@ -291,9 +320,13 @@ export default function Contact() {
             <Card className="border-2 border-[var(--mint)] shadow-lg bg-gradient-to-br from-[var(--mint)]/5 to-white relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[var(--mint)]/20 to-transparent rounded-full blur-2xl" />
               <CardContent className="p-6 relative">
-                <h3 className="font-bold text-[var(--navy)] mb-2">Free 1→10x Growth Audit</h3>
+                <h3 className="font-bold text-[var(--navy)] mb-2">
+                  Not sure what you need?
+                </h3>
                 <p className="text-sm text-slate-600">
-                  Get a complimentary audit of your current systems to identify 1→10x growth opportunities, plus a 30-minute consultation. No obligation.
+                  That's fine — most people aren't when they first reach out.
+                  Just tell me about your business and what's not working. We'll
+                  figure out the right approach together.
                 </p>
               </CardContent>
             </Card>

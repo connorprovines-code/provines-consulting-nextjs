@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Calendar, Mail, Menu, X } from "lucide-react";
+import { Calendar, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -28,33 +28,12 @@ export default function ClientLayout({ children }) {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Content", path: "/content" },
+    { name: "How It Works", path: "/how-it-works" },
+    { name: "Work", path: "/work" },
+    { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
-    { name: "Schedule", path: "/schedule" },
-    { name: "FAQ", path: "/faq" },
   ];
-
-  const isStandalone = pathname?.startsWith("/rebuild-offer");
-
-  if (isStandalone) {
-    return (
-      <>
-        <style>{`
-          :root {
-            --navy: #0A1F44;
-            --electric-blue: #0091FF;
-            --mint: #00D9A3;
-            --charcoal: #1A1A1A;
-            --off-white: #F8FAFC;
-          }
-        `}</style>
-        {children}
-        <Toaster />
-      </>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -98,25 +77,15 @@ export default function ClientLayout({ children }) {
               ))}
             </div>
 
-            {/* Desktop CTAs */}
-            <div className="hidden md:flex items-center gap-3">
+            {/* Desktop CTA */}
+            <div className="hidden md:flex items-center">
               <Link href="/schedule">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white flex items-center"
-                >
-                  <Calendar className="w-4 h-4 mr-2" />
-                  Book a Call
-                </Button>
-              </Link>
-              <Link href="/contact">
                 <Button
                   size="sm"
                   className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white flex items-center"
                 >
-                  <Mail className="w-4 h-4 mr-2" />
-                  Contact
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Book a Call
                 </Button>
               </Link>
             </div>
@@ -148,22 +117,13 @@ export default function ClientLayout({ children }) {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-3 space-y-2">
+              <div className="pt-3">
                 <Link href="/schedule" className="block">
-                  <Button
-                    variant="outline"
-                    className="w-full border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white bg-white"
-                  >
-                    <Calendar className="w-4 h-4 mr-2" />
-                    Book a Call
-                  </Button>
-                </Link>
-                <Link href="/contact" className="block">
                   <Button
                     className="w-full bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white"
                   >
-                    <Mail className="w-4 h-4 mr-2" />
-                    Contact
+                    <Calendar className="w-4 h-4 mr-2" />
+                    Book a Call
                   </Button>
                 </Link>
               </div>
@@ -184,79 +144,44 @@ export default function ClientLayout({ children }) {
             <div>
               <h3 className="text-2xl font-bold mb-4">Provines Consulting</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Transforming businesses through strategic marketing leadership and cutting-edge AI automation.
+                Custom AI agents, process automation, and modern digital infrastructure — built for business owners who want to stop grinding through manual operations and start owning systems that scale.
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
-              <div className="grid grid-cols-2 gap-x-1 gap-y-2 max-w-xs mx-auto">
-                <div className="space-y-2">
+              <div className="space-y-2">
+                {[
+                  { name: "Home", path: "/" },
+                  { name: "Services", path: "/services" },
+                  { name: "How It Works", path: "/how-it-works" },
+                  { name: "Work", path: "/work" },
+                  { name: "About", path: "/about" },
+                  { name: "Contact", path: "/contact" },
+                  { name: "FAQ", path: "/faq" },
+                ].map((link) => (
                   <Link
-                    href="/"
+                    key={link.path}
+                    href={link.path}
                     className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
                   >
-                    Home
+                    {link.name}
                   </Link>
-                  <Link
-                    href="/services"
-                    className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
-                  >
-                    Contact
-                  </Link>
-                  <Link
-                    href="/faq"
-                    className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
-                  >
-                    FAQ
-                  </Link>
-                </div>
-                <div className="space-y-2">
-                  <Link
-                    href="/about"
-                    className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/content"
-                    className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
-                  >
-                    Content
-                  </Link>
-                  <Link
-                    href="/schedule"
-                    className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
-                  >
-                    Schedule
-                  </Link>
-                  <Link
-                    href="/legal"
-                    className="block text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
-                  >
-                    Legal
-                  </Link>
-                </div>
+                ))}
               </div>
             </div>
 
             <div>
               <h4 className="font-semibold mb-4">Get Started</h4>
               <p className="text-slate-300 text-sm mb-4">
-                Ready to transform your marketing and operations?
+                Let's talk about what to automate first.
               </p>
               <div className="flex flex-col gap-3">
                 <Link href="/schedule">
                   <Button
                     className="w-full bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)] font-semibold"
                   >
-                    Schedule a Call
+                    Book a Call
                   </Button>
                 </Link>
                 <Link href="/contact">
@@ -271,7 +196,7 @@ export default function ClientLayout({ children }) {
           </div>
 
           <div className="border-t border-slate-700 mt-12 pt-8 text-center text-slate-400 text-sm">
-            <p>© {new Date().getFullYear()} Provines Consulting. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Provines Consulting. All rights reserved.</p>
           </div>
         </div>
       </footer>

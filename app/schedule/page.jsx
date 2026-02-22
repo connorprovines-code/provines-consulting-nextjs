@@ -45,7 +45,7 @@ export default function Schedule() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero - compact, no jarring gradient */}
-      <section className="relative overflow-hidden bg-[var(--navy)] hero-fade">
+      <section className="relative bg-[#0A1F44]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[var(--electric-blue)]/10 via-[var(--mint)]/5 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3" />
         </div>
@@ -69,6 +69,8 @@ export default function Schedule() {
             </p>
           </motion.div>
         </div>
+
+        <div className="relative z-10 h-24" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* Calendly Widget - full size, no container clipping */}

@@ -160,27 +160,6 @@ button:focus-visible {
   }
 }
 
-/* Smooth hero-to-content transitions */
-.hero-fade {
-  position: relative;
-}
-.hero-fade::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 120px;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(248, 250, 252, 0.3) 30%,
-    rgba(248, 250, 252, 0.7) 60%,
-    #f8fafc 85%,
-    white 100%
-  );
-  pointer-events: none;
-}
 
 /* Calendly widget responsiveness */
 .calendly-inline-widget iframe {

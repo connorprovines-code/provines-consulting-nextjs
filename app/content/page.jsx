@@ -39,11 +39,7 @@ export default function Content() {
   return (
     <div className="relative">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[var(--navy)] to-[#112240] hero-fade">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }} />
+      <section className="relative bg-[#0A1F44]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-[var(--electric-blue)]/8 via-[var(--mint)]/5 to-transparent rounded-full blur-3xl" />
         </div>
@@ -69,6 +65,7 @@ export default function Content() {
           </motion.div>
         </div>
 
+        <div className="relative z-10 h-32" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* Articles */}

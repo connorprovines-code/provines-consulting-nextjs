@@ -297,12 +297,7 @@ export default function ArticlePage() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[var(--navy)] to-[#112240] hero-fade">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }} />
-
+      <section className="relative bg-[#0A1F44]">
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -337,6 +332,7 @@ export default function ArticlePage() {
           </motion.div>
         </div>
 
+        <div className="relative z-10 h-24" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* Article Body */}

@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[var(--navy)] via-[#0d2a52] to-[#112240]">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[var(--navy)] via-[#0d2a52] to-[#112240] hero-fade">
         {/* Subtle grid background */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
@@ -83,8 +83,6 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
       </section>
 
       {/* The Pain — Why they need this */}

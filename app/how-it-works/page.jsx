@@ -76,7 +76,7 @@ export default function HowItWorks() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[var(--navy)] to-[#112240]">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[var(--navy)] to-[#112240] hero-fade">
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
           backgroundSize: '60px 60px'
@@ -106,7 +106,6 @@ export default function HowItWorks() {
           </motion.div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
       </section>
 
       {/* Steps */}

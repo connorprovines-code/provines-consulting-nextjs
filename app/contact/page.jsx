@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -29,10 +29,19 @@ export default function Contact() {
     phone: "",
     interest_area: "",
     message: "",
+    website: "" // honeypot
   });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
+  const formLoadedAt = useRef(Date.now());
+
+  // Reset timer when form becomes visible again after submission
+  useEffect(() => {
+    if (!submitted) {
+      formLoadedAt.current = Date.now();
+    }
+  }, [submitted]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,7 +52,10 @@ export default function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          formLoadedAt: formLoadedAt.current
+        }),
       });
 
       if (res.ok) {
@@ -55,9 +67,11 @@ export default function Contact() {
           phone: "",
           interest_area: "",
           message: "",
+          website: "",
         });
       } else {
-        setError("Something went wrong. Please email me directly.");
+        const data = await res.json().catch(() => ({}));
+        setError(data.error || "Something went wrong. Please email me directly.");
       }
     } catch (err) {
       console.error("Submission error:", err);
@@ -137,6 +151,20 @@ export default function Contact() {
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* Honeypot - hidden from humans, bots will fill it */}
+                    <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px", height: 0, overflow: "hidden", tabIndex: -1 }}>
+                      <label htmlFor="website">Website</label>
+                      <input
+                        type="text"
+                        id="website"
+                        name="website"
+                        autoComplete="off"
+                        tabIndex={-1}
+                        value={formData.website}
+                        onChange={(e) => handleChange("website", e.target.value)}
+                      />
+                    </div>
+
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Name *</Label>

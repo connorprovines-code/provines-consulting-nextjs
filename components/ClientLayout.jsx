@@ -32,7 +32,7 @@ export default function ClientLayout({ children }) {
     { name: "How It Works", path: "/how-it-works" },
     { name: "Work", path: "/work" },
     { name: "Insights", path: "/content" },
-    { name: "About", path: "/about" },
+{ name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
 

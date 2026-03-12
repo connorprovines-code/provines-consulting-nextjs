@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Schedule a Call – Book Your Free Marketing Audit | Provines Consulting',
-  description: 'Schedule a free 30-minute consultation and marketing audit. Discover how AI automation and strategic marketing can transform your B2B SaaS business.',
-  keywords: ['schedule consultation', 'book a call', 'free audit', 'marketing consultation', 'calendly'],
+  title: 'Schedule a Call – Free Discovery Consultation | Provines Consulting',
+  description: 'Book a free 30-minute discovery call. We\'ll look at where you\'re spending time on things that should be automated and figure out what to build first.',
+  keywords: ['schedule consultation', 'book a call', 'discovery call', 'AI consultation', 'automation consultation'],
   openGraph: {
-    title: 'Schedule a Call – Book Your Free Marketing Audit',
-    description: 'Schedule a free 30-minute consultation and marketing audit.',
+    title: 'Schedule a Call – Free Discovery Consultation',
+    description: 'Book a free 30-minute discovery call about AI agents and automation for your business.',
     type: 'website',
   },
 };

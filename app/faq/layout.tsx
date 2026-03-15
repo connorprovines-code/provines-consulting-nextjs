@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'FAQ – Common Questions | Provines Consulting',
-  description: 'Answers about website rebuilds, AI agents, pricing, ownership, timelines, and how the full engagement works.',
-  keywords: ['FAQ', 'website rebuild questions', 'AI agents FAQ', 'pricing', 'ownership', 'small business'],
+  title: 'FAQ | AI Marketing Infrastructure & Business Automation Questions',
+  description: 'Common questions about AI assistants, marketing infrastructure, website migrations, CRM automation, and how engagements work.',
+  keywords: ['AI assistant FAQ', 'marketing infrastructure questions', 'Claude AI for business FAQ', 'website migration FAQ', 'CRM automation questions', 'AI chatbot vs assistant'],
   openGraph: {
-    title: 'FAQ – Common Questions',
-    description: 'Answers about website rebuilds, AI agents, pricing, ownership, and how it all works.',
+    title: 'FAQ | AI Marketing Infrastructure & Business Automation Questions',
+    description: 'Common questions about AI assistants, marketing infrastructure, website migrations, CRM automation, and how engagements work.',
     type: 'website',
   },
 };

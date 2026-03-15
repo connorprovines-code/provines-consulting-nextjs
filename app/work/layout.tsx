@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Work – Website Rebuilds & Client Projects',
-  description: 'See examples of website rebuilds, AI agent installations, and digital operations transformations for real businesses.',
-  keywords: ['website rebuild examples', 'portfolio', 'case studies', 'website migration', 'AI agent projects', 'client work'],
+  title: 'Work | AI Marketing Infrastructure Projects & Case Studies',
+  description: 'Real projects: website rebuilds, AI assistant deployments, CRM automation, and complete marketing infrastructure builds for business owners.',
+  keywords: ['AI marketing projects', 'website rebuild case studies', 'AI assistant deployment', 'CRM automation projects', 'marketing infrastructure examples', 'AI for home builders', 'AI for contractors'],
   openGraph: {
-    title: 'Work – Website Rebuilds & Client Projects',
-    description: 'Real examples of website rebuilds and digital operations transformations.',
+    title: 'Work | AI Marketing Infrastructure Projects & Case Studies',
+    description: 'Real projects: website rebuilds, AI assistant deployments, CRM automation, and complete marketing infrastructure builds.',
     type: 'website',
   },
 };

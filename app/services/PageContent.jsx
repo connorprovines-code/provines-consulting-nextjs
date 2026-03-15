@@ -17,93 +17,93 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    icon: Bot,
-    title: "AI Agents & Custom Assistants",
-    tagline: "Purpose-built intelligence for your operations.",
+    icon: Workflow,
+    title: "Marketing Infrastructure Build",
+    tagline: "Your complete marketing department — built as infrastructure you own.",
     description:
-      "I don't install generic chatbots. I build agents trained on your business — handling CRM management, lead follow-up, content creation, SEO monitoring, and operational tasks that currently eat your time. You manage them in plain English. They learn your patterns and get better.",
+      "The full package. Website, CRM, AI assistants, content engine, SEO, ads integration — one system that replaces the agency, the freelancers, and the patchwork of SaaS tools that don't talk to each other. This is for you if you know what your marketing should look like but don't have the team to build or run it.",
     features: [
-      "CRM agent — leads captured, enriched, and routed automatically",
-      "SEO agent — keyword tracking, content optimization, rank monitoring",
-      "Content agent — draft, publish, and schedule without manual work",
-      "Custom operational agents — tailored to your specific workflows",
-      "Managed in plain English — no technical knowledge required",
-      "Agents improve over time as they learn your business",
+      "Modern website on infrastructure you own",
+      "CRM with automated lead pipeline",
+      "Claude-powered AI assistants for content and ops",
+      "SEO monitoring and content engine",
+      "Ad platform integration and tracking",
+      "Full ownership and independence after handoff",
     ],
   },
   {
-    icon: Workflow,
-    title: "Process Automation & Workflow Engineering",
-    tagline: "Turn multi-step manual work into one-click operations.",
+    icon: Bot,
+    title: "AI Assistants & Intelligent Automation",
+    tagline: "Claude-powered agents that do real work — not a chat widget.",
     description:
-      "Every business has processes that shouldn't require a person — data entry, report generation, lead routing, follow-up sequences, internal notifications. I map your operations, identify what's wasteful, and build end-to-end automation that eliminates it.",
+      "I build AI assistants that connect to your CRM, manage real workflows, and handle operational tasks — not a chat bubble that answers FAQs from a knowledge base. Built on Anthropic's Claude, configured specifically for your business, your data, your workflows. This is for you if you've looked at AI chatbot tools and realized they don't actually do anything beyond answering basic questions.",
     features: [
-      "End-to-end workflow design and implementation",
-      "Multi-tool orchestration (CRM, email, scheduling, billing)",
-      "Lead routing and follow-up automation",
-      "Internal operations dashboards and reporting",
-      "Conditional logic and smart decision trees",
-      "Integration with your existing tech stack",
+      "Lead intake, qualification, and CRM routing",
+      "Content drafting, editing, and publishing",
+      "Appointment scheduling and calendar management",
+      "Customer communication and follow-up",
+      "Website updates in plain English",
+      "Agents improve as they learn your business",
     ],
   },
   {
     icon: Globe,
-    title: "Website Rebuild & Digital Platform",
-    tagline: "Modern infrastructure you own — built for AI.",
+    title: "Website Platform & AI-Managed Content",
+    tagline: "Your website isn't a brochure — it's the hub your AI runs through.",
     description:
-      "Your website is the foundation everything else connects to. I rebuild outdated sites on modern, AI-ready infrastructure — fast, SEO-optimized, and designed so your agents can update and manage it directly. No lock-in, no recurring fees to me.",
+      "Built on Next.js — fast, SEO-optimized, extensible. Your AI assistants publish content, capture leads, and keep your business visible through it. Update pages in plain English. This is for you if your current website is on a platform that limits what you can do, charges you monthly for basic changes, or can't integrate with modern AI tools.",
     features: [
-      "Full rebuild on Next.js — fast, modern, and extensible",
-      "Content and branding migrated from any existing platform",
-      "Mobile-first, SEO-optimized by default",
+      "Full rebuild on Next.js — fast and modern",
+      "Migration from Wix, WordPress, Squarespace, GoDaddy",
       "AI-editable — update pages in plain English",
-      "You own the code, hosting, and domain completely",
-      "Any developer can work on it — zero vendor lock-in",
+      "Mobile-first, SEO-optimized by default",
+      "You own the code, hosting, and domain",
+      "Any developer can maintain or extend it",
     ],
   },
   {
     icon: Zap,
-    title: "System Integrations",
-    tagline: "Your tools talking to each other, automatically.",
+    title: "CRM & Lead Operations",
+    tagline: "Leads in. Follow-up out. Nothing lost in between.",
     description:
-      "Most businesses run 5-15 tools that don't communicate. Leads come in from the website but don't make it to the CRM. Appointments get booked but no one gets notified. I connect everything so data flows and nothing falls through the cracks.",
+      "Full lead lifecycle — capture, enrichment, scoring, routing, follow-up, reporting. Connected to your website, ads, and AI assistants so leads get handled the minute they come in. This is for you if leads come in and then nothing happens — or it takes two days to follow up, or you're manually copying data between tools.",
     features: [
-      "CRM integration — site leads flow directly into your pipeline",
-      "Email marketing and drip campaign automation",
-      "Scheduling and appointment booking connections",
-      "Review management and reputation monitoring",
-      "Payment processing and invoicing workflows",
-      "API connections to any platform with an interface",
-    ],
-  },
-  {
-    icon: Wrench,
-    title: "Custom Tool Development",
-    tagline: "When off-the-shelf doesn't fit your business.",
-    description:
-      "Sometimes the tool you need doesn't exist — or the one that does costs $500/month and only covers 60% of what you actually need. I build custom internal tools, client portals, dashboards, and operational software scoped exactly to your requirements.",
-    features: [
-      "Internal dashboards and operational tools",
-      "Client-facing portals and self-service platforms",
-      "Custom reporting and analytics dashboards",
-      "Data management and processing tools",
-      "Industry-specific applications and calculators",
-      "Built to integrate with your existing systems",
+      "Lead capture from website, ads, and forms",
+      "Automatic enrichment and scoring",
+      "Smart routing to the right person or workflow",
+      "Automated follow-up sequences",
+      "Connects to GoHighLevel, HubSpot, or custom CRM",
+      "Full pipeline visibility and reporting",
     ],
   },
   {
     icon: GraduationCap,
-    title: "Training & Handoff",
-    tagline: "The goal is for you to not need me.",
+    title: "SEO & Content Engine",
+    tagline: "Your AI drafts it. You approve it. It goes live.",
     description:
-      "Every engagement ends with full ownership transfer. Your team learns how to operate every system, manage every agent, and troubleshoot issues independently. I provide documentation, training, and 90 days of support — then you run it yourself.",
+      "Automated, AI-driven content pipeline. Your AI drafts content, you approve it, it publishes. SEO monitoring runs in the background. Your content engine feeds your website, your website feeds your CRM, your CRM feeds your follow-up. One system. This is for you if you know SEO matters but you haven't published a blog post in six months because who has the time.",
     features: [
-      "Hands-on training for you and your team",
-      "Comprehensive documentation and SOPs",
-      "90 days of post-launch support included",
-      "Agent management and troubleshooting training",
-      "No ongoing dependency — fully self-sufficient",
-      "Available for future projects if you want to expand",
+      "AI-assisted content drafting and editing",
+      "Keyword tracking and rank monitoring",
+      "Automated publishing pipeline",
+      "Content calendar management",
+      "SEO audit and optimization recommendations",
+      "Connected to your website and CRM",
+    ],
+  },
+  {
+    icon: Wrench,
+    title: "Custom Development",
+    tagline: "When the tool you need doesn't exist.",
+    description:
+      "Internal dashboards, client portals, reporting tools, industry-specific apps, API integrations. Sometimes what you need isn't a product — it's 200 lines of code that do exactly what your business requires. This is for you if the tool you need doesn't exist, or it does but costs $500/month and covers 60% of what you need.",
+    features: [
+      "Internal dashboards and operational tools",
+      "Client-facing portals and self-service platforms",
+      "Custom reporting and analytics",
+      "Industry-specific applications",
+      "API integrations between any platforms",
+      "Built to work with your existing systems",
     ],
   },
 ];
@@ -125,16 +125,16 @@ export default function ServicesContent() {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Solutions built for
+              Most businesses come to me needing one thing and leave with
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                how your business actually works.
+                a system that handles everything their marketing team would have done.
               </span>
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Every engagement is scoped to your specific operations. These are
-              the building blocks — assembled into whatever combination actually
-              solves your problem.
+              These aren't à la carte services. They're building blocks of an
+              integrated marketing infrastructure — assembled for whatever your
+              business actually needs.
             </p>
           </motion.div>
         </div>
@@ -248,7 +248,7 @@ export default function ServicesContent() {
                   {[
                     {
                       title: "Custom-scoped to your business",
-                      detail: "Some businesses need a single automation workflow. Others need the full stack — website, agents, CRM, training. I scope based on your situation and give you clear pricing before anything starts.",
+                      detail: "Some businesses need one workflow. Others need the full stack — website, AI assistants, CRM, content engine. I scope to your situation and give you clear pricing before anything starts.",
                     },
                     {
                       title: "See the work before you commit",
@@ -309,8 +309,7 @@ export default function ServicesContent() {
             </h2>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
               That's what the first call is for. We'll look at where you are
-              now, what's costing you time and money, and figure out what
-              to build first.
+              now, what's eating your time, and figure out what to build first.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/schedule">

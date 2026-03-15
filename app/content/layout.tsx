@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Insights – AI, Automation & Operations for Business Owners | Provines Consulting',
-  description: 'Practical thinking about AI agents, process automation, and operational efficiency — written for business owners, not developers.',
-  keywords: ['AI agents', 'business automation', 'operations', 'small business AI', 'process automation', 'custom tools'],
+  title: 'Insights | AI, Marketing Infrastructure & Business Automation',
+  description: 'Practical insights on AI implementation, marketing infrastructure, and business automation — from someone who builds these systems for a living.',
+  keywords: ['AI for small business', 'marketing infrastructure', 'business automation insights', 'Claude AI for business', 'AI chatbot vs AI assistant', 'marketing automation', 'website migration guide'],
   openGraph: {
-    title: 'Insights – AI, Automation & Operations for Business Owners',
-    description: 'Practical thinking about AI agents, automation, and operations for business owners.',
+    title: 'Insights | AI, Marketing Infrastructure & Business Automation',
+    description: 'Practical insights on AI implementation, marketing infrastructure, and business automation.',
     type: 'website',
   },
 };

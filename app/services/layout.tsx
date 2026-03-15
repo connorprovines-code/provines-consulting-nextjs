@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services – AI Agents, Automation & Custom Solutions | Provines Consulting',
-  description: 'AI agents, process automation, website platforms, system integrations, and custom tool development for SMB owners. Built for your operations, owned by you.',
-  keywords: ['AI agents', 'process automation', 'custom tools', 'CRM integration', 'workflow automation', 'website rebuild', 'business automation'],
+  title: 'Services | AI Marketing Infrastructure, Custom Bots & Automation',
+  description: 'Complete marketing infrastructure builds, Claude-powered AI assistants, website platforms, CRM automation, and SEO systems — custom-built for business owners.',
+  keywords: ['AI marketing infrastructure', 'custom AI chatbot for business', 'Claude-powered AI assistant', 'marketing automation for service companies', 'CRM automation', 'website rebuild', 'AI assistant implementation', 'replace marketing agency'],
   openGraph: {
-    title: 'Services – AI Agents, Automation & Custom Solutions',
-    description: 'AI agents, process automation, integrations, and custom tools for business owners.',
+    title: 'Services | AI Marketing Infrastructure, Custom Bots & Automation',
+    description: 'Complete marketing infrastructure builds, Claude-powered AI assistants, website platforms, CRM automation, and SEO systems — custom-built for business owners.',
     type: 'website',
   },
 };

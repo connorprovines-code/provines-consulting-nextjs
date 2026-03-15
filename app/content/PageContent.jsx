@@ -7,31 +7,76 @@ import { motion } from "framer-motion";
 
 const articles = [
   {
-    slug: "what-ai-agents-actually-do-for-small-business",
-    title: "What AI Agents Actually Do for a Small Business",
+    slug: "you-dont-need-a-marketing-team",
+    title: "You Don't Need a Marketing Team. You Need Marketing Infrastructure.",
     excerpt:
-      "Cut through the hype. Here's what AI agents look like in practice for a service business — CRM automation, SEO monitoring, content updates, and lead follow-up that actually runs without you.",
+      "The cost of hiring a marketing team vs. building systems that do the work. Why infrastructure beats headcount for businesses under 50 employees — and what that infrastructure actually looks like.",
+    readTime: "8 min read",
+    date: "March 2026",
+    category: "Marketing Infrastructure",
+  },
+  {
+    slug: "ai-chatbots-vs-ai-assistants",
+    title: "AI Chatbots vs. AI Assistants: Why Most Business Bots Are a Waste of Money",
+    excerpt:
+      "There's a difference between a chat widget that answers FAQs and an AI assistant that routes leads, updates your website, and manages your CRM. Most businesses are buying the wrong one.",
     readTime: "7 min read",
-    date: "February 2026",
+    date: "March 2026",
     category: "AI & Automation",
   },
   {
-    slug: "manual-operations-killing-your-margins",
-    title: "The Manual Operations Quietly Killing Your Margins",
+    slug: "what-claude-powered-ai-assistant-does-for-small-business",
+    title: "What a Claude-Powered AI Assistant Actually Does for a Small Business",
     excerpt:
-      "You don't notice them because they've always been there — the spreadsheets, the copy-pasting, the follow-up emails you type by hand. But they're costing you more than you think.",
-    readTime: "5 min read",
-    date: "February 2026",
-    category: "Operations",
+      "Forget the hype. Here's what happens on a Tuesday morning when your AI assistant handles lead intake, drafts a blog post, updates your homepage, and follows up with yesterday's inquiries — all before you finish coffee.",
+    readTime: "7 min read",
+    date: "March 2026",
+    category: "AI & Automation",
   },
   {
-    slug: "why-off-the-shelf-software-doesnt-fit",
-    title: "Why Off-the-Shelf Software Never Quite Fits Your Business",
+    slug: "migrating-website-from-wix-to-nextjs",
+    title: "Migrating Your Website from Wix to Next.js: What Business Owners Need to Know",
     excerpt:
-      "You're paying for 100 features and using 12 of them. The one thing you actually need it to do? That's the thing it can't do. Here's why custom-built tools are closer than you think.",
+      "Why legacy platforms limit your growth, what modern infrastructure looks like, and what actually happens during a migration. Written for business owners, not developers.",
     readTime: "6 min read",
-    date: "February 2026",
-    category: "Custom Tools",
+    date: "March 2026",
+    category: "Website Platform",
+  },
+  {
+    slug: "real-cost-of-not-following-up-with-leads",
+    title: "The Real Cost of Not Following Up with Leads",
+    excerpt:
+      "The data on lead response time is brutal. Every hour you wait cuts your conversion rate in half. Here's the math on what that's actually costing you — and what automated follow-up looks like in practice.",
+    readTime: "5 min read",
+    date: "March 2026",
+    category: "Lead Operations",
+  },
+  {
+    slug: "complete-marketing-infrastructure-for-home-builder",
+    title: "How I Built a Complete Marketing Infrastructure for a Home Builder in 6 Weeks",
+    excerpt:
+      "Website migration, AI content agents, CRM overhaul, cost estimation AI, automated lead flow. A full walkthrough of what was built, what it replaced, and how the owner runs it daily.",
+    readTime: "10 min read",
+    date: "March 2026",
+    category: "Case Study",
+  },
+  {
+    slug: "business-owners-guide-to-ai-2026",
+    title: "The Business Owner's Guide to AI in 2026: What's Real and What to Build First",
+    excerpt:
+      "Cutting through the noise. Where AI delivers actual ROI right now for small businesses — operational infrastructure, not shiny consumer tools. What to build first, what to skip.",
+    readTime: "9 min read",
+    date: "March 2026",
+    category: "AI & Automation",
+  },
+  {
+    slug: "why-your-marketing-agency-isnt-building-anything-you-own",
+    title: "Why Your $3K/Month Marketing Agency Isn't Building You Anything You Own",
+    excerpt:
+      "The retainer model means you never own anything. When you leave, you start over. There's an alternative: build the infrastructure once, own it forever, and run it yourself.",
+    readTime: "6 min read",
+    date: "March 2026",
+    category: "Marketing Infrastructure",
   },
 ];
 
@@ -59,8 +104,7 @@ export default function ContentPage() {
             </h1>
 
             <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Practical thinking about AI, automation, and operations —
-              written for people who run businesses, not developers.
+              Practical thinking about AI implementation, marketing infrastructure, and business automation — written for people who run businesses, not developers.
             </p>
           </motion.div>
         </div>

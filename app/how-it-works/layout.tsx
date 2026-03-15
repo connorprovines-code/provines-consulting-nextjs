@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How It Works – From Preview to Full Ownership',
-  description: 'See the step-by-step process: preview your rebuilt site before committing, scope the project, build and install, then take full ownership with training and support.',
-  keywords: ['website rebuild process', 'how it works', 'website migration steps', 'AI agent installation', 'digital operations handoff'],
+  title: 'How It Works | From Discovery to Full Marketing Infrastructure',
+  description: 'A clear 4-step process: discovery, architecture, build, and handoff. You get complete marketing infrastructure — website, AI, CRM, content — that you own and operate.',
+  keywords: ['marketing infrastructure process', 'AI assistant implementation', 'website migration process', 'CRM setup', 'marketing automation setup', 'Claude AI implementation'],
   openGraph: {
-    title: 'How It Works – From Preview to Full Ownership',
-    description: 'See the step-by-step process from preview to full digital independence.',
+    title: 'How It Works | From Discovery to Full Marketing Infrastructure',
+    description: 'A clear 4-step process: discovery, architecture, build, and handoff. Complete marketing infrastructure you own and operate.',
     type: 'website',
   },
 };

@@ -1,0 +1,52 @@
+# Provines Consulting
+> AI marketing infrastructure for business owners. I build your complete marketing stack — website, AI assistants, CRM, content engine, lead flow — and hand you the keys.
+
+## About
+Connor Provines runs Provines Consulting out of the Bay Area. 12+ years B2B SaaS marketing leadership (demand gen, marketing ops, RevOps, GTM strategy) across companies from 0→1 and 1→10. Self-taught technical builder who ships production AI systems, multi-agent workflows, voice agents, lead enrichment pipelines, and full web applications.
+
+## What I Build
+I build marketing infrastructure for business owners who need marketing capacity but don't have or want a full marketing team. The core offering is a complete marketing stack — website, CRM, AI assistants, content engine, SEO, lead automation — built as infrastructure you own. No retainers. No lock-in. Everything gets handed over with full ownership.
+
+## Services
+- Marketing Infrastructure Build: Complete marketing department built as infrastructure — website, CRM, AI assistants, content engine, SEO, ads integration
+- AI Assistants & Intelligent Automation: Claude-powered AI agents that connect to CRM, manage workflows, handle lead intake, content, scheduling, and customer communication
+- Website Platform & AI-Managed Content: Next.js websites that are fast, SEO-optimized, and updatable in plain English through AI assistants
+- CRM & Lead Operations: Full lead lifecycle automation — capture, enrichment, scoring, routing, follow-up, reporting
+- SEO & Content Engine: AI-driven content pipeline with automated publishing, keyword tracking, and SEO monitoring
+- Custom Development: Internal dashboards, client portals, reporting tools, industry-specific applications
+
+## Technology
+- Web: Next.js, React, Tailwind CSS, Vercel
+- AI: Anthropic Claude, Claude API, multi-agent workflows
+- Data: Supabase, MongoDB
+- CRM: GoHighLevel, HubSpot, custom
+- Voice: ElevenLabs, Twilio
+- Automation: n8n, custom pipelines
+
+## Target Audience
+Service businesses, contractors, home builders, professional firms, and SMB owner-operators who need marketing infrastructure but don't have a marketing team. Also small SaaS companies looking for AI integration.
+
+## Key Differentiators
+- Strategy + implementation in one person (12+ years marketing leadership + full-stack development)
+- Everything built for independence — you own code, data, infrastructure
+- AI assistants that do real work, not chat widgets
+- No retainers, no lock-in, no dependency after handoff
+- 90 days post-launch support included
+
+## Contact
+- Website: https://provines.consulting
+- Email: connorprovines@gmail.com
+- Phone: +1 (408) 340-3265
+- Schedule: https://calendly.com/connorprovines/30min
+
+## Pages
+- /: Homepage — marketing infrastructure positioning and overview
+- /services: Detailed service offerings
+- /how-it-works: 4-step engagement process
+- /about: Background and credentials
+- /work: Project examples and case studies
+- /content: Articles on AI, marketing infrastructure, and business automation
+- /faq: Common questions and answers
+- /contact: Contact form
+- /schedule: Book a discovery call
+- /website-rebuild: Website rebuild + AI platform landing page

@@ -109,8 +109,7 @@ export default function ContactContent() {
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Whether you have a specific project in mind or just want to
-              explore what's possible — reach out. No pitch, no pressure.
+              Let's figure out what your marketing infrastructure should look like. Whether you have a specific project in mind or just want to explore what's possible — no pitch, no pressure.
             </p>
           </motion.div>
         </div>
@@ -227,23 +226,23 @@ export default function ContactContent() {
                           <SelectValue placeholder="Select an area" />
                         </SelectTrigger>
                         <SelectContent position="popper" sideOffset={4}>
-                          <SelectItem value="ai_agents">
-                            AI Agents & Assistants
+                          <SelectItem value="full_infrastructure">
+                            Full Marketing Infrastructure Build
                           </SelectItem>
-                          <SelectItem value="process_automation">
-                            Process Automation
+                          <SelectItem value="ai_assistants">
+                            AI Assistants & Automation
                           </SelectItem>
                           <SelectItem value="website_rebuild">
-                            Website Rebuild & Migration
+                            Website Platform & Migration
                           </SelectItem>
-                          <SelectItem value="integrations">
-                            System Integrations
+                          <SelectItem value="crm_leads">
+                            CRM & Lead Operations
+                          </SelectItem>
+                          <SelectItem value="seo_content">
+                            SEO & Content Engine
                           </SelectItem>
                           <SelectItem value="custom_tools">
-                            Custom Tool Development
-                          </SelectItem>
-                          <SelectItem value="full_engagement">
-                            Full Engagement (Multiple Services)
+                            Custom Development
                           </SelectItem>
                           <SelectItem value="other">
                             Not Sure / Other

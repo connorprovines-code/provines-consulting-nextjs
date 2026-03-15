@@ -12,64 +12,54 @@ export default function FAQContent() {
 
   const faqs = [
     {
-      question: "What exactly do you do?",
+      question: "What exactly do you build?",
       answer:
-        "I rebuild websites on modern infrastructure (Next.js), install AI agents to handle marketing and operations (CRM, SEO, content, lead follow-up), connect your existing tools, and train you to run everything yourself. One engagement, complete digital transformation — then you're independent.",
+        "Marketing infrastructure. Website, CRM, AI assistants, content systems, SEO, lead automation — one integrated system. Everything a marketing team would build, delivered as infrastructure you own.",
     },
     {
-      question: "Who is this for?",
+      question: "What are the AI assistants and how do they work?",
       answer:
-        "Owner-operators of small to medium businesses — especially service companies, contractors, professional firms, and businesses with high operational burden. If you're stuck on Wix or WordPress, paying an agency for every small change, or drowning in manual marketing work, this is built for you.",
+        "Claude-powered AI agents trained on your business. They connect to your CRM, manage content, handle lead intake, schedule appointments, and automate operations. Not a chat widget — real agents doing real work. Built on Anthropic's Claude, configured for your data and workflows.",
     },
     {
-      question: "Why would you rebuild my site before I pay you?",
+      question: "How is this different from hiring a marketing agency?",
       answer:
-        "Because a demo beats a pitch deck. I build a working preview of your site so you can see the actual product — not a mockup, not promises. If you don't like it, you don't pay. Preview builds convert better than asking people to trust a pitch, and the work tends to speak for itself.",
+        "An agency charges monthly and you never own anything. Every change, every update — you're calling them and paying for it. I build systems you own completely. After handoff — no recurring fees, no lock-in, no dependency. You run it yourself.",
     },
     {
-      question: "How much does this cost?",
+      question: "How is this different from a chatbot tool?",
       answer:
-        "It depends on what you need. Some businesses just need the website rebuild. Others need the full suite — agents, CRM integration, email automation, team training. I scope it based on your situation and give you clear, fixed pricing before anything starts. No standard packages because the work isn't standard.",
+        "Most chatbot tools are a widget answering questions from a knowledge base. My AI assistants are integrated into your systems — CRM, website, scheduling, pipeline. They don't just answer questions. They route leads, update your website, draft content, and manage follow-up.",
     },
     {
-      question: "Do I need to know how to code?",
+      question: "What technology do you use?",
       answer:
-        "No. Everything is built for plain English use. You describe what you want changed, the system does it. No terminal, no Git, no developer on speed dial. If you can write an email, you can manage your site and run your agents.",
+        "Next.js and React for websites. Supabase for databases. Vercel for hosting. Anthropic's Claude for AI. Various APIs for CRM, email, scheduling, and enrichment. Modern, open, maintainable by any developer.",
     },
     {
-      question: "What do I actually own after the engagement?",
+      question: "Do I need technical knowledge?",
       answer:
-        "Everything. The code, the hosting, the domain, the agents, the documentation. No lock-in, no monthly fees to me. Any developer you hire down the road can work on it. I can't hold it over you — and I wouldn't want to.",
+        "No. Plain English management. Tell your AI to update the homepage. Check leads in your dashboard. Approve content your AI drafted. If you can write an email, you can run these systems.",
     },
     {
-      question: "How is this different from hiring an agency?",
+      question: "What does it cost?",
       answer:
-        "An agency builds your site and you're dependent on them forever. Every change, every update, every small fix — you're calling them and paying for it. I build your site, install the tools, train your team, and hand you the keys. After the handoff, you don't need me. That's the whole point.",
+        "Custom-scoped. Some businesses need one workflow, others need the full build. Clear fixed pricing before anything starts — no hourly billing, no scope creep.",
     },
     {
-      question: "What platforms do you migrate from?",
+      question: "What happens after the project?",
       answer:
-        "Wix, Squarespace, WordPress, GoDaddy, Weebly, and most other website builders. If your site is currently live somewhere, I can migrate the content, images, and structure to modern infrastructure.",
+        "90 days of support, full documentation, training. Then you're independent. Code yours, infrastructure yours, data yours. Any developer can maintain or extend it.",
     },
     {
-      question: "What's the timeline?",
+      question: "What kinds of businesses do you work with?",
       answer:
-        "Depends on scope. A straightforward website rebuild can be done in a few weeks. Full digital operations — site + agents + integrations + training — typically takes 4-8 weeks. I'll give you a clear timeline during the scoping conversation.",
+        "Service businesses, contractors, home builders, SMB owner-operators who need marketing infrastructure but don't have or want a marketing team. Also small SaaS companies on AI integration.",
     },
     {
-      question: "What happens after the 90 days of support?",
+      question: "How long does a typical project take?",
       answer:
-        "You're on your own — in a good way. You know how everything works, you have documentation, and the systems are designed to be self-managing. If you want to add new capabilities or expand later, I'm available for new projects. But you'll never be in a position where you need me to keep things running.",
-    },
-    {
-      question: "What are the AI agents, specifically?",
-      answer:
-        "They're automated systems that handle operational tasks for your business. A CRM agent captures and routes leads from your website. An SEO agent monitors your rankings and optimizes content. A web management agent lets you update your site through natural language. They run continuously and handle work you'd otherwise do manually or pay someone to do.",
-    },
-    {
-      question: "What's the catch?",
-      answer:
-        "No catch. This is how I find clients. I build a preview, you see the quality of work, and we have a conversation about whether the full engagement makes sense. If it doesn't, no hard feelings. The preview cost me time, not you.",
+        "Website rebuild with basic AI assistants: 3-4 weeks. Full marketing infrastructure build: 6-8 weeks. Specific timeline during scoping.",
     },
   ];
 

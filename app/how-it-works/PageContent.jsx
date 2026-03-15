@@ -19,13 +19,13 @@ export default function HowItWorksContent() {
       icon: Search,
       step: "01",
       title: "Discovery",
-      subtitle: "Understanding what's actually costing you.",
+      subtitle: "I figure out what your marketing team would look like — then design it as infrastructure.",
       description:
-        "We start with a conversation about your operations — not a sales pitch. I want to understand where your time goes, what's manual that shouldn't be, which tools aren't talking to each other, and what's keeping you from focusing on actual business growth. This call is free and there's zero obligation.",
+        "This is where the GTM experience matters. I'm not just asking what tools you use — I'm mapping where leads come from, where they drop off, what content you should be creating, and how your follow-up should work. This call is free and there's zero obligation.",
       details: [
-        "Map your current workflows and tool stack",
-        "Identify bottlenecks, manual processes, and time sinks",
-        "Assess your current website and digital infrastructure",
+        "Map where leads come from and where they drop off",
+        "Audit your current website, CRM, and marketing tools",
+        "Identify what a marketing team would be doing for you",
         "Understand your team's technical comfort level",
       ],
     },
@@ -33,12 +33,12 @@ export default function HowItWorksContent() {
       icon: Ruler,
       step: "02",
       title: "Architecture & Scoping",
-      subtitle: "A clear plan with clear pricing.",
+      subtitle: "Strategy meets implementation — with clear pricing.",
       description:
-        "Based on discovery, I design the solution — which agents to build, what to automate, what infrastructure needs to change, and how it all connects. You get a detailed scope document with exactly what's included and exactly what it costs. No hourly billing, no scope creep.",
+        "You get a system design informed by 12+ years of marketing operations — not just a list of features to build. Architecture includes your website platform, CRM configuration, AI assistant design, content pipeline, and integration map — with clear pricing for each module.",
       details: [
         "Detailed solution architecture document",
-        "Specific deliverables and timeline for each phase",
+        "Website, CRM, AI assistant, and content pipeline design",
         "Fixed pricing — no hourly surprises",
         "You choose which modules to include",
       ],
@@ -47,12 +47,12 @@ export default function HowItWorksContent() {
       icon: Hammer,
       step: "03",
       title: "Build & Deploy",
-      subtitle: "Everything built, tested, and running.",
+      subtitle: "Everything built, tested, and running in your environment.",
       description:
-        "I build everything — agents, automations, integrations, website, custom tools — and test it end-to-end before going live. For website rebuilds, you see a working preview before committing. For automation projects, I demo every workflow. Nothing launches until you've seen it working.",
+        "Every build includes Claude-powered AI assistants configured for your specific business — trained on your services, connected to your CRM, ready to handle real workflows. Built on Next.js, Supabase, Vercel, and Anthropic's Claude. Nothing launches until you've seen it working.",
       details: [
-        "Iterative build with check-ins throughout",
-        "End-to-end testing before anything goes live",
+        "Iterative build with regular check-ins",
+        "Claude-powered AI assistants configured for your business",
         "Website previews and workflow demos before launch",
         "Deployed into your environment — you own everything",
       ],
@@ -63,12 +63,12 @@ export default function HowItWorksContent() {
       title: "Handoff & Independence",
       subtitle: "You run this. That's the whole point.",
       description:
-        "Training for you and your team on every system that was built. Documentation for every agent, workflow, and integration. 90 days of support for questions and fixes. After that, you're fully independent — and that's exactly how it should work.",
+        "Tell your AI to update the homepage. Ask it to draft a blog post. Check your CRM dashboard for this week's leads. That's what 'managed in plain English' actually means. After 90 days, you're fully independent. Any competent developer can pick it up. No proprietary lock-in.",
       details: [
-        "Hands-on training sessions for you and your team",
+        "Hands-on training for you and your team",
         "Written documentation and SOPs for everything",
-        "90 days of included post-launch support",
-        "You're never locked in — extend or modify anything freely",
+        "90 days of post-launch support included",
+        "Complete ownership — code, data, infrastructure, everything",
       ],
     },
   ];
@@ -205,15 +205,17 @@ export default function HowItWorksContent() {
 
               <div className="rounded-2xl border border-slate-100 bg-white shadow-sm p-8">
                 <h3 className="text-lg font-bold text-[var(--navy)] mb-4">
-                  From me
+                  What You Walk Away With
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    "Complete solution architecture and project scope",
-                    "All systems built, tested, and deployed",
-                    "Integrations connected and verified end-to-end",
-                    "Comprehensive documentation and SOPs",
-                    "Training sessions and 90 days of support",
+                    "Modern website on infrastructure you own (Next.js / Vercel)",
+                    "Configured CRM with automated lead pipeline",
+                    "Claude-powered AI assistants trained on your business",
+                    "Automated content and SEO pipeline",
+                    "Full documentation and SOPs for every system",
+                    "90 days of post-launch support",
+                    "Complete ownership — code, data, infrastructure, everything",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle className="w-4 h-4 text-[var(--electric-blue)] flex-shrink-0 mt-1" />
@@ -237,11 +239,11 @@ export default function HowItWorksContent() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to see what's possible?
+              Ready to see what your marketing infrastructure should look like?
             </h2>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
               The first step is a conversation. No obligation, no pitch — just
-              a look at where you're wasting time and what we can automate.
+              a look at what you're doing manually that should be a system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/schedule">

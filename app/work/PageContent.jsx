@@ -37,24 +37,24 @@ export default function WorkContent() {
   const capabilities = [
     {
       icon: Globe,
-      title: "Website Migrations",
+      title: "Complete Marketing Infrastructure",
       description:
-        "Full rebuilds from Wix, WordPress, GoDaddy, and Squarespace to modern Next.js. Content, images, branding — all migrated.",
-      industries: "Home services, professional services, contractors, local businesses",
+        "Website rebuilt on Next.js. Claude-powered AI assistants handling content and leads. CRM integrated with automated follow-up. SEO running on autopilot. From a static website and manual everything to a system that runs your marketing.",
+      industries: "Home builders, service businesses, professional firms",
     },
     {
       icon: Zap,
-      title: "AI Agent Installations",
+      title: "AI Assistant Deployment",
       description:
-        "CRM agents, SEO monitoring, content management, and lead follow-up — all running through plain English interfaces.",
-      industries: "Service businesses with high operational burden",
+        "AI voice receptionist handling calls 24/7. Leads routed to CRM automatically. Automated follow-up sequences. Review management. Website generating leads on its own.",
+      industries: "Service businesses with high call volume and lead flow",
     },
     {
       icon: TrendingUp,
-      title: "Full Digital Operations",
+      title: "Agency Replacement Build",
       description:
-        "Complete transformations: website + agents + CRM integration + email automation + training and handoff.",
-      industries: "Owner-operators ready to own their digital infrastructure",
+        "From paying an agency $3K/month for a website they controlled to owning everything. AI handles what the agency used to do. Content publishing, SEO, site updates — all in plain English.",
+      industries: "Owner-operators tired of agency dependency",
     },
   ];
 
@@ -74,15 +74,14 @@ export default function WorkContent() {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[var(--navy)] mb-6 leading-tight">
-              Work that
+              Real projects.
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                speaks for itself.
+                Real infrastructure.
               </span>
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Every project ends the same way: the client owns everything and
-              runs it themselves. Here's what that looks like.
+              Every project ends the same way: the client owns everything and runs it themselves. No retainers. No dependency. Here's what that looks like in practice.
             </p>
           </motion.div>
         </div>
@@ -120,10 +119,10 @@ export default function WorkContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-              What I build
+              What marketing infrastructure looks like in practice
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Three types of engagements, often combined into one project.
+              Three patterns I see most. Most projects combine elements of all three.
             </p>
           </motion.div>
 
@@ -168,13 +167,10 @@ export default function WorkContent() {
           className="text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-            Case studies coming soon.
+            Detailed case studies coming soon.
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
-            I'm documenting current client projects with before/after
-            comparisons, performance metrics, and detailed breakdowns of what
-            was built. In the meantime, the best way to see the work is to
-            book a call — I'll walk you through live examples.
+            I'm documenting current projects with before/after comparisons, performance metrics, and full breakdowns of what was built and what it replaced. In the meantime — book a call and I'll walk you through live systems.
           </p>
           <Link href="/schedule">
             <Button
@@ -197,11 +193,10 @@ export default function WorkContent() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Want to see what your site could look like?
+              Want to see what your marketing infrastructure could look like?
             </h2>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              I'll build a preview of your site on modern infrastructure —
-              before you commit to anything. See the work first, decide later.
+              I'll walk you through live systems and show you what makes sense for your business. No pitch deck. Just a conversation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/schedule">

@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Schedule a Call – Free Discovery Consultation | Provines Consulting',
-  description: 'Book a free 30-minute discovery call. We\'ll look at where you\'re spending time on things that should be automated and figure out what to build first.',
-  keywords: ['schedule consultation', 'book a call', 'discovery call', 'AI consultation', 'automation consultation'],
+  title: 'Schedule a Discovery Call | Marketing Infrastructure Consultation',
+  description: 'Book a free 30-minute call. We\'ll figure out what your marketing infrastructure should look like and what to build first.',
+  keywords: ['schedule consultation', 'book a call', 'discovery call', 'marketing infrastructure consultation', 'AI assistant consultation'],
   openGraph: {
-    title: 'Schedule a Call – Free Discovery Consultation',
-    description: 'Book a free 30-minute discovery call about AI agents and automation for your business.',
+    title: 'Schedule a Discovery Call | Marketing Infrastructure Consultation',
+    description: 'Book a free 30-minute call about your marketing infrastructure.',
     type: 'website',
   },
 };

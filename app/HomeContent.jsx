@@ -38,18 +38,17 @@ export default function HomeContent() {
           >
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
               <div className="w-2 h-2 rounded-full bg-[var(--mint)] animate-pulse" />
-              <span className="text-sm text-slate-300 font-medium">AI-powered operations for SMBs</span>
+              <span className="text-sm text-slate-300 font-medium">AI marketing infrastructure for business owners</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]">
-              Hi Veronika
+              You know what your marketing should look like. You just don't have the team to build it.
             </h1>
 
             <p className="text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
-              I build custom AI agents, automated workflows, and modern digital
-              infrastructure that replace the manual work eating your margins.
-              CRM, marketing, content, operations — built for your business,
-              owned by you, managed in plain English.
+              I build your marketing infrastructure — website, AI assistants, CRM,
+              content engine, lead flow — and hand you the keys. No retainers.
+              No lock-in. You own everything.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -88,13 +87,10 @@ export default function HomeContent() {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
-            You didn't start a business to manage spreadsheets.
+            You're running the business and the marketing department. Neither gets your full attention.
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            But that's where you are — chasing leads manually, updating
-            websites through agencies, copying data between tools, and spending
-            hours on work that should take minutes. Meanwhile, the businesses
-            pulling ahead have systems doing this for them.
+            You know you need content, SEO, a website that actually works, lead follow-up that doesn't depend on you remembering. But you're also running the business. So marketing gets whatever time is left — which is none.
           </p>
         </motion.div>
 
@@ -102,21 +98,21 @@ export default function HomeContent() {
           {[
             {
               icon: Clock,
-              problem: "Drowning in manual operations",
+              problem: "You're the entire marketing department",
               detail:
-                "Lead follow-up, content updates, reporting, data entry — your day is consumed by tasks that should be automated but aren't.",
+                "Website, content, SEO, lead follow-up, social, ads — it all falls on you. And when you're also closing deals and running operations, marketing gets whatever time is left. Which is none.",
             },
             {
               icon: Users,
-              problem: "Overpaying for underdelivery",
+              problem: "Agencies take your money, not your problems",
               detail:
-                "Agencies charge monthly for basic changes. Freelancers disappear. SaaS tools don't talk to each other. Nothing is built for your business specifically.",
+                "Monthly retainers for basic website changes. Reports you don't read. \"Strategy\" that's just a content calendar. You're paying for a team that doesn't actually build anything you keep.",
             },
             {
               icon: TrendingUp,
-              problem: "Falling behind on AI",
+              problem: "AI is everywhere and nowhere useful",
               detail:
-                "You know AI is changing how business gets done, but every solution is either consumer-grade fluff or enterprise software you can't afford.",
+                "Every tool promises AI. Most of it is a chat widget that can't find your pricing page. You need systems that actually do the work — not another subscription.",
             },
           ].map((item, index) => (
             <motion.div
@@ -152,56 +148,55 @@ export default function HomeContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-              Custom-built systems that run your business operations.
+              I build the marketing infrastructure your business should have had from day one.
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Not templates. Not off-the-shelf SaaS. Solutions engineered
-              for how your business actually works.
+              Not a menu of services. One integrated system — website, AI assistants, CRM, content engine — that does what a marketing team would do. Owned by you.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: Bot,
-                title: "AI Agents & Assistants",
-                description:
-                  "Purpose-built agents that handle CRM, lead follow-up, content creation, SEO monitoring, and operational tasks — managed in plain English.",
-                accent: "var(--electric-blue)",
-              },
-              {
-                icon: Workflow,
-                title: "Process Automation",
-                description:
-                  "End-to-end workflows that connect your tools, eliminate data entry, and turn multi-step manual processes into one-click operations.",
-                accent: "var(--mint)",
-              },
-              {
                 icon: Globe,
-                title: "Modern Web Platforms",
+                title: "Modern Website You Own",
                 description:
-                  "Fast, AI-ready websites built on infrastructure you own. No lock-in, no monthly agency fees — and your agents can update them directly.",
+                  "Built on Next.js — fast, SEO-optimized, and designed so your AI assistants can update it directly. No agency fees. No platform lock-in. Your code, your hosting, your domain.",
                 accent: "var(--electric-blue)",
               },
               {
                 icon: Zap,
-                title: "System Integrations",
+                title: "CRM & Lead Operations",
                 description:
-                  "CRM, email, scheduling, payments, reviews — connected so data flows automatically and nothing falls through the cracks.",
+                  "Leads captured, enriched, scored, routed, and followed up — automatically. Your CRM connected to your website, ads, and AI so nothing falls through the cracks.",
                 accent: "var(--mint)",
               },
               {
-                icon: BarChart3,
-                title: "SEO & Content Engines",
+                icon: Bot,
+                title: "AI Assistants That Actually Work",
                 description:
-                  "Automated keyword tracking, content pipelines, and publishing workflows that keep you visible without daily manual effort.",
+                  "Claude-powered AI agents connected to your CRM, website, and calendar. They handle content, customer communication, lead intake, and scheduling — not a chat widget with a knowledge base.",
+                accent: "var(--electric-blue)",
+              },
+              {
+                icon: BarChart3,
+                title: "SEO & Content Engine",
+                description:
+                  "Your AI drafts content, you approve it, it goes live. Keyword tracking and SEO monitoring run in the background. Publishing on autopilot.",
+                accent: "var(--mint)",
+              },
+              {
+                icon: Workflow,
+                title: "End-to-End Automation",
+                description:
+                  "Multi-step manual processes turned into one-click operations. Data entry, report generation, follow-up sequences, internal notifications — automated.",
                 accent: "var(--electric-blue)",
               },
               {
                 icon: Wrench,
-                title: "Custom Tool Development",
+                title: "Custom Development",
                 description:
-                  "When off-the-shelf doesn't cut it, I build exactly what you need — internal dashboards, client portals, reporting tools, and more.",
+                  "Internal dashboards, client portals, reporting tools, industry-specific apps. When the tool you need doesn't exist or costs too much for what it does.",
                 accent: "var(--mint)",
               },
             ].map((service, index) => (
@@ -237,19 +232,56 @@ export default function HomeContent() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center text-slate-600 mt-10 max-w-2xl mx-auto"
+          >
+            Most businesses come to me needing one thing and leave with a system that handles five. That's by design — everything connects.
+          </motion.p>
+
+          <div className="text-center mt-8">
             <Link href="/services">
               <Button
                 variant="outline"
                 size="lg"
                 className="border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white"
               >
-                Explore Full Service Details
+                See Full Service Details
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* AI Assistant Callout — SEO section */}
+      <section className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="relative rounded-2xl bg-[var(--navy)] p-10 md:p-14 overflow-hidden"
+        >
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-[var(--electric-blue)]/10 to-transparent rounded-full blur-3xl" />
+          </div>
+          <div className="relative">
+            <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full border border-white/10 bg-white/5">
+              <Bot className="w-4 h-4 text-[var(--mint)]" />
+              <span className="text-sm text-slate-300 font-medium">Claude-powered AI assistants</span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              Every system includes AI assistants trained on your business.
+            </h3>
+            <p className="text-lg text-slate-300 leading-relaxed max-w-3xl">
+              They update your website, draft and publish content, handle lead intake, manage your calendar, and answer customer questions — using your CRM data, not a generic knowledge base. This isn't a chatbot widget. It's operational intelligence built into your marketing infrastructure.
+            </p>
+          </div>
+        </motion.div>
       </section>
 
       {/* How It Works — Brief */}
@@ -411,12 +443,10 @@ export default function HomeContent() {
 
             <div className="relative p-12 md:p-16 text-center text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Let's talk about what's slowing you down.
+                Let's figure out what your marketing infrastructure should look like.
               </h2>
               <p className="text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-                30 minutes. No pitch deck. We'll look at where you're spending
-                time on things that should be automated and figure out what to
-                build first.
+                30 minutes. No pitch deck. We'll look at what you're doing manually that should be automated and figure out what to build first.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/schedule">

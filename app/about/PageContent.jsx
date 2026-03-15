@@ -17,37 +17,37 @@ export default function AboutContent() {
   const expertise = [
     {
       icon: Wrench,
-      title: "I Build the Systems",
+      title: "Strategy + Implementation in One Person",
       description:
-        "I don't advise and leave. I build the website, configure the agents, connect the integrations, and make sure everything works before I hand it over.",
+        "I don't hand you a strategy deck and wish you luck. I architect the system and build it. The marketing experience informs what gets built. The technical skills mean it actually gets shipped.",
     },
     {
       icon: Lightbulb,
-      title: "Marketing + Engineering",
+      title: "Everything Built for Independence",
       description:
-        "12+ years in SaaS marketing leadership means I understand what actually drives leads and revenue. The tech I build is informed by what actually converts.",
+        "After the handoff, you don't need me. That's not a risk — it's the entire point. You own the code, the data, the infrastructure. Any developer can maintain it.",
     },
     {
       icon: ShieldCheck,
-      title: "Independence Is the Product",
+      title: "Built for Owners, Not Developers",
       description:
-        "Everything I build is designed for you to own and operate. After the handoff, you don't need me. That's not a risk — it's the entire point.",
+        "Plain English management. Tell your AI to update the homepage. Check leads in your dashboard. Approve content your AI drafted. If you can write an email, you can run these systems.",
     },
     {
       icon: Users,
-      title: "Built for Owners, Not Developers",
+      title: "Marketing Experience That Shows in the Build",
       description:
-        "Plain English management, no-code interfaces, clear documentation. If you can write an email, you can run the systems I install.",
+        "I don't just build your marketing stack. I architect it around what actually drives revenue — because I've spent a decade doing exactly that. The systems I build are informed by what actually converts.",
     },
   ];
 
   const background = [
-    "12+ years B2B SaaS marketing leadership",
-    "Built and deployed AI agent systems for operational businesses",
-    "Website migrations from Wix, WordPress, GoDaddy, Squarespace",
-    "CRM architecture and integration (Supabase, HubSpot, custom)",
-    "Full-stack development (Next.js, React, Node.js, Tailwind)",
-    "SEO systems and content automation pipelines",
+    "12+ years B2B SaaS marketing leadership (demand gen, marketing ops, RevOps)",
+    "Production AI systems — Claude-powered assistants, multi-agent workflows, voice agents",
+    "Website migrations from Wix, WordPress, Squarespace to Next.js",
+    "CRM architecture and integration (GoHighLevel, HubSpot, Supabase, custom)",
+    "Full-stack development — Next.js, React, Tailwind, Supabase, Vercel",
+    "SEO systems, content automation, and lead enrichment pipelines",
   ];
 
   return (
@@ -73,16 +73,17 @@ export default function AboutContent() {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[var(--navy)] mb-6 leading-tight">
-              I spent a decade building
+              12+ years building marketing systems for SaaS companies.
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                growth systems for SaaS companies.
+                Now I package that into infrastructure business owners actually own.
               </span>
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Now I bring that same infrastructure to the businesses that
-              actually need it — service companies, owner-operators, and SMBs
-              that deserve modern tools but don't have a dev team.
+              Most developers don't understand marketing. Most marketers can't
+              build production systems. I do both — which means the
+              infrastructure I build isn't just technically sound, it's designed
+              around what actually drives leads and revenue.
             </p>
           </motion.div>
         </div>
@@ -100,36 +101,36 @@ export default function AboutContent() {
         >
           <div className="space-y-6 text-slate-700 leading-relaxed text-lg">
             <p>
-              I'm Connor Provines. For the past 12+ years I've been in SaaS
-              marketing — building go-to-market strategies, setting up
-              automation pipelines, running growth operations. I've seen what it
-              takes to build the systems that actually generate leads and close
-              deals at scale.
+              I'm Connor Provines. Twelve years in B2B SaaS marketing —
+              building go-to-market strategies, running demand gen, setting up
+              the automation and ops infrastructure that actually generates
+              pipeline. I've done it at companies going from zero to first
+              customers and companies scaling from 10M to 50M.
             </p>
 
             <p>
-              What I kept noticing was that the businesses doing the most
-              important work — contractors, service companies, professional
-              firms — were stuck with the worst tools. Their websites were on
-              platforms that couldn't support modern marketing. Their leads were
-              falling through the cracks. They were paying agencies for things
-              they should have been able to do themselves.
+              What I kept seeing was that the businesses doing the hardest,
+              most important work — contractors, service companies,
+              professional firms — were stuck with the worst tools. Websites on
+              platforms that couldn't support basic SEO. Leads falling through
+              cracks. Paying agencies thousands a month for a content calendar
+              and a website they couldn't update themselves.
             </p>
 
             <p>
               So I started building for them. I take what I know about
-              marketing operations, automation, and AI — and I package it into
-              something a business owner can actually use. Not a retainer. Not
-              a dashboard they'll never log into. A system they own and operate
-              themselves, with agents that handle the repetitive work and
-              infrastructure that supports whatever they want to do next.
+              marketing operations, automation, and AI — and I build it as
+              infrastructure a business owner can actually run. Not a retainer.
+              Not a dashboard you'll never log into. A system you own. AI
+              assistants that handle the repetitive work. A website that your
+              AI can update. A CRM that routes leads without you touching it.
             </p>
 
             <p>
               The engagement ends with a handoff. You know how everything
-              works, you have documentation, you have 90 days of support. After
-              that, you're running your own digital operations. That's not a
-              feature — it's the foundation of everything I build.
+              works. You have documentation. You have 90 days of support. After
+              that, you're running your own marketing infrastructure. That's
+              the product.
             </p>
           </div>
         </motion.div>
@@ -231,7 +232,8 @@ export default function AboutContent() {
           </h2>
           <p className="text-xl text-slate-600 mb-8 leading-relaxed">
             No pitch, no pressure. Just a conversation about where you are,
-            where you want to be, and whether this is the right fit.
+            where you want to be, and whether I can build the infrastructure
+            to get you there.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/schedule">

@@ -37,7 +37,7 @@ export default function AboutContent() {
       icon: Users,
       title: "Marketing Experience That Shows in the Build",
       description:
-        "I don't just build your marketing stack. I architect it around what actually drives revenue — because I've spent a decade doing exactly that. The systems I build are informed by what actually converts.",
+        "I don't just build your marketing stack. I architect it around what actually drives revenue — because I've spent 12+ years doing exactly that. The systems I build are informed by what actually converts.",
     },
   ];
 

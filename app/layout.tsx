@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     default: "Provines Consulting | AI Marketing Infrastructure for Business Owners",
     template: "%s | Provines Consulting",
   },
-  description: "I build your complete marketing stack — website, AI assistants, CRM, content engine, lead flow — and hand you the keys. No retainers. No lock-in. You own everything.",
+  description: "I build your marketing stack — website, AI assistants, CRM, content engine, lead flow — and hand you the keys. No retainers. No lock-in. You own everything.",
   keywords: ["AI marketing infrastructure", "custom AI chatbot for business", "Claude chatbot implementation", "AI assistant for small business", "marketing systems for business owners", "Next.js website for small business", "CRM automation", "replace marketing agency with AI", "AI-powered business assistant", "marketing automation for service companies"],
   authors: [{ name: "Connor Provines" }],
   creator: "Connor Provines",
   openGraph: {
     title: "Provines Consulting | AI Marketing Infrastructure for Business Owners",
-    description: "I build your complete marketing stack — website, AI assistants, CRM, content engine, lead flow — and hand you the keys. No retainers. No lock-in. You own everything.",
+    description: "I build your marketing stack — website, AI assistants, CRM, content engine, lead flow — and hand you the keys. No retainers. No lock-in. You own everything.",
     url: "https://provines.consulting",
     siteName: "Provines Consulting",
     type: "website",
@@ -62,6 +62,7 @@ const jsonLd = {
     jobTitle: "Founder",
   },
   areaServed: "US",
+  email: "connor@provines.consulting",
   serviceType: [
     "AI Marketing Infrastructure",
     "Claude-Powered AI Assistant Implementation",

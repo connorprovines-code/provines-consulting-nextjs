@@ -100,13 +100,13 @@ export default function HomeContent() {
               icon: Clock,
               problem: "You're the entire marketing department",
               detail:
-                "Website, content, SEO, lead follow-up, social, ads — it all falls on you. And when you're also closing deals and running operations, marketing gets whatever time is left. Which is none.",
+                "Website, content, SEO, lead follow-up, social, ads — it all falls on you. Whether you're a contractor, home builder, or running a service company, marketing gets whatever time is left after the real work. Which is none.",
             },
             {
               icon: Users,
               problem: "Agencies take your money, not your problems",
               detail:
-                "Monthly retainers for basic website changes. Reports you don't read. \"Strategy\" that's just a content calendar. You're paying for a team that doesn't actually build anything you keep.",
+                "Monthly retainers for basic website changes. Reports you don't read. \"Strategy\" that's just a content calendar. You're paying for a team that doesn't actually build anything you keep. It's time to replace your marketing agency with systems you own.",
             },
             {
               icon: TrendingUp,
@@ -148,7 +148,7 @@ export default function HomeContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-              I build the marketing infrastructure your business should have had from day one.
+              Marketing infrastructure for small business — what your company should have had from day one.
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Not a menu of services. One integrated system — website, AI assistants, CRM, content engine — that does what a marketing team would do. Owned by you.
@@ -308,7 +308,7 @@ export default function HomeContent() {
               step: "01",
               title: "Discovery",
               description:
-                "We map your current operations, identify where time and money are being wasted, and scope what to build.",
+                "I map your current operations, identify where time and money are being wasted, and scope what to build first.",
             },
             {
               step: "02",

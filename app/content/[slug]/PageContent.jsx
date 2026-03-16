@@ -332,7 +332,6 @@ export default function ArticleContent() {
           </motion.div>
         </div>
 
-        <div className="relative z-10 h-24" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* Article Body */}

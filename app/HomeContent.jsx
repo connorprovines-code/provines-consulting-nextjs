@@ -23,13 +23,8 @@ export default function HomeContent() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <section className="relative bg-[#0A1F44]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[var(--electric-blue)]/10 via-[var(--mint)]/5 to-transparent rounded-full blur-3xl transform translate-x-1/4 -translate-y-1/4" />
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-[var(--mint)]/8 to-transparent rounded-full blur-3xl transform -translate-x-1/4 translate-y-1/4" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-40">
+      <section className="bg-[#0A1F44]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -74,7 +69,6 @@ export default function HomeContent() {
           </motion.div>
         </div>
 
-        <div className="relative z-10 h-32" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* The Pain — Why they need this */}
@@ -264,12 +258,9 @@ export default function HomeContent() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative rounded-2xl bg-[var(--navy)] p-10 md:p-14 overflow-hidden"
+          className="rounded-2xl bg-[var(--navy)] p-10 md:p-14"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-[var(--electric-blue)]/10 to-transparent rounded-full blur-3xl" />
-          </div>
-          <div className="relative">
+          <div>
             <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full border border-white/10 bg-white/5">
               <Bot className="w-4 h-4 text-[var(--mint)]" />
               <span className="text-sm text-slate-300 font-medium">Claude-powered AI assistants</span>
@@ -372,17 +363,8 @@ export default function HomeContent() {
       </section>
 
       {/* Ownership Principles */}
-      <section className="relative bg-[var(--navy)] text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }} />
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[var(--electric-blue)]/8 to-transparent rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[var(--mint)]/5 to-transparent rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-[var(--navy)] text-white py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

@@ -58,10 +58,7 @@ export default function ScheduleContent() {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              Book a
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                {" "}discovery call
-              </span>
+              Book a discovery call
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed max-w-xl mx-auto">

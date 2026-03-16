@@ -427,46 +427,39 @@ export default function HomeContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative rounded-3xl overflow-hidden"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[var(--electric-blue)] via-[#0077cc] to-[var(--navy)]" />
-            <div className="absolute inset-0 opacity-10" style={{
-              backgroundImage: `radial-gradient(circle at 30% 50%, var(--mint), transparent 60%)`
-            }} />
-
-            <div className="relative p-12 md:p-16 text-center text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Let's figure out what your marketing infrastructure should look like.
-              </h2>
-              <p className="text-xl text-white/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-                30 minutes. No pitch deck. We'll look at what you're doing manually that should be automated and figure out what to build first.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/schedule">
-                  <Button
-                    size="lg"
-                    className="bg-white text-[var(--navy)] hover:bg-slate-100 text-lg h-14 px-8 shadow-lg w-full sm:w-auto font-semibold"
-                  >
-                    <Calendar className="w-5 h-5 mr-2" />
-                    Book a Discovery Call
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 text-lg h-14 px-8 w-full sm:w-auto"
-                  >
-                    Send a Message
-                  </Button>
-                </Link>
-              </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
+              Let's figure out what your marketing infrastructure should look like.
+            </h2>
+            <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+              30 minutes. No pitch deck. We'll look at what you're doing manually that should be automated and figure out what to build first.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/schedule">
+                <Button
+                  size="lg"
+                  className="bg-[var(--navy)] hover:bg-[var(--navy)]/90 text-white text-lg h-14 px-8 w-full sm:w-auto font-semibold"
+                >
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Book a Discovery Call
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white text-lg h-14 px-8 w-full sm:w-auto"
+                >
+                  Send a Message
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

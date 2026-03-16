@@ -76,26 +76,19 @@ export default function HowItWorksContent() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-24 left-0 w-[400px] h-[400px] bg-gradient-to-br from-[var(--mint)]/6 to-transparent rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight border-l-4 border-transparent" style={{ borderImage: 'linear-gradient(to bottom, var(--electric-blue), var(--mint)) 1', paddingLeft: '1rem' }}>
-              From conversation to
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                full ownership.
-              </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+              From conversation to full ownership.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl ml-5">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
               No black boxes, no vague timelines, no surprises.
               Here&apos;s exactly how an engagement works from start to finish.
             </p>
@@ -228,41 +221,35 @@ export default function HowItWorksContent() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[var(--navy)] text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }} />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to see what your marketing infrastructure should look like?
-            </h2>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              The first step is a conversation. No obligation, no pitch — just
-              a look at what you're doing manually that should be a system.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/schedule">
-                <Button
-                  size="lg"
-                  className="bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)] text-lg h-14 px-8 w-full sm:w-auto font-semibold"
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Book a Discovery Call
-                </Button>
-              </Link>
-              <Link href="/services">
-                <Button
-                  size="lg"
-                  className="bg-transparent border-2 border-white/30 text-white hover:bg-white/10 text-lg h-14 px-8 w-full sm:w-auto"
-                >
-                  View Services
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            </div>
+      <section className="border-t border-slate-100 py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
+            Ready to see what this looks like for your business?
+          </h2>
+          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            The first step is a conversation. No obligation, no pitch — just
+            a look at what you're doing manually that should be a system.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/schedule">
+              <Button
+                size="lg"
+                className="bg-[var(--navy)] hover:bg-[var(--navy)]/90 text-white text-lg h-14 px-8 w-full sm:w-auto font-semibold"
+              >
+                <Calendar className="w-5 h-5 mr-2" />
+                Book a Discovery Call
+              </Button>
+            </Link>
+            <Link href="/services">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white text-lg h-14 px-8 w-full sm:w-auto"
+              >
+                View Services
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

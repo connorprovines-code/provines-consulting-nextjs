@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -84,26 +84,19 @@ export default function ContentPage() {
   return (
     <div className="relative">
       {/* Hero */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-24 right-1/4 w-[500px] h-[500px] bg-gradient-to-bl from-[var(--electric-blue)]/5 via-[var(--mint)]/4 to-transparent rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight border-l-4 border-transparent" style={{ borderImage: 'linear-gradient(to bottom, var(--electric-blue), var(--mint)) 1', paddingLeft: '1rem' }}>
-              Insights for
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                business owners.
-              </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+              Insights for business owners.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl ml-5">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
               Practical thinking about AI implementation, marketing infrastructure, and business automation — written for people who run businesses, not developers.
             </p>
           </motion.div>
@@ -160,28 +153,34 @@ export default function ContentPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative rounded-3xl overflow-hidden"
+          className="text-center"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--electric-blue)] via-[#0077cc] to-[var(--navy)]" />
-          <div className="relative p-12 md:p-16 text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to build your marketing infrastructure?
-            </h2>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-              30 minutes. No pitch deck. We&apos;ll figure out what to build first.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/schedule">
-                <button className="bg-white text-[var(--navy)] hover:bg-slate-100 text-lg h-14 px-8 rounded-md font-semibold shadow-lg w-full sm:w-auto">
-                  Book a Discovery Call
-                </button>
-              </Link>
-              <Link href="/services">
-                <button className="bg-transparent border-2 border-white/40 text-white hover:bg-white/10 text-lg h-14 px-8 rounded-md w-full sm:w-auto">
-                  See What I Build
-                </button>
-              </Link>
-            </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
+            Ready to build your marketing infrastructure?
+          </h2>
+          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+            30 minutes. No pitch deck. We&apos;ll figure out what to build first.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/schedule">
+              <Button
+                size="lg"
+                className="bg-[var(--navy)] hover:bg-[var(--navy)]/90 text-white text-lg h-14 px-8 w-full sm:w-auto font-semibold"
+              >
+                <Calendar className="w-5 h-5 mr-2" />
+                Book a Discovery Call
+              </Button>
+            </Link>
+            <Link href="/services">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white text-lg h-14 px-8 w-full sm:w-auto"
+              >
+                See What I Build
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </section>

@@ -92,26 +92,19 @@ export default function ServicesContent() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-32 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[var(--electric-blue)]/6 via-[var(--mint)]/4 to-transparent rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight border-l-4 border-transparent" style={{ borderImage: 'linear-gradient(to bottom, var(--electric-blue), var(--mint)) 1', paddingLeft: '1rem' }}>
-              Most businesses come to me needing one thing and leave with
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                a system that handles everything.
-              </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+              Most businesses come to me needing one thing and leave with a system that handles everything.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl ml-5">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
               Not a menu of services — building blocks of an
               integrated marketing infrastructure. Designed by someone who's
               run demand gen and built pipeline, not just someone who codes.
@@ -198,44 +191,35 @@ export default function ServicesContent() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[var(--navy)] text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }} />
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[var(--electric-blue)]/8 to-transparent rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Not sure where to start?
-            </h2>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              That's what the first call is for. We'll look at where you are
-              now, what's eating your time, and figure out what to build first.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/schedule">
-                <Button
-                  size="lg"
-                  className="bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)] text-lg h-14 px-8 w-full sm:w-auto font-semibold"
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Book a Discovery Call
-                </Button>
-              </Link>
-              <Link href="/how-it-works">
-                <Button
-                  size="lg"
-                  className="bg-transparent border-2 border-white/30 text-white hover:bg-white/10 text-lg h-14 px-8 w-full sm:w-auto"
-                >
-                  See How It Works
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            </div>
+      <section className="border-t border-slate-100 py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
+            Not sure where to start?
+          </h2>
+          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            That's what the first call is for. We'll look at where you are
+            now, what's eating your time, and figure out what to build first.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/schedule">
+              <Button
+                size="lg"
+                className="bg-[var(--navy)] hover:bg-[var(--navy)]/90 text-white text-lg h-14 px-8 w-full sm:w-auto font-semibold"
+              >
+                <Calendar className="w-5 h-5 mr-2" />
+                Book a Discovery Call
+              </Button>
+            </Link>
+            <Link href="/how-it-works">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white text-lg h-14 px-8 w-full sm:w-auto"
+              >
+                See How It Works
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

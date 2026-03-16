@@ -52,13 +52,8 @@ export default function AboutContent() {
   return (
     <div className="relative">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[var(--electric-blue)]/5 via-[var(--mint)]/5 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3" />
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-[var(--mint)]/5 via-[var(--electric-blue)]/5 to-transparent rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -72,10 +67,7 @@ export default function AboutContent() {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[var(--navy)] mb-6 leading-tight">
-              12+ years building marketing systems for SaaS companies.
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                Now I package that into infrastructure business owners actually own.
-              </span>
+              12+ years building marketing systems for SaaS companies. Now I build infrastructure business owners actually own.
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
@@ -136,12 +128,8 @@ export default function AboutContent() {
       </section>
 
       {/* Expertise Grid */}
-      <section className="relative bg-gradient-to-b from-white via-slate-50/50 to-white py-24">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-bl from-[var(--mint)]/5 to-transparent rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -190,14 +178,9 @@ export default function AboutContent() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-[var(--navy)] via-[#0d2a52] to-[#1a3a6b] rounded-3xl p-12 md:p-16 text-white relative overflow-hidden"
+          className="bg-[var(--navy)] rounded-3xl p-12 md:p-16 text-white"
         >
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[var(--mint)] to-transparent rounded-full blur-2xl" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-[var(--electric-blue)] to-transparent rounded-full blur-2xl" />
-          </div>
-
-          <div className="relative">
+          <div>
             <h2 className="text-3xl font-bold mb-8">Background</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {background.map((item, index) => (

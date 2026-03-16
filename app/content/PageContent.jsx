@@ -84,32 +84,30 @@ export default function ContentPage() {
   return (
     <div className="relative">
       {/* Hero */}
-      <section className="relative bg-[#0A1F44]">
+      <section className="relative bg-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-[var(--electric-blue)]/8 via-[var(--mint)]/5 to-transparent rounded-full blur-3xl" />
+          <div className="absolute -top-24 right-1/4 w-[500px] h-[500px] bg-gradient-to-bl from-[var(--electric-blue)]/5 via-[var(--mint)]/4 to-transparent rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto text-center"
+            className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight border-l-4 border-transparent" style={{ borderImage: 'linear-gradient(to bottom, var(--electric-blue), var(--mint)) 1', paddingLeft: '1rem' }}>
               Insights for
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
                 business owners.
               </span>
             </h1>
 
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl ml-5">
               Practical thinking about AI implementation, marketing infrastructure, and business automation — written for people who run businesses, not developers.
             </p>
           </motion.div>
         </div>
-
-        <div className="relative z-10 h-32" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* Articles */}

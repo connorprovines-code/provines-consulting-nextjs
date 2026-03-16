@@ -57,7 +57,7 @@ const faqSchema = {
       "name": "What does it cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Custom-scoped. Some businesses need one workflow, others need the full build. Clear fixed pricing before anything starts — no hourly billing, no scope creep."
+        "text": "Every engagement is scoped to what you actually need — some businesses need one workflow, others need the full build. We figure out what makes sense on a call and you know exactly what you're getting before anything starts."
       }
     },
     {

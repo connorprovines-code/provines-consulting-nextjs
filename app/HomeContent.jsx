@@ -314,7 +314,7 @@ export default function HomeContent() {
               step: "02",
               title: "Architecture",
               description:
-                "I design the systems — agents, automations, integrations, and infrastructure — scoped to your specific needs with clear pricing.",
+                "I design the systems — agents, automations, integrations, and infrastructure — with architecture informed by 12+ years of marketing ops.",
             },
             {
               step: "03",

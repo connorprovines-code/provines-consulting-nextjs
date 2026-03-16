@@ -93,7 +93,7 @@ export default function ClientLayout({ children }) {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2 text-[var(--navy)]"
+              className="md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--navy)]"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -145,7 +145,7 @@ export default function ClientLayout({ children }) {
             <div>
               <h3 className="text-2xl font-bold mb-4">Provines Consulting</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Custom AI agents, process automation, and modern digital infrastructure — built for business owners who want to stop grinding through manual operations and start owning systems that scale.
+                Marketing infrastructure and growth strategy for business owners — 12+ years of B2B SaaS marketing leadership combined with production AI systems. I build the systems, hand you the keys, and you run them.
               </p>
             </div>
 

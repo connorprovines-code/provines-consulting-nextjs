@@ -44,7 +44,7 @@ export default function FAQContent() {
     {
       question: "What does it cost?",
       answer:
-        "Custom-scoped. Some businesses need one workflow, others need the full build. Clear fixed pricing before anything starts — no hourly billing, no scope creep.",
+        "Every engagement is scoped to what you actually need — some businesses need one workflow, others need the full build. We figure out what makes sense on a call and you know exactly what you're getting before anything starts.",
     },
     {
       question: "What happens after the project?",

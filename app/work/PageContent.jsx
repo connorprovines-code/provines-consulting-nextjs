@@ -137,8 +137,8 @@ export default function WorkContent() {
               >
                 <Card className="border-0 shadow-lg h-full hover:shadow-xl transition-shadow">
                   <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--electric-blue)] to-[var(--mint)] flex items-center justify-center mb-6 shadow-lg">
-                      <item.icon className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: ['color-mix(in srgb, var(--electric-blue) 12%, transparent)', 'color-mix(in srgb, var(--mint) 12%, transparent)', 'color-mix(in srgb, var(--navy) 10%, transparent)'][index] }}>
+                      <item.icon className="w-6 h-6" style={{ color: ['var(--electric-blue)', 'var(--mint)', 'var(--navy)'][index] }} />
                     </div>
                     <h3 className="text-xl font-bold text-[var(--navy)] mb-3">
                       {item.title}
@@ -175,7 +175,7 @@ export default function WorkContent() {
           <Link href="/schedule">
             <Button
               size="lg"
-              className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white text-lg h-14 px-8"
+              className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white text-lg h-14 px-8 w-full sm:w-auto"
             >
               <Calendar className="w-5 h-5 mr-2" />
               See Live Examples on a Call

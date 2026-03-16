@@ -33,13 +33,13 @@ export default function HowItWorksContent() {
       icon: Ruler,
       step: "02",
       title: "Architecture & Scoping",
-      subtitle: "Strategy meets implementation — with clear pricing.",
+      subtitle: "Strategy meets implementation — scoped to your business.",
       description:
-        "You get a system design informed by 12+ years of marketing operations — not just a list of features to build. Architecture includes your website platform, CRM configuration, AI assistant design, content pipeline, and integration map — with clear pricing for each module.",
+        "You get a system design informed by 12+ years of marketing operations — not just a list of features to build. Architecture includes your website platform, CRM configuration, AI assistant design, content pipeline, and integration map — scoped to what you actually need.",
       details: [
         "Detailed solution architecture document",
         "Website, CRM, AI assistant, and content pipeline design",
-        "Fixed pricing — no hourly surprises",
+        "Scoped engagement — no hourly billing",
         "You choose which modules to include",
       ],
     },
@@ -76,33 +76,31 @@ export default function HowItWorksContent() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="relative bg-[#0A1F44]">
+      <section className="relative bg-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[var(--electric-blue)]/10 via-[var(--mint)]/5 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute -top-24 left-0 w-[400px] h-[400px] bg-gradient-to-br from-[var(--mint)]/6 to-transparent rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto text-center"
+            className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight border-l-4 border-transparent" style={{ borderImage: 'linear-gradient(to bottom, var(--electric-blue), var(--mint)) 1', paddingLeft: '1rem' }}>
               From conversation to
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
                 full ownership.
               </span>
             </h1>
 
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl ml-5">
               No black boxes, no vague timelines, no surprises.
-              Here's exactly how an engagement works from start to finish.
+              Here&apos;s exactly how an engagement works from start to finish.
             </p>
           </motion.div>
         </div>
-
-        <div className="relative z-10 h-32" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* Steps */}

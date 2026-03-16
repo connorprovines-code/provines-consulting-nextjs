@@ -229,17 +229,14 @@ export default function ContactContent() {
                           <SelectItem value="full_infrastructure">
                             Full Marketing Infrastructure Build
                           </SelectItem>
+                          <SelectItem value="growth_consulting">
+                            Growth Consulting
+                          </SelectItem>
                           <SelectItem value="ai_assistants">
                             AI Assistants & Automation
                           </SelectItem>
-                          <SelectItem value="website_rebuild">
-                            Website Platform & Migration
-                          </SelectItem>
-                          <SelectItem value="crm_leads">
-                            CRM & Lead Operations
-                          </SelectItem>
-                          <SelectItem value="seo_content">
-                            SEO & Content Engine
+                          <SelectItem value="website_crm_content">
+                            Website, CRM & Content Platform
                           </SelectItem>
                           <SelectItem value="custom_tools">
                             Custom Development

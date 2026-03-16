@@ -6,8 +6,7 @@ import {
   Bot,
   Workflow,
   Globe,
-  Zap,
-  GraduationCap,
+  TrendingUp,
   Wrench,
   CheckCircle,
   Calendar,
@@ -19,9 +18,9 @@ const services = [
   {
     icon: Workflow,
     title: "Marketing Infrastructure Build",
-    tagline: "Your complete marketing department — built as infrastructure you own.",
+    tagline: "Your complete marketing department — built as systems you own.",
     description:
-      "The full package. Website, CRM, AI assistants, content engine, SEO, ads integration — one system that replaces the agency, the freelancers, and the patchwork of SaaS tools that don't talk to each other. This is for you if you know what your marketing should look like but don't have the team to build or run it.",
+      "Website, CRM, AI assistants, content engine, SEO, ads integration — one connected system that replaces the agency, the freelancers, and the patchwork of SaaS tools that don't talk to each other. I've spent 12+ years building marketing operations for B2B SaaS companies. Now I package that into infrastructure that business owners actually own and run themselves.",
     features: [
       "Modern website on infrastructure you own",
       "CRM with automated lead pipeline",
@@ -32,71 +31,56 @@ const services = [
     ],
   },
   {
+    icon: TrendingUp,
+    title: "Growth Consulting",
+    tagline: "Strategy from someone who's built the systems, not just the decks.",
+    description:
+      "Sometimes you don't need the full infrastructure build — you need someone who's done this 100 times to look at your business and tell you what's actually going to move the needle. I spent 12+ years running demand gen, GTM, and pipeline for B2B SaaS companies before I started building these systems. That background doesn't disappear when I'm consulting — it's the whole point. Whether you need help with positioning, pipeline architecture, or figuring out where your marketing dollars should actually go, this is strategy with implementation behind it.",
+    features: [
+      "Go-to-market strategy and positioning",
+      "Demand gen and pipeline architecture",
+      "Marketing operations audit and roadmap",
+      "Channel strategy and budget allocation",
+      "Marketing org design and hiring plans",
+      "Can lead into a full infrastructure build if that's what makes sense",
+    ],
+  },
+  {
     icon: Bot,
     title: "AI Assistants & Intelligent Automation",
-    tagline: "Claude-powered agents that do real work — not a chat widget.",
+    tagline: "Claude-powered agents that handle real work.",
     description:
-      "I build AI assistants that connect to your CRM, manage real workflows, and handle operational tasks — not a chat bubble that answers FAQs from a knowledge base. Built on Anthropic's Claude, configured specifically for your business, your data, your workflows. This is for you if you've looked at AI chatbot tools and realized they don't actually do anything beyond answering basic questions.",
+      "These aren't chatbots that answer FAQs from a knowledge base. I build AI assistants on Anthropic's Claude that connect to your CRM, manage workflows, draft content, handle customer communication, and update your website — all configured for your specific business and data. The difference between what most companies sell as \"AI\" and what I build is that mine actually do things.",
     features: [
       "Lead intake, qualification, and CRM routing",
       "Content drafting, editing, and publishing",
       "Appointment scheduling and calendar management",
       "Customer communication and follow-up",
       "Website updates in plain English",
-      "Agents improve as they learn your business",
+      "Agents that improve as they learn your business",
     ],
   },
   {
     icon: Globe,
-    title: "Website Platform & AI-Managed Content",
-    tagline: "Your website isn't a brochure — it's the hub your AI runs through.",
+    title: "Website, CRM & Content Platform",
+    tagline: "Your website, lead ops, and content engine — one connected system.",
     description:
-      "Built on Next.js — fast, SEO-optimized, extensible. Your AI assistants publish content, capture leads, and keep your business visible through it. Update pages in plain English. This is for you if your current website is on a platform that limits what you can do, charges you monthly for basic changes, or can't integrate with modern AI tools.",
+      "Most businesses run their website on one platform, their CRM on another, their content somewhere else, and none of it talks to each other. I build all of it as one system — your website captures leads and feeds your CRM, your CRM triggers follow-up, your content engine publishes through your website, and SEO runs in the background. Built on Next.js, connected to your CRM of choice, managed in plain English.",
     features: [
-      "Full rebuild on Next.js — fast and modern",
-      "Migration from Wix, WordPress, Squarespace, GoDaddy",
-      "AI-editable — update pages in plain English",
-      "Mobile-first, SEO-optimized by default",
-      "You own the code, hosting, and domain",
-      "Any developer can maintain or extend it",
-    ],
-  },
-  {
-    icon: Zap,
-    title: "CRM & Lead Operations",
-    tagline: "Leads in. Follow-up out. Nothing lost in between.",
-    description:
-      "Full lead lifecycle — capture, enrichment, scoring, routing, follow-up, reporting. Connected to your website, ads, and AI assistants so leads get handled the minute they come in. This is for you if leads come in and then nothing happens — or it takes two days to follow up, or you're manually copying data between tools.",
-    features: [
-      "Lead capture from website, ads, and forms",
-      "Automatic enrichment and scoring",
-      "Smart routing to the right person or workflow",
-      "Automated follow-up sequences",
-      "Connects to GoHighLevel, HubSpot, or custom CRM",
-      "Full pipeline visibility and reporting",
-    ],
-  },
-  {
-    icon: GraduationCap,
-    title: "SEO & Content Engine",
-    tagline: "Your AI drafts it. You approve it. It goes live.",
-    description:
-      "Automated, AI-driven content pipeline. Your AI drafts content, you approve it, it publishes. SEO monitoring runs in the background. Your content engine feeds your website, your website feeds your CRM, your CRM feeds your follow-up. One system. This is for you if you know SEO matters but you haven't published a blog post in six months because who has the time.",
-    features: [
-      "AI-assisted content drafting and editing",
-      "Keyword tracking and rank monitoring",
-      "Automated publishing pipeline",
-      "Content calendar management",
-      "SEO audit and optimization recommendations",
-      "Connected to your website and CRM",
+      "Website rebuild on Next.js — fast, modern, yours to own",
+      "Migration from Wix, WordPress, Squarespace, or GoDaddy",
+      "CRM with automated lead capture, scoring, and follow-up",
+      "AI-driven content drafting and publishing pipeline",
+      "SEO monitoring and keyword tracking baked in",
+      "Update pages, publish content, check leads — all in plain English",
     ],
   },
   {
     icon: Wrench,
     title: "Custom Development",
-    tagline: "When the tool you need doesn't exist.",
+    tagline: "When the tool you need doesn't exist yet.",
     description:
-      "Internal dashboards, client portals, reporting tools, industry-specific apps, API integrations. Sometimes what you need isn't a product — it's 200 lines of code that do exactly what your business requires. This is for you if the tool you need doesn't exist, or it does but costs $500/month and covers 60% of what you need.",
+      "Internal dashboards, client portals, reporting tools, industry-specific apps, API integrations. Sometimes what your business needs is 200 lines of code that do exactly the right thing — not a $500/month SaaS product that covers 60% of it. I build custom tools that fit into your existing stack and solve the specific problem you're dealing with.",
     features: [
       "Internal dashboards and operational tools",
       "Client-facing portals and self-service platforms",
@@ -112,34 +96,33 @@ export default function ServicesContent() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="relative bg-[#0A1F44]">
+      <section className="relative bg-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[var(--electric-blue)]/10 via-[var(--mint)]/5 to-transparent rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute -top-32 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[var(--electric-blue)]/6 via-[var(--mint)]/4 to-transparent rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto text-center"
+            className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight border-l-4 border-transparent" style={{ borderImage: 'linear-gradient(to bottom, var(--electric-blue), var(--mint)) 1', paddingLeft: '1rem' }}>
               Most businesses come to me needing one thing and leave with
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]">
-                a system that handles everything their marketing team would have done.
+                a system that handles everything.
               </span>
             </h1>
 
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl ml-5">
               These aren't à la carte services. They're building blocks of an
-              integrated marketing infrastructure — assembled for whatever your
+              integrated marketing infrastructure — designed by someone who's spent
+              12+ years in B2B SaaS marketing, assembled for whatever your
               business actually needs.
             </p>
           </motion.div>
         </div>
-
-        <div className="relative z-10 h-32" style={{ background: 'linear-gradient(to bottom, #0A1F44 0%, #0A1F44 5%, rgba(10,31,68,0.8) 25%, rgba(10,31,68,0.4) 50%, rgba(255,255,255,0.6) 75%, white 100%)' }} />
       </section>
 
       {/* Services Detail */}
@@ -212,83 +195,6 @@ export default function ServicesContent() {
               </div>
             </motion.div>
           ))}
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="bg-gradient-to-b from-slate-50 to-white py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-              Pricing
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Every business is different, so every engagement is scoped to what
-              you actually need. No standard packages — because the work isn't
-              standard.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="rounded-2xl border border-slate-100 bg-white shadow-lg overflow-hidden">
-              <div className="h-1 bg-gradient-to-r from-[var(--electric-blue)] to-[var(--mint)]" />
-              <div className="p-10 md:p-12">
-                <div className="space-y-8">
-                  {[
-                    {
-                      title: "Custom-scoped to your business",
-                      detail: "Some businesses need one workflow. Others need the full stack — website, AI assistants, CRM, content engine. I scope to your situation and give you clear pricing before anything starts.",
-                    },
-                    {
-                      title: "See the work before you commit",
-                      detail: "For website rebuilds, I build a working preview before you pay. For automation and agent projects, you get a detailed architecture document and demo. No surprises.",
-                    },
-                    {
-                      title: "No recurring fees to me",
-                      detail: "You pay for the engagement, you own the result. Hosting and API costs are yours (typically modest), but there are no ongoing fees to me. After the handoff, you're independent.",
-                    },
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-5">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[var(--navy)] flex items-center justify-center text-white font-bold text-sm">
-                        {String(index + 1).padStart(2, '0')}
-                      </div>
-                      <div>
-                        <p className="font-semibold text-[var(--navy)] text-lg mb-1">
-                          {item.title}
-                        </p>
-                        <p className="text-slate-600 leading-relaxed">
-                          {item.detail}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-10 text-center">
-                  <Link href="/schedule">
-                    <Button
-                      size="lg"
-                      className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white text-lg h-14 px-8"
-                    >
-                      <Calendar className="w-5 h-5 mr-2" />
-                      Book a Call to Scope Your Project
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
 

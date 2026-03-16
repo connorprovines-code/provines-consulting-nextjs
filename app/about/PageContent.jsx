@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Wrench,
   Lightbulb,
@@ -163,21 +162,21 @@ export default function AboutContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
+                className="relative pl-6 border-l-3"
+                style={{
+                  borderLeftWidth: '3px',
+                  borderLeftColor: index % 2 === 0 ? 'var(--electric-blue)' : 'var(--mint)',
+                }}
               >
-                <Card className="border-0 shadow-lg h-full hover:shadow-xl transition-all duration-300 bg-white relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[var(--electric-blue)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <CardContent className="p-8 relative">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: index % 2 === 0 ? 'color-mix(in srgb, var(--electric-blue) 12%, transparent)' : 'color-mix(in srgb, var(--mint) 12%, transparent)' }}>
-                      <item.icon className="w-6 h-6" style={{ color: index % 2 === 0 ? 'var(--electric-blue)' : 'var(--mint)' }} />
-                    </div>
-                    <h3 className="text-xl font-bold text-[var(--navy)] mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-600 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                <div className="flex items-center gap-3 mb-3">
+                  <item.icon className="w-5 h-5" style={{ color: index % 2 === 0 ? 'var(--electric-blue)' : 'var(--mint)' }} />
+                  <h3 className="text-xl font-bold text-[var(--navy)]">
+                    {item.title}
+                  </h3>
+                </div>
+                <p className="text-slate-600 leading-relaxed">
+                  {item.description}
+                </p>
               </motion.div>
             ))}
           </div>

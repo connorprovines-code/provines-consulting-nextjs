@@ -54,10 +54,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What does it cost?",
+      "name": "How do engagements work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Every engagement is scoped to what you actually need — some businesses need one workflow, others need the full build. We figure out what makes sense on a call and you know exactly what you're getting before anything starts."
+        "text": "Every engagement starts with a discovery call where we figure out what you actually need. From there I scope it — some businesses need one workflow, others need the full infrastructure build. You know exactly what you're getting before anything starts."
       }
     },
     {

@@ -47,32 +47,28 @@ const services = [
   },
   {
     icon: Bot,
-    title: "AI Assistants & Intelligent Automation",
-    tagline: "Claude-powered agents that handle real work.",
+    title: "AI Assistants & Automation",
+    tagline: "Agents that handle the work, not just the questions.",
     description:
-      "These aren't chatbots that answer FAQs from a knowledge base. I build AI assistants on Anthropic's Claude that connect to your CRM, manage workflows, draft content, handle customer communication, and update your website — all configured for your specific business and data. The difference between what most companies sell as \"AI\" and what I build is that mine actually do things.",
+      "I build Claude-powered AI assistants that connect to your CRM, draft and publish content, route leads, manage your calendar, and update your website — configured for your business, your data, your workflows. They get better as they learn how you operate.",
     features: [
       "Lead intake, qualification, and CRM routing",
       "Content drafting, editing, and publishing",
-      "Appointment scheduling and calendar management",
-      "Customer communication and follow-up",
+      "Customer communication and automated follow-up",
       "Website updates in plain English",
-      "Agents that improve as they learn your business",
     ],
   },
   {
     icon: Globe,
-    title: "Website, CRM & Content Platform",
-    tagline: "Your website, lead ops, and content engine — one connected system.",
+    title: "Website & Marketing Operations",
+    tagline: "Website, CRM, content, SEO — one connected system you own.",
     description:
-      "Most businesses run their website on one platform, their CRM on another, their content somewhere else, and none of it talks to each other. I build all of it as one system — your website captures leads and feeds your CRM, your CRM triggers follow-up, your content engine publishes through your website, and SEO runs in the background. Built on Next.js, connected to your CRM of choice, managed in plain English.",
+      "Your website captures leads and feeds your CRM. Your CRM triggers follow-up. Your content engine publishes through your site. SEO runs in the background. I build the whole thing as one platform on Next.js — and you manage it in plain English.",
     features: [
       "Website rebuild on Next.js — fast, modern, yours to own",
-      "Migration from Wix, WordPress, Squarespace, or GoDaddy",
       "CRM with automated lead capture, scoring, and follow-up",
-      "AI-driven content drafting and publishing pipeline",
-      "SEO monitoring and keyword tracking baked in",
-      "Update pages, publish content, check leads — all in plain English",
+      "AI-driven content and SEO pipeline",
+      "Migration from Wix, WordPress, Squarespace, or legacy platforms",
     ],
   },
   {
@@ -116,10 +112,10 @@ export default function ServicesContent() {
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl ml-5">
-              These aren't à la carte services. They're building blocks of an
-              integrated marketing infrastructure — designed by someone who's spent
-              12+ years in B2B SaaS marketing, assembled for whatever your
-              business actually needs.
+              Not a menu of services — building blocks of an
+              integrated marketing infrastructure. Designed by someone who's
+              run demand gen and built pipeline, not just someone who codes.
+              Assembled for whatever your business actually needs.
             </p>
           </motion.div>
         </div>
@@ -149,46 +145,49 @@ export default function ServicesContent() {
                   }}
                 />
 
-                <div className="p-10 lg:p-12">
-                  {/* Header */}
-                  <div className="flex items-start gap-5 mb-8">
+                <div className="p-8 md:p-10 lg:p-12">
+                  {/* Header — inline icon + title */}
+                  <div className="flex items-center gap-4 mb-2">
                     <div
-                      className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm"
+                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
                       style={{
                         backgroundColor: index % 2 === 0 ? 'var(--electric-blue)' : 'var(--mint)',
                       }}
                     >
-                      <service.icon className="w-7 h-7 text-white" />
+                      <service.icon className="w-5 h-5 text-white" />
                     </div>
-                    <div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)] mb-1">
-                        {service.title}
-                      </h2>
-                      <p className="text-slate-500 font-medium text-lg">
-                        {service.tagline}
-                      </p>
-                    </div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)]">
+                      {service.title}
+                    </h2>
                   </div>
+                  <p className="text-slate-500 font-medium text-lg mb-6 ml-14">
+                    {service.tagline}
+                  </p>
 
                   {/* Description */}
-                  <p className="text-slate-600 leading-relaxed text-lg mb-10 max-w-3xl">
+                  <p className="text-slate-600 leading-relaxed text-lg mb-8 max-w-3xl">
                     {service.description}
                   </p>
 
-                  {/* Features grid */}
-                  <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
+                  {/* Features — inline list */}
+                  <div className="flex flex-wrap gap-3">
                     {service.features.map((feature, fIndex) => (
-                      <div key={fIndex} className="flex items-start gap-3">
+                      <span
+                        key={fIndex}
+                        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm border"
+                        style={{
+                          borderColor: index % 2 === 0 ? 'color-mix(in srgb, var(--electric-blue) 20%, transparent)' : 'color-mix(in srgb, var(--mint) 20%, transparent)',
+                          color: 'var(--navy)',
+                        }}
+                      >
                         <CheckCircle
-                          className="w-4 h-4 flex-shrink-0 mt-1"
+                          className="w-3.5 h-3.5 flex-shrink-0"
                           style={{
                             color: index % 2 === 0 ? 'var(--electric-blue)' : 'var(--mint)',
                           }}
                         />
-                        <span className="text-sm text-slate-700 leading-relaxed">
-                          {feature}
-                        </span>
-                      </div>
+                        {feature}
+                      </span>
                     ))}
                   </div>
                 </div>

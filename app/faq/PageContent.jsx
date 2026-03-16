@@ -42,9 +42,9 @@ export default function FAQContent() {
         "No. Plain English management. Tell your AI to update the homepage. Check leads in your dashboard. Approve content your AI drafted. If you can write an email, you can run these systems.",
     },
     {
-      question: "What does it cost?",
+      question: "How do engagements work?",
       answer:
-        "Every engagement is scoped to what you actually need — some businesses need one workflow, others need the full build. We figure out what makes sense on a call and you know exactly what you're getting before anything starts.",
+        "Every engagement starts with a discovery call where we figure out what you actually need. From there I scope it — some businesses need one workflow, others need the full infrastructure build. You know exactly what you're getting before anything starts.",
     },
     {
       question: "What happens after the project?",
@@ -86,8 +86,7 @@ export default function FAQContent() {
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Straight answers about how this works, what it costs, and what you
-              get.
+              Straight answers about how this works and what you get.
             </p>
           </motion.div>
         </div>
@@ -150,7 +149,7 @@ export default function FAQContent() {
           <Link href="/schedule">
             <Button
               size="lg"
-              className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white text-lg h-14 px-8"
+              className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white text-lg h-14 px-8 w-full sm:w-auto"
             >
               <Calendar className="w-5 h-5 mr-2" />
               Book a Call

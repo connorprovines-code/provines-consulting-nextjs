@@ -2,14 +2,12 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Calendar,
   ArrowRight,
   Globe,
   Zap,
   TrendingUp,
-  ExternalLink,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -126,7 +124,7 @@ export default function WorkContent() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="space-y-6 max-w-4xl mx-auto">
             {capabilities.map((item, index) => (
               <motion.div
                 key={index}
@@ -134,23 +132,25 @@ export default function WorkContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
+                className="flex gap-6 items-start p-6 md:p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-lg transition-shadow"
               >
-                <Card className="border-0 shadow-lg h-full hover:shadow-xl transition-shadow">
-                  <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: ['color-mix(in srgb, var(--electric-blue) 12%, transparent)', 'color-mix(in srgb, var(--mint) 12%, transparent)', 'color-mix(in srgb, var(--navy) 10%, transparent)'][index] }}>
-                      <item.icon className="w-6 h-6" style={{ color: ['var(--electric-blue)', 'var(--mint)', 'var(--navy)'][index] }} />
-                    </div>
-                    <h3 className="text-xl font-bold text-[var(--navy)] mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-600 leading-relaxed mb-4">
-                      {item.description}
-                    </p>
-                    <p className="text-xs text-slate-400 uppercase tracking-wider font-medium">
-                      {item.industries}
-                    </p>
-                  </CardContent>
-                </Card>
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ backgroundColor: ['color-mix(in srgb, var(--electric-blue) 12%, transparent)', 'color-mix(in srgb, var(--mint) 12%, transparent)', 'color-mix(in srgb, var(--navy) 10%, transparent)'][index] }}
+                >
+                  <item.icon className="w-6 h-6" style={{ color: ['var(--electric-blue)', 'var(--mint)', 'var(--navy)'][index] }} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[var(--navy)] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed mb-3">
+                    {item.description}
+                  </p>
+                  <p className="text-xs text-slate-400 uppercase tracking-wider font-medium">
+                    {item.industries}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>

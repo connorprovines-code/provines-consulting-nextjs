@@ -19,9 +19,9 @@ export default function HowItWorksContent() {
       icon: Search,
       step: "01",
       title: "Discovery",
-      subtitle: "I figure out what your marketing team would look like — then design it as infrastructure.",
+      subtitle: "Figure out what you actually need, not what sounds good on paper.",
       description:
-        "This is where the GTM experience matters. I'm not just asking what tools you use — I'm mapping where leads come from, where they drop off, what content you should be creating, and how your follow-up should work. This call is free and there's zero obligation.",
+        "This is where the GTM experience shows up. I'm not just asking what tools you use. I'm mapping where leads come from, where they drop off, what content you should be creating, and how your follow-up should work. This call is free and there's zero obligation.",
       details: [
         "Map where leads come from and where they drop off",
         "Audit your current website, CRM, and marketing tools",
@@ -33,13 +33,13 @@ export default function HowItWorksContent() {
       icon: Ruler,
       step: "02",
       title: "Architecture & Scoping",
-      subtitle: "Strategy meets implementation — scoped to your business.",
+      subtitle: "Strategy meets implementation, scoped to your business.",
       description:
-        "You get a system design informed by 12+ years of marketing operations — not just a list of features to build. Architecture includes your website platform, CRM configuration, AI assistant design, content pipeline, and integration map — scoped to what you actually need.",
+        "You get a system design informed by 12+ years of marketing operations. Not just a list of features to build. Architecture covers your website platform, CRM configuration, AI assistant design, content pipeline, and integration map. Scoped to what you actually need.",
       details: [
         "Detailed solution architecture document",
         "Website, CRM, AI assistant, and content pipeline design",
-        "Scoped engagement — no hourly billing",
+        "Scoped engagement, no hourly billing",
         "You choose which modules to include",
       ],
     },
@@ -49,12 +49,12 @@ export default function HowItWorksContent() {
       title: "Build & Deploy",
       subtitle: "Everything built, tested, and running in your environment.",
       description:
-        "Every build includes Claude-powered AI assistants configured for your specific business — trained on your services, connected to your CRM, ready to handle real workflows. Built on Next.js, Supabase, Vercel, and Anthropic's Claude. Nothing launches until you've seen it working.",
+        "Every build includes Claude-powered AI assistants configured for your specific business. Trained on your services, connected to your CRM, ready to handle real workflows. Built on Next.js, Supabase, Vercel, and Anthropic's Claude. Nothing launches until you've seen it working.",
       details: [
         "Iterative build with regular check-ins",
         "Claude-powered AI assistants configured for your business",
         "Website previews and workflow demos before launch",
-        "Deployed into your environment — you own everything",
+        "Deployed into your environment, you own everything",
       ],
     },
     {
@@ -63,12 +63,12 @@ export default function HowItWorksContent() {
       title: "Handoff & Independence",
       subtitle: "You run this. That's the whole point.",
       description:
-        "Tell your AI to update the homepage. Ask it to draft a blog post. Check your CRM dashboard for this week's leads. That's what 'managed in plain English' actually means. After 90 days, you're fully independent. Any competent developer can pick it up. No proprietary lock-in.",
+        "Tell your AI to update the homepage. Ask it to draft a blog post. Check your CRM dashboard for this week's leads. That's what managing in plain English actually looks like. After 90 days, you're fully independent. Any developer can pick it up. No proprietary lock-in.",
       details: [
         "Hands-on training for you and your team",
         "Written documentation and SOPs for everything",
         "90 days of post-launch support included",
-        "Complete ownership — code, data, infrastructure, everything",
+        "Complete ownership of code, data, and infrastructure",
       ],
     },
   ];
@@ -182,7 +182,7 @@ export default function HowItWorksContent() {
                   {[
                     "A clear picture of your current operations and pain points",
                     "Access to existing tools and platforms (website URL, CRM, etc.)",
-                    "Your goals — what success looks like in 6 months",
+                    "Your goals and what success looks like in 6 months",
                     "Availability for check-in calls during the build",
                     "Your team members who will manage things post-launch",
                   ].map((item, i) => (
@@ -206,7 +206,7 @@ export default function HowItWorksContent() {
                     "Automated content and SEO pipeline",
                     "Full documentation and SOPs for every system",
                     "90 days of post-launch support",
-                    "Complete ownership — code, data, infrastructure, everything",
+                    "Complete ownership of code, data, and infrastructure",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle className="w-4 h-4 text-[var(--electric-blue)] flex-shrink-0 mt-1" />
@@ -227,8 +227,7 @@ export default function HowItWorksContent() {
             Ready to see what this looks like for your business?
           </h2>
           <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-            The first step is a conversation. No obligation, no pitch — just
-            a look at what you're doing manually that should be a system.
+            The first step is a conversation. No obligation, no pitch. Just a look at what you&apos;re doing manually that should be a system.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/schedule">

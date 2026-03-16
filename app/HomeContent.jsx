@@ -37,13 +37,13 @@ export default function HomeContent() {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1]">
-              You know what your marketing should look like. You just don't have the team to build it.
+              You know what your marketing should look like. You just don&apos;t have the team to build it.
             </h1>
 
             <p className="text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
-              I build your marketing infrastructure — website, AI assistants, CRM,
-              content engine, lead flow — and hand you the keys. No retainers.
-              No lock-in. You own everything.
+              I build complete marketing systems. Website, AI assistants, CRM,
+              content, lead flow. Then I hand you the keys. No retainers,
+              no lock-in. It&apos;s yours.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -71,7 +71,7 @@ export default function HomeContent() {
 
       </section>
 
-      {/* The Pain — Why they need this */}
+      {/* The Pain */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <motion.div
           initial={{ opacity: 0 }}
@@ -81,10 +81,10 @@ export default function HomeContent() {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
-            You're running the business and the marketing department. Neither gets your full attention.
+            You&apos;re running the business and the marketing. Neither one gets your full attention.
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            You know you need content, SEO, a website that actually works, lead follow-up that doesn't depend on you remembering. But you're also running the business. So marketing gets whatever time is left — which is none.
+            Content, SEO, a website that actually converts, follow-up that doesn&apos;t depend on your memory. You know all of it matters. But you&apos;re also running the business, so marketing gets whatever time is left. Which is none.
           </p>
         </motion.div>
 
@@ -92,21 +92,21 @@ export default function HomeContent() {
           {[
             {
               icon: Clock,
-              problem: "You're the entire marketing department",
+              problem: "You are the marketing department",
               detail:
-                "Website, content, SEO, lead follow-up, social, ads — it all falls on you. Whether you're a contractor, home builder, or running a service company, marketing gets whatever time is left after the real work. Which is none.",
+                "Website updates, content, SEO, lead follow-up, social, ads. It all lands on you. And it gets done when there's time, which there never is.",
             },
             {
               icon: Users,
               problem: "Agencies take your money, not your problems",
               detail:
-                "Monthly retainers for basic website changes. Reports you don't read. \"Strategy\" that's just a content calendar. You're paying for a team that doesn't actually build anything you keep. It's time to replace your marketing agency with systems you own.",
+                "Monthly retainers for basic site changes. Reports nobody reads. \"Strategy\" that's really just a content calendar. You pay for a team that never builds anything you keep.",
             },
             {
               icon: TrendingUp,
               problem: "AI is everywhere and nowhere useful",
               detail:
-                "Every tool promises AI. Most of it is a chat widget that can't find your pricing page. You need systems that actually do the work — not another subscription.",
+                "Every tool slaps AI on the label. Most of it is a chat widget that can't find your pricing page. What you actually need are systems that do the work.",
             },
           ].map((item, index) => (
             <motion.div
@@ -131,7 +131,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      {/* What I Build — Core Capabilities */}
+      {/* What I Build */}
       <section className="relative bg-gradient-to-b from-slate-50 to-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -142,10 +142,10 @@ export default function HomeContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-              Marketing infrastructure for small business — what your company should have had from day one.
+              The marketing infrastructure your company should have had from day one.
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Not a menu of services. One integrated system — website, AI assistants, CRM, content engine — that does what a marketing team would do. Owned by you.
+              One connected system. Website, AI assistants, CRM, content engine. It does what a marketing team would do. And you own all of it.
             </p>
           </motion.div>
 
@@ -155,42 +155,42 @@ export default function HomeContent() {
                 icon: Globe,
                 title: "Modern Website You Own",
                 description:
-                  "Built on Next.js — fast, SEO-optimized, and designed so your AI assistants can update it directly. No agency fees. No platform lock-in. Your code, your hosting, your domain.",
+                  "Built on Next.js. Fast, SEO-ready, and designed so your AI assistants can update it directly. No agency fees. No platform lock-in. Your code, your hosting, your domain.",
                 accent: "var(--electric-blue)",
               },
               {
                 icon: Zap,
                 title: "CRM & Lead Operations",
                 description:
-                  "Leads captured, enriched, scored, routed, and followed up — automatically. Your CRM connected to your website, ads, and AI so nothing falls through the cracks.",
+                  "Leads captured, enriched, scored, routed, and followed up. Automatically. Your CRM talks to your website, your ads, and your AI. Nothing falls through.",
                 accent: "var(--mint)",
               },
               {
                 icon: Bot,
-                title: "AI Assistants That Actually Work",
+                title: "AI Assistants That Do Real Work",
                 description:
-                  "Claude-powered AI agents connected to your CRM, website, and calendar. They handle content, customer communication, lead intake, and scheduling — not a chat widget with a knowledge base.",
+                  "Claude-powered agents connected to your CRM, website, and calendar. They handle content, lead intake, customer communication, and scheduling. Not a chatbot. Actual operational tools.",
                 accent: "var(--electric-blue)",
               },
               {
                 icon: BarChart3,
                 title: "SEO & Content Engine",
                 description:
-                  "Your AI drafts content, you approve it, it goes live. Keyword tracking and SEO monitoring run in the background. Publishing on autopilot.",
+                  "Your AI drafts content, you approve it, it goes live. Keyword tracking and SEO monitoring run in the background. Publishing stays consistent without you thinking about it.",
                 accent: "var(--mint)",
               },
               {
                 icon: Workflow,
                 title: "End-to-End Automation",
                 description:
-                  "Multi-step manual processes turned into one-click operations. Data entry, report generation, follow-up sequences, internal notifications — automated.",
+                  "Multi-step manual processes turned into one-click operations. Data entry, report generation, follow-up sequences, internal notifications. All handled.",
                 accent: "var(--electric-blue)",
               },
               {
                 icon: Wrench,
                 title: "Custom Development",
                 description:
-                  "Internal dashboards, client portals, reporting tools, industry-specific apps. When the tool you need doesn't exist or costs too much for what it does.",
+                  "Internal dashboards, client portals, reporting tools, industry-specific apps. When the tool you need doesn't exist or costs too much for what it actually does.",
                 accent: "var(--mint)",
               },
             ].map((service, index) => (
@@ -233,7 +233,7 @@ export default function HomeContent() {
             viewport={{ once: true }}
             className="text-center text-slate-600 mt-10 max-w-2xl mx-auto"
           >
-            Most businesses come to me needing one thing and leave with a system that handles five. That's by design — everything connects.
+            Most people come in needing one thing and leave with a system that handles five. That&apos;s by design. Everything connects.
           </motion.p>
 
           <div className="text-center mt-8">
@@ -251,7 +251,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      {/* AI Assistant Callout — SEO section */}
+      {/* AI Assistant Callout */}
       <section className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -269,13 +269,13 @@ export default function HomeContent() {
               Every system includes AI assistants trained on your business.
             </h3>
             <p className="text-lg text-slate-300 leading-relaxed max-w-3xl">
-              They update your website, draft and publish content, handle lead intake, manage your calendar, and answer customer questions — using your CRM data, not a generic knowledge base. This isn't a chatbot widget. It's operational intelligence built into your marketing infrastructure.
+              They update your website, draft and publish content, handle lead intake, manage your calendar, and answer customer questions. All using your actual CRM data, not a generic knowledge base. This isn&apos;t a chat widget. It&apos;s operational intelligence wired into how your business runs.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* How It Works — Brief */}
+      {/* How It Works */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <motion.div
           initial={{ opacity: 0 }}
@@ -288,8 +288,7 @@ export default function HomeContent() {
             How an engagement works
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            No black boxes. No vague timelines. A structured process from
-            discovery to independence.
+            No black boxes. No vague timelines. Here&apos;s the process from start to finish.
           </p>
         </motion.div>
 
@@ -299,25 +298,25 @@ export default function HomeContent() {
               step: "01",
               title: "Discovery",
               description:
-                "I map your current operations, identify where time and money are being wasted, and scope what to build first.",
+                "I look at your current setup, find where time and money are leaking, and figure out what to build first.",
             },
             {
               step: "02",
               title: "Architecture",
               description:
-                "I design the systems — agents, automations, integrations, and infrastructure — with architecture informed by 12+ years of marketing ops.",
+                "I design the systems. Agents, automations, integrations, infrastructure. 12+ years of marketing ops goes into the blueprint.",
             },
             {
               step: "03",
               title: "Build & Deploy",
               description:
-                "Everything gets built, tested end-to-end, and deployed into your environment. You see it working before it goes live.",
+                "Everything gets built, tested end-to-end, and deployed in your environment. You see it working before it goes live.",
             },
             {
               step: "04",
               title: "Handoff & Training",
               description:
-                "Your team learns how to manage everything. Full documentation, 90 days of support, and complete ownership.",
+                "Your team learns how to run everything. Full documentation, 90 days of support, and complete ownership.",
             },
           ].map((item, index) => (
             <motion.div
@@ -373,18 +372,17 @@ export default function HomeContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Everything I build is yours. That's the point.
+              Everything I build is yours. That&apos;s the whole point.
             </h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              No retainers, no lock-in, no dependency. The engagement ends with
-              you owning and operating every system independently.
+              No retainers, no lock-in, no dependency. When the engagement ends, you own and operate every system independently.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-6 max-w-3xl mx-auto">
             {[
               { icon: Shield, text: "You own all code, infrastructure, and data" },
-              { text: "No recurring fees to me — ever" },
+              { text: "No recurring fees to me, ever" },
               { text: "Manage agents and systems in plain English" },
               { text: "Any developer can maintain or extend what I build" },
               { text: "Full documentation and SOPs for every system" },
@@ -418,10 +416,10 @@ export default function HomeContent() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
-              Let's figure out what your marketing infrastructure should look like.
+              Let&apos;s figure out what to build first.
             </h2>
             <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-              30 minutes. No pitch deck. We'll look at what you're doing manually that should be automated and figure out what to build first.
+              30 minutes. No pitch deck. We look at what you&apos;re doing manually, what should be automated, and where to start.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/schedule">

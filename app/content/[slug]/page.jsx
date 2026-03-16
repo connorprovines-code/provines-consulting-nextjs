@@ -9,7 +9,7 @@ const articles = {
   "manual-operations-killing-your-margins": {
     title: "The Manual Operations Quietly Killing Your Margins",
     description:
-      "How to spot the manual processes silently taxing your margins — and what to do about them.",
+      "How to spot the manual processes silently taxing your margins, and what to do about them.",
   },
   "why-off-the-shelf-software-doesnt-fit": {
     title: "Why Off-the-Shelf Software Never Quite Fits Your Business",

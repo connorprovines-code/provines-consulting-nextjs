@@ -101,7 +101,7 @@ export default function ContactContent() {
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-              Whether you have a specific project in mind or just want to explore what&apos;s possible — no pitch, no pressure.
+              Whether you have a specific project in mind or just want to explore what&apos;s possible. No pitch, no pressure.
             </p>
           </motion.div>
         </div>
@@ -348,7 +348,7 @@ export default function ContactContent() {
                   Not sure what you need?
                 </h3>
                 <p className="text-sm text-slate-600">
-                  That's fine — most people aren't when they first reach out.
+                  That's fine. Most people aren't when they first reach out.
                   Just tell me about your business and what's not working. We'll
                   figure out the right approach together.
                 </p>

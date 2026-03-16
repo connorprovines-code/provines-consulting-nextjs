@@ -19,7 +19,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `So let's talk about what AI agents actually look like when they're installed in a real small business — not a tech company, not a startup, but a service business with 5-50 employees that makes money by doing good work for real clients.`,
+        text: `So let's talk about what AI agents actually look like when they're installed in a real small business. Not a tech company, not a startup, but a service business with 5-50 employees that makes money by doing good work for real clients.`,
       },
       {
         type: "heading",
@@ -27,11 +27,11 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `An AI agent is software that can take action on your behalf — not just answer questions, but actually do things. It can read your inbox, update your CRM, draft content, monitor your SEO rankings, follow up with leads, and make decisions based on rules you define. Think of it as a virtual team member that handles the repetitive operational work you're currently doing manually.`,
+        text: `An AI agent is software that can take action on your behalf. Not just answer questions, but actually do things. It can read your inbox, update your CRM, draft content, monitor your SEO rankings, follow up with leads, and make decisions based on rules you define. Think of it as a virtual team member that handles the repetitive operational work you're currently doing manually.`,
       },
       {
         type: "paragraph",
-        text: `The key difference between an AI agent and a regular automation tool (like Zapier) is judgment. Zapier follows rigid if-then rules. An agent can look at context, interpret it, and decide what to do. "This lead came from the roofing page, has a commercial email, and filled out the emergency form — route to the owner directly and mark as high priority." That's agent behavior.`,
+        text: `The key difference between an AI agent and a regular automation tool (like Zapier) is judgment. Zapier follows rigid if-then rules. An agent can look at context, interpret it, and decide what to do. "This lead came from the roofing page, has a commercial email, and filled out the emergency form. Route to the owner directly and mark as high priority." That's agent behavior.`,
       },
       {
         type: "heading",
@@ -43,7 +43,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `A lead fills out your contact form. The CRM agent captures their information, enriches it (company size, industry, location), scores it based on your criteria, creates a record in your pipeline, and sends them a personalized acknowledgment email — all before you've looked at your phone. If the lead is high-value, it texts you directly. If it's a tire-kicker, it queues a nurture sequence. The agent handles 90% of lead intake that you or your admin used to do by hand.`,
+        text: `A lead fills out your contact form. The CRM agent captures their information, enriches it (company size, industry, location), scores it based on your criteria, creates a record in your pipeline, and sends them a personalized acknowledgment email. All before you've looked at your phone. If the lead is high-value, it texts you directly. If it's a tire-kicker, it queues a nurture sequence. The agent handles 90% of lead intake that you or your admin used to do by hand.`,
       },
       {
         type: "subheading",
@@ -67,7 +67,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `Your content agent tracks what topics are performing in your industry, drafts blog posts and social content based on your positioning, formats everything for your website, and can publish on a schedule you define. It's not replacing your voice — it's doing the 80% of content work that's research, formatting, and scheduling, so you only need to review and approve.`,
+        text: `Your content agent tracks what topics are performing in your industry, drafts blog posts and social content based on your positioning, formats everything for your website, and can publish on a schedule you define. It's not replacing your voice. It's doing the 80% of content work that's research, formatting, and scheduling, so you only need to review and approve.`,
       },
       {
         type: "heading",
@@ -79,7 +79,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `The difference is that agents are a one-time build. You pay to have them built and configured for your business. After that, you own them. The ongoing costs are the API calls and hosting — pennies per interaction, not thousands per month.`,
+        text: `The difference is that agents are a one-time build. You pay to have them built and configured for your business. After that, you own them. The ongoing costs are the API calls and hosting. Pennies per interaction, not thousands per month.`,
       },
       {
         type: "heading",
@@ -99,7 +99,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `AI agents aren't magic and they're not hype — they're a practical tool that lets small businesses operate with the efficiency of companies ten times their size. The question isn't whether AI will change how your business runs. It's whether you'll be the one adopting it or the one competing against businesses that did.`,
+        text: `AI agents aren't magic and they're not hype. They're a practical tool that lets small businesses operate with the efficiency of companies ten times their size. The question isn't whether AI will change how your business runs. It's whether you'll be the one adopting it or the one competing against businesses that did.`,
       },
     ],
   },
@@ -111,7 +111,7 @@ const articles = {
     content: [
       {
         type: "paragraph",
-        text: `Nobody wakes up one morning and decides to build an inefficient business. It happens gradually — one workaround at a time, one "I'll just handle that manually for now" after another. Before you know it, you've got a team of five people and three of them spend half their day on tasks that exist only because your systems don't talk to each other.`,
+        text: `Nobody wakes up one morning and decides to build an inefficient business. It happens gradually. One workaround at a time, one "I'll just handle that manually for now" after another. Before you know it, you've got a team of five people and three of them spend half their day on tasks that exist only because your systems don't talk to each other.`,
       },
       {
         type: "heading",
@@ -123,7 +123,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `A lead comes in through your website. Someone copies their info into the CRM. Then someone sends them an email. Then someone checks the CRM two days later to see if they responded. Then someone follows up. Each of these is a manual step that takes 5-10 minutes. Multiply by 20 leads a week. That's a full day of someone's time — just on lead intake.`,
+        text: `A lead comes in through your website. Someone copies their info into the CRM. Then someone sends them an email. Then someone checks the CRM two days later to see if they responded. Then someone follows up. Each of these is a manual step that takes 5-10 minutes. Multiply by 20 leads a week. That's a full day of someone's time, just on lead intake.`,
       },
       {
         type: "paragraph",
@@ -139,11 +139,11 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `The direct cost is obvious — you're paying people to do work a machine should handle. But the indirect costs are bigger:`,
+        text: `The direct cost is obvious. You're paying people to do work a machine should handle. But the indirect costs are bigger:`,
       },
       {
         type: "paragraph",
-        text: `Speed-to-lead drops. When a lead waits 24 hours for a response because your intake process is manual, you lose 60% of them. That's not a stat I made up — Harvard Business Review studied it. The businesses that respond within 5 minutes are 21x more likely to qualify the lead than those that respond within 30 minutes.`,
+        text: `Speed-to-lead drops. When a lead waits 24 hours for a response because your intake process is manual, you lose 60% of them. That's not a stat I made up. Harvard Business Review studied it. The businesses that respond within 5 minutes are 21x more likely to qualify the lead than those that respond within 30 minutes.`,
       },
       {
         type: "paragraph",
@@ -151,7 +151,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `You can't scale. When every new client adds manual work, growth becomes linear — you need proportionally more people for proportionally more revenue. Automated businesses scale logarithmically — the system handles the increased volume without proportional cost increases.`,
+        text: `You can't scale. When every new client adds manual work, growth becomes linear. You need proportionally more people for proportionally more revenue. Automated businesses scale logarithmically. The system handles the increased volume without proportional cost increases.`,
       },
       {
         type: "heading",
@@ -159,7 +159,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `Take one day and write down every time you or your team manually moves data from one place to another. Every copy-paste. Every "let me check on that." Every time someone has to remember to do something. You'll be surprised — most businesses find 15-25 manual processes that happen daily, and at least half of them can be fully automated.`,
+        text: `Take one day and write down every time you or your team manually moves data from one place to another. Every copy-paste. Every "let me check on that." Every time someone has to remember to do something. You'll be surprised. Most businesses find 15-25 manual processes that happen daily, and at least half of them can be fully automated.`,
       },
       {
         type: "paragraph",
@@ -171,11 +171,11 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `This isn't about replacing your team. It's about redirecting their energy. Your office manager shouldn't be copy-pasting lead info into a CRM — they should be building relationships with existing clients. Your marketing person shouldn't be manually scheduling social posts — they should be developing strategy.`,
+        text: `This isn't about replacing your team. It's about redirecting their energy. Your office manager shouldn't be copy-pasting lead info into a CRM. They should be building relationships with existing clients. Your marketing person shouldn't be manually scheduling social posts. They should be developing strategy.`,
       },
       {
         type: "paragraph",
-        text: `Automation takes the repetitive, rule-based work off people's plates so they can do the judgment-based work that actually grows your business. The people don't go away — they just start doing work that matters.`,
+        text: `Automation takes the repetitive, rule-based work off people's plates so they can do the judgment-based work that actually grows your business. The people don't go away. They just start doing work that matters.`,
       },
       {
         type: "heading",
@@ -195,7 +195,7 @@ const articles = {
     content: [
       {
         type: "paragraph",
-        text: `You've been here before. You find a new tool that's supposed to solve your problem. You sign up, watch the demo, get excited. Then you try to use it for your actual workflow and hit a wall. The thing it can't do — the one specific thing your business needs — is the thing that would make it actually useful.`,
+        text: `You've been here before. You find a new tool that's supposed to solve your problem. You sign up, watch the demo, get excited. Then you try to use it for your actual workflow and hit a wall. The thing it can't do, the one specific thing your business needs, is the thing that would make it actually useful.`,
       },
       {
         type: "paragraph",
@@ -207,11 +207,11 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `SaaS products are built for the average of their customer base, not for any specific customer. They have to serve a roofing company in Dallas and a law firm in Seattle and a marketing agency in Miami — all with the same interface. To do that, they make everything generic enough to be usable but specific enough to feel like it's purpose-built. It's an illusion.`,
+        text: `SaaS products are built for the average of their customer base, not for any specific customer. They have to serve a roofing company in Dallas and a law firm in Seattle and a marketing agency in Miami. All with the same interface. To do that, they make everything generic enough to be usable but specific enough to feel like it's purpose-built. It's an illusion.`,
       },
       {
         type: "paragraph",
-        text: `The result is that every business ends up adapting their workflow to fit the software, instead of the other way around. You change how you do things to match what the tool can do. That's backwards. Your process exists because it works for your clients and your team. The software should support the process — not redefine it.`,
+        text: `The result is that every business ends up adapting their workflow to fit the software, instead of the other way around. You change how you do things to match what the tool can do. That's backwards. Your process exists because it works for your clients and your team. The software should support the process, not redefine it.`,
       },
       {
         type: "heading",
@@ -219,7 +219,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `Let's do the real math. Say you're paying $200/month for a CRM, $150 for an email marketing tool, $100 for a project management platform, $80 for a scheduling tool, and $50 for a reporting dashboard. That's $580/month — $6,960/year — for tools that each do 60% of what you need.`,
+        text: `Let's do the real math. Say you're paying $200/month for a CRM, $150 for an email marketing tool, $100 for a project management platform, $80 for a scheduling tool, and $50 for a reporting dashboard. That's $580/month. $6,960/year. For tools that each do 60% of what you need.`,
       },
       {
         type: "paragraph",
@@ -263,7 +263,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `If that sounds like where you are, it's worth having the conversation about what a purpose-built solution would look like. Not to replace everything — but to replace the friction points that are silently costing you time and money every single day.`,
+        text: `If that sounds like where you are, it's worth having the conversation about what a purpose-built solution would look like. Not to replace everything, but to replace the friction points that are silently costing you time and money every single day.`,
       },
       {
         type: "heading",
@@ -271,7 +271,7 @@ const articles = {
       },
       {
         type: "paragraph",
-        text: `Off-the-shelf software is designed for the general case. Your business is a specific case. The further those two things diverge, the more you pay — in subscription fees, in workaround labor, and in opportunities lost to friction. Custom tools don't have to be a massive investment. They just have to fit the way you actually work.`,
+        text: `Off-the-shelf software is designed for the general case. Your business is a specific case. The further those two things diverge, the more you pay. In subscription fees, in workaround labor, and in opportunities lost to friction. Custom tools don't have to be a massive investment. They just have to fit the way you actually work.`,
       },
     ],
   },

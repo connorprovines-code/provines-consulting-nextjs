@@ -10,7 +10,7 @@ const articles = [
     slug: "what-ai-agents-actually-do-for-small-business",
     title: "What AI Agents Actually Do for a Small Business",
     excerpt:
-      "Not chatbots. Not hype. Here's what AI agents look like when they're installed in a real service business — handling lead intake, CRM updates, content, SEO, and website management.",
+      "Not chatbots. Not hype. Here's what AI agents look like when they're installed in a real service business. Handling lead intake, CRM updates, content, SEO, and website management.",
     readTime: "7 min read",
     date: "February 2026",
     category: "AI & Automation",
@@ -19,7 +19,7 @@ const articles = [
     slug: "manual-operations-killing-your-margins",
     title: "The Manual Operations Quietly Killing Your Margins",
     excerpt:
-      "Nobody builds an inefficient business on purpose. It happens one workaround at a time. Here's how to spot the manual processes silently taxing your margins — and what to do about them.",
+      "Nobody builds an inefficient business on purpose. It happens one workaround at a time. Here's how to spot the manual processes silently taxing your margins, and what to do about them.",
     readTime: "5 min read",
     date: "February 2026",
     category: "Operations",
@@ -28,7 +28,7 @@ const articles = [
     slug: "why-off-the-shelf-software-doesnt-fit",
     title: "Why Off-the-Shelf Software Never Quite Fits Your Business",
     excerpt:
-      "You sign up, watch the demo, get excited — then hit the one thing it can't do. Before you know it you're paying for four platforms and a VA to stitch them together. There's another way.",
+      "You sign up, watch the demo, get excited. Then you hit the one thing it can't do. Before you know it you're paying for four platforms and a VA to stitch them together. There's another way.",
     readTime: "6 min read",
     date: "February 2026",
     category: "Custom Tools",
@@ -52,7 +52,7 @@ export default function ContentPage() {
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
-              Practical thinking about AI, operations, and the tools that actually move the needle — written for people who run businesses, not developers.
+              Practical thinking about AI, operations, and the tools that actually move the needle. Written for people who run businesses, not developers.
             </p>
           </motion.div>
         </div>

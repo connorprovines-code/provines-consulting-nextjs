@@ -58,7 +58,7 @@ export default function ScheduleContent() {
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed max-w-xl mx-auto">
-              30 minutes. No pitch. We'll figure out what your marketing infrastructure should look like — and what to build first.
+              30 minutes. No pitch. We figure out what your marketing infrastructure should look like and what to build first.
             </p>
           </motion.div>
         </div>

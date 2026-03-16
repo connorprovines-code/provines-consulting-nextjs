@@ -144,7 +144,7 @@ export default function ClientLayout({ children }) {
             <div>
               <h3 className="text-2xl font-bold mb-4">Provines Consulting</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                12+ years of B2B SaaS marketing leadership — demand gen, GTM, pipeline ops — now applied to building marketing infrastructure for business owners. I don't just build the systems. I understand why they work.
+                12+ years of B2B SaaS marketing leadership, now applied to building marketing infrastructure for business owners. I don&apos;t just build the systems. I understand why they work.
               </p>
             </div>
 

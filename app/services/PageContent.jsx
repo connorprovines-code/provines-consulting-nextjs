@@ -18,9 +18,9 @@ const services = [
   {
     icon: Workflow,
     title: "Marketing Infrastructure Build",
-    tagline: "Your complete marketing department — built as systems you own.",
+    tagline: "Your complete marketing department, built as systems you own.",
     description:
-      "Website, CRM, AI assistants, content engine, SEO, ads integration — one connected system that replaces the agency, the freelancers, and the patchwork of SaaS tools that don't talk to each other. I've spent 12+ years building marketing operations for B2B SaaS companies. Now I package that into infrastructure that business owners actually own and run themselves.",
+      "Website, CRM, AI assistants, content engine, SEO, ads integration. One connected system that replaces the agency, the freelancers, and the patchwork of SaaS tools that don't talk to each other. I spent 12+ years building marketing operations for B2B SaaS companies. Now I package that into infrastructure business owners actually own and run themselves.",
     features: [
       "Modern website on infrastructure you own",
       "CRM with automated lead pipeline",
@@ -35,14 +35,14 @@ const services = [
     title: "Growth Consulting",
     tagline: "Strategy from someone who's built the systems, not just the decks.",
     description:
-      "Sometimes you don't need the full infrastructure build — you need someone who's done this 100 times to look at your business and tell you what's actually going to move the needle. I spent 12+ years running demand gen, GTM, and pipeline for B2B SaaS companies before I started building these systems. That background doesn't disappear when I'm consulting — it's the whole point. Whether you need help with positioning, pipeline architecture, or figuring out where your marketing dollars should actually go, this is strategy with implementation behind it.",
+      "Sometimes you don't need the full build. You need someone who's done this 100 times to look at your business and tell you what's actually going to move the needle. I ran demand gen, GTM, and pipeline for B2B SaaS companies for over a decade before I started building these systems. That background doesn't go away when I'm consulting. It's the whole point. Positioning, pipeline architecture, figuring out where your marketing dollars should actually go. Strategy with implementation behind it.",
     features: [
       "Go-to-market strategy and positioning",
       "Demand gen and pipeline architecture",
       "Marketing operations audit and roadmap",
       "Channel strategy and budget allocation",
       "Marketing org design and hiring plans",
-      "Can lead into a full infrastructure build if that's what makes sense",
+      "Can lead into a full infrastructure build if that makes sense",
     ],
   },
   {
@@ -50,7 +50,7 @@ const services = [
     title: "AI Assistants & Automation",
     tagline: "Agents that handle the work, not just the questions.",
     description:
-      "I build Claude-powered AI assistants that connect to your CRM, draft and publish content, route leads, manage your calendar, and update your website — configured for your business, your data, your workflows. They get better as they learn how you operate.",
+      "Claude-powered AI assistants that connect to your CRM, draft and publish content, route leads, manage your calendar, and update your website. Configured for your business, your data, your workflows. They get better as they learn how you operate.",
     features: [
       "Lead intake, qualification, and CRM routing",
       "Content drafting, editing, and publishing",
@@ -61,11 +61,11 @@ const services = [
   {
     icon: Globe,
     title: "Website & Marketing Operations",
-    tagline: "Website, CRM, content, SEO — one connected system you own.",
+    tagline: "Website, CRM, content, SEO. One connected system you own.",
     description:
-      "Your website captures leads and feeds your CRM. Your CRM triggers follow-up. Your content engine publishes through your site. SEO runs in the background. I build the whole thing as one platform on Next.js — and you manage it in plain English.",
+      "Your website captures leads and feeds your CRM. Your CRM triggers follow-up. Your content engine publishes through your site. SEO runs in the background. I build the whole thing as one platform on Next.js, and you manage it in plain English.",
     features: [
-      "Website rebuild on Next.js — fast, modern, yours to own",
+      "Website rebuild on Next.js, fast, modern, yours to own",
       "CRM with automated lead capture, scoring, and follow-up",
       "AI-driven content and SEO pipeline",
       "Migration from Wix, WordPress, Squarespace, or legacy platforms",
@@ -76,7 +76,7 @@ const services = [
     title: "Custom Development",
     tagline: "When the tool you need doesn't exist yet.",
     description:
-      "Internal dashboards, client portals, reporting tools, industry-specific apps, API integrations. Sometimes what your business needs is 200 lines of code that do exactly the right thing — not a $500/month SaaS product that covers 60% of it. I build custom tools that fit into your existing stack and solve the specific problem you're dealing with.",
+      "Internal dashboards, client portals, reporting tools, industry-specific apps, API integrations. Sometimes what your business needs is 200 lines of code that do exactly the right thing. Not a $500/month SaaS product that covers 60% of it. I build custom tools that fit into your existing stack and solve the specific problem you're dealing with.",
     features: [
       "Internal dashboards and operational tools",
       "Client-facing portals and self-service platforms",
@@ -101,13 +101,11 @@ export default function ServicesContent() {
             className="max-w-4xl"
           >
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              Most businesses come to me needing one thing and leave with a system that handles everything.
+              Most people come in needing one thing and leave with a system that handles everything.
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
-              Building blocks of an integrated marketing infrastructure.
-              Designed by someone who&apos;s run demand gen and built pipeline,
-              not just someone who codes.
+              These aren&apos;t a la carte services. They&apos;re building blocks of an integrated marketing infrastructure. Assembled for whatever your business actually needs.
             </p>
           </motion.div>
         </div>
@@ -169,8 +167,7 @@ export default function ServicesContent() {
             Not sure where to start?
           </h2>
           <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-            That's what the first call is for. We'll look at where you are
-            now, what's eating your time, and figure out what to build first.
+            That&apos;s what the first call is for. We look at where you are now, what&apos;s eating your time, and figure out what to build first.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/schedule">

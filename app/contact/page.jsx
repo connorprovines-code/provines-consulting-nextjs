@@ -3,7 +3,7 @@ import ContactContent from "./PageContent";
 export const metadata = {
   title: "Contact",
   description:
-    "Get in touch about your marketing infrastructure. Send a message or book a discovery call — no pitch, no pressure.",
+    "Get in touch about your marketing infrastructure. Send a message or book a discovery call. No pitch, no pressure.",
   openGraph: {
     title: "Contact | Provines Consulting",
     description:

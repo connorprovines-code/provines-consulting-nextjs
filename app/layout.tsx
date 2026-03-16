@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     default: "Provines Consulting | AI Marketing Infrastructure for Business Owners",
     template: "%s | Provines Consulting",
   },
-  description: "I build your marketing stack — website, AI assistants, CRM, content engine, lead flow — and hand you the keys. No retainers. No lock-in. You own everything.",
+  description: "I build your marketing stack: website, AI assistants, CRM, content engine, lead flow. Then I hand you the keys. No retainers. No lock-in. You own everything.",
   keywords: ["AI marketing infrastructure", "custom AI chatbot for business", "Claude chatbot implementation", "AI assistant for small business", "marketing systems for business owners", "Next.js website for small business", "CRM automation", "replace marketing agency with AI", "AI-powered business assistant", "marketing automation for service companies"],
   authors: [{ name: "Connor Provines" }],
   creator: "Connor Provines",
   openGraph: {
     title: "Provines Consulting | AI Marketing Infrastructure for Business Owners",
-    description: "I build your marketing stack — website, AI assistants, CRM, content engine, lead flow — and hand you the keys. No retainers. No lock-in. You own everything.",
+    description: "I build your marketing stack: website, AI assistants, CRM, content engine, lead flow. Then I hand you the keys. No retainers. No lock-in. You own everything.",
     url: "https://provines.consulting",
     siteName: "Provines Consulting",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Provines Consulting | AI Marketing Infrastructure",
-    description: "Complete marketing infrastructure — website, AI assistants, CRM, content engine — built for business owners. You own everything.",
+    description: "Complete marketing infrastructure: website, AI assistants, CRM, content engine. Built for business owners. You own everything.",
   },
   robots: {
     index: true,
@@ -54,7 +54,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Provines Consulting",
-  description: "AI marketing infrastructure for business owners. Complete marketing stack — website, Claude-powered AI assistants, CRM, content engine, lead automation — built and handed over with full ownership.",
+  description: "AI marketing infrastructure for business owners. Complete marketing stack: website, Claude-powered AI assistants, CRM, content engine, lead automation. Built and handed over with full ownership.",
   url: "https://provines.consulting",
   founder: {
     "@type": "Person",

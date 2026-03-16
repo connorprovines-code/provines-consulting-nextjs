@@ -20,7 +20,7 @@ const faqSchema = {
       "name": "What exactly do you build?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Marketing infrastructure. Website, CRM, AI assistants, content systems, SEO, lead automation — one integrated system. Everything a marketing team would build, delivered as infrastructure you own."
+        "text": "Marketing infrastructure. Website, CRM, AI assistants, content systems, SEO, lead automation. One integrated system that does what a marketing team would do, delivered as infrastructure you own."
       }
     },
     {
@@ -28,7 +28,7 @@ const faqSchema = {
       "name": "What are the AI assistants and how do they work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Claude-powered AI agents trained on your business. They connect to your CRM, manage content, handle lead intake, schedule appointments, and automate operations. Not a chat widget — real agents doing real work. Built on Anthropic's Claude, configured for your data and workflows."
+        "text": "Claude-powered AI agents trained on your business. They connect to your CRM, manage content, handle lead intake, schedule appointments, and automate operations. Not a chat widget. Real agents doing real work. Built on Anthropic's Claude, configured for your data and workflows."
       }
     },
     {
@@ -36,7 +36,7 @@ const faqSchema = {
       "name": "How is this different from hiring a marketing agency?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An agency charges monthly and you never own anything. Every change, every update — you're calling them and paying for it. I build systems you own completely. After handoff — no recurring fees, no lock-in, no dependency. You run it yourself."
+        "text": "An agency charges monthly and you never own anything. Every change, every update, you're calling them and paying for it. I build systems you own completely. After handoff there are no recurring fees, no lock-in, no dependency. You run it yourself."
       }
     },
     {
@@ -44,7 +44,7 @@ const faqSchema = {
       "name": "How is this different from a chatbot tool?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most chatbot tools are a widget answering questions from a knowledge base. My AI assistants are integrated into your systems — CRM, website, scheduling, pipeline. They don't just answer questions. They route leads, update your website, draft content, and manage follow-up."
+        "text": "Most chatbot tools are a widget answering questions from a knowledge base. My AI assistants are integrated into your actual systems. CRM, website, scheduling, pipeline. They don't just answer questions. They route leads, update your website, draft content, and manage follow-up."
       }
     },
     {
@@ -68,7 +68,7 @@ const faqSchema = {
       "name": "How do engagements work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Every engagement starts with a discovery call where we figure out what you actually need. From there I scope it — some businesses need one workflow, others need the full infrastructure build. You know exactly what you're getting before anything starts."
+        "text": "Every engagement starts with a discovery call where we figure out what you actually need. From there I scope it. Some businesses need one workflow, others need the full infrastructure build. You know exactly what you're getting before anything starts."
       }
     },
     {

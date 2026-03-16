@@ -18,13 +18,13 @@ export default function AboutContent() {
       icon: Wrench,
       title: "Strategy + Implementation in One Person",
       description:
-        "I don't hand you a strategy deck and wish you luck. I architect the system and build it. The marketing experience informs what gets built. The technical skills mean it actually gets shipped.",
+        "I don't hand you a strategy deck and wish you luck. I architect the system and build it. The marketing experience informs what gets built. The technical skills mean it actually ships.",
     },
     {
       icon: Lightbulb,
       title: "Everything Built for Independence",
       description:
-        "After the handoff, you don't need me. That's not a risk — it's the entire point. You own the code, the data, the infrastructure. Any developer can maintain it.",
+        "After the handoff, you don't need me. That's not a risk. It's the entire point. You own the code, the data, the infrastructure. Any developer can maintain it.",
     },
     {
       icon: ShieldCheck,
@@ -36,16 +36,16 @@ export default function AboutContent() {
       icon: Users,
       title: "Marketing Experience That Shows in the Build",
       description:
-        "I don't just build your marketing stack. I architect it around what actually drives revenue — because I've spent 12+ years doing exactly that. The systems I build are informed by what actually converts.",
+        "I don't just build your marketing stack. I architect it around what actually drives revenue, because I've spent 12+ years doing exactly that. The systems I build reflect what actually converts.",
     },
   ];
 
   const background = [
     "12+ years B2B SaaS marketing leadership (demand gen, marketing ops, RevOps)",
-    "Production AI systems — Claude-powered assistants, multi-agent workflows, voice agents",
+    "Production AI systems: Claude-powered assistants, multi-agent workflows, voice agents",
     "Website migrations from Wix, WordPress, Squarespace to Next.js",
     "CRM architecture and integration (GoHighLevel, HubSpot, Supabase, custom)",
-    "Full-stack development — Next.js, React, Tailwind, Supabase, Vercel",
+    "Full-stack development: Next.js, React, Tailwind, Supabase, Vercel",
     "SEO systems, content automation, and lead enrichment pipelines",
   ];
 
@@ -65,9 +65,7 @@ export default function AboutContent() {
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
-              Most developers don&apos;t understand marketing. Most marketers can&apos;t
-              build production systems. I do both — which means the
-              infrastructure I build is designed around what actually drives leads and revenue.
+              Most developers don&apos;t understand marketing. Most marketers can&apos;t build production systems. I do both, which means the infrastructure I build is designed around what actually drives leads and revenue.
             </p>
           </motion.div>
         </div>
@@ -85,36 +83,19 @@ export default function AboutContent() {
         >
           <div className="space-y-6 text-slate-700 leading-relaxed text-lg">
             <p>
-              I'm Connor Provines. Twelve years in B2B SaaS marketing —
-              building go-to-market strategies, running demand gen, setting up
-              the automation and ops infrastructure that actually generates
-              pipeline. I've done it at companies going from zero to first
-              customers and companies scaling from 10M to 50M.
+              I&apos;m Connor Provines. Twelve years in B2B SaaS marketing. Building go-to-market strategies, running demand gen, setting up the automation and ops infrastructure that actually generates pipeline. I&apos;ve done it at companies going from zero to first customers and companies scaling from 10M to 50M.
             </p>
 
             <p>
-              What I kept seeing was that the businesses doing the hardest,
-              most important work — contractors, service companies,
-              professional firms — were stuck with the worst tools. Websites on
-              platforms that couldn't support basic SEO. Leads falling through
-              cracks. Paying agencies thousands a month for a content calendar
-              and a website they couldn't update themselves.
+              What I kept seeing was that the businesses doing the hardest, most important work (contractors, service companies, professional firms) were stuck with the worst tools. Websites on platforms that couldn&apos;t support basic SEO. Leads falling through cracks. Paying agencies thousands a month for a content calendar and a website they couldn&apos;t update themselves.
             </p>
 
             <p>
-              So I started building for them. I take what I know about
-              marketing operations, automation, and AI — and I build it as
-              infrastructure a business owner can actually run. Not a retainer.
-              Not a dashboard you'll never log into. A system you own. AI
-              assistants that handle the repetitive work. A website that your
-              AI can update. A CRM that routes leads without you touching it.
+              So I started building for them. I take what I know about marketing operations, automation, and AI and build it as infrastructure a business owner can actually run. Not a retainer. Not a dashboard you&apos;ll never log into. A system you own. AI assistants that handle the repetitive work. A website that your AI can update. A CRM that routes leads without you touching it.
             </p>
 
             <p>
-              The engagement ends with a handoff. You know how everything
-              works. You have documentation. You have 90 days of support. After
-              that, you're running your own marketing infrastructure. That's
-              the product.
+              The engagement ends with a handoff. You know how everything works. You have documentation. You have 90 days of support. After that, you&apos;re running your own marketing infrastructure. That&apos;s the product.
             </p>
           </div>
         </motion.div>
@@ -203,12 +184,10 @@ export default function AboutContent() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
-            Let's talk about your business.
+            Let&apos;s talk about your business.
           </h2>
           <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-            No pitch, no pressure. Just a conversation about where you are,
-            where you want to be, and whether I can build the infrastructure
-            to get you there.
+            No pitch, no pressure. Just a conversation about where you are, where you want to be, and whether I can help build the infrastructure to get you there.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/schedule">

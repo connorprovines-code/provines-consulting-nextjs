@@ -14,22 +14,22 @@ export default function FAQContent() {
     {
       question: "What exactly do you build?",
       answer:
-        "Marketing infrastructure. Website, CRM, AI assistants, content systems, SEO, lead automation — one integrated system. Everything a marketing team would build, delivered as infrastructure you own.",
+        "Marketing infrastructure. Website, CRM, AI assistants, content systems, SEO, lead automation. One integrated system that does what a marketing team would do, delivered as infrastructure you own.",
     },
     {
       question: "What are the AI assistants and how do they work?",
       answer:
-        "Claude-powered AI agents trained on your business. They connect to your CRM, manage content, handle lead intake, schedule appointments, and automate operations. Not a chat widget — real agents doing real work. Built on Anthropic's Claude, configured for your data and workflows.",
+        "Claude-powered AI agents trained on your business. They connect to your CRM, manage content, handle lead intake, schedule appointments, and automate operations. Not a chat widget. Real agents doing real work. Built on Anthropic's Claude, configured for your data and workflows.",
     },
     {
       question: "How is this different from hiring a marketing agency?",
       answer:
-        "An agency charges monthly and you never own anything. Every change, every update — you're calling them and paying for it. I build systems you own completely. After handoff — no recurring fees, no lock-in, no dependency. You run it yourself.",
+        "An agency charges monthly and you never own anything. Every change, every update, you're calling them and paying for it. I build systems you own completely. After handoff there are no recurring fees, no lock-in, no dependency. You run it yourself.",
     },
     {
       question: "How is this different from a chatbot tool?",
       answer:
-        "Most chatbot tools are a widget answering questions from a knowledge base. My AI assistants are integrated into your systems — CRM, website, scheduling, pipeline. They don't just answer questions. They route leads, update your website, draft content, and manage follow-up.",
+        "Most chatbot tools are a widget answering questions from a knowledge base. My AI assistants are integrated into your actual systems. CRM, website, scheduling, pipeline. They don't just answer questions. They route leads, update your website, draft content, and manage follow-up.",
     },
     {
       question: "What technology do you use?",
@@ -44,7 +44,7 @@ export default function FAQContent() {
     {
       question: "How do engagements work?",
       answer:
-        "Every engagement starts with a discovery call where we figure out what you actually need. From there I scope it — some businesses need one workflow, others need the full infrastructure build. You know exactly what you're getting before anything starts.",
+        "Every engagement starts with a discovery call where we figure out what you actually need. From there I scope it. Some businesses need one workflow, others need the full infrastructure build. You know exactly what you're getting before anything starts.",
     },
     {
       question: "What happens after the project?",
@@ -54,12 +54,12 @@ export default function FAQContent() {
     {
       question: "What kinds of businesses do you work with?",
       answer:
-        "Service businesses, contractors, home builders, SMB owner-operators who need marketing infrastructure but don't have or want a marketing team. Also small SaaS companies on AI integration.",
+        "Service businesses, contractors, home builders, SMB owner-operators who need marketing infrastructure but don't have or want a marketing team. Also small SaaS companies looking at AI integration.",
     },
     {
       question: "How long does a typical project take?",
       answer:
-        "Website rebuild with basic AI assistants: 3-4 weeks. Full marketing infrastructure build: 6-8 weeks. Specific timeline during scoping.",
+        "Website rebuild with basic AI assistants: 3-4 weeks. Full marketing infrastructure build: 6-8 weeks. We get into specifics during scoping.",
     },
   ];
 

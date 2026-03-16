@@ -92,99 +92,71 @@ export default function ServicesContent() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
+      <section className="bg-[#0A1F44]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
               Most businesses come to me needing one thing and leave with a system that handles everything.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Not a menu of services — building blocks of an
-              integrated marketing infrastructure. Designed by someone who's
-              run demand gen and built pipeline, not just someone who codes.
-              Assembled for whatever your business actually needs.
+            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
+              Building blocks of an integrated marketing infrastructure.
+              Designed by someone who&apos;s run demand gen and built pipeline,
+              not just someone who codes.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Services Detail */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="space-y-20">
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="space-y-16">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="relative"
             >
-              {/* Service card */}
-              <div className="relative rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-                {/* Top accent line */}
-                <div
-                  className="h-1"
-                  style={{
-                    background: index % 2 === 0
-                      ? `linear-gradient(90deg, var(--electric-blue), var(--mint))`
-                      : `linear-gradient(90deg, var(--mint), var(--electric-blue))`,
-                  }}
-                />
-
-                <div className="p-8 md:p-10 lg:p-12">
-                  {/* Header — inline icon + title */}
-                  <div className="flex items-center gap-4 mb-2">
-                    <div
-                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{
-                        backgroundColor: index % 2 === 0 ? 'var(--electric-blue)' : 'var(--mint)',
-                      }}
-                    >
-                      <service.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)]">
-                      {service.title}
-                    </h2>
-                  </div>
-                  <p className="text-slate-500 font-medium text-lg mb-6 ml-14">
+              <div className="flex items-start gap-5 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-[var(--navy)] flex items-center justify-center flex-shrink-0 mt-1">
+                  <service.icon className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)]">
+                    {service.title}
+                  </h2>
+                  <p className="text-slate-500 font-medium mt-1">
                     {service.tagline}
                   </p>
-
-                  {/* Description */}
-                  <p className="text-slate-600 leading-relaxed text-lg mb-8 max-w-3xl">
-                    {service.description}
-                  </p>
-
-                  {/* Features — inline list */}
-                  <div className="flex flex-wrap gap-3">
-                    {service.features.map((feature, fIndex) => (
-                      <span
-                        key={fIndex}
-                        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm border"
-                        style={{
-                          borderColor: index % 2 === 0 ? 'color-mix(in srgb, var(--electric-blue) 20%, transparent)' : 'color-mix(in srgb, var(--mint) 20%, transparent)',
-                          color: 'var(--navy)',
-                        }}
-                      >
-                        <CheckCircle
-                          className="w-3.5 h-3.5 flex-shrink-0"
-                          style={{
-                            color: index % 2 === 0 ? 'var(--electric-blue)' : 'var(--mint)',
-                          }}
-                        />
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
+
+              <p className="text-slate-600 leading-relaxed text-lg mb-6 max-w-3xl">
+                {service.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {service.features.map((feature, fIndex) => (
+                  <span
+                    key={fIndex}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm bg-slate-50 text-slate-700 border border-slate-100"
+                  >
+                    <CheckCircle className="w-3.5 h-3.5 flex-shrink-0 text-[var(--mint)]" />
+                    {feature}
+                  </span>
+                ))}
+              </div>
+
+              {index < services.length - 1 && (
+                <div className="border-b border-slate-100 mt-16" />
+              )}
             </motion.div>
           ))}
         </div>

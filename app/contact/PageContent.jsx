@@ -88,20 +88,20 @@ export default function ContactContent() {
   return (
     <div className="relative min-h-screen">
       {/* Hero */}
-      <section>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <section className="bg-[#0A1F44]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
-              Let's talk.
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+              Let&apos;s talk.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Let's figure out what your marketing infrastructure should look like. Whether you have a specific project in mind or just want to explore what's possible — no pitch, no pressure.
+            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+              Whether you have a specific project in mind or just want to explore what&apos;s possible — no pitch, no pressure.
             </p>
           </motion.div>
         </div>

@@ -52,29 +52,22 @@ export default function AboutContent() {
   return (
     <div className="relative">
       {/* Hero */}
-      <section>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <section className="bg-[#0A1F44]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <div className="inline-block mb-4">
-              <span className="px-4 py-1.5 bg-gradient-to-r from-[var(--mint)]/10 to-[var(--electric-blue)]/10 text-[var(--navy)] rounded-full text-sm font-medium border border-[var(--mint)]/20">
-                About Connor
-              </span>
-            </div>
-
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[var(--navy)] mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
               12+ years building marketing systems for SaaS companies. Now I build infrastructure business owners actually own.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Most developers don't understand marketing. Most marketers can't
+            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
+              Most developers don&apos;t understand marketing. Most marketers can&apos;t
               build production systems. I do both — which means the
-              infrastructure I build isn't just technically sound, it's designed
-              around what actually drives leads and revenue.
+              infrastructure I build is designed around what actually drives leads and revenue.
             </p>
           </motion.div>
         </div>

@@ -7,76 +7,31 @@ import { motion } from "framer-motion";
 
 const articles = [
   {
-    slug: "you-dont-need-a-marketing-team",
-    title: "You Don't Need a Marketing Team. You Need Marketing Infrastructure.",
+    slug: "what-ai-agents-actually-do-for-small-business",
+    title: "What AI Agents Actually Do for a Small Business",
     excerpt:
-      "The cost of hiring a marketing team vs. building systems that do the work. Why infrastructure beats headcount for businesses under 50 employees — and what that infrastructure actually looks like.",
-    readTime: "8 min read",
-    date: "March 2026",
-    category: "Marketing Infrastructure",
-  },
-  {
-    slug: "ai-chatbots-vs-ai-assistants",
-    title: "AI Chatbots vs. AI Assistants: Why Most Business Bots Are a Waste of Money",
-    excerpt:
-      "There's a difference between a chat widget that answers FAQs and an AI assistant that routes leads, updates your website, and manages your CRM. Most businesses are buying the wrong one.",
+      "Not chatbots. Not hype. Here's what AI agents look like when they're installed in a real service business — handling lead intake, CRM updates, content, SEO, and website management.",
     readTime: "7 min read",
-    date: "March 2026",
+    date: "February 2026",
     category: "AI & Automation",
   },
   {
-    slug: "what-claude-powered-ai-assistant-does-for-small-business",
-    title: "What a Claude-Powered AI Assistant Actually Does for a Small Business",
+    slug: "manual-operations-killing-your-margins",
+    title: "The Manual Operations Quietly Killing Your Margins",
     excerpt:
-      "Forget the hype. Here's what happens on a Tuesday morning when your AI assistant handles lead intake, drafts a blog post, updates your homepage, and follows up with yesterday's inquiries — all before you finish coffee.",
-    readTime: "7 min read",
-    date: "March 2026",
-    category: "AI & Automation",
-  },
-  {
-    slug: "migrating-website-from-wix-to-nextjs",
-    title: "Migrating Your Website from Wix to Next.js: What Business Owners Need to Know",
-    excerpt:
-      "Why legacy platforms limit your growth, what modern infrastructure looks like, and what actually happens during a migration. Written for business owners, not developers.",
-    readTime: "6 min read",
-    date: "March 2026",
-    category: "Website Platform",
-  },
-  {
-    slug: "real-cost-of-not-following-up-with-leads",
-    title: "The Real Cost of Not Following Up with Leads",
-    excerpt:
-      "The data on lead response time is brutal. Every hour you wait cuts your conversion rate in half. Here's the math on what that's actually costing you — and what automated follow-up looks like in practice.",
+      "Nobody builds an inefficient business on purpose. It happens one workaround at a time. Here's how to spot the manual processes silently taxing your margins — and what to do about them.",
     readTime: "5 min read",
-    date: "March 2026",
-    category: "Lead Operations",
+    date: "February 2026",
+    category: "Operations",
   },
   {
-    slug: "complete-marketing-infrastructure-for-home-builder",
-    title: "How I Built a Complete Marketing Infrastructure for a Home Builder in 6 Weeks",
+    slug: "why-off-the-shelf-software-doesnt-fit",
+    title: "Why Off-the-Shelf Software Never Quite Fits Your Business",
     excerpt:
-      "Website migration, AI content agents, CRM overhaul, cost estimation AI, automated lead flow. A full walkthrough of what was built, what it replaced, and how the owner runs it daily.",
-    readTime: "10 min read",
-    date: "March 2026",
-    category: "Case Study",
-  },
-  {
-    slug: "business-owners-guide-to-ai-2026",
-    title: "The Business Owner's Guide to AI in 2026: What's Real and What to Build First",
-    excerpt:
-      "Cutting through the noise. Where AI delivers actual ROI right now for small businesses — operational infrastructure, not shiny consumer tools. What to build first, what to skip.",
-    readTime: "9 min read",
-    date: "March 2026",
-    category: "AI & Automation",
-  },
-  {
-    slug: "why-your-marketing-agency-isnt-building-anything-you-own",
-    title: "Why Your $3K/Month Marketing Agency Isn't Building You Anything You Own",
-    excerpt:
-      "The retainer model means you never own anything. When you leave, you start over. There's an alternative: build the infrastructure once, own it forever, and run it yourself.",
+      "You sign up, watch the demo, get excited — then hit the one thing it can't do. Before you know it you're paying for four platforms and a VA to stitch them together. There's another way.",
     readTime: "6 min read",
-    date: "March 2026",
-    category: "Marketing Infrastructure",
+    date: "February 2026",
+    category: "Custom Tools",
   },
 ];
 
@@ -84,20 +39,20 @@ export default function ContentPage() {
   return (
     <div className="relative">
       {/* Hero */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
+      <section className="bg-[#0A1F44]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
               Insights for business owners.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Practical thinking about AI implementation, marketing infrastructure, and business automation — written for people who run businesses, not developers.
+            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
+              Practical thinking about AI, operations, and the tools that actually move the needle — written for people who run businesses, not developers.
             </p>
           </motion.div>
         </div>

@@ -294,8 +294,22 @@ export default function ArticleContent() {
     );
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    author: { "@type": "Person", name: "Connor Provines" },
+    publisher: { "@type": "Organization", name: "Provines Consulting" },
+    datePublished: article.date,
+    url: `https://provines.consulting/content/${slug}`,
+  };
+
   return (
     <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Header */}
       <section className="relative bg-[#0A1F44]">
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">

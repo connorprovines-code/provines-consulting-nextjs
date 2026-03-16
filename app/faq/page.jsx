@@ -1,5 +1,16 @@
 import FAQContent from "./PageContent";
 
+export const metadata = {
+  title: "FAQ",
+  description:
+    "Answers to common questions about marketing infrastructure, AI assistants, how engagements work, and what you own when the project is done.",
+  openGraph: {
+    title: "FAQ | Provines Consulting",
+    description:
+      "Common questions about AI marketing infrastructure, how projects work, and what you own.",
+  },
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

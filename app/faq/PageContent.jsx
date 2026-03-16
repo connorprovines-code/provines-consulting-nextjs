@@ -66,19 +66,19 @@ export default function FAQContent() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero */}
-      <section>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <section className="bg-[#0A1F44]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
               Common Questions
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
               Straight answers about how this works and what you get.
             </p>
           </motion.div>

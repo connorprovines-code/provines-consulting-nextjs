@@ -76,19 +76,19 @@ export default function HowItWorksContent() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-36 pb-16 md:pb-24">
+      <section className="bg-[#0A1F44]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
               From conversation to full ownership.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
+            <p className="text-lg text-slate-300 leading-relaxed max-w-2xl">
               No black boxes, no vague timelines, no surprises.
               Here&apos;s exactly how an engagement works from start to finish.
             </p>

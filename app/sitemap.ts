@@ -25,18 +25,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/work`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
       url: `${BASE_URL}/content`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
-{
+    {
+      url: `${BASE_URL}/content/what-ai-agents-actually-do-for-small-business`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/content/manual-operations-killing-your-margins`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/content/why-off-the-shelf-software-doesnt-fit`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/about`,
       lastModified: now,
       changeFrequency: "monthly",

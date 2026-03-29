@@ -13,3 +13,8 @@
 [2026-03-29T20:08:00.010Z] SPAWN_ERROR Access is denied. (os error 5)
 [2026-03-29T20:08:15.625Z] SPAWN model: haiku cwd: C:\Users\Administrator\projects\provines-consulting-nextjs
 [2026-03-29T20:08:15.724Z] SPAWN_ERROR Access is denied. (os error 5)
+[2026-03-29T20:29:25.412Z] SUBMIT hasChild: false processReady: false prompt: Test
+[2026-03-29T20:29:59.709Z] SUBMIT hasChild: false processReady: false prompt: 123
+[2026-03-29T21:48:22.880Z] SPAWN model: haiku cwd: C:\Users\Administrator\projects\provines-consulting-nextjs
+[2026-03-29T21:48:22.881Z] SPAWN_ATTEMPT claude args: --print --input-format stream-json --output-format stream-json --permission-mode bypassPermissions --model haiku --verbose
+[2026-03-29T21:48:22.950Z] SPAWNED claude pid: 314912

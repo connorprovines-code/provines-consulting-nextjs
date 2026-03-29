@@ -27,3 +27,6 @@
 [2026-03-29T22:01:30.748Z] SUBMIT hasChild: true processReady: true prompt: Test
 [2026-03-29T22:01:30.783Z] STREAM_SYSTEM {"type":"system","subtype":"init","cwd":"C:\\Users\\Administrator\\projects\\provines-consulting-nextjs","session_id":"5e71fe0b-2937-4986-862f-e4bd47c78e1a","tools":["Task","TaskOutput","Bash","Glob",
 [2026-03-29T22:01:33.411Z] STREAM_RESULT cost: 0.01470265 turns: 1
+[2026-03-29T22:16:11.976Z] SPAWN model: haiku cwd: C:\Users\Administrator\projects\provines-consulting-nextjs
+[2026-03-29T22:16:11.982Z] SPAWN_ATTEMPT claude args: --print --input-format stream-json --output-format stream-json --permission-mode bypassPermissions --model haiku --verbose
+[2026-03-29T22:16:12.163Z] SPAWNED claude pid: 49868

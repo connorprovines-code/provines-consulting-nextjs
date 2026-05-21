@@ -1,144 +1,142 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import {
-  Calendar,
-  ArrowRight,
-  Globe,
-  Zap,
-  TrendingUp,
-} from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+
+const SHOW_CLIENT_DETAILS = process.env.NEXT_PUBLIC_SHOW_CLIENT_DETAILS === "true";
+
+const caseStudies = [
+  {
+    slug: "custom-home-builder",
+    title: "Legacy Lock-In to Full Control",
+    subtitle: SHOW_CLIENT_DETAILS ? "Turner & Son Homes" : "Custom Home Builder",
+    location: "Oklahoma City, OK",
+    headline: "Years of overpaying for software nobody fully used. Fixed in under a month.",
+    tags: ["CRM Migration", "Website Rebuild", "AI Training", "Strategic Audit"],
+    image: "/ts-after.png",
+    ready: true,
+  },
+  {
+    slug: "residential-construction",
+    title: SHOW_CLIENT_DETAILS ? "Creekside Homes" : "Residential Construction Company",
+    subtitle: SHOW_CLIENT_DETAILS ? "Creekside Homes" : "Residential Construction",
+    location: "Oregon",
+    headline: "Wix site, no CRM, no pipeline. Now the owner runs the whole stack with AI.",
+    tags: ["Wix Migration", "CRM Setup", "Google Ads", "AI Training"],
+    image: "/creekside-after.png",
+    ready: false,
+  },
+];
 
 export default function WorkContent() {
-  const capabilities = [
-    {
-      icon: Globe,
-      title: "Complete Marketing Infrastructure",
-      description:
-        "Website rebuilt on Next.js. Claude-powered AI assistants handling content and leads. CRM integrated with automated follow-up. SEO running on autopilot. From a static website and manual everything to a system that runs your marketing.",
-      industries: "Home builders, service businesses, professional firms",
-    },
-    {
-      icon: Zap,
-      title: "AI Assistant Deployment",
-      description:
-        "AI voice receptionist handling calls 24/7. Leads routed to CRM automatically. Automated follow-up sequences. Review management. Website generating leads on its own.",
-      industries: "Service businesses with high call volume and lead flow",
-    },
-    {
-      icon: TrendingUp,
-      title: "Agency Replacement Build",
-      description:
-        "From paying an agency $3K/month for a website they controlled to owning everything. AI handles what the agency used to do. Content publishing, SEO, site updates — all in plain English.",
-      industries: "Owner-operators tired of agency dependency",
-    },
-  ];
-
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl"
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
-              Real projects. Real infrastructure.
-            </h1>
-
-            <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Every project ends the same way: the client owns everything and runs it themselves. No retainers. No dependency. Here's what that looks like.
-            </p>
-          </motion.div>
-        </div>
+      <section className="max-w-4xl mx-auto px-6 sm:px-8 pt-24 pb-8 md:pt-32 md:pb-12">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+          Case Studies
+        </h1>
+        <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
+          Every engagement ends the same way: the client owns everything and
+          knows how to run it. Here&apos;s what that looks like in practice.
+        </p>
       </section>
 
-      {/* What I Build */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-4">
-              What I typically build
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl">
-              Three patterns I see most. Most projects combine elements of all three.
-            </p>
-          </motion.div>
+      {/* Case Study Cards */}
+      <section className="max-w-4xl mx-auto px-6 sm:px-8 py-12 md:py-16">
+        <div className="space-y-8">
+          {caseStudies.map((study) => {
+            const content = (
+              <>
+                {/* Image */}
+                <div className="aspect-[2.4/1] overflow-hidden bg-slate-100">
+                  <img
+                    src={study.image}
+                    alt={study.title}
+                    className={`w-full h-full object-cover object-top ${study.ready ? "group-hover:scale-[1.02]" : ""} transition-transform duration-500`}
+                  />
+                </div>
 
-          <div className="space-y-6 max-w-4xl">
-            {capabilities.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="flex gap-6 items-start p-6 md:p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-lg transition-shadow"
-              >
-                <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: ['color-mix(in srgb, var(--electric-blue) 12%, transparent)', 'color-mix(in srgb, var(--mint) 12%, transparent)', 'color-mix(in srgb, var(--navy) 10%, transparent)'][index] }}
+                {/* Content */}
+                <div className="p-6 md:p-8">
+                  <h2 className="text-xl md:text-2xl font-bold text-[var(--navy)] mb-2 leading-snug">
+                    {study.title}
+                  </h2>
+                  <div className="flex items-center gap-2 mb-4">
+                    <p className="text-sm font-medium text-slate-500">
+                      {study.subtitle}
+                    </p>
+                    <span className="text-slate-300">&middot;</span>
+                    <p className="text-sm text-slate-400">{study.location}</p>
+                  </div>
+                  <p className="text-base text-slate-600 mb-4 leading-relaxed">
+                    {study.headline}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {study.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {study.ready ? (
+                    <span className="inline-flex items-center text-sm font-semibold text-[var(--electric-blue)] group-hover:gap-2 transition-all">
+                      Read the case study
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </span>
+                  ) : (
+                    <span className="inline-flex items-center text-sm font-medium text-slate-400">
+                      Full case study coming soon
+                    </span>
+                  )}
+                </div>
+              </>
+            );
+
+            if (study.ready) {
+              return (
+                <Link
+                  key={study.slug}
+                  href={`/work/${study.slug}`}
+                  className="group block border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300"
                 >
-                  <item.icon className="w-6 h-6" style={{ color: ['var(--electric-blue)', 'var(--mint)', 'var(--navy)'][index] }} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-[var(--navy)] mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed mb-3">
-                    {item.description}
-                  </p>
-                  <p className="text-xs text-slate-400 uppercase tracking-wider font-medium">
-                    {item.industries}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+                  {content}
+                </Link>
+              );
+            }
+
+            return (
+              <div
+                key={study.slug}
+                className="block border border-slate-200 rounded-xl overflow-hidden"
+              >
+                {content}
+              </div>
+            );
+          })}
         </div>
       </section>
 
-      {/* CTA — clean, no heavy gradient */}
-      <section className="border-t border-slate-100 py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* CTA */}
+      <section className="border-t border-slate-200 py-20 md:py-24">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
             Want to see what this looks like for your business?
           </h2>
-          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-            I'll walk you through live systems on a call. No pitch deck. Just a conversation.
+          <p className="text-xl text-slate-600 mb-10 leading-relaxed">
+            30 minutes. I&apos;ll walk you through the live systems. No pitch deck.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/schedule">
-              <Button
-                size="lg"
-                className="bg-[var(--navy)] hover:bg-[var(--navy)]/90 text-white text-lg h-14 px-8 w-full sm:w-auto font-semibold"
-              >
-                <Calendar className="w-5 h-5 mr-2" />
-                Book a Call
-              </Button>
-            </Link>
-            <Link href="/services">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-[var(--navy)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white text-lg h-14 px-8 w-full sm:w-auto"
-              >
-                View Services
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
-          </div>
+          <Link
+            href="/schedule"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[var(--navy)] text-white font-semibold text-lg rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Book a discovery call
+          </Link>
         </div>
       </section>
     </div>

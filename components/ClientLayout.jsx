@@ -28,11 +28,8 @@ export default function ClientLayout({ children }) {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
+    { name: "Work", path: "/work" },
     { name: "How It Works", path: "/how-it-works" },
-    { name: "Insights", path: "/content" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -144,7 +141,7 @@ export default function ClientLayout({ children }) {
             <div>
               <h3 className="text-2xl font-bold mb-4">Provines Consulting</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                12+ years of B2B SaaS marketing leadership, now applied to building marketing infrastructure for business owners. I don&apos;t just build the systems. I understand why they work.
+                Website migrations, marketing automation, and strategic advisory for small businesses. 12 years of B2B SaaS experience. I build it, we run it together, then it&apos;s yours.
               </p>
             </div>
 
@@ -153,12 +150,9 @@ export default function ClientLayout({ children }) {
               <div className="space-y-2">
                 {[
                   { name: "Home", path: "/" },
-                  { name: "Services", path: "/services" },
+                  { name: "Work", path: "/work" },
                   { name: "How It Works", path: "/how-it-works" },
-                  { name: "Insights", path: "/content" },
-                  { name: "About", path: "/about" },
-                  { name: "Contact", path: "/contact" },
-                  { name: "FAQ", path: "/faq" },
+                  { name: "Schedule", path: "/schedule" },
                 ].map((link) => (
                   <Link
                     key={link.path}
@@ -174,21 +168,14 @@ export default function ClientLayout({ children }) {
             <div>
               <h4 className="font-semibold mb-4">Get Started</h4>
               <p className="text-slate-300 text-sm mb-4">
-                Let's talk about what to automate first.
+                Let&apos;s figure out what you need.
               </p>
               <div className="flex flex-col gap-3">
                 <Link href="/schedule">
                   <Button
                     className="w-full bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)] font-semibold"
                   >
-                    Book a Call
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button
-                    className="w-full bg-[var(--electric-blue)] hover:bg-[var(--electric-blue)]/90 text-white font-semibold"
-                  >
-                    Send a Message
+                    Book a Discovery Call
                   </Button>
                 </Link>
               </div>

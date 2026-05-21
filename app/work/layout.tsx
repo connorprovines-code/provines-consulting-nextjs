@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Work | Marketing Infrastructure Projects',
-  description: 'Real projects: website rebuilds, AI assistant deployments, CRM automation, and complete marketing infrastructure builds for business owners.',
-  keywords: ['AI marketing projects', 'website rebuild case studies', 'AI assistant deployment', 'CRM automation projects', 'marketing infrastructure examples', 'AI for home builders', 'AI for contractors'],
+  title: 'Case Studies',
+  description: 'Real engagements: website rebuilds, AI-powered team enablement, CRM migrations, and full marketing infrastructure ownership. Every client owns everything when we are done.',
+  keywords: ['AI marketing case studies', 'website rebuild case studies', 'AI team enablement', 'CRM migration', 'marketing infrastructure', 'legacy software migration'],
   openGraph: {
-    title: 'Work | Marketing Infrastructure Projects',
-    description: 'Real projects: website rebuilds, AI assistant deployments, CRM automation, and complete marketing infrastructure builds.',
+    title: 'Case Studies | Provines Consulting',
+    description: 'Real engagements: website rebuilds, AI-powered team enablement, CRM migrations, and full marketing infrastructure ownership.',
     type: 'website',
   },
 };

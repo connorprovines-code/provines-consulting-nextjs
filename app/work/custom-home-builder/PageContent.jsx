@@ -81,8 +81,8 @@ export default function CaseStudyContent() {
           <div className="space-y-5">
             <p className="text-slate-600 leading-relaxed">
               This is a well-established custom home builder in Oklahoma City that&apos;s been operating
-              since the 1960s. They have a 9-person team, strong local brand recognition, and they rank
-              #1 for most of their core search terms. From the outside, things looked fine.
+              since the 1960s. They have a 9-person team and strong local brand recognition. From the
+              outside, things looked fine.
             </p>
             <p className="text-slate-600 leading-relaxed">
               The website was the most visible problem. It was hosted inside their CRM&apos;s proprietary
@@ -99,14 +99,6 @@ export default function CaseStudyContent() {
               majority of features went completely unused. A second business under the same umbrella had
               its own separate CRM instance with the same problem. Combined, they were spending over 90%
               more than they needed to on platforms that didn&apos;t fit the size or shape of their operation.
-            </p>
-            <p className="text-slate-600 leading-relaxed">
-              There was also a deeper issue that nobody had connected yet. Despite ranking #1 for their
-              most important terms, their click-through rates were sitting below 5%. They had dominant
-              visibility in search results but almost no one was actually clicking through. The root
-              causes traced back to gaps in their review presence, their reach across local platforms,
-              and a handful of business-level issues that had gone unexamined because the focus had
-              always been on rankings rather than what happens after someone sees you.
             </p>
           </div>
         </section>
@@ -214,30 +206,6 @@ export default function CaseStudyContent() {
             </div>
           </div>
 
-          {/* The Audit */}
-          <div className="mb-12">
-            <h3 className="text-xl font-bold text-[var(--navy)] mb-4">
-              Strategic Audit
-            </h3>
-            <div className="space-y-5">
-              <p className="text-slate-600 leading-relaxed">
-                During the course of the engagement, we went deeper than the original scope called for.
-                The click-through rate problem was one piece of it; despite owning the #1 position for
-                their most valuable search terms, almost nobody was clicking through to the site. We
-                traced that back to several factors: gaps in their review presence across platforms,
-                limited visibility on local directories that actually drive clicks in their market, and
-                a few business-level issues that were quietly undermining the trust signals that search
-                users rely on when deciding who to click.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                We documented everything we found, prioritized what to address first, and delivered a
-                roadmap they could act on. This wasn&apos;t billed as a separate engagement or positioned
-                as an upsell. It was part of getting the full picture right, because fixing the technology
-                without addressing the business-level problems underneath it would have left real value
-                on the table.
-              </p>
-            </div>
-          </div>
         </section>
 
         {/* The Outcome */}
@@ -266,10 +234,6 @@ export default function CaseStudyContent() {
                   <td className="py-4 pr-6">Oversized CRM platforms across two businesses; over 90% of features unused</td>
                   <td className="py-4">Right-sized platforms at over 90% less annual cost</td>
                 </tr>
-                <tr className="border-b border-slate-100">
-                  <td className="py-4 pr-6">#1 search rankings but sub-5% click-through; visibility without conversion</td>
-                  <td className="py-4">Root causes identified, prioritized, and roadmapped for action</td>
-                </tr>
                 <tr>
                   <td className="py-4 pr-6">Total dependency on outside vendors for digital presence</td>
                   <td className="py-4">Full ownership of website, CRM, AI tools, and marketing infrastructure</td>
@@ -288,9 +252,9 @@ export default function CaseStudyContent() {
         <section className="mb-16">
           <div className="space-y-5">
             <p className="text-slate-600 leading-relaxed">
-              If this had gone through a traditional agency, it would have been scoped as four separate
-              projects: a website redesign, an AI enablement package, a CRM migration, and a strategic
-              audit. Each with its own timeline, its own invoice, and its own account manager. And at
+              If this had gone through a traditional agency, it would have been scoped as three separate
+              projects: a website redesign, an AI enablement package, and a CRM migration. Each with
+              its own timeline, its own invoice, and its own account manager. And at
               the end of all of it, the team would still be calling someone else every time they needed
               a change made.
             </p>

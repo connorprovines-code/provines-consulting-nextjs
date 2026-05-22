@@ -12,7 +12,7 @@ const caseStudies = [
     subtitle: SHOW_CLIENT_DETAILS ? "Turner & Son Homes" : "Custom Home Builder",
     location: "Oklahoma City, OK",
     headline: "Years of overpaying for software nobody fully used. Fixed in under a month.",
-    tags: ["CRM Migration", "Website Rebuild", "AI Training", "Strategic Audit"],
+    tags: ["Website Rebuild", "AI Enablement", "CRM Migration", "Team Training"],
     image: "/ts-after.png",
     ready: true,
   },

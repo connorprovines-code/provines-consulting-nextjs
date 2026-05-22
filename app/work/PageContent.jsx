@@ -16,6 +16,16 @@ const caseStudies = [
     image: "/ts-after.png",
     ready: true,
   },
+  {
+    slug: "residential-construction",
+    title: "The Bottleneck Was Never the Owner",
+    subtitle: SHOW_CLIENT_DETAILS ? "Creekside Homes" : "Custom Home Builder",
+    location: "Oregon",
+    headline: "He had the vision and the creative instincts. The tools just couldn't keep up.",
+    tags: ["Wix Migration", "AI Content Engine", "CRM Overhaul", "Marketing Automation"],
+    image: "/creekside-after.png",
+    ready: true,
+  },
 ];
 
 export default function WorkContent() {

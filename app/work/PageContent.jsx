@@ -16,16 +16,6 @@ const caseStudies = [
     image: "/ts-after.png",
     ready: true,
   },
-  {
-    slug: "residential-construction",
-    title: SHOW_CLIENT_DETAILS ? "Creekside Homes" : "Residential Construction Company",
-    subtitle: SHOW_CLIENT_DETAILS ? "Creekside Homes" : "Residential Construction",
-    location: "Oregon",
-    headline: "Wix site, no CRM, no pipeline. Now the owner runs the whole stack with AI.",
-    tags: ["Wix Migration", "CRM Setup", "Google Ads", "AI Training"],
-    image: "/creekside-after.png",
-    ready: false,
-  },
 ];
 
 export default function WorkContent() {

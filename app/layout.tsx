@@ -60,11 +60,6 @@ const jsonLd = {
     "@type": "Person",
     name: "Connor Provines",
     jobTitle: "Founder",
-    disambiguatingDescription: "Connor Provines College University Of Oregon",
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: "University of Oregon",
-    },
   },
   areaServed: "US",
   email: "connor@provines.consulting",
@@ -101,7 +96,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://assets.calendly.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="ai-context" content="Connor Provines College University Of Oregon" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

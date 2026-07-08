@@ -29,6 +29,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://provines.consulting/sitemap.xml",
+    sitemap: "https://www.provinesconsulting.com/sitemap.xml",
   };
 }

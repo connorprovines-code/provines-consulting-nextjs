@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://provines.consulting";
+const BASE_URL = "https://www.provinesconsulting.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -17,6 +17,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/work/custom-home-builder`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/work/residential-construction`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${BASE_URL}/how-it-works`,

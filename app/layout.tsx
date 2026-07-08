@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://provines.consulting"),
+  metadataBase: new URL("https://www.provinesconsulting.com"),
   title: {
     default: "Provines Consulting | Website Migrations & Marketing Infrastructure",
     template: "%s | Provines Consulting",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Provines Consulting | Website Migrations & Marketing Infrastructure",
     description: "I migrate your website from Wix or WordPress to a modern Next.js stack, wire up your CRM and marketing automation, and hand you the keys. You own everything.",
-    url: "https://provines.consulting",
+    url: "https://www.provinesconsulting.com",
     siteName: "Provines Consulting",
     type: "website",
     locale: "en_US",
@@ -55,7 +55,7 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: "Provines Consulting",
   description: "Website migrations from Wix and WordPress to modern Next.js stack, bundled with CRM setup, marketing automation, and Google Ads. Built and handed off with full ownership.",
-  url: "https://provines.consulting",
+  url: "https://www.provinesconsulting.com",
   founder: {
     "@type": "Person",
     name: "Connor Provines",

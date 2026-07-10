@@ -135,7 +135,7 @@ export default function WorkContent() {
             href="/schedule"
             className="inline-flex items-center justify-center px-10 py-4 bg-[var(--navy)] text-white font-semibold text-lg rounded-lg hover:opacity-90 transition-opacity"
           >
-            Book a discovery call
+            Book a growth audit
           </Link>
         </div>
       </section>

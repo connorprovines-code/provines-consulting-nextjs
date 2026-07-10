@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Schedule a Discovery Call',
-  description: 'Book a free 30-minute call. We\'ll figure out what your marketing infrastructure should look like and what to build first.',
-  keywords: ['schedule consultation', 'book a call', 'discovery call', 'marketing infrastructure consultation', 'AI assistant consultation'],
+  title: 'Book a Growth Audit',
+  description: 'Book a 30-minute call to kick off the audit. We\'ll walk through your site, CRM, and ad accounts and map what to build first.',
+  keywords: ['schedule consultation', 'book a call', 'growth audit', 'marketing infrastructure consultation', 'AI marketing operator'],
   openGraph: {
-    title: 'Schedule a Discovery Call',
-    description: 'Book a free 30-minute call about your marketing infrastructure.',
+    title: 'Book a Growth Audit',
+    description: 'Book a 30-minute call to kick off the audit of your marketing stack.',
     type: 'website',
   },
 };

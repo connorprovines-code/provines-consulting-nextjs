@@ -16,16 +16,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.provinesconsulting.com"),
   title: {
-    default: "Provines Consulting | Website Migrations & Marketing Infrastructure",
+    default: "Provines Consulting | The Owner-Operated Growth Stack",
     template: "%s | Provines Consulting",
   },
-  description: "I migrate your website from Wix or WordPress to a modern Next.js stack, wire up your CRM and marketing automation, and hand you the keys. You own everything.",
-  keywords: ["website migration from Wix", "Wix to Next.js migration", "WordPress to React migration", "modern website rebuild", "CRM setup for small business", "marketing automation", "Google Ads management", "website migration consultant", "Next.js website for small business", "marketing infrastructure"],
+  description: "I replace your marketing agency with a growth stack you own: modern website, connected CRM, and live ad campaigns, run day-to-day by an AI operator you direct in plain English. Built, handed over, yours.",
+  keywords: ["marketing agency alternative", "replace marketing agency", "AI marketing operator", "owner-operated growth stack", "website migration from Wix", "Wix to Next.js migration", "WordPress to React migration", "modern website rebuild", "CRM setup for small business", "marketing automation", "Google Ads management", "website migration consultant", "Next.js website for small business", "marketing infrastructure"],
   authors: [{ name: "Connor Provines" }],
   creator: "Connor Provines",
   openGraph: {
-    title: "Provines Consulting | Website Migrations & Marketing Infrastructure",
-    description: "I migrate your website from Wix or WordPress to a modern Next.js stack, wire up your CRM and marketing automation, and hand you the keys. You own everything.",
+    title: "Provines Consulting | The Owner-Operated Growth Stack",
+    description: "I replace your marketing agency with a growth stack you own: modern website, connected CRM, and live ad campaigns, run day-to-day by an AI operator you direct in plain English. Built, handed over, yours.",
     url: "https://www.provinesconsulting.com",
     siteName: "Provines Consulting",
     type: "website",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Provines Consulting | Website Migrations & Marketing Infrastructure",
-    description: "Website migrations from Wix/WordPress to modern stack. CRM, marketing automation, Google Ads. Built and handed off — you own everything.",
+    title: "Provines Consulting | The Owner-Operated Growth Stack",
+    description: "Replace your marketing agency with a stack you own: website, CRM, and ads, run by an AI operator you direct. Built and handed over — you own everything.",
   },
   robots: {
     index: true,
@@ -54,7 +54,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Provines Consulting",
-  description: "Website migrations from Wix and WordPress to modern Next.js stack, bundled with CRM setup, marketing automation, and Google Ads. Built and handed off with full ownership.",
+  description: "Replaces your marketing agency with infrastructure you own: modern website, connected CRM, and ad campaigns, operated day-to-day by a dedicated AI. Built and handed over with full ownership.",
   url: "https://www.provinesconsulting.com",
   founder: {
     "@type": "Person",
@@ -64,6 +64,8 @@ const jsonLd = {
   areaServed: "US",
   email: "connor@provines.consulting",
   serviceType: [
+    "Marketing Agency Replacement",
+    "AI Marketing Operator Setup",
     "Website Migration",
     "Wix to Next.js Migration",
     "WordPress to React Migration",

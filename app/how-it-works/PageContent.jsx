@@ -20,7 +20,7 @@ export default function HowItWorksContent() {
           <div>
             <div className="flex items-baseline gap-4 mb-4">
               <span className="text-sm font-semibold text-[var(--electric-blue)] uppercase tracking-wide">01</span>
-              <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)]">Discovery</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)]">Growth Audit</h2>
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               This is where 12 years of marketing ops shows up. I&apos;m not just asking
@@ -31,7 +31,7 @@ export default function HowItWorksContent() {
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Map where leads come from and where they drop off</span></li>
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Audit your current website, CRM, and marketing tools</span></li>
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Identify what a marketing team would be doing for you</span></li>
-              <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>This call is free. Zero obligation.</span></li>
+              <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>You get the findings in writing. They&apos;re yours either way.</span></li>
             </ul>
           </div>
 
@@ -60,7 +60,7 @@ export default function HowItWorksContent() {
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               Everything gets built, tested, and deployed in your environment.
-              Site migration, CRM setup, automation pipelines, AI integrations &mdash;
+              Site migration, CRM setup, automation pipelines, the AI operator &mdash;
               nothing launches until you&apos;ve seen it working. Regular check-ins
               throughout so there are no surprises.
             </p>
@@ -78,9 +78,10 @@ export default function HowItWorksContent() {
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               This is the part most people skip. I don&apos;t just build it and disappear.
-              I work alongside you 1:1 &mdash; making sure everything runs, training you on
-              every system, flagging what needs attention in your marketing. When you&apos;re
-              comfortable, I step back. The goal is to make myself unnecessary.
+              I work alongside you 1:1 &mdash; making sure everything runs, training you to
+              direct the operator and every system underneath it, flagging what needs attention
+              in your marketing. When you&apos;re comfortable, I step back. Stay independent
+              or keep me on light-touch &mdash; month to month, nothing locked in.
             </p>
             <ul className="space-y-2 text-slate-600">
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Hands-on training for you and your team</span></li>
@@ -109,9 +110,9 @@ export default function HowItWorksContent() {
               <ul className="space-y-4 text-slate-600">
                 <li>Modern website on infrastructure you own</li>
                 <li>Configured CRM with automated lead pipeline</li>
-                <li>AI-editable site &mdash; update content in plain English</li>
+                <li>A dedicated AI operator that runs the day-to-day &mdash; you direct it in plain English</li>
                 <li>Full documentation and SOPs for every system</li>
-                <li>Complete ownership &mdash; code, data, infrastructure</li>
+                <li>Complete ownership &mdash; code, data, accounts, infrastructure</li>
               </ul>
             </div>
           </div>
@@ -121,17 +122,17 @@ export default function HowItWorksContent() {
       <section className="py-24">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
-            The first step is a conversation.
+            The first step is the growth audit.
           </h2>
           <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl mx-auto">
-            No obligation, no pitch. Just a look at what you&apos;re working with and
-            where the biggest opportunities are.
+            I go through what you&apos;re working with, quantify where the leaks are,
+            and hand you the findings in writing.
           </p>
           <Link
             href="/schedule"
             className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg rounded-lg hover:opacity-90 transition-opacity"
           >
-            Book a discovery call
+            Book a growth audit
           </Link>
         </div>
       </section>

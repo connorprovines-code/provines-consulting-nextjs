@@ -18,9 +18,9 @@ export default function HomeContent() {
                 Start owning it.
               </h1>
               <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-4 max-w-lg">
-                I implement AI-powered marketing programs that your team actually runs. Strategy,
-                automation, website, CRM, ads, content; all connected, all yours. I build it,
-                train your people on it, and get out of the way.
+                I replace your marketing agency with a system you own — website, CRM, and ads,
+                all connected — run day-to-day by an AI operator you direct in plain English.
+                I build it, hand you the keys, and get out of the way.
               </p>
               <p className="text-sm text-slate-500 mb-10 max-w-md">
                 12 years of B2B SaaS marketing. Now applied to business owners
@@ -31,7 +31,7 @@ export default function HomeContent() {
                   href="/schedule"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-[var(--navy)] font-semibold text-lg hover:bg-slate-100 transition-colors"
                 >
-                  Book a discovery call
+                  Book a growth audit
                 </Link>
                 <Link
                   href="/work"
@@ -46,10 +46,10 @@ export default function HomeContent() {
             {/* Right side — what this looks like in practice */}
             <div className="hidden md:block self-center">
               <div className="space-y-6 text-slate-400 text-sm leading-relaxed border-l border-white/10 pl-6">
-                <p>Audit your marketing stack and figure out what&apos;s actually working versus what you&apos;re overpaying for.</p>
-                <p>Build an AI-powered marketing program your team runs internally; website, ads, CRM, content, automation, all connected.</p>
-                <p>Train your people on the tools so they&apos;re self-sufficient. No ongoing dependency, no retainer.</p>
-                <p>Consulting, implementation, and go-to-market strategy. Whatever the business needs to move.</p>
+                <p>Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p>
+                <p>Then I build the full stack in your environment — website, CRM, ads, content, automation — every account and asset in your name.</p>
+                <p>An AI operator, trained on your business, does the daily labor: content, follow-up, campaign adjustments, reporting. You direct it in plain English.</p>
+                <p>I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch — month to month, nothing locked in.</p>
               </div>
             </div>
           </div>
@@ -172,26 +172,28 @@ export default function HomeContent() {
       <section className="py-20 md:py-28">
         <div className="max-w-2xl mx-auto px-6 sm:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] leading-tight mb-12">
-            I build it. We run it together. Then it&apos;s yours.
+            I build it. An AI operator runs it. You own all of it.
           </h2>
           <div className="space-y-6 text-slate-600 leading-relaxed">
             <p>
               The first thing I do is scope what you actually need versus what you&apos;re paying for.
-              Most businesses I work with are spending money on platforms that are way too big for
-              their team, or they&apos;re spread across tools that don&apos;t talk to each other.
+              Most owners I talk to are either paying an agency they can&apos;t see into — the
+              accounts, the data, and the know-how all live on someone else&apos;s side of the
+              fence — or they&apos;re spread across tools that don&apos;t talk to each other.
               I look at the whole picture and build a plan around what matters.
             </p>
             <p>
               Then I build the systems in your environment. Your website moves to a modern stack.
               Your CRM gets right-sized. Your ads, email, and content tools get wired together.
-              I set up an AI-powered environment so your team can manage the site and create content
-              without needing a developer.
+              And I stand up the operator: a dedicated AI, trained on your business, that manages
+              the site, writes content, follows up with leads, and keeps the CRM clean — no
+              developer required.
             </p>
             <p>
-              We work together 1:1 until you&apos;re comfortable running everything. I train you
-              on the tools, flag what needs attention, and make sure nothing falls through the cracks
+              We work together 1:1 until you&apos;re comfortable directing it. I train you on the
+              system, flag what needs attention, and make sure nothing falls through the cracks
               during the transition. When you don&apos;t need me anymore, I step back. You own
-              everything: the code, the data, the infrastructure.
+              everything: the code, the data, the accounts, the machine it all runs on.
             </p>
           </div>
           <div className="mt-10">
@@ -217,8 +219,9 @@ export default function HomeContent() {
                 Let&apos;s figure out what you need.
               </h2>
               <p className="text-lg text-slate-500 max-w-md">
-                30 minutes. No pitch deck. We look at what you&apos;ve got and talk about
-                what you&apos;ll own when we&apos;re done.
+                The first step is a growth audit. I go through your site, your CRM, and your
+                ad spend, show you where leads are leaking, and map what you&apos;ll own
+                when we&apos;re done.
               </p>
             </div>
             <div className="md:text-right">
@@ -226,7 +229,7 @@ export default function HomeContent() {
                 href="/schedule"
                 className="inline-flex items-center justify-center px-10 py-5 bg-[var(--navy)] text-white font-semibold text-lg hover:opacity-90 transition-opacity"
               >
-                Book a discovery call
+                Book a growth audit
               </Link>
             </div>
           </div>

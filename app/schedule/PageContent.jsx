@@ -54,11 +54,11 @@ export default function ScheduleContent() {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              Book a discovery call
+              Book a growth audit
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed max-w-xl mx-auto">
-              30 minutes. No pitch. We figure out what your marketing infrastructure should look like and what to build first.
+              30 minutes to kick it off. We walk through your site, your CRM, and your ad accounts, and map what to build first.
             </p>
           </motion.div>
         </div>

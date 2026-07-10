@@ -141,7 +141,7 @@ export default function ClientLayout({ children }) {
             <div>
               <h3 className="text-2xl font-bold mb-4">Provines Consulting</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Website migrations, marketing automation, and strategic advisory for small businesses. 12 years of B2B SaaS experience. I build it, we run it together, then it&apos;s yours.
+                Website, CRM, and ads you own, run by an AI operator you direct. 12 years of B2B SaaS experience. I build it, hand you the keys, and get out of the way.
               </p>
             </div>
 
@@ -175,7 +175,7 @@ export default function ClientLayout({ children }) {
                   <Button
                     className="w-full bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)] font-semibold"
                   >
-                    Book a Discovery Call
+                    Book a Growth Audit
                   </Button>
                 </Link>
               </div>

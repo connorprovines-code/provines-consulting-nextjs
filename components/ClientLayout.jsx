@@ -171,6 +171,7 @@ export default function ClientLayout({ children }) {
                 Let&apos;s figure out what you need.
               </p>
               <div className="flex flex-col gap-3">
+                <Link href="/growth-audit" className="text-slate-300 hover:text-[var(--mint)] transition-colors text-sm">What&apos;s a growth audit?</Link>
                 <Link href="/schedule">
                   <Button
                     className="w-full bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)] font-semibold"

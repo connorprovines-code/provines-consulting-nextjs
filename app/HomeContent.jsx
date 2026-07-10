@@ -119,8 +119,7 @@ export default function HomeContent() {
               <p className="text-slate-400 text-sm mb-6">Custom Home Builder, Oklahoma City</p>
               <p className="text-slate-300 leading-relaxed mb-6">
                 A 9-person home builder paying over 90% more than they needed to in software costs, with a
-                website trapped in a CMS nobody could edit. We migrated the CRM, rebuilt the site, deployed
-                put an AI operator on site and content management, and trained the team. Under four weeks, start to finish.
+                website trapped in a CMS nobody could edit. We migrated the CRM and the site, put an AI operator on site and content management, and trained the team. Under four weeks, start to finish.
               </p>
               <Link
                 href="/work/custom-home-builder"
@@ -219,7 +218,7 @@ export default function HomeContent() {
                 Let&apos;s figure out what you need.
               </h2>
               <p className="text-lg text-slate-500 max-w-md">
-                The first step is a growth audit. I go through your site, your CRM, and your
+                The first step is a <Link href="/growth-audit" className="text-[var(--electric-blue)] hover:underline">growth audit</Link>. I go through your site, your CRM, and your
                 ad spend, show you where leads are leaking, and map what you&apos;ll own
                 when we&apos;re done.
               </p>

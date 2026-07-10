@@ -20,7 +20,7 @@ export default function HowItWorksContent() {
           <div>
             <div className="flex items-baseline gap-4 mb-4">
               <span className="text-sm font-semibold text-[var(--electric-blue)] uppercase tracking-wide">01</span>
-              <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)]">Growth Audit</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-[var(--navy)]"><Link href="/growth-audit" className="hover:text-[var(--electric-blue)] transition-colors">Growth Audit</Link></h2>
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               This is where 12 years of marketing ops shows up. I&apos;m not just asking

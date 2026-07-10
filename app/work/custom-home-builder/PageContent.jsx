@@ -40,7 +40,7 @@ export default function CaseStudyContent() {
           couldn&apos;t meaningfully control. Their website was trapped in a proprietary CMS, their
           software costs were wildly oversized for the team, and nobody on staff could make a change
           without outside help. In under four weeks we rebuilt the site on a modern stack, deployed an
-          AI-powered environment the team manages themselves, migrated their CRM, and handed them
+          AI environment the team manages themselves, migrated their CRM, and handed them
           full ownership of everything.
         </p>
       </header>
@@ -129,7 +129,7 @@ export default function CaseStudyContent() {
                 the same, so there was no disruption to their search rankings or existing traffic. The
                 result is a site that actually looks like the company it represents, loads faster, works
                 properly on mobile, and is structured for both search engines and the way people actually
-                discover businesses now through AI-powered search tools.
+                discover businesses now through AI search tools.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 The site rebuild was delivered in under two weeks. This was an aggressive timeline,
@@ -142,13 +142,13 @@ export default function CaseStudyContent() {
           {/* AI Enablement */}
           <div className="mb-12">
             <h3 className="text-xl font-bold text-[var(--navy)] mb-4">
-              AI-Powered Management Environment
+              AI Management Environment
             </h3>
             <div className="space-y-5">
               <p className="text-slate-600 leading-relaxed">
                 Rebuilding the site only solves half the problem if the team still can&apos;t manage it
                 without calling someone. The whole point of this engagement was to make them self-sufficient,
-                so we built an AI-powered environment that gives the team direct control over their own
+                so we built an AI environment that gives the team direct control over their own
                 platform.
               </p>
               <p className="text-slate-600 leading-relaxed">
@@ -228,7 +228,7 @@ export default function CaseStudyContent() {
                 </tr>
                 <tr className="border-b border-slate-100">
                   <td className="py-4 pr-6">No one on the team could make site changes without a developer or agency</td>
-                  <td className="py-4">AI-powered environment where any team member updates the site in plain language</td>
+                  <td className="py-4">AI environment where any team member updates the site in plain language</td>
                 </tr>
                 <tr className="border-b border-slate-100">
                   <td className="py-4 pr-6">Oversized CRM platforms across two businesses; over 90% of features unused</td>

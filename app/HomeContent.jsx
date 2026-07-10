@@ -120,7 +120,7 @@ export default function HomeContent() {
               <p className="text-slate-300 leading-relaxed mb-6">
                 A 9-person home builder paying over 90% more than they needed to in software costs, with a
                 website trapped in a CMS nobody could edit. We migrated the CRM, rebuilt the site, deployed
-                AI-powered management tools, and trained the team. Under four weeks, start to finish.
+                put an AI operator on site and content management, and trained the team. Under four weeks, start to finish.
               </p>
               <Link
                 href="/work/custom-home-builder"

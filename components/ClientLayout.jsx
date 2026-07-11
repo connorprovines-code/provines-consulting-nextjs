@@ -33,27 +33,29 @@ export default function ClientLayout({ children }) {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bp-ground">
       <style>{`
         :root {
-          --navy: #0A1F44;
-          --electric-blue: #0091FF;
-          --mint: #00D9A3;
-          --charcoal: #1A1A1A;
+          --navy: #0F172A;
+          --electric-blue: #0369A1;
+          --mint: #7CBFE9;
+          --charcoal: #334155;
           --off-white: #F8FAFC;
+          --line: #CBD5E1;
         }
       `}</style>
 
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-transparent"
+        isScrolled ? "bg-[var(--off-white)]/95 backdrop-blur-md border-b border-[var(--line)]" : "bg-transparent"
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link
               href="/"
-              className="text-2xl font-bold text-[var(--navy)] tracking-tight"
+              className="flex items-center gap-2.5 text-2xl font-bold text-[var(--navy)] tracking-tight"
             >
+              <span className="inline-flex w-7 h-7 bg-[var(--navy)] text-white items-center justify-center text-base font-bold" aria-hidden="true">P</span>
               Provines Consulting
             </Link>
 
@@ -129,9 +131,11 @@ export default function ClientLayout({ children }) {
         )}
       </nav>
 
-      {/* Main Content */}
+      {/* Main Content — framed sheet on the drafting-grid ground */}
       <main className="pt-20">
-        {children}
+        <div className="mx-auto max-w-[1200px] bg-white border-x border-[var(--line)] border-t-[3px] border-t-[var(--navy)]">
+          {children}
+        </div>
       </main>
 
       {/* Footer */}

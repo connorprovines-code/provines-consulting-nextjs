@@ -165,3 +165,17 @@ button:focus-visible {
 .calendly-inline-widget iframe {
   min-height: 700px !important;
 }
+
+/* Blueprint ground — drafting-grid page background behind the framed sheet */
+.bp-ground {
+  background-color: #F1F5F9;
+  background-image:
+    linear-gradient(#E2E8F0 1px, transparent 1px),
+    linear-gradient(90deg, #E2E8F0 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+::selection {
+  background: #0369A1;
+  color: #fff;
+}

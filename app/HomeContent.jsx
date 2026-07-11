@@ -15,7 +15,7 @@ export default function HomeContent() {
             <div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.06] tracking-tight mb-6">
                 Stop renting your marketing.<br />
-                Start owning it.
+                Start <span className="border-b-4 border-[var(--electric-blue)]">owning</span> it.
               </h1>
               <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-4 max-w-lg">
                 I replace your marketing agency with a system you own — website, CRM, and ads,

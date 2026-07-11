@@ -11,7 +11,7 @@ export default function ScheduleContent() {
       if (window.Calendly && widgetRef.current) {
         widgetRef.current.innerHTML = "";
         window.Calendly.initInlineWidget({
-          url: "https://calendly.com/connorprovines/30min?hide_gdpr_banner=1&background_color=ffffff&text_color=0A1F44&primary_color=0091FF",
+          url: "https://calendly.com/connorprovines/30min?hide_gdpr_banner=1&background_color=ffffff&text_color=0F172A&primary_color=0369A1",
           parentElement: widgetRef.current,
         });
       }
@@ -45,7 +45,7 @@ export default function ScheduleContent() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero - compact, no jarring gradient */}
-      <section className="bg-[#0A1F44]">
+      <section className="bg-[var(--navy)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

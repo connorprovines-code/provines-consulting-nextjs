@@ -13,9 +13,10 @@ export default function HomeContent() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full pt-32 pb-20 md:pt-40 md:pb-28">
           <div className="grid md:grid-cols-[1.3fr_1fr] gap-12 md:gap-16 items-center">
             <div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.06] tracking-tight mb-6">
+              <p className="inline-block border border-white/25 bg-white/5 px-3 py-1.5 font-[family-name:var(--font-geist-mono)] text-[9.5px] sm:text-[11px] tracking-[0.06em] sm:tracking-[0.08em] text-slate-300 mb-8">THE OWNER-OPERATED GROWTH STACK · REV 2026.07</p>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.02] tracking-tighter mb-10">
                 Stop renting your marketing.<br />
-                Start <span className="border-b-4 border-[var(--electric-blue)]">owning</span> it.
+                Start <span className="relative whitespace-nowrap"><span className="border-b-4 border-[var(--mint)]">owning</span><span className="absolute left-0 right-0 -bottom-8 text-center font-[family-name:var(--font-geist-mono)] text-[11px] font-normal tracking-[0.06em] text-[var(--mint)]">|—— in your name ——|</span></span> it.
               </h1>
               <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-4 max-w-lg">
                 I replace your marketing agency with a system you own — website, CRM, and ads,
@@ -45,11 +46,14 @@ export default function HomeContent() {
 
             {/* Right side — what this looks like in practice */}
             <div className="hidden md:block self-center">
-              <div className="space-y-6 text-slate-400 text-sm leading-relaxed border-l border-white/10 pl-6">
-                <p>Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p>
-                <p>Then I build the full stack in your environment — website, CRM, ads, content, automation — every account and asset in your name.</p>
-                <p>An AI operator, trained on your business, does the daily labor: content, follow-up, campaign adjustments, reporting. You direct it in plain English.</p>
-                <p>I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch — month to month, nothing locked in.</p>
+              <div className="flex flex-col">
+                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 01 · AUDIT</div><p className="text-slate-300 text-sm leading-relaxed">Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p></div>
+                <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
+                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 02 · BUILD</div><p className="text-slate-300 text-sm leading-relaxed">Then I build the full stack in your environment — website, CRM, ads, content, automation — every account and asset in your name.</p></div>
+                <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
+                <div className="border-2 border-[var(--mint)] bg-white/[0.06] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 03 · OPERATOR</div><p className="text-slate-300 text-sm leading-relaxed">An AI operator, trained on your business, does the daily labor: content, follow-up, campaign adjustments, reporting. You direct it in plain English.</p></div>
+                <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
+                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 04 · HANDOVER</div><p className="text-slate-300 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch — month to month, nothing locked in.</p></div>
               </div>
             </div>
           </div>
@@ -66,11 +70,11 @@ export default function HomeContent() {
               <img
                 src="/connor.jpg"
                 alt="Connor Provines"
-                className="rounded-xl w-full"
+                className="w-full border border-[var(--line)]"
               />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] leading-tight mb-6">
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-6">
                 Connor Provines
               </h2>
               <div className="space-y-5 text-slate-600 leading-relaxed max-w-xl">
@@ -97,7 +101,7 @@ export default function HomeContent() {
       {/* ============================================================ */}
       <section className="bg-[var(--navy)]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-16">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-white leading-tight mb-16">
             Every engagement ends the same way: the client owns everything.
           </h2>
 
@@ -105,7 +109,7 @@ export default function HomeContent() {
           <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-16 mb-20 items-start">
             <div>
               <Link href="/work/custom-home-builder" className="group">
-                <div className="rounded-lg overflow-hidden border border-white/10">
+                <div className="overflow-hidden border border-white/25">
                   <img
                     src="/ts-after.png"
                     alt="Custom home builder website"
@@ -135,7 +139,7 @@ export default function HomeContent() {
           <div className="grid md:grid-cols-[1.2fr_1fr] gap-10 md:gap-16 items-start">
             <div className="md:order-2">
               <Link href="/work/residential-construction" className="group">
-                <div className="rounded-lg overflow-hidden border border-white/10">
+                <div className="overflow-hidden border border-white/25">
                   <img
                     src="/creekside-after.png"
                     alt="Residential construction website"
@@ -168,11 +172,22 @@ export default function HomeContent() {
       {/* ============================================================ */}
       {/* HOW IT WORKS — narrow column, paragraphs not steps           */}
       {/* ============================================================ */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-2xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] leading-tight mb-12">
+      <section className="py-20 md:py-28 border-t border-[var(--line)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-12">
             I build it. An AI operator runs it. You own all of it.
           </h2>
+          <div className="mb-14">
+            <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-7">FIG. 1 — WHAT YOU OWN WHEN WE&apos;RE DONE<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 md:gap-y-0">
+              <div className="relative bg-white border border-[var(--navy)] p-5 md:mr-9"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-slate-500 mb-2.5">MOD 01</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">Site</h3><p className="text-[13px] leading-relaxed text-slate-600">Migrated. Same URLs, same rankings, zero lock-in.</p><span className="hidden md:block absolute -right-9 top-1/2 -translate-y-1/2 w-9 text-center font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500">——▸</span></div>
+              <div className="relative bg-white border border-[var(--navy)] p-5 md:mr-9"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-slate-500 mb-2.5">MOD 02</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">CRM</h3><p className="text-[13px] leading-relaxed text-slate-600">Right-sized. Follow-up in minutes, not days.</p><span className="hidden md:block absolute -right-9 top-1/2 -translate-y-1/2 w-9 text-center font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500">——▸</span></div>
+              <div className="relative bg-white border border-[var(--navy)] p-5 md:mr-9"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-slate-500 mb-2.5">MOD 03</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">Ads</h3><p className="text-[13px] leading-relaxed text-slate-600">Longtail, direct, tracked to booked revenue.</p><span className="hidden md:block absolute -right-9 top-1/2 -translate-y-1/2 w-9 text-center font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500">——▸</span></div>
+              <div className="relative bg-white border-2 border-[var(--electric-blue)] p-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-[var(--electric-blue)] mb-2.5">MOD 04 · OPERATOR</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">Orchestrator</h3><p className="text-[13px] leading-relaxed text-slate-600">Sees the whole board. Executes what you say.</p></div>
+            </div>
+            <p className="font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500 mt-6">every path between modules mapped at build · <span className="text-[var(--electric-blue)]">you direct it in plain English</span> · nothing locked in</p>
+          </div>
+          <div className="max-w-2xl">
           <div className="space-y-6 text-slate-600 leading-relaxed">
             <p>
               The first thing I do is scope what you actually need versus what you&apos;re paying for.
@@ -195,6 +210,7 @@ export default function HomeContent() {
               everything: the code, the data, the accounts, the machine it all runs on.
             </p>
           </div>
+          </div>
           <div className="mt-10">
             <Link
               href="/how-it-works"
@@ -214,7 +230,7 @@ export default function HomeContent() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid md:grid-cols-[1.5fr_1fr] gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] leading-tight mb-4">
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-4">
                 Let&apos;s figure out what you need.
               </h2>
               <p className="text-lg text-slate-500 max-w-md">

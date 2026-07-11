@@ -84,7 +84,7 @@ export default function ClientLayout({ children }) {
                   className="bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white flex items-center"
                 >
                   <Calendar className="w-4 h-4 mr-2" />
-                  Book a Call
+                  Book a growth audit
                 </Button>
               </Link>
             </div>
@@ -122,7 +122,7 @@ export default function ClientLayout({ children }) {
                     className="w-full bg-[var(--electric-blue)] hover:bg-[var(--navy)] text-white"
                   >
                     <Calendar className="w-4 h-4 mr-2" />
-                    Book a Call
+                    Book a growth audit
                   </Button>
                 </Link>
               </div>
@@ -180,7 +180,7 @@ export default function ClientLayout({ children }) {
                   <Button
                     className="w-full bg-[var(--mint)] hover:bg-[var(--mint)]/90 text-[var(--navy)] font-semibold"
                   >
-                    Book a Growth Audit
+                    Book a growth audit
                   </Button>
                 </Link>
               </div>

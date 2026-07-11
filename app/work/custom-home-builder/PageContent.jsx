@@ -29,7 +29,7 @@ export default function CaseStudyContent() {
         <p className="text-[var(--electric-blue)] text-xs font-bold uppercase tracking-widest mb-4">
           Case Study
         </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--navy)] leading-tight mb-3">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-3">
           Legacy Lock-In to Full Control
         </h1>
         <p className="text-lg text-slate-500 mb-8">
@@ -48,7 +48,7 @@ export default function CaseStudyContent() {
       {/* Before/After images */}
       <div className="max-w-5xl mx-auto px-6 sm:px-8 pb-16">
         <div className="grid grid-cols-2 gap-3">
-          <div className="relative rounded-lg overflow-hidden border border-slate-200">
+          <div className="relative overflow-hidden border border-slate-200">
             <div className="absolute top-3 left-3 bg-slate-800/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded z-10">
               Before
             </div>
@@ -58,7 +58,7 @@ export default function CaseStudyContent() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="relative rounded-lg overflow-hidden border border-slate-200">
+          <div className="relative overflow-hidden border border-slate-200">
             <div className="absolute top-3 left-3 bg-[var(--mint)] text-[var(--navy)] text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded z-10">
               After
             </div>
@@ -242,7 +242,7 @@ export default function CaseStudyContent() {
             </table>
           </div>
 
-          <div className="mt-8 inline-flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-full px-5 py-2.5">
+          <div className="mt-8 inline-flex items-center gap-3 bg-slate-50 border border-slate-200  px-5 py-2.5">
             <span className="text-[var(--electric-blue)] text-sm font-bold">Timeline:</span>
             <span className="text-slate-700 text-sm">Kickoff to full handoff in under 4 weeks</span>
           </div>
@@ -278,7 +278,7 @@ export default function CaseStudyContent() {
           </p>
           <Link
             href="/schedule"
-            className="inline-flex items-center justify-center px-10 py-4 bg-[var(--navy)] text-white font-semibold text-lg rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[var(--navy)] text-white font-semibold text-lg hover:opacity-90 transition-opacity"
           >
             Book a growth audit
           </Link>

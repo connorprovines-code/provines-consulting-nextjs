@@ -53,7 +53,7 @@ export default function ScheduleContent() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-white mb-4 leading-tight">
               Book a growth audit
             </h1>
 

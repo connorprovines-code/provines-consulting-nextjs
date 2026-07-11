@@ -101,7 +101,7 @@ export default function GrowthAuditContent() {
       {/* ============================================================ */}
       <section className="bg-[var(--navy)] py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-white leading-tight mb-6">
             AI rewrote the economics of marketing labor. It didn&apos;t change who keeps the keys.
           </h2>
           <div className="space-y-5 text-slate-300 leading-relaxed mb-12">
@@ -172,7 +172,7 @@ export default function GrowthAuditContent() {
       <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
           <p className="text-sm font-semibold text-[var(--electric-blue)] uppercase tracking-wide mb-3">The build</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] leading-tight mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-6">
             About five weeks, fixed scope. Every piece exists so you can act on your own
             vision without asking permission.
           </h2>
@@ -182,6 +182,7 @@ export default function GrowthAuditContent() {
             ad accounts can see your numbers and execute your decisions. The five weeks exist to do that wiring. By the end, one operator can see the whole board at once: the site, the CRM, the campaigns, the search data, with every path between them mapped. That&apos;s what makes the same-day launch real.
           </p>
 
+          <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-6">FIG. 1 — THE BUILD<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
           <div className="space-y-4 mb-12">
             {[
               {
@@ -236,7 +237,7 @@ export default function GrowthAuditContent() {
       <section className="bg-slate-50 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
           <p className="text-sm font-semibold text-[var(--electric-blue)] uppercase tracking-wide mb-3">Proof</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] leading-tight mb-10">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-10">
             Two recent builds.
           </h2>
 
@@ -278,7 +279,7 @@ export default function GrowthAuditContent() {
       <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
           <p className="text-sm font-semibold text-[var(--electric-blue)] uppercase tracking-wide mb-3">The first step</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] leading-tight mb-8">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-8">
             You don&apos;t decide about the build today. You decide whether it&apos;s worth
             finding out what you&apos;re leaking.
           </h2>

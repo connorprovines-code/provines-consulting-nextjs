@@ -6,7 +6,7 @@ export default function HowItWorksContent() {
   return (
     <div className="bg-white">
       <section className="max-w-5xl mx-auto px-6 sm:px-8 py-24 md:py-32">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--navy)] mb-6 leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-[var(--navy)] mb-6 leading-tight">
           From conversation to full ownership.
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
@@ -121,7 +121,7 @@ export default function HowItWorksContent() {
 
       <section className="py-24">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--navy)] mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] mb-6">
             The first step is the growth audit.
           </h2>
           <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl mx-auto">
@@ -130,7 +130,7 @@ export default function HowItWorksContent() {
           </p>
           <Link
             href="/schedule"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg hover:opacity-90 transition-opacity"
           >
             Book a growth audit
           </Link>

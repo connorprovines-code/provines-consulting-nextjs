@@ -9,22 +9,22 @@ export default function GrowthAuditContent() {
       {/* ============================================================ */}
       {/* HERO — navy, the offer in one breath                          */}
       {/* ============================================================ */}
-      <section className="bg-[var(--navy)]">
+      <section className="border-b border-[var(--line)]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
           <p className="text-[var(--electric-blue)] text-xs font-bold uppercase tracking-widest mb-5">
             The Owner-Operated Growth Stack
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.06] tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--navy)] leading-[1.04] tracking-tighter mb-6">
             Stop renting your marketing.<br />
             Start owning it.
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-10 max-w-xl">
+          <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
             A marketing department you own: website, CRM, and ads wired together in your
             name, run day to day by an AI operator you direct in plain English.
           </p>
           <Link
             href="/schedule"
-            className="inline-flex items-center justify-center px-8 py-4 bg-white text-[var(--navy)] font-semibold text-lg hover:bg-slate-100 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg hover:bg-[var(--electric-blue)] transition-colors"
           >
             Book a growth audit
           </Link>
@@ -99,12 +99,12 @@ export default function GrowthAuditContent() {
       {/* ============================================================ */}
       {/* 02 — WHAT CHANGED — navy band with comparison table           */}
       {/* ============================================================ */}
-      <section className="bg-[var(--navy)] py-16 md:py-24">
+      <section className="bg-[var(--off-white)] border-y border-[var(--line)] py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-white leading-tight mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-6">
             AI rewrote the economics of marketing labor. It didn&apos;t change who keeps the keys.
           </h2>
-          <div className="space-y-5 text-slate-300 leading-relaxed mb-12">
+          <div className="space-y-5 text-slate-600 leading-relaxed mb-12">
             <p>
               The labor an agency actually does for you, meaning the follow-up, the campaign
               adjustments, the reporting, the CRM upkeep: AI can now do most of that work, all
@@ -123,43 +123,43 @@ export default function GrowthAuditContent() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left">
               <thead>
-                <tr className="text-slate-400 uppercase text-xs tracking-wider border-b border-white/20">
+                <tr className="text-slate-500 uppercase text-xs tracking-wider border-b border-slate-300">
                   <th className="py-3 pr-4 font-semibold"></th>
                   <th className="py-3 pr-4 font-semibold">Agency</th>
                   <th className="py-3 pr-4 font-semibold">AI platforms</th>
-                  <th className="py-3 font-semibold text-[var(--mint)]">The Growth Stack</th>
+                  <th className="py-3 font-semibold text-[var(--electric-blue)]">The Growth Stack</th>
                 </tr>
               </thead>
-              <tbody className="text-slate-300">
-                <tr className="border-b border-white/10">
-                  <td className="py-4 pr-4 font-semibold text-white">Who owns the accounts</td>
+              <tbody className="text-slate-600">
+                <tr className="border-b border-[var(--line)]">
+                  <td className="py-4 pr-4 font-semibold text-[var(--navy)]">Who owns the accounts</td>
                   <td className="py-4 pr-4">They do</td>
                   <td className="py-4 pr-4">They do</td>
-                  <td className="py-4 text-white font-medium">You do</td>
+                  <td className="py-4 text-[var(--navy)] font-medium">You do</td>
                 </tr>
-                <tr className="border-b border-white/10">
-                  <td className="py-4 pr-4 font-semibold text-white">Who does the daily labor</td>
+                <tr className="border-b border-[var(--line)]">
+                  <td className="py-4 pr-4 font-semibold text-[var(--navy)]">Who does the daily labor</td>
                   <td className="py-4 pr-4">Their juniors, increasingly their AI</td>
                   <td className="py-4 pr-4">Their bots, on their servers</td>
-                  <td className="py-4 text-white font-medium">Your operator, on your machine</td>
+                  <td className="py-4 text-[var(--navy)] font-medium">Your operator, on your machine</td>
                 </tr>
-                <tr className="border-b border-white/10">
-                  <td className="py-4 pr-4 font-semibold text-white">Who understands the system</td>
+                <tr className="border-b border-[var(--line)]">
+                  <td className="py-4 pr-4 font-semibold text-[var(--navy)]">Who understands the system</td>
                   <td className="py-4 pr-4">They do</td>
                   <td className="py-4 pr-4">Nobody, really</td>
-                  <td className="py-4 text-white font-medium">You do. I train you.</td>
+                  <td className="py-4 text-[var(--navy)] font-medium">You do. I train you.</td>
                 </tr>
                 <tr>
-                  <td className="py-4 pr-4 font-semibold text-white">What&apos;s left when you leave</td>
+                  <td className="py-4 pr-4 font-semibold text-[var(--navy)]">What&apos;s left when you leave</td>
                   <td className="py-4 pr-4">Nothing</td>
                   <td className="py-4 pr-4">Nothing</td>
-                  <td className="py-4 text-white font-medium">Everything. Leaving isn&apos;t a concept that applies.</td>
+                  <td className="py-4 text-[var(--navy)] font-medium">Everything. Leaving isn&apos;t a concept that applies.</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <p className="text-white text-lg leading-relaxed mt-12 max-w-2xl">
+          <p className="text-[var(--navy)] text-lg leading-relaxed mt-12 max-w-2xl font-medium">
             I do the one thing neither of them will, because it would kill their retainer.
             I build the machine in your name, and I teach you to run it.
           </p>

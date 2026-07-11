@@ -9,16 +9,16 @@ export default function HomeContent() {
       {/* ============================================================ */}
       {/* HERO — navy, asymmetric: text left, scope card right         */}
       {/* ============================================================ */}
-      <section className="bg-[var(--navy)] min-h-[90vh] flex items-center">
+      <section className="min-h-[90vh] flex items-center border-b border-[var(--line)]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full pt-32 pb-20 md:pt-40 md:pb-28">
           <div className="grid md:grid-cols-[1.3fr_1fr] gap-12 md:gap-16 items-center">
             <div>
-              <p className="inline-block border border-white/25 bg-white/5 px-3 py-1.5 font-[family-name:var(--font-geist-mono)] text-[9.5px] sm:text-[11px] tracking-[0.06em] sm:tracking-[0.08em] text-slate-300 mb-8">THE OWNER-OPERATED GROWTH STACK · REV 2026.07</p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.02] tracking-tighter mb-10">
+              <p className="inline-block border border-[var(--line)] bg-white px-3 py-1.5 font-[family-name:var(--font-geist-mono)] text-[9.5px] sm:text-[11px] tracking-[0.06em] sm:tracking-[0.08em] text-slate-500 mb-8">THE OWNER-OPERATED GROWTH STACK · REV 2026.07</p>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[var(--navy)] leading-[1.02] tracking-tighter mb-10">
                 Stop renting your marketing.<br />
-                Start <span className="relative whitespace-nowrap"><span className="border-b-4 border-[var(--mint)]">owning</span><span className="absolute left-0 right-0 -bottom-8 text-center font-[family-name:var(--font-geist-mono)] text-[11px] font-normal tracking-[0.06em] text-[var(--mint)]">|—— in your name ——|</span></span> it.
+                Start <span className="relative whitespace-nowrap"><span className="border-b-4 border-[var(--electric-blue)]">owning</span><span className="absolute left-0 right-0 -bottom-8 text-center font-[family-name:var(--font-geist-mono)] text-[11px] font-normal tracking-[0.06em] text-[var(--electric-blue)]">|—— in your name ——|</span></span> it.
               </h1>
-              <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-4 max-w-lg">
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-4 max-w-lg">
                 I replace your marketing agency with a system you own: website, CRM, and ads,
                 all connected, run day-to-day by an AI operator you direct in plain English.
                 I build it, hand you the keys, and get out of the way.
@@ -30,13 +30,13 @@ export default function HomeContent() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/schedule"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-[var(--navy)] font-semibold text-lg hover:bg-slate-100 transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg hover:bg-[var(--electric-blue)] transition-colors"
                 >
                   Book a growth audit
                 </Link>
                 <Link
                   href="/work"
-                  className="inline-flex items-center justify-center px-8 py-4 text-white font-medium text-lg border-b border-white/30 hover:border-white transition-colors bg-transparent"
+                  className="inline-flex items-center justify-center px-8 py-4 text-[var(--navy)] font-medium text-lg border-b border-slate-300 hover:border-[var(--navy)] transition-colors bg-transparent"
                 >
                   See the work
                   <ArrowRight className="w-5 h-5 ml-2" />
@@ -47,13 +47,13 @@ export default function HomeContent() {
             {/* Right side — what this looks like in practice */}
             <div className="hidden md:block self-center">
               <div className="flex flex-col">
-                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 01 · AUDIT</div><p className="text-slate-300 text-sm leading-relaxed">Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p></div>
-                <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
-                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 02 · BUILD</div><p className="text-slate-300 text-sm leading-relaxed">Then I build the full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p></div>
-                <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
-                <div className="border-2 border-[var(--mint)] bg-white/[0.06] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 03 · OPERATOR</div><p className="text-slate-300 text-sm leading-relaxed">An AI operator, trained on your business, runs the ops: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English.</p></div>
-                <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
-                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 04 · HANDOVER</div><p className="text-slate-300 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch, month to month, nothing locked in.</p></div>
+                <div className="border border-[var(--line)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-1.5">STEP 01 · AUDIT</div><p className="text-slate-600 text-sm leading-relaxed">Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p></div>
+                <div className="h-5 border-l border-dashed border-slate-300 ml-6"></div>
+                <div className="border border-[var(--line)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-1.5">STEP 02 · BUILD</div><p className="text-slate-600 text-sm leading-relaxed">Then I build the full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p></div>
+                <div className="h-5 border-l border-dashed border-slate-300 ml-6"></div>
+                <div className="border-2 border-[var(--electric-blue)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--electric-blue)] mb-1.5">STEP 03 · OPERATOR</div><p className="text-slate-600 text-sm leading-relaxed">An AI operator, trained on your business, runs the ops: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English.</p></div>
+                <div className="h-5 border-l border-dashed border-slate-300 ml-6"></div>
+                <div className="border border-[var(--line)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-1.5">STEP 04 · HANDOVER</div><p className="text-slate-600 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch, month to month, nothing locked in.</p></div>
               </div>
             </div>
           </div>
@@ -99,9 +99,9 @@ export default function HomeContent() {
       {/* ============================================================ */}
       {/* CASE STUDIES — navy, alternating image/text                   */}
       {/* ============================================================ */}
-      <section className="bg-[var(--navy)]">
+      <section className="bg-[var(--off-white)] border-y border-[var(--line)]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-white leading-tight mb-16">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-16">
             Every engagement ends the same way: the client owns everything.
           </h2>
 
@@ -109,7 +109,7 @@ export default function HomeContent() {
           <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-16 mb-20 items-start">
             <div>
               <Link href="/work/custom-home-builder" className="group">
-                <div className="overflow-hidden border border-white/25">
+                <div className="overflow-hidden border border-[var(--line)]">
                   <img
                     src="/ts-after.png"
                     alt="Custom home builder website"
@@ -119,15 +119,15 @@ export default function HomeContent() {
               </Link>
             </div>
             <div className="md:pt-2">
-              <h3 className="text-2xl font-bold text-white mb-2">Legacy Lock-In to Full Control</h3>
-              <p className="text-slate-400 text-sm mb-6">Custom Home Builder, Oklahoma City</p>
-              <p className="text-slate-300 leading-relaxed mb-6">
+              <h3 className="text-2xl font-bold text-[var(--navy)] mb-2">Legacy Lock-In to Full Control</h3>
+              <p className="text-slate-500 text-sm mb-6">Custom Home Builder, Oklahoma City</p>
+              <p className="text-slate-600 leading-relaxed mb-6">
                 A 9-person home builder paying over 90% more than they needed to in software costs, with a
                 website trapped in a CMS nobody could edit. We migrated the CRM and the site, put an AI operator on the day-to-day, and trained the team. Under four weeks, start to finish.
               </p>
               <Link
                 href="/work/custom-home-builder"
-                className="inline-flex items-center text-[var(--mint)] font-medium text-sm hover:underline"
+                className="inline-flex items-center text-[var(--electric-blue)] font-medium text-sm hover:underline"
               >
                 Read the case study
                 <ArrowRight className="w-4 h-4 ml-1" />
@@ -139,7 +139,7 @@ export default function HomeContent() {
           <div className="grid md:grid-cols-[1.2fr_1fr] gap-10 md:gap-16 items-start">
             <div className="md:order-2">
               <Link href="/work/residential-construction" className="group">
-                <div className="overflow-hidden border border-white/25">
+                <div className="overflow-hidden border border-[var(--line)]">
                   <img
                     src="/creekside-after.png"
                     alt="Residential construction website"
@@ -149,9 +149,9 @@ export default function HomeContent() {
               </Link>
             </div>
             <div className="md:order-1 md:pt-2">
-              <h3 className="text-2xl font-bold text-white mb-2">The Bottleneck Was Never the Owner</h3>
-              <p className="text-slate-400 text-sm mb-6">Custom Home Builder, Oregon</p>
-              <p className="text-slate-300 leading-relaxed mb-6">
+              <h3 className="text-2xl font-bold text-[var(--navy)] mb-2">The Bottleneck Was Never the Owner</h3>
+              <p className="text-slate-500 text-sm mb-6">Custom Home Builder, Oregon</p>
+              <p className="text-slate-600 leading-relaxed mb-6">
                 An owner with the creative vision and marketing instincts was stuck on a Wix site
                 he couldn&apos;t edit, with a CRM full of automations nobody had turned on. We migrated
                 the platform, wired ads, landing pages, and the CRM into one connected system,
@@ -159,7 +159,7 @@ export default function HomeContent() {
               </p>
               <Link
                 href="/work/residential-construction"
-                className="inline-flex items-center text-[var(--mint)] font-medium text-sm hover:underline"
+                className="inline-flex items-center text-[var(--electric-blue)] font-medium text-sm hover:underline"
               >
                 Read the case study
                 <ArrowRight className="w-4 h-4 ml-1" />

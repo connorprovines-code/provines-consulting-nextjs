@@ -45,7 +45,7 @@ export default function ScheduleContent() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero - compact, no jarring gradient */}
-      <section className="bg-[var(--navy)]">
+      <section className="border-b border-[var(--line)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -53,11 +53,11 @@ export default function ScheduleContent() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-white mb-4 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tighter text-[var(--navy)] mb-4 leading-tight">
               Book a growth audit
             </h1>
 
-            <p className="text-lg text-slate-300 leading-relaxed max-w-xl mx-auto">
+            <p className="text-lg text-slate-600 leading-relaxed max-w-xl mx-auto">
               30 minutes to kick it off. We walk through your site, your CRM, and your ad accounts, and map what to build first.
             </p>
           </motion.div>

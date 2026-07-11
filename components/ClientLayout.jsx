@@ -30,6 +30,7 @@ export default function ClientLayout({ children }) {
     { name: "Home", path: "/" },
     { name: "Work", path: "/work" },
     { name: "How It Works", path: "/how-it-works" },
+    { name: "Growth Audit", path: "/growth-audit" },
   ];
 
   return (
@@ -156,6 +157,7 @@ export default function ClientLayout({ children }) {
                   { name: "Home", path: "/" },
                   { name: "Work", path: "/work" },
                   { name: "How It Works", path: "/how-it-works" },
+                  { name: "Growth Audit", path: "/growth-audit" },
                   { name: "Schedule", path: "/schedule" },
                 ].map((link) => (
                   <Link

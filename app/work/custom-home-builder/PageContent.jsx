@@ -39,7 +39,7 @@ export default function CaseStudyContent() {
           A 9-person custom home builder was running their entire digital presence on a platform they
           couldn&apos;t meaningfully control. Their website was trapped in a proprietary CMS, their
           software costs were wildly oversized for the team, and nobody on staff could make a change
-          without outside help. In under four weeks we rebuilt the site on a modern stack, deployed an
+          without outside help. In under four weeks we migrated the site to a modern stack, deployed an
           AI environment the team manages themselves, migrated their CRM, and handed them
           full ownership of everything.
         </p>
@@ -109,10 +109,10 @@ export default function CaseStudyContent() {
             What We Did
           </h2>
 
-          {/* Website Rebuild */}
+          {/* Website Migration */}
           <div className="mb-12">
             <h3 className="text-xl font-bold text-[var(--navy)] mb-4">
-              Website Rebuild
+              Website Migration
             </h3>
             <div className="space-y-5">
               <p className="text-slate-600 leading-relaxed">

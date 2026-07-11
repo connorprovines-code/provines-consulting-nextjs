@@ -39,7 +39,7 @@ export default function CaseStudyContent() {
           A 5-person custom home builder in Oregon was stuck on a Wix site they couldn&apos;t
           meaningfully edit, with a CRM full of automations that had never been turned on, and no
           real system connecting their marketing to their pipeline. We migrated the site to a modern
-          stack, built an AI content and marketing engine the owner runs himself, and wired
+          stack, put an AI operator on his marketing that he runs himself, and wired
           the whole thing together so ads, landing pages, and the CRM all talk to each other
           automatically.
         </p>
@@ -149,10 +149,10 @@ export default function CaseStudyContent() {
             </div>
           </div>
 
-          {/* AI Content Engine */}
+          {/* AI Marketing Engine */}
           <div className="mb-12">
             <h3 className="text-xl font-bold text-[var(--navy)] mb-4">
-              AI Content Engine
+              AI Marketing Engine
             </h3>
             <div className="space-y-5">
               <p className="text-slate-600 leading-relaxed">

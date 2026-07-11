@@ -25,7 +25,7 @@ export default function HowItWorksContent() {
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               This is where 12 years of marketing ops shows up. I&apos;m not just asking
               what tools you use. I&apos;m mapping where leads come from, where they drop off,
-              what content you should be creating, and how your follow-up should work.
+              which campaigns and pages you&apos;re missing, and how your follow-up should work.
             </p>
             <ul className="space-y-2 text-slate-600">
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Map where leads come from and where they drop off</span></li>
@@ -42,13 +42,13 @@ export default function HowItWorksContent() {
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               You get a system design informed by over a decade of marketing operations.
-              Not a list of features &mdash; a blueprint. Website platform, CRM configuration,
-              automation design, content pipeline, integration map. Scoped to what you
+              Not a list of features. A blueprint. Website platform, CRM configuration,
+              automation design, campaign pipeline, integration map. Scoped to what you
               actually need, not what sounds impressive.
             </p>
             <ul className="space-y-2 text-slate-600">
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Detailed solution architecture document</span></li>
-              <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Fixed scope engagement &mdash; no hourly billing</span></li>
+              <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Fixed scope engagement, no hourly billing</span></li>
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>You choose which modules to include</span></li>
             </ul>
           </div>
@@ -60,14 +60,13 @@ export default function HowItWorksContent() {
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               Everything gets built, tested, and deployed in your environment.
-              Site migration, CRM setup, automation pipelines, the AI operator &mdash;
-              nothing launches until you&apos;ve seen it working. Regular check-ins
+              Site migration, CRM setup, automation pipelines, the AI operator: nothing launches until you&apos;ve seen it working. Regular check-ins
               throughout so there are no surprises.
             </p>
             <ul className="space-y-2 text-slate-600">
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Iterative build with regular check-ins</span></li>
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Website previews and workflow demos before launch</span></li>
-              <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Deployed in your environment &mdash; you own everything</span></li>
+              <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Deployed in your environment. You own everything.</span></li>
             </ul>
           </div>
 
@@ -78,10 +77,10 @@ export default function HowItWorksContent() {
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               This is the part most people skip. I don&apos;t just build it and disappear.
-              I work alongside you 1:1 &mdash; making sure everything runs, training you to
+              I work alongside you 1:1, making sure everything runs, training you to
               direct the operator and every system underneath it, flagging what needs attention
               in your marketing. When you&apos;re comfortable, I step back. Stay independent
-              or keep me on light-touch &mdash; month to month, nothing locked in.
+              or keep me on light-touch, month to month, nothing locked in.
             </p>
             <ul className="space-y-2 text-slate-600">
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Hands-on training for you and your team</span></li>
@@ -110,9 +109,9 @@ export default function HowItWorksContent() {
               <ul className="space-y-4 text-slate-600">
                 <li>Modern website on infrastructure you own</li>
                 <li>Configured CRM with automated lead pipeline</li>
-                <li>A dedicated AI operator that runs the day-to-day &mdash; you direct it in plain English</li>
+                <li>A dedicated AI operator that runs the day-to-day. You direct it in plain English</li>
                 <li>Full documentation and SOPs for every system</li>
-                <li>Complete ownership &mdash; code, data, accounts, infrastructure</li>
+                <li>Complete ownership: code, data, accounts, infrastructure</li>
               </ul>
             </div>
           </div>

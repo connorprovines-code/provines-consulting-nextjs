@@ -19,8 +19,8 @@ export default function HomeContent() {
                 Start <span className="relative whitespace-nowrap"><span className="border-b-4 border-[var(--mint)]">owning</span><span className="absolute left-0 right-0 -bottom-8 text-center font-[family-name:var(--font-geist-mono)] text-[11px] font-normal tracking-[0.06em] text-[var(--mint)]">|—— in your name ——|</span></span> it.
               </h1>
               <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-4 max-w-lg">
-                I replace your marketing agency with a system you own — website, CRM, and ads,
-                all connected — run day-to-day by an AI operator you direct in plain English.
+                I replace your marketing agency with a system you own: website, CRM, and ads,
+                all connected, run day-to-day by an AI operator you direct in plain English.
                 I build it, hand you the keys, and get out of the way.
               </p>
               <p className="text-sm text-slate-500 mb-10 max-w-md">
@@ -49,11 +49,11 @@ export default function HomeContent() {
               <div className="flex flex-col">
                 <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 01 · AUDIT</div><p className="text-slate-300 text-sm leading-relaxed">Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p></div>
                 <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
-                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 02 · BUILD</div><p className="text-slate-300 text-sm leading-relaxed">Then I build the full stack in your environment — website, CRM, ads, content, automation — every account and asset in your name.</p></div>
+                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 02 · BUILD</div><p className="text-slate-300 text-sm leading-relaxed">Then I build the full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p></div>
                 <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
-                <div className="border-2 border-[var(--mint)] bg-white/[0.06] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 03 · OPERATOR</div><p className="text-slate-300 text-sm leading-relaxed">An AI operator, trained on your business, does the daily labor: content, follow-up, campaign adjustments, reporting. You direct it in plain English.</p></div>
+                <div className="border-2 border-[var(--mint)] bg-white/[0.06] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 03 · OPERATOR</div><p className="text-slate-300 text-sm leading-relaxed">An AI operator, trained on your business, runs the ops: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English.</p></div>
                 <div className="h-5 border-l border-dashed border-white/30 ml-6"></div>
-                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 04 · HANDOVER</div><p className="text-slate-300 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch — month to month, nothing locked in.</p></div>
+                <div className="border border-white/20 bg-white/[0.04] px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-1.5">STEP 04 · HANDOVER</div><p className="text-slate-300 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch, month to month, nothing locked in.</p></div>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function HomeContent() {
               <p className="text-slate-400 text-sm mb-6">Custom Home Builder, Oklahoma City</p>
               <p className="text-slate-300 leading-relaxed mb-6">
                 A 9-person home builder paying over 90% more than they needed to in software costs, with a
-                website trapped in a CMS nobody could edit. We migrated the CRM and the site, put an AI operator on site and content management, and trained the team. Under four weeks, start to finish.
+                website trapped in a CMS nobody could edit. We migrated the CRM and the site, put an AI operator on the day-to-day, and trained the team. Under four weeks, start to finish.
               </p>
               <Link
                 href="/work/custom-home-builder"
@@ -153,9 +153,9 @@ export default function HomeContent() {
               <p className="text-slate-400 text-sm mb-6">Custom Home Builder, Oregon</p>
               <p className="text-slate-300 leading-relaxed mb-6">
                 An owner with the creative vision and marketing instincts was stuck on a Wix site
-                he couldn&apos;t edit, with a CRM full of automations nobody had turned on. We rebuilt
-                the platform, built an AI content engine he runs himself, and wired ads, landing pages,
-                and CRM into one connected system.
+                he couldn&apos;t edit, with a CRM full of automations nobody had turned on. We migrated
+                the platform, wired ads, landing pages, and the CRM into one connected system,
+                and now he runs the whole thing himself.
               </p>
               <Link
                 href="/work/residential-construction"
@@ -191,16 +191,16 @@ export default function HomeContent() {
           <div className="space-y-6 text-slate-600 leading-relaxed">
             <p>
               The first thing I do is scope what you actually need versus what you&apos;re paying for.
-              Most owners I talk to are either paying an agency they can&apos;t see into — the
+              Most owners I talk to are either paying an agency they can&apos;t see into, where the
               accounts, the data, and the know-how all live on someone else&apos;s side of the
-              fence — or they&apos;re spread across tools that don&apos;t talk to each other.
+              fence, or they&apos;re spread across tools that don&apos;t talk to each other.
               I look at the whole picture and build a plan around what matters.
             </p>
             <p>
               Then I build the systems in your environment. Your website moves to a modern stack.
               Your CRM gets right-sized. Your ads, email, and content tools get wired together.
               And I stand up the operator: a dedicated AI, trained on your business, that manages
-              the site, writes content, follows up with leads, and keeps the CRM clean — no
+              the site, follows up with leads, adjusts campaigns, and keeps the CRM clean. No
               developer required.
             </p>
             <p>

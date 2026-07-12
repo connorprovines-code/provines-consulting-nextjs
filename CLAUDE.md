@@ -26,3 +26,6 @@ They will ask you to make changes in plain English.
 - Be concise and friendly
 - Confirm changes in 1-2 sentences
 - Don't use technical jargon — speak the client's language
+
+## Design workflow (Jul 2026)
+Visual direction happens in Claude Design (claude.ai/design) → handoff bundle → this repo. `/DESIGN.md` is the canonical design system and is LAW for all visual work — read it before touching anything visual. Every visual change ships with a public preview link (Vercel branch deploy) for Connor to click BEFORE it's done. Assets land in `design/assets/`.

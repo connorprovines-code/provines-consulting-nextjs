@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import PaintStreak from "@/components/PaintStreak";
 
 export default function GrowthAuditContent() {
   return (
@@ -10,8 +9,9 @@ export default function GrowthAuditContent() {
       {/* ============================================================ */}
       {/* HERO — navy, the offer in one breath                          */}
       {/* ============================================================ */}
-      <section className="border-b border-[var(--line)]">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
+      <section className="relative overflow-hidden border-b border-[var(--line)]">
+        <svg aria-hidden="true" viewBox="0 0 1000 480" className="pointer-events-none absolute right-[-4%] w-[47%] max-w-[600px] hidden md:block" style={{top:"55%", transform:"translateY(-50%) rotate(-4deg)"}}><g fill="#00D9A3"><path d="M 533.6 240.0 C 539.5 252.6, 544.3 268.3, 539.7 280.7 C 535.1 293.2, 519.2 305.0, 506.0 314.6 C 492.7 324.1, 475.6 331.5, 460.0 337.8 C 444.5 344.1, 427.6 347.7, 412.6 352.5 C 397.6 357.4, 384.8 364.1, 369.8 366.9 C 354.8 369.7, 338.1 369.1, 322.7 369.2 C 307.4 369.3, 291.0 371.5, 277.6 367.5 C 264.1 363.5, 258.3 346.6, 242.1 345.4 C 225.8 344.1, 201.3 358.6, 179.9 360.0 C 158.6 361.4, 135.5 358.7, 113.7 353.8 C 92.0 348.9, 63.8 342.0, 49.2 330.8 C 34.7 319.6, 25.8 301.6, 26.4 286.5 C 26.9 271.4, 41.6 253.7, 52.5 240.0 C 63.4 226.3, 80.8 215.6, 91.7 204.6 C 102.6 193.6, 108.3 183.5, 118.0 174.1 C 127.7 164.7, 136.4 154.2, 149.8 148.2 C 163.1 142.2, 183.3 141.4, 198.2 138.3 C 213.1 135.2, 226.0 133.9, 239.2 129.5 C 252.4 125.1, 262.9 118.0, 277.4 111.7 C 291.9 105.4, 307.9 96.8, 326.1 91.9 C 344.3 87.0, 367.6 81.1, 386.7 82.4 C 405.7 83.7, 425.8 91.2, 440.4 99.8 C 454.9 108.3, 465.9 121.7, 474.0 133.7 C 482.2 145.6, 484.3 159.5, 489.4 171.5 C 494.5 183.4, 497.2 193.8, 504.5 205.2 C 511.9 216.7, 527.7 227.4, 533.6 240.0 Z"/><path d="M 429.3 303.0 Q 615.8 375.9, 811.7 403.7 L 814.1 397.0 Q 627.2 343.2, 449.8 244.4 Z"/><circle cx="812.9" cy="400.4" r="6.7"/><path d="M 450.5 248.8 Q 684.4 230.8, 911.8 147.5 L 910.1 138.5 Q 678.5 198.8, 440.3 194.0 Z"/><circle cx="911.0" cy="143.0" r="8.7"/><path d="M 436.0 293.3 Q 613.9 327.3, 802.0 352.8 L 805.3 340.2 Q 622.8 293.4, 450.3 238.1 Z"/><circle cx="803.7" cy="346.5" r="12.5"/><path d="M 444.6 278.1 Q 545.5 260.3, 645.3 271.9 L 646.6 258.7 Q 548.8 225.0, 449.9 220.8 Z"/><circle cx="646.0" cy="265.3" r="12.6"/><circle cx="851.8" cy="433.9" r="3.8"/><circle cx="775.5" cy="283.2" r="2.5"/><circle cx="938.4" cy="175.3" r="2.4"/><circle cx="633.2" cy="264.6" r="6.9"/><path d="M 633.2 260.3 Q 610.1 260.5, 633.2 268.9 Z"/><circle cx="912.8" cy="167.6" r="2.4"/><circle cx="722.2" cy="393.2" r="4.1"/><circle cx="912.3" cy="240.5" r="3.9"/><circle cx="948.8" cy="303.3" r="3.1"/><circle cx="597.9" cy="142.1" r="4.7"/><circle cx="873.5" cy="7.5" r="2.4"/><circle cx="838.5" cy="233.6" r="3.1"/><circle cx="764.4" cy="48.4" r="3.8"/><circle cx="672.5" cy="142.4" r="3.9"/><circle cx="800.5" cy="401.3" r="3.8"/><circle cx="900.3" cy="419.1" r="3.4"/><circle cx="896.5" cy="181.7" r="4.1"/><circle cx="584.0" cy="126.8" r="7.2"/><path d="M 584.0 122.3 Q 561.5 136.2, 584.0 131.3 Z"/><circle cx="729.8" cy="387.0" r="4.2"/><circle cx="782.3" cy="165.3" r="4.8"/><path d="M 339.4 360.0 Q 342.7 399.1, 345.0 425.1 Q 347.2 399.1, 350.5 360.0 Z"/><circle cx="345.0" cy="425.1" r="4.7"/><path d="M 296.8 360.0 Q 301.1 410.9, 304.0 444.9 Q 306.9 410.9, 311.2 360.0 Z"/><circle cx="304.0" cy="444.9" r="6.1"/></g></svg>
+        <div className="relative z-10 max-w-3xl mx-auto px-6 sm:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
           <p className="text-[var(--electric-blue)] text-xs font-bold uppercase tracking-widest mb-5">
             The Owner-Operated Growth Stack
           </p>
@@ -19,7 +19,6 @@ export default function GrowthAuditContent() {
             Stop renting your marketing.<br />
             Start{" "}
             <span className="relative inline-block">
-              <PaintStreak className="pointer-events-none absolute left-[-7%] bottom-[-0.12em] z-0 h-[0.95em] w-[114%] select-none" />
               <span className="relative z-10">owning it.</span>
             </span>
           </h1>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import PaintStreak from "@/components/PaintStreak";
 
 export default function GrowthAuditContent() {
   return (
@@ -16,7 +17,11 @@ export default function GrowthAuditContent() {
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--navy)] leading-[1.04] tracking-tighter mb-6">
             Stop renting your marketing.<br />
-            Start owning it.
+            Start{" "}
+            <span className="relative inline-block">
+              <PaintStreak className="pointer-events-none absolute left-[-7%] bottom-[-0.12em] z-0 h-[0.95em] w-[114%] select-none" />
+              <span className="relative z-10">owning it.</span>
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
             A marketing department you own: website, CRM, and ads wired together in your

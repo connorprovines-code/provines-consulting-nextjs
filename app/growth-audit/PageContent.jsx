@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import PaintStreak from "@/components/PaintStreak";
 
 export default function GrowthAuditContent() {
   return (
@@ -10,20 +9,19 @@ export default function GrowthAuditContent() {
       {/* ============================================================ */}
       {/* HERO — navy, the offer in one breath                          */}
       {/* ============================================================ */}
-      <section className="border-b border-[var(--line)]">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
+      <section className="relative overflow-hidden border-b border-[var(--line)]">
+                <div className="relative z-10 max-w-3xl mx-auto px-6 sm:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
           <p className="text-[var(--electric-blue)] text-xs font-bold uppercase tracking-widest mb-5">
             The Owner-Operated Growth Stack
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--navy)] leading-[1.04] tracking-tighter mb-6">
-            Stop renting your marketing.<br />
-            Start{" "}
+            <span className="relative z-10">Stop renting your </span><span className="relative inline-block"><span className="relative z-10">marketing.</span><img src="/splash-green.png" alt="" aria-hidden="true" className="pointer-events-none absolute z-0 hidden md:block select-none max-w-none" style={{left:"3.5em",top:"-2.35em",width:"15em"}} /></span><br />
+            <span className="relative z-10">Start</span>{" "}
             <span className="relative inline-block">
-              <PaintStreak className="pointer-events-none absolute left-[-7%] bottom-[-0.12em] z-0 h-[0.95em] w-[114%] select-none" />
               <span className="relative z-10">owning it.</span>
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
+          <p className="relative z-10 text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
             A marketing department you own: website, CRM, and ads wired together in your
             name, run day to day by an AI operator you direct in plain English.
           </p>

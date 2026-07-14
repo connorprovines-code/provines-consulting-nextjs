@@ -9,53 +9,53 @@ export default function HomeContent() {
       {/* ============================================================ */}
       {/* HERO — navy, asymmetric: text left, scope card right         */}
       {/* ============================================================ */}
-      <section className="min-h-[90vh] flex items-center border-b border-[var(--line)]">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full pt-32 pb-20 md:pt-40 md:pb-28">
-          <div className="grid md:grid-cols-[1.3fr_1fr] gap-12 md:gap-16 items-center">
-            <div>
-              <p className="inline-block border border-[var(--line)] bg-white px-3 py-1.5 font-[family-name:var(--font-geist-mono)] text-[9.5px] sm:text-[11px] tracking-[0.06em] sm:tracking-[0.08em] text-slate-500 mb-8">THE OWNER-OPERATED GROWTH STACK · REV 2026.07</p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[var(--navy)] leading-[1.02] tracking-tighter mb-10">
-                Stop renting your marketing.<br />
-                Start <span className="relative whitespace-nowrap"><span className="border-b-4 border-[var(--electric-blue)]">owning</span><span className="absolute left-0 right-0 -bottom-8 text-center font-[family-name:var(--font-geist-mono)] text-[11px] font-normal tracking-[0.06em] text-[var(--electric-blue)]">|—— in your name ——|</span></span> it.
-              </h1>
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-4 max-w-lg">
-                I replace your marketing agency with a system you own: website, CRM, and ads,
-                all connected, run day-to-day by an AI operator you direct in plain English.
-                I build it, hand you the keys, and get out of the way.
-              </p>
-              <p className="text-sm text-slate-500 mb-10 max-w-md">
-                12 years of B2B SaaS marketing. Now applied to business owners
-                who need the same infrastructure without hiring a department.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/schedule"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg hover:bg-[var(--electric-blue)] transition-colors"
-                >
-                  Book a growth audit
-                </Link>
-                <Link
-                  href="/work"
-                  className="inline-flex items-center justify-center px-8 py-4 text-[var(--navy)] font-medium text-lg border-b border-slate-300 hover:border-[var(--navy)] transition-colors bg-transparent"
-                >
-                  See the work
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </div>
+      <section className="border-b border-[var(--line)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full pt-32 pb-16 md:pt-40 md:pb-24">
+          <div className="max-w-3xl">
+            <p className="inline-block border border-[var(--line)] bg-white px-3 py-1.5 font-[family-name:var(--font-geist-mono)] text-[9.5px] sm:text-[11px] tracking-[0.06em] sm:tracking-[0.08em] text-slate-500 mb-8">THE OWNER-OPERATED GROWTH STACK · REV 2026.07</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[var(--navy)] leading-[1.02] tracking-tighter mb-10">
+              Stop renting your marketing.<br />
+              Start <span className="relative whitespace-nowrap"><span className="border-b-4 border-[var(--electric-blue)]">owning</span><span className="absolute left-0 right-0 -bottom-8 text-center font-[family-name:var(--font-geist-mono)] text-[11px] font-normal tracking-[0.06em] text-[var(--electric-blue)]">|—— in your name ——|</span></span> it.
+            </h1>
+            <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-4 max-w-lg">
+              I replace your marketing agency with a system you own: website, CRM, and ads,
+              all connected, run day-to-day by an AI operator you direct in plain English.
+              I build it, hand you the keys, and get out of the way.
+            </p>
+            <p className="text-sm text-slate-500 mb-10 max-w-md">
+              12 years of B2B SaaS marketing. Now applied to business owners
+              who need the same infrastructure without hiring a department.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/schedule"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg hover:bg-[var(--electric-blue)] transition-colors"
+              >
+                Book a growth audit
+              </Link>
+              <Link
+                href="/work"
+                className="inline-flex items-center justify-center px-8 py-4 text-[var(--navy)] font-medium text-lg border-b border-slate-300 hover:border-[var(--navy)] transition-colors bg-transparent"
+              >
+                See the work
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Right side — what this looks like in practice */}
-            <div className="hidden md:block self-center">
-              <div className="flex flex-col">
-                <div className="border border-[var(--line)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-1.5">STEP 01 · AUDIT</div><p className="text-slate-600 text-sm leading-relaxed">Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p></div>
-                <div className="h-5 border-l border-dashed border-slate-300 ml-6"></div>
-                <div className="border border-[var(--line)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-1.5">STEP 02 · BUILD</div><p className="text-slate-600 text-sm leading-relaxed">Then I build the full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p></div>
-                <div className="h-5 border-l border-dashed border-slate-300 ml-6"></div>
-                <div className="border-2 border-[var(--electric-blue)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--electric-blue)] mb-1.5">STEP 03 · OPERATOR</div><p className="text-slate-600 text-sm leading-relaxed">An AI operator, trained on your business, runs the ops: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English.</p></div>
-                <div className="h-5 border-l border-dashed border-slate-300 ml-6"></div>
-                <div className="border border-[var(--line)] bg-white px-5 py-4"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-1.5">STEP 04 · HANDOVER</div><p className="text-slate-600 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch, month to month, nothing locked in.</p></div>
-              </div>
-            </div>
+      {/* ============================================================ */}
+      {/* HOW IT WORKS — 01→04 rail, full-width band below the hero     */}
+      {/* ============================================================ */}
+      <section className="bg-[var(--off-white)] border-b border-[var(--line)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-14 md:py-16">
+          <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-8">THE ENGAGEMENT · STEP 01 &rarr; 04<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="border border-[var(--line)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 01 · AUDIT</div><p className="text-slate-600 text-sm leading-relaxed">Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p></div>
+            <div className="border border-[var(--line)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 02 · BUILD</div><p className="text-slate-600 text-sm leading-relaxed">Then I build the full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p></div>
+            <div className="border-2 border-[var(--electric-blue)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--electric-blue)] mb-2">STEP 03 · OPERATOR</div><p className="text-slate-600 text-sm leading-relaxed">An AI operator, trained on your business, runs the ops: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English.</p></div>
+            <div className="border border-[var(--line)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 04 · HANDOVER</div><p className="text-slate-600 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch, month to month, nothing locked in.</p></div>
           </div>
         </div>
       </section>

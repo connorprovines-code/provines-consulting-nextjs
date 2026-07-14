@@ -46,16 +46,32 @@ export default function HomeContent() {
       </section>
 
       {/* ============================================================ */}
-      {/* HOW IT WORKS — 01→04 rail, full-width band below the hero     */}
+      {/* HOW IT WORKS — 01→04, operator as the inverted centerpiece    */}
       {/* ============================================================ */}
       <section className="bg-[var(--off-white)] border-b border-[var(--line)]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 py-14 md:py-16">
           <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-8">THE ENGAGEMENT · STEP 01 &rarr; 04<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="border border-[var(--line)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 01 · AUDIT</div><p className="text-slate-600 text-sm leading-relaxed">Start with a growth audit: I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p></div>
-            <div className="border border-[var(--line)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 02 · BUILD</div><p className="text-slate-600 text-sm leading-relaxed">Then I build the full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p></div>
-            <div className="border-2 border-[var(--electric-blue)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--electric-blue)] mb-2">STEP 03 · OPERATOR</div><p className="text-slate-600 text-sm leading-relaxed">An AI operator, trained on your business, runs the ops: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English.</p></div>
-            <div className="border border-[var(--line)] bg-white px-5 py-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 04 · HANDOVER</div><p className="text-slate-600 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Stay independent or keep me on light-touch, month to month, nothing locked in.</p></div>
+          <div className="grid md:grid-cols-[1fr_1fr_1.5fr_1fr] border border-[var(--line)] divide-y md:divide-y-0 md:divide-x divide-[var(--line)]">
+            <div className="bg-white px-6 py-6">
+              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 01</div>
+              <p className="font-bold text-[var(--navy)] text-sm mb-2">Audit</p>
+              <p className="text-slate-600 text-sm leading-relaxed">I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p>
+            </div>
+            <div className="bg-white px-6 py-6">
+              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 02</div>
+              <p className="font-bold text-[var(--navy)] text-sm mb-2">Build</p>
+              <p className="text-slate-600 text-sm leading-relaxed">The full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p>
+            </div>
+            <div className="bg-[var(--navy)] px-6 py-6">
+              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-2">STEP 03</div>
+              <p className="font-extrabold text-white text-lg tracking-tight mb-2.5">Your AI operator</p>
+              <p className="text-slate-300 text-sm leading-relaxed">Trained on your business and wired into all of it. It runs the day-to-day: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English, it executes.</p>
+            </div>
+            <div className="bg-white px-6 py-6">
+              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 04</div>
+              <p className="font-bold text-[var(--navy)] text-sm mb-2">Handover</p>
+              <p className="text-slate-600 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Month to month, nothing locked in.</p>
+            </div>
           </div>
         </div>
       </section>

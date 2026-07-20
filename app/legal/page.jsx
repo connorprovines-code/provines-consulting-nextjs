@@ -74,6 +74,22 @@ export default function Legal() {
             securely and accessed only by authorized personnel.
           </p>
 
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">Third-Party Services and API Integrations</h3>
+          <p className="text-slate-700 leading-relaxed mb-4">
+            With our clients&rsquo; authorization, we connect to third-party marketing platforms &mdash; including
+            Google (Google Ads, Google Analytics, Google Search Console, and the Google Business Profile APIs)
+            and Meta &mdash; to manage advertising, analyze performance, and maintain business listings on our
+            clients&rsquo; behalf. When we access data through the Google Business Profile and other Google APIs,
+            we use that data solely to provide the marketing management and reporting services our clients
+            request. Our use and transfer of information received from Google APIs adheres to the{' '}
+            <a href="https://developers.google.com/terms/api-services-user-data-policy" className="underline text-[var(--navy)]">
+              Google API Services User Data Policy
+            </a>, including the Limited Use requirements. We never sell this data, use it for advertising
+            unrelated to the client&rsquo;s own accounts, or share it with third parties except as needed to
+            provide the requested services. Clients may revoke our access at any time through their platform
+            account settings.
+          </p>
+
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">Contact</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             For questions about these terms or our privacy practices, please contact us at

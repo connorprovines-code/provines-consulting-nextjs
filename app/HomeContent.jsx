@@ -11,7 +11,7 @@ export default function HomeContent() {
       {/* ============================================================ */}
       <section className="border-b border-[var(--line)]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full pt-32 pb-16 md:pt-40 md:pb-24">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto">
             <p className="inline-block border border-[var(--line)] bg-white px-3 py-1.5 font-[family-name:var(--font-geist-mono)] text-[9.5px] sm:text-[11px] tracking-[0.06em] sm:tracking-[0.08em] text-slate-500 mb-8">THE OWNER-OPERATED GROWTH STACK · REV 2026.07</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[var(--navy)] leading-[1.02] tracking-tighter mb-10">
               Stop renting your marketing.<br />

@@ -240,6 +240,47 @@ export default function HomeContent() {
       </section>
 
       {/* ============================================================ */}
+      {/* THE PLATFORM — what the app connects to and does with it.     */}
+      {/* Required for Google/Meta OAuth verification: the homepage must */}
+      {/* explain the purpose of the app requesting account access.     */}
+      {/* ============================================================ */}
+      <section id="platform" className="bg-[var(--navy)] border-t border-[var(--line)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-20 md:py-28">
+          <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-[var(--mint)] mb-8">THE PLATFORM · WHAT IT CONNECTS TO<span className="flex-1 border-b border-dotted border-slate-600"></span></p>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-white leading-tight mb-6 max-w-3xl">
+            One secure connection puts your whole marketing picture in one place.
+          </h2>
+          <p className="text-slate-300 leading-relaxed max-w-2xl mb-10">
+            Provines Consulting builds and runs a marketing platform — <span className="text-white font-semibold">Golden Kit</span> — for
+            each client. With your permission, granted through the official Google and Meta sign-in
+            screens one click each, Golden Kit securely connects to the marketing accounts you already
+            own and reads their performance data so your AI operator can report on results and manage
+            your campaigns in one place. We only request the access needed to do that, your data is
+            stored encrypted, it is never sold, and you can revoke the connection at any time.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-700 border border-slate-700 mb-8">
+            {[
+              ["Google Ads", "Reads campaign spend, clicks, and conversions to report and optimize your paid search."],
+              ["Google Analytics (GA4)", "Reads website traffic and conversion metrics to show what's working."],
+              ["Google Search Console", "Reads organic search clicks, impressions, and rankings for your SEO."],
+              ["Google Business Profile", "Reads local listing performance — views, calls, and direction requests."],
+              ["Meta Ads", "Reads Facebook and Instagram ad spend and results alongside your Google spend."],
+              ["Facebook & Instagram", "Reads Page and profile insights so social sits in the same report."],
+            ].map(([name, desc]) => (
+              <div key={name} className="bg-[var(--navy)] px-6 py-6">
+                <h3 className="font-bold text-white text-base tracking-tight mb-1.5">{name}</h3>
+                <p className="text-[13px] leading-relaxed text-slate-400">{desc}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-slate-400">
+            How we handle the data we access is described in our{" "}
+            <Link href="/legal" className="text-[var(--mint)] hover:underline">Privacy Policy</Link>.
+          </p>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
       {/* CTA — asymmetric, text left, button right                    */}
       {/* ============================================================ */}
       <section className="border-t border-slate-200 py-20 md:py-28">

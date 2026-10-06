@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const MONO = "font-[family-name:var(--font-geist-mono)]";
-const PAGE_SCALE = 20; // largest page count shown; one square = one page
 
 // FIG. 1: the eight systems around the operator, in 3x3 grid order (center inserted at index 4).
 const systems = [
@@ -20,36 +19,25 @@ const systems = [
 const nodes = [[1, 1], [3, 1], [5, 1], [1, 3], [5, 3], [1, 5], [3, 5], [5, 5]];
 const ring = [[1, 1], [3, 1], [5, 1], [5, 3], [5, 5], [3, 5], [1, 5], [1, 3], [1, 1]];
 
-// Before/after jobs. Bars and counts are drawn to scale.
+// Jobs that run through several systems. Outcomes are the ones Connor confirmed from real installs.
 const jobs = [
   {
-    title: "Publishing a new page on the website",
-    touches: ["Website", "Search data"],
-    what: "Writing the page, building it into the site, checking it on a phone, and getting it in front of Google.",
-    unit: "pages",
-    before: { label: "1 to 2 pages a week", count: 2 },
-    after: { label: "15 to 20 pages a week", count: 20 },
-  },
-  {
     title: "Launching a new service or service area",
-    touches: ["Website", "Ads", "Analytics", "CRM"],
+    chain: ["Website", "Ads", "Analytics", "CRM"],
     what: "A landing page, a campaign aimed at the right searches, conversion tracking, and the new leads wired into follow-up.",
-    before: { label: "2 to 3 weeks of requests and handoffs" },
-    after: { label: "The same day", ratio: 0.05 },
+    outcome: "Live the same day.",
   },
   {
-    title: "Finding out why leads dropped last week",
-    touches: ["Analytics", "Ads", "Search data", "Website", "CRM"],
-    what: "Checking the campaigns, the site, the rankings and the CRM for the cause, then proposing the fix.",
-    before: { label: "Half a day of pulling reports" },
-    after: { label: "About ten minutes", ratio: 0.04 },
+    title: "Answering a new lead",
+    chain: ["Website", "CRM", "Email + calendar"],
+    what: "The lead comes in from a form or an ad, lands in the CRM with where it came from, and gets a reply from your business.",
+    outcome: "New leads hear back within five minutes.",
   },
   {
-    title: "Following through on a sales call",
-    touches: ["Email + calendar", "CRM", "ERP + accounting"],
-    what: "Notes from the call, to-dos in the job system, the CRM updated, and a follow-up drafted for the rep to send.",
-    before: { label: "30 to 45 minutes after every call" },
-    after: { label: "A few minutes to review", ratio: 0.08 },
+    title: "Publishing new pages on the website",
+    chain: ["Search data", "Website"],
+    what: "Writing the page, building it into the site, checking it on a phone, and getting it in front of Google.",
+    outcome: "Three or four new pages a day.",
   },
 ];
 
@@ -103,30 +91,6 @@ export const faqs = [
   },
 ];
 
-// One measured line: mono tag and plain-language duration above a full-width scale.
-function Measure({ tag, tagTone, label, unit, count, widthPct, tone }) {
-  return (
-    <div>
-      <div className="flex items-baseline justify-between gap-4 mb-1.5">
-        <span className={`${MONO} text-[10px] tracking-[0.08em] shrink-0 ${tagTone}`}>{tag}</span>
-        <span className="text-[13px] text-slate-700 text-right leading-snug">{label}</span>
-      </div>
-      {unit === "pages" ? (
-        <div className="flex gap-[3px]">
-          {Array.from({ length: count }).map((_, i) => (
-            // Same square size on every row (sized for the largest count) keeps rows to scale.
-            <span key={i} className={`h-3 ${tone}`} style={{ width: `calc((100% - ${(PAGE_SCALE - 1) * 3}px) / ${PAGE_SCALE})` }} />
-          ))}
-        </div>
-      ) : (
-        <div className="h-3 bg-slate-100">
-          <div className={`h-full ${tone}`} style={{ width: `${widthPct}%` }} />
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function AiAgentsContent() {
   return (
     <div className="bg-white">
@@ -157,10 +121,10 @@ export default function AiAgentsContent() {
                 Book a growth audit
               </Link>
               <a
-                href="#before-and-after"
+                href="#what-it-does"
                 className="inline-flex items-center justify-center px-8 py-4 text-[var(--navy)] font-medium text-lg border-b border-slate-300 hover:border-[var(--navy)] transition-colors bg-transparent"
               >
-                See before and after
+                See what it does
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
             </div>
@@ -250,15 +214,8 @@ export default function AiAgentsContent() {
               in a business lives.
             </p>
             <p>
-              Take a question like why leads dropped last week. The answer could be in the ads,
-              the site, the rankings or the CRM, which usually means four logins and two or
-              three people. An operator that can reach all of them follows the trail the way a
-              sharp person would, only in minutes, and then acts on what it finds: it repairs
-              the form, adjusts the campaign, and flags the leads that went cold.
-            </p>
-            <p>
-              That&apos;s the part I build. I connect each system your business runs on, map the
-              paths between them, and give the operator a browser for anything without a clean
+              The connections are the part I build. I connect each system your business runs on,
+              map the paths between them, and give the operator a browser for anything without a clean
               connection, so it can work through a web page the way a person would. Once
               that&apos;s in place there&apos;s very little operational work it can&apos;t take
               on, and the job left for your people is the part that needs them: deciding what
@@ -277,57 +234,39 @@ export default function AiAgentsContent() {
       </section>
 
       {/* ============================================================ */}
-      {/* BEFORE AND AFTER                                              */}
+      {/* WHAT IT DOES: jobs that run through several systems           */}
       {/* ============================================================ */}
-      <section id="before-and-after" className="bg-[var(--off-white)] border-b border-[var(--line)] scroll-mt-24">
+      <section id="what-it-does" className="bg-[var(--off-white)] border-b border-[var(--line)] scroll-mt-24">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-6 max-w-3xl">
-            The same work, before and after.
+            Work that used to pass between people now runs through one operator.
           </h2>
           <p className="text-slate-600 leading-relaxed text-lg max-w-2xl mb-14">
-            These are jobs from businesses I&apos;ve set this up for. The before is how long the
-            work took the people doing it. The after is how long it takes now, including the
-            minutes someone spends checking the result.
+            Each of these jobs normally moves through several tools, and usually several people,
+            before it&apos;s done. These three come from businesses where the operator runs them now.
           </p>
 
-          <div className="border border-[var(--line)] bg-white divide-y divide-[var(--line)]">
+          <div className="grid md:grid-cols-3 gap-px bg-[var(--line)] border border-[var(--line)]">
             {jobs.map((job) => (
-              <div key={job.title} className="grid md:grid-cols-[1fr_1.15fr] gap-6 md:gap-12 px-6 py-8 md:px-8 md:py-9">
-                <div>
-                  <h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-2">{job.title}</h3>
-                  <p className="text-[15px] text-slate-600 leading-relaxed mb-4">{job.what}</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {job.touches.map((t) => (
-                      <span key={t} className={`${MONO} text-[10px] uppercase tracking-[0.06em] text-slate-500 border border-[var(--line)] px-2 py-0.5`}>
+              <div key={job.title} className="bg-white flex flex-col px-6 py-8 md:px-7">
+                <h3 className="font-bold text-lg text-[var(--navy)] tracking-tight leading-snug mb-3">{job.title}</h3>
+                <p className="text-[15px] text-slate-600 leading-relaxed mb-6">{job.what}</p>
+                <div className="flex flex-wrap items-center gap-x-1.5 gap-y-2 mb-8">
+                  {job.chain.map((t, i) => (
+                    <span key={t} className="inline-flex items-center gap-1.5">
+                      {i > 0 && <span className={`${MONO} text-[11px] text-[var(--electric-blue)]`} aria-hidden="true">▸</span>}
+                      <span className={`${MONO} text-[10px] uppercase tracking-[0.06em] text-slate-600 border border-[var(--navy)] px-2 py-0.5`}>
                         {t}
                       </span>
-                    ))}
-                  </div>
+                    </span>
+                  ))}
                 </div>
-                <div className="space-y-5 md:pt-1">
-                  <Measure
-                    tag="BEFORE"
-                    tagTone="text-slate-500"
-                    label={job.before.label}
-                    unit={job.unit}
-                    count={job.before.count}
-                    widthPct={100}
-                    tone="bg-slate-300"
-                  />
-                  <Measure
-                    tag="WITH THE OPERATOR"
-                    tagTone="text-[var(--electric-blue)]"
-                    label={job.after.label}
-                    unit={job.unit}
-                    count={job.after.count}
-                    widthPct={(job.after.ratio || 0) * 100}
-                    tone="bg-[var(--navy)]"
-                  />
-                </div>
+                <p className="mt-auto pt-5 md:min-h-[4.5rem] border-t border-[var(--line)] font-bold text-lg text-[var(--navy)] tracking-tight leading-snug">
+                  {job.outcome}
+                </p>
               </div>
             ))}
           </div>
-          <p className={`${MONO} text-[11px] text-slate-500 mt-5`}>bars and page counts drawn to scale</p>
         </div>
       </section>
 

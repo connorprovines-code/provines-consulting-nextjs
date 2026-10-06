@@ -27,7 +27,10 @@ export default function ClientLayout({ children }) {
   }, [pathname]);
 
   // Pages that open on a full-bleed dark stage: dark nav, no framed sheet (approved for /ai-agents, Oct 2026).
-  const darkStage = pathname === "/ai-agents";
+  const darkStage = pathname === "/ai-agents" || pathname.startsWith("/ai-agents/") || pathname === "/ai-consultant";
+
+  // A section stays active on its subpages (e.g. AI Agents on /ai-agents/examples).
+  const isActive = (path) => pathname === path || (path !== "/" && pathname.startsWith(path + "/"));
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -74,10 +77,10 @@ export default function ClientLayout({ children }) {
                   href={item.path}
                   className={`relative flex items-center self-stretch text-sm font-medium transition-colors duration-200 ${
                     darkStage
-                      ? pathname === item.path
+                      ? isActive(item.path)
                         ? "text-[#F8FAFC] after:absolute after:left-0 after:right-0 after:-bottom-px after:h-px after:bg-[#7CBFE9] after:shadow-[0_0_10px_#7CBFE9]"
                         : "text-slate-400 hover:text-[#F8FAFC]"
-                      : pathname === item.path
+                      : isActive(item.path)
                         ? "text-[var(--electric-blue)]"
                         : "text-[var(--charcoal)] hover:text-[var(--electric-blue)]"
                   }`}
@@ -119,7 +122,7 @@ export default function ClientLayout({ children }) {
                   key={item.path}
                   href={item.path}
                   className={`block py-2 text-base font-medium transition-colors ${
-                    pathname === item.path
+                    isActive(item.path)
                       ? darkStage ? "text-[#F8FAFC]" : "text-[var(--electric-blue)]"
                       : darkStage ? "text-slate-400" : "text-[var(--charcoal)]"
                   }`}
@@ -170,6 +173,8 @@ export default function ClientLayout({ children }) {
                 {[
                   { name: "Home", path: "/" },
                   { name: "AI Agents", path: "/ai-agents" },
+                  { name: "AI Agent Examples", path: "/ai-agents/examples" },
+                  { name: "AI Consultant", path: "/ai-consultant" },
                   { name: "Work", path: "/work" },
                   { name: "How It Works", path: "/how-it-works" },
                   { name: "Growth Audit", path: "/growth-audit" },

@@ -73,6 +73,8 @@ const jsonLd = {
     "Marketing Automation",
     "Google Ads Management",
     "Marketing Operations Consulting",
+    "AI Agent Implementation",
+    "AI Consulting for Small Business",
   ],
   knowsAbout: [
     "Website Migration",
@@ -83,6 +85,8 @@ const jsonLd = {
     "Google Ads",
     "B2B Marketing Operations",
     "Lead Generation",
+    "AI Agents",
+    "AI Automation",
   ],
 };
 

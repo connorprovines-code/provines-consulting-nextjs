@@ -1,7 +1,7 @@
 import PageContent, { faqs } from "./PageContent";
 
 const description =
-  "What AI agents can actually do inside a business: one operator wired into your website, ads, CRM, analytics, ERP and email, piloted by your own team.";
+  "AI agents for small business: one operator connected to your website, ads, CRM, ERP and email, installed by an AI consultant and directed by your own team.";
 
 export const metadata = {
   title: "AI Agents for Business",
@@ -33,7 +33,17 @@ const jsonLd = [
       "@type": "ProfessionalService",
       name: "Provines Consulting",
       url: "https://www.provinesconsulting.com",
+      founder: { "@type": "Person", name: "Connor Provines", jobTitle: "Founder" },
     },
+    audience: { "@type": "BusinessAudience", audienceType: "Owners and CEOs of small businesses" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.provinesconsulting.com" },
+      { "@type": "ListItem", position: 2, name: "AI agents", item: "https://www.provinesconsulting.com/ai-agents" },
+    ],
   },
   {
     "@context": "https://schema.org",

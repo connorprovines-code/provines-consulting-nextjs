@@ -5,7 +5,7 @@ export const faqs = [
   {
     q: "What can an AI agent actually do for my business?",
     a: [
-      "The operational work that runs through your systems: building, budgeting and reporting on ad campaigns; writing and scheduling social posts; writing and publishing pages on the website; answering new leads and booking the calls; keeping the CRM clean and chasing follow-ups; filing documents and data into the ERP and accounting; researching search terms and competitors; and pulling the numbers into the reports you actually read. The work that crosses several systems is where it saves the most, because that's the work that takes longest by hand and is the easiest to drop.",
+      "The operational work that runs through your systems: building, budgeting and reporting on ad campaigns; writing and scheduling social posts; writing and publishing pages on the website; answering new leads and booking the calls; keeping the CRM clean and chasing follow-ups; filing documents and data into the ERP and accounting; researching search terms and competitors; and pulling the numbers into the reports you actually read. The work that crosses several systems is where an AI agent saves the most, because that's the work that takes longest by hand and is the easiest to drop.",
       "It doesn't decide what your business should do. Someone on your team does that, and the operator carries it out and flags what deserves their attention.",
     ],
   },
@@ -17,16 +17,37 @@ export const faqs = [
     ],
   },
   {
-    q: "Where does it start?",
+    q: "What is the best AI agent for business?",
     a: [
-      "With the job that crosses the most systems and costs your team the most hours, which is what the growth audit finds. That job gets connected, tested and handed to your pilot first.",
-      "Every job after it goes faster, because the connections it needs are already in place.",
+      "The one connected to the systems where your work actually happens. A well-reviewed tool that only sees its own app still leaves your team carrying information between the website, the CRM and the ad account by hand, which is the part that eats the hours.",
+      "When owners ask me which AI agent to buy, I ask which job costs them the most hours across the most systems, because that decides what the agent needs to reach.",
+    ],
+  },
+  {
+    q: "How is an AI agent different from automation?",
+    a: [
+      "An automation follows a path someone set up in advance, like copying every new form entry into the CRM, and it works until the input changes, at which point it breaks or quietly does the wrong thing. An AI agent works from a goal and from standing instructions about your business, so it can read a lead that arrived in an unusual format, decide where it belongs, and ask the pilot when it isn't sure.",
+      "The automations you already have can keep running alongside it. Often the operator ends up watching them and fixing the ones that fail.",
+    ],
+  },
+  {
+    q: "Is my business ready for an AI agent?",
+    a: [
+      "A business is ready when the work it wants done already runs through software: a website, an ad account, a CRM, an accounting or job system, and a shared inbox and calendar. It also needs one person who knows how the business works and has time to direct the operator and check its work.",
+      "Messy data isn't a reason to wait, since keeping the CRM clean is one of the jobs the operator does. The harder case is a business where the important work lives only in one person's head, because there's nothing yet for an operator to connect to.",
     ],
   },
   {
     q: "What does it need access to, and who owns it?",
     a: [
       "The same accounts your team already logs into, granted through each platform's own sign-in screens, in your company's name. It runs under your accounts on a machine you own, so nothing about it lives on a platform you'd lose if we stopped working together, and you can revoke any connection whenever you like.",
+    ],
+  },
+  {
+    q: "How much does an AI agent cost for a small business?",
+    a: [
+      "There are two parts. The first is the install: the audit, the connections, the standing instructions, and my time alongside your team until they run it without me. The second is the running cost, meaning the AI usage and the software it works through, and because the operator runs on your own accounts, those bills come to you directly.",
+      "The growth audit is where the first job gets scoped, so the price reflects your systems and that job rather than a package.",
     ],
   },
   {
@@ -58,35 +79,65 @@ export default function AiAgentsContent() {
   return (
     <div className="aa">
       <CommandStage>
-        {/* Why one operator: the argument behind the stage */}
+        {/* Kinds of agents, and why one connected operator */}
         <div className="aa-block grid md:grid-cols-[5fr_7fr] gap-8 md:gap-16">
-          <h2 style={H2_FLUSH}>What makes it useful is that one operator can reach every system at once.</h2>
+          <h2 style={H2_FLUSH}>The kinds of AI agents a business can run</h2>
           <div className={`space-y-5 ${PROSE}`}>
             <p>
-              Most of what gets sold as an AI agent does one job inside one app. A chat widget
-              answers questions on your website, an email tool writes follow-ups, a sales bot books
-              meetings. Each of them is useful in a narrow way, and each of them is blind to
-              everything happening outside its own box, which is where most of the real work in a
-              business lives.
+              Most AI agents sold to businesses fall into a handful of kinds: chatbots that answer
+              customer questions on a website, sales agents that research prospects and draft
+              outreach, inbox and scheduling assistants, support agents that sort and answer tickets,
+              and automations with an AI step in the middle. Each one works inside a single app and
+              sees only what that app holds.
             </p>
             <p>
-              The connections are the part I build. I connect each system and write down how work
-              moves between them: where a lead lands in the CRM, what turns it into a job, where
-              documents get filed, and which actions need someone&apos;s approval. Then I give the
-              operator a browser for anything without a clean connection, so it can work through a
-              web page the way a person would. Once that&apos;s in place, the job left for your
-              people is deciding what should happen and checking that it did.
+              An operator is a different kind of AI agent. It&apos;s connected to all of those systems
+              at once, so one request can move from the website to the CRM to the ad account without
+              anyone carrying it between them. For an owner, the same operator can work as an{" "}
+              <Link href="/ai-agents/chief-of-staff" className="ilink">AI chief of staff</Link> that runs
+              the business systems instead of summarizing the inbox.
+            </p>
+            <h3 className="pt-3 text-[21px] font-bold tracking-tight text-[var(--ink2)]">
+              Why one connected operator beats a stack of single-purpose bots
+            </h3>
+            <p>
+              A stack of separate tools means separate logins, separate places where instructions
+              live, and nobody watching the handoffs between them, which is where work gets dropped.
+              One operator holds the standing instructions once, sees every system, and carries the
+              work across those handoffs itself.
             </p>
           </div>
         </div>
 
-        {/* What to expect: the questions searchers ask */}
+        {/* What an install involves */}
+        <div className="aa-block grid md:grid-cols-[5fr_7fr] gap-8 md:gap-16">
+          <h2 style={H2_FLUSH}>What an AI agent install involves</h2>
+          <div className={`space-y-5 ${PROSE}`}>
+            <p>
+              An install starts with the <Link href="/growth-audit" className="ilink">growth audit</Link>,
+              which maps the systems your business runs on and picks the first job. I connect each of
+              those systems through its own sign-in screen, in your company&apos;s name, and write down
+              how work moves between them: where a lead lands in the CRM, what turns it into a job,
+              where documents get filed, and which actions need someone&apos;s approval. That becomes
+              the standing instructions the operator works from, along with your services, your
+              pricing rules and who handles what. Anything without a clean connection, the operator
+              works through in a browser, the way a person would.
+            </p>
+            <p>
+              The first job is tested end to end and handed to your pilot with every send, spend and
+              publish waiting for their sign-off. I stay alongside your team until directing it is
+              part of their normal day, and every job after the first reuses the connections already
+              in place. If you&apos;re comparing <Link href="/ai-consultant" className="ilink">AI consultants</Link>,
+              ask each one how they handle this stretch, because it decides whether the operator gets
+              used.
+            </p>
+          </div>
+        </div>
+
+        {/* Questions owners ask (People also ask targets) */}
         <div className="aa-block grid md:grid-cols-[5fr_7fr] gap-8 md:gap-16">
           <div className="md:sticky md:top-28 md:self-start">
-            <h2 style={H2_FLUSH}>What to expect if you bring an operator into your business.</h2>
-            <p className={`mt-6 ${PROSE}`}>
-              These are the questions owners ask me before an install, with the answers I give them.
-            </p>
+            <h2 style={H2_FLUSH}>Questions owners ask about AI agents</h2>
           </div>
           <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
             {faqs.map((f) => (
@@ -105,12 +156,11 @@ export default function AiAgentsContent() {
         {/* CTA */}
         <div className="aa-block grid md:grid-cols-[1.5fr_1fr] gap-8 md:gap-12 items-center bg-[var(--off)]">
           <div>
-            <h2 style={H2_FLUSH}>The first step is finding the job it should take on first.</h2>
+            <h2 style={H2_FLUSH}>Where an AI agent install starts</h2>
             <p className={`mt-6 max-w-xl ${PROSE}`}>
-              That&apos;s what the <Link href="/growth-audit" className="ilink">growth audit</Link> is
-              for. I go through the systems your business runs on and how work moves between them,
-              and pick the job where an operator would save the most hours across the most systems.
-              The install starts with that job.
+              The <Link href="/growth-audit" className="ilink">growth audit</Link> maps the systems your
+              business runs on and how work moves between them, and picks the job where an AI agent
+              would save the most hours across the most systems. That job is where the install starts.
             </p>
           </div>
           <div className="md:text-right">

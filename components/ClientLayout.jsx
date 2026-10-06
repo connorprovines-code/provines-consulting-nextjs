@@ -26,6 +26,9 @@ export default function ClientLayout({ children }) {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  // Pages that open on a full-bleed dark stage: dark nav, no framed sheet (approved for /ai-agents, Oct 2026).
+  const darkStage = pathname === "/ai-agents";
+
   const navItems = [
     { name: "Home", path: "/" },
     { name: "AI Agents", path: "/ai-agents" },
@@ -49,28 +52,34 @@ export default function ClientLayout({ children }) {
 
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[var(--off-white)]/95 backdrop-blur-md border-b border-[var(--line)]" : "bg-transparent"
+        darkStage
+          ? "bg-[rgba(6,10,18,0.8)] backdrop-blur-md border-b border-[rgba(148,163,184,0.13)]"
+          : isScrolled ? "bg-[var(--off-white)]/95 backdrop-blur-md border-b border-[var(--line)]" : "bg-transparent"
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link
               href="/"
-              className="flex items-center gap-2.5 text-2xl font-bold text-[var(--navy)] tracking-tight"
+              className={`flex items-center gap-2.5 text-2xl font-bold tracking-tight ${darkStage ? "text-[#F8FAFC]" : "text-[var(--navy)]"}`}
             >
-              <span className="inline-flex w-7 h-7 bg-[var(--navy)] text-white items-center justify-center text-base font-bold" aria-hidden="true">P</span>
+              <span className={`inline-flex w-7 h-7 items-center justify-center text-base font-bold ${darkStage ? "bg-[#F8FAFC] text-[var(--navy)]" : "bg-[var(--navy)] text-white"}`} aria-hidden="true">P</span>
               Provines Consulting
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-8 self-stretch">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`text-sm font-medium transition-colors duration-200 ${
-                    pathname === item.path
-                      ? "text-[var(--electric-blue)]"
-                      : "text-[var(--charcoal)] hover:text-[var(--electric-blue)]"
+                  className={`relative flex items-center self-stretch text-sm font-medium transition-colors duration-200 ${
+                    darkStage
+                      ? pathname === item.path
+                        ? "text-[#F8FAFC] after:absolute after:left-0 after:right-0 after:-bottom-px after:h-px after:bg-[#7CBFE9] after:shadow-[0_0_10px_#7CBFE9]"
+                        : "text-slate-400 hover:text-[#F8FAFC]"
+                      : pathname === item.path
+                        ? "text-[var(--electric-blue)]"
+                        : "text-[var(--charcoal)] hover:text-[var(--electric-blue)]"
                   }`}
                 >
                   {item.name}
@@ -93,7 +102,7 @@ export default function ClientLayout({ children }) {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--navy)]"
+              className={`md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center ${darkStage ? "text-[#F8FAFC]" : "text-[var(--navy)]"}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -103,7 +112,7 @@ export default function ClientLayout({ children }) {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-slate-200 shadow-lg">
+          <div className={`md:hidden shadow-lg ${darkStage ? "bg-[#0A101C] border-t border-[rgba(148,163,184,0.13)]" : "bg-white border-t border-slate-200"}`}>
             <div className="max-w-7xl mx-auto px-4 py-4 space-y-3">
               {navItems.map((item) => (
                 <Link
@@ -111,8 +120,8 @@ export default function ClientLayout({ children }) {
                   href={item.path}
                   className={`block py-2 text-base font-medium transition-colors ${
                     pathname === item.path
-                      ? "text-[var(--electric-blue)]"
-                      : "text-[var(--charcoal)]"
+                      ? darkStage ? "text-[#F8FAFC]" : "text-[var(--electric-blue)]"
+                      : darkStage ? "text-slate-400" : "text-[var(--charcoal)]"
                   }`}
                 >
                   {item.name}
@@ -134,11 +143,15 @@ export default function ClientLayout({ children }) {
       </nav>
 
       {/* Main Content — framed sheet on the drafting-grid ground */}
-      <main className="pt-20">
-        <div className="mx-auto max-w-[1200px] bg-white border-x border-[var(--line)] border-t-[3px] border-t-[var(--navy)]">
-          {children}
-        </div>
-      </main>
+      {darkStage ? (
+        <main>{children}</main>
+      ) : (
+        <main className="pt-20">
+          <div className="mx-auto max-w-[1200px] bg-white border-x border-[var(--line)] border-t-[3px] border-t-[var(--navy)]">
+            {children}
+          </div>
+        </main>
+      )}
 
       {/* Footer */}
       <footer className="bg-[var(--navy)] text-white mt-32">

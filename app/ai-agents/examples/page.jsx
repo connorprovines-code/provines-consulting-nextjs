@@ -8,7 +8,7 @@ import AgentsSubpage, { subpageJsonLd } from "../AgentsSubpage";
 const PATH = "/ai-agents/examples";
 const title = "AI Agent Examples: Small Business Use Cases";
 const description =
-  "Real AI agent examples from small business installs: the request, the systems it ran through, what came back and who approved it, in marketing, sales and ops.";
+  "Real AI agent examples for small businesses: the request, the systems the work runs through, what comes back and who approves it, in marketing, sales and ops.";
 
 export const metadata = {
   title,
@@ -169,23 +169,12 @@ const sections = [
   {
     h2: "Email and calendar",
     paras: [
-      "An inbox assistant that can't see the CRM or the job system can only summarize. With those connected, the operator drafts replies that already know a job's status and puts a lead's history into the meeting before anyone opens the invite.",
-    ],
-    examples: [
-      {
-        title: "Sorting the owner's inbox against the CRM and job system",
-        request: "Go through my inbox. File what's handled, draft replies for what needs me, and tell me what's waiting on a decision.",
-        systems: ["email", "crm", "erp"],
-        result: "It links each customer email to its CRM record and job, files the threads that were already handled, and drafts replies using the job's current status, schedule and balance. What's left is a short list of threads that need the owner's decision, each with a line on what's being asked.",
-        approval: "Drafts wait in the owner's drafts folder, and nothing goes out from the owner's address without them.",
-      },
-      {
-        title: "A brief in the invite before every sales call",
-        request: "Before each sales call, put the lead's history at the top of the invite.",
-        systems: ["crm", "website", "email"],
-        result: "For each sales call on the calendar it pulls the lead's form submission, earlier emails and any past quotes, and writes a short brief into the event notes, so the salesperson walks in knowing what the lead asked for and what was already promised.",
-        approval: "Nothing reaches the lead, so there's nothing to approve.",
-      },
+      "Email and calendar run through most of the examples above: the lead's reply goes out by email and the call lands on the right calendar, call notes become to-dos, and the weekly report arrives in the owner's inbox. An inbox assistant that can't see the CRM or the job system can only summarize. With those connected, the operator drafts replies that already know a job's status and puts a lead's history into the invite before a sales call.",
+      <>
+        Pointed at the owner&apos;s own day, the same operator works as an{" "}
+        <Link href="/ai-agents/chief-of-staff" className="ilink">AI chief of staff</Link>: it sorts the
+        owner&apos;s inbox against the CRM and the books, and prepares the owner for each meeting.
+      </>,
     ],
   },
   {
@@ -204,11 +193,11 @@ const sections = [
   {
     h2: "Choosing your first use case",
     paras: [
-      "The first job sets up the connections and teaches the team how to direct the operator, so it matters more than the ones after it. A job where a mistake reaches a customer or moves money makes a better second or third job, once the pilot has seen how the operator works. Reporting and lead response make good first jobs for that reason: one only reads, and the other runs on rules approved up front.",
+      "The first job sets up the connections and teaches the team how to direct the operator, so it matters more than the ones after it. A job where a mistake reaches a customer or moves money makes a better second or third job, once the pilot has seen how the operator works. The growth audit picks the first job by the hours it saves across systems. When two jobs qualify, the one that only reads, or runs on rules approved up front, goes first.",
       <>
         The <Link href="/work" className="ilink">case studies</Link> show where a first job has led,
-        including a home builder that was overpaying for software and an owner-run company that now
-        runs its own marketing system.
+        including a client that was overpaying for software and an owner-run company that now runs its
+        own marketing system.
       </>,
     ],
     points: [
@@ -229,31 +218,24 @@ const faqs = [
     ],
   },
   {
-    q: "What are the 5 types of AI agents?",
+    q: "Which of these should a small business start with?",
     a: [
-      "The standard five are simple reflex, model-based reflex, goal-based, utility-based and learning agents. They describe how an agent decides: by a fixed rule, by tracking what has happened, by planning toward a goal, by weighing options, or by improving from feedback.",
-      "In a business these aren't five products to buy. One well-connected operator behaves as each of them depending on the job, from a crawl alert that fires by rule to a service launch it plans toward a goal.",
+      "Start with the job that crosses the most systems and costs the team the most hours, as long as someone can write down how it should be done and check the result quickly. That is usually work a person does by hand every week, copying information from one system into another.",
+      "Whichever job comes first, the connections it needs stay in place, so the second job starts with most of its groundwork already done.",
     ],
   },
   {
-    q: "Is ChatGPT an AI agent?",
+    q: "Can one AI agent run all of these jobs?",
     a: [
-      "It's barely one in the sense a business needs. Most people use the chat, which works from what you paste in and hands the doing back to you. Its agent mode can browse and click through a few connected apps, but it's still a session you start and watch, with no standing knowledge of how your business works.",
-      "An operator lives inside the business instead. It runs on the company's own accounts, stays connected to the website, ads, CRM, ERP and email, and keeps standing instructions about services, pricing rules and who approves what. That's what lets it run the jobs above without someone rebuilding the context each time.",
+      "Yes, as long as it's connected to every system the jobs pass through. The same operator answers the lead, files the contract and writes the weekly report, because it holds connections to the website, ads, social accounts, analytics, search data, CRM, ERP and accounting, and email and calendar at the same time, plus a browser for anything without a connection.",
+      "What changes from job to job is the instructions and the approvals. Each job gets written instructions for how the business wants it done and a clear line on what the operator may do alone, and the pilot moves that line as the work proves itself.",
     ],
   },
   {
-    q: "What can AI agents do for a small business?",
+    q: "Do these examples need custom software built?",
     a: [
-      "They can take on the operational work that runs between systems: answering and booking new leads, running and reporting on ad campaigns, publishing website pages, keeping the CRM current, filing documents and drafting invoices in the ERP and accounting, and turning the numbers into a report the owner reads.",
-      "They don't decide what the business should do. Someone on the team directs the operator, approves anything that spends money, publishes or reaches a customer, and widens what it can do alone as they see how it handles the work.",
-    ],
-  },
-  {
-    q: "What is an agentic workflow?",
-    a: [
-      "An agentic workflow is a job an AI agent carries out in several steps, using what it finds at each step to decide the next, usually across more than one system. A fixed automation in a tool like Zapier runs the same recipe every time and stalls when an input doesn't fit, while an agentic workflow reads the input and adapts.",
-      "Answering a lead is a typical example. The agent reads the inquiry, logs it in the CRM, works out who should take it, checks that person's calendar, writes a reply that fits the question and books the call. Existing automations can stay in place, with the operator taking the steps that need reading and judgment.",
+      "No new software gets built for them. The operator works through the accounts the business already has, such as the website, ad accounts, CRM, ERP and accounting, and email and calendar, each connected through the platform's own sign-in in the company's name. Where a system has no clean connection, the operator uses a browser the way a person would.",
+      "What gets built is the connections and the standing instructions: which system holds what, how work moves between them, and what needs approval. Any connection can be revoked from the platform it belongs to.",
     ],
   },
 ];
@@ -261,7 +243,7 @@ const faqs = [
 const related = [
   { href: "/ai-agents", title: "AI agents for business", text: "The full operator: how one agent connects to every system a business runs, who pilots it, and what an install involves." },
   { href: "/ai-agents/chief-of-staff", title: "An AI chief of staff for the owner", text: "The same operator pointed at the owner's own work: the inbox, the calendar, the follow-ups and the numbers that need a decision." },
-  { href: "/work", title: "Case studies", text: "What the work looked like from start to finish at client businesses, and what each team runs on its own now." },
+  { href: "/ai-consultant", title: "Working with an AI consultant", text: "How an install runs, from the audit to the day the team runs the operator on its own, and what the business owns at the end." },
 ];
 
 const jsonLd = subpageJsonLd({ path: PATH, title, description, crumbs, faqs });
@@ -271,13 +253,12 @@ export default function AiAgentExamples() {
     <AgentsSubpage
       crumbs={crumbs}
       h1="AI agent examples: real jobs one agent runs inside a small business"
-      lede="These are jobs one AI operator runs inside the small businesses where I install it: a single agent connected to the website, ads, social accounts, analytics, search data, CRM, ERP and accounting, and email and calendar, directed by someone on the team in plain English. Each example gives the request, the systems the work runs through, what comes back and who approves it."
-      small="Most of them run at client businesses today. The rest are jobs the same connections handle when a team asks for them."
+      lede="These AI agent examples come from the work an AI operator does inside a small business: a single agent connected to the website, ads, social accounts, analytics, search data, CRM, ERP and accounting, and email and calendar, and directed by someone on the team in plain English."
+      small="Every job here runs on the connections an install puts in place. Where a result is given, it comes from a client install."
       systems={["website", "ads", "social", "analytics", "search", "crm", "erp", "email"]}
       panelNote="The examples run through every system the operator is connected to, and most single jobs cross several of them."
       sections={sections}
       faqs={faqs}
-      faqIntro="The questions owners ask when they look at examples like these, with the answers I give them."
       related={related}
       cta={{
         h2: "The first example worth running in your business is the one the audit finds.",

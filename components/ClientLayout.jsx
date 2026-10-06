@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Calendar, Menu, X } from "lucide-react";
+import { Calendar, ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -32,9 +32,21 @@ export default function ClientLayout({ children }) {
   // A section stays active on its subpages (e.g. AI Agents on /ai-agents/examples).
   const isActive = (path) => pathname === path || (path !== "/" && pathname.startsWith(path + "/"));
 
+  // A parent with a dropdown is active when any of its pages is.
+  const itemActive = (item) => isActive(item.path) || (item.children || []).some((c) => isActive(c.path));
+
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "AI Agents", path: "/ai-agents" },
+    {
+      name: "AI Agents",
+      path: "/ai-agents",
+      children: [
+        { name: "AI agents for business", path: "/ai-agents", note: "One operator connected to every system" },
+        { name: "AI agent examples", path: "/ai-agents/examples", note: "Real jobs, by business function" },
+        { name: "AI chief of staff", path: "/ai-agents/chief-of-staff", note: "An agent for the owner's own requests" },
+        { name: "AI consultant", path: "/ai-consultant", note: "How an engagement works" },
+      ],
+    },
     { name: "Work", path: "/work" },
     { name: "How It Works", path: "/how-it-works" },
     { name: "Growth Audit", path: "/growth-audit" },
@@ -71,23 +83,55 @@ export default function ClientLayout({ children }) {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8 self-stretch">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  href={item.path}
-                  className={`relative flex items-center self-stretch text-sm font-medium transition-colors duration-200 ${
-                    darkStage
-                      ? isActive(item.path)
-                        ? "text-[#F8FAFC] after:absolute after:left-0 after:right-0 after:-bottom-px after:h-px after:bg-[#7CBFE9] after:shadow-[0_0_10px_#7CBFE9]"
-                        : "text-slate-400 hover:text-[#F8FAFC]"
-                      : isActive(item.path)
-                        ? "text-[var(--electric-blue)]"
-                        : "text-[var(--charcoal)] hover:text-[var(--electric-blue)]"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                const link = (
+                  <Link
+                    key={item.path}
+                    href={item.path}
+                    className={`relative flex items-center gap-1 self-stretch text-sm font-medium transition-colors duration-200 ${
+                      darkStage
+                        ? itemActive(item)
+                          ? "text-[#F8FAFC] after:absolute after:left-0 after:right-0 after:-bottom-px after:h-px after:bg-[#7CBFE9] after:shadow-[0_0_10px_#7CBFE9]"
+                          : "text-slate-400 hover:text-[#F8FAFC]"
+                        : itemActive(item)
+                          ? "text-[var(--electric-blue)]"
+                          : "text-[var(--charcoal)] hover:text-[var(--electric-blue)]"
+                    }`}
+                  >
+                    {item.name}
+                    {item.children && (
+                      <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden="true" />
+                    )}
+                  </Link>
+                );
+                if (!item.children) return link;
+                return (
+                  <div key={item.path} className="group relative flex self-stretch">
+                    {link}
+                    {/* Dropdown: opens on hover and on keyboard focus */}
+                    <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150 absolute left-1/2 -translate-x-1/2 top-full w-80">
+                      <div className={`py-2 shadow-xl ${darkStage ? "bg-[#0A101C] border border-[rgba(148,163,184,0.22)]" : "bg-white border border-[var(--line)]"}`}>
+                        {item.children.map((c) => (
+                          <Link
+                            key={c.path}
+                            href={c.path}
+                            className={`block px-5 py-3 transition-colors ${darkStage ? "hover:bg-white/5" : "hover:bg-[var(--off-white)]"}`}
+                          >
+                            <span className={`block text-sm font-semibold ${
+                              pathname === c.path
+                                ? darkStage ? "text-[#7CBFE9]" : "text-[var(--electric-blue)]"
+                                : darkStage ? "text-[#F8FAFC]" : "text-[var(--navy)]"
+                            }`}>
+                              {c.name}
+                            </span>
+                            <span className={`block mt-0.5 text-[13px] ${darkStage ? "text-slate-400" : "text-slate-500"}`}>{c.note}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             {/* Desktop CTA */}
@@ -117,7 +161,32 @@ export default function ClientLayout({ children }) {
         {mobileMenuOpen && (
           <div className={`md:hidden shadow-lg ${darkStage ? "bg-[#0A101C] border-t border-[rgba(148,163,184,0.13)]" : "bg-white border-t border-slate-200"}`}>
             <div className="max-w-7xl mx-auto px-4 py-4 space-y-3">
-              {navItems.map((item) => (
+              {navItems.map((item) => item.children ? (
+                <div key={item.path}>
+                  <span className={`block py-2 text-base font-medium ${
+                    itemActive(item)
+                      ? darkStage ? "text-[#F8FAFC]" : "text-[var(--electric-blue)]"
+                      : darkStage ? "text-slate-400" : "text-[var(--charcoal)]"
+                  }`}>
+                    {item.name}
+                  </span>
+                  <div className={`ml-1 pl-4 border-l space-y-1 ${darkStage ? "border-[rgba(148,163,184,0.22)]" : "border-[var(--line)]"}`}>
+                    {item.children.map((c) => (
+                      <Link
+                        key={c.path}
+                        href={c.path}
+                        className={`block py-1.5 text-[15px] ${
+                          pathname === c.path
+                            ? darkStage ? "text-[#7CBFE9]" : "text-[var(--electric-blue)]"
+                            : darkStage ? "text-slate-300" : "text-[var(--charcoal)]"
+                        }`}
+                      >
+                        {c.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
                 <Link
                   key={item.path}
                   href={item.path}

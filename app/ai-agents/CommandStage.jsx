@@ -42,7 +42,7 @@ const JOBS = [
   {
     req: "A new lead just came in from the website. Answer them and get a call booked.",
     plan: "Log the lead in the CRM with its source, answer their question, offer times, book the call.",
-    steps: [["website", "Website", "lead captured from the form"], ["crm", "CRM", "logged with its source"], ["email", "Email + calendar", "answered, times offered"], ["email", "Email + calendar", "call booked"]],
+    steps: [["website", "Website", "lead captured from the form"], ["crm", "CRM", "logged with its source"], ["email", "Email", "answered, times offered"], ["email", "Calendar", "call booked"]],
     end: "Booked.", status: "BOOKED", route: "WEBSITE ▸ CRM ▸ CALENDAR",
   },
   {

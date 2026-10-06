@@ -26,16 +26,6 @@ const caseStudies = [
     image: "/creekside-after.png",
     ready: true,
   },
-  {
-    slug: "technical-education",
-    title: "10x the Output, Zero the Team",
-    subtitle: SHOW_CLIENT_DETAILS ? "Electrification Academy" : "Technical Education Platform",
-    location: "Online",
-    headline: "A PhD founder went from waiting months on dev changes to shipping them herself in hours.",
-    tags: ["Platform Simplification", "AI Management", "Growth Strategy", "Automation"],
-    image: null,
-    ready: true,
-  },
 ];
 
 export default function WorkContent() {

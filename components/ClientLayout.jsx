@@ -28,6 +28,7 @@ export default function ClientLayout({ children }) {
 
   const navItems = [
     { name: "Home", path: "/" },
+    { name: "AI Agents", path: "/ai-agents" },
     { name: "Work", path: "/work" },
     { name: "How It Works", path: "/how-it-works" },
     { name: "Growth Audit", path: "/growth-audit" },
@@ -155,6 +156,7 @@ export default function ClientLayout({ children }) {
               <div className="space-y-2">
                 {[
                   { name: "Home", path: "/" },
+                  { name: "AI Agents", path: "/ai-agents" },
                   { name: "Work", path: "/work" },
                   { name: "How It Works", path: "/how-it-works" },
                   { name: "Growth Audit", path: "/growth-audit" },

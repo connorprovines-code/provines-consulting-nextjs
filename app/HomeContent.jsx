@@ -227,12 +227,19 @@ export default function HomeContent() {
             </p>
           </div>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-10">
             <Link
               href="/how-it-works"
               className="inline-flex items-center text-[var(--electric-blue)] font-medium hover:underline"
             >
               Full process breakdown
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+            <Link
+              href="/ai-agents"
+              className="inline-flex items-center text-[var(--electric-blue)] font-medium hover:underline"
+            >
+              What the operator can do across your business
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>

@@ -62,7 +62,7 @@ const jsonLd = {
     jobTitle: "Founder",
   },
   areaServed: "US",
-  email: "connor@provines.consulting",
+  email: "connor@provinesconsulting.com",
   serviceType: [
     "Marketing Agency Replacement",
     "AI Marketing Operator Setup",

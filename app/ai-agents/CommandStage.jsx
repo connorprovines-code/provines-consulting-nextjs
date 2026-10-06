@@ -24,9 +24,9 @@ const NODES = [
 // Outcomes are the ones Connor confirmed from real installs; no other performance claims.
 const JOB_CARDS = [
   {
-    title: "Launching a new service or service area",
-    route: [["website", "Website"], ["ads", "Ads"], ["analytics", "Analytics"], ["crm", "CRM"]],
-    what: "A landing page, a campaign aimed at the right searches, conversion tracking, and the new leads wired into follow-up.",
+    title: "Launching a new service across your ads and social",
+    route: [["website", "Website"], ["ads", "Ads"], ["social", "Social"], ["analytics", "Analytics"]],
+    what: "The landing page built, the ad campaigns and social posts created and published, the budget set and moved toward what converts, and reporting that shows where the spend went and what it brought in.",
     outcome: "Live the same day.",
   },
   {
@@ -38,7 +38,7 @@ const JOB_CARDS = [
   {
     title: "Publishing new pages on the website",
     route: [["search", "Search data"], ["website", "Website"]],
-    what: "Writing the page, building it into the site, checking it on a phone, and getting it in front of Google.",
+    what: "Choosing topics from search data, writing the page, building it into the site, checking it on a phone, and submitting it to Google for indexing.",
     outcome: "Three or four new pages a day.",
   },
 ];
@@ -46,10 +46,10 @@ const JOB_CARDS = [
 // What plays on the console for each job: request, plan, steps [system, label, action], closing word.
 const JOBS = [
   {
-    req: "We're adding a new service. Get the page, the campaign and the follow-up live today.",
-    plan: "Service page on the website, a campaign in ads, tracking in analytics, follow-up in the CRM.",
-    steps: [["website", "Website", "service page drafted"], ["ads", "Ads", "campaign built"], ["analytics", "Analytics", "conversion tracking added"], ["crm", "CRM", "follow-up wired"]],
-    end: "Live.", status: "LIVE", route: "WEBSITE ▸ ADS ▸ ANALYTICS ▸ CRM",
+    req: "We're adding a new service. Get the page, ads and social posts live today.",
+    plan: "Page on the website, campaigns and budgets in ads, posts on social, a spend report in analytics.",
+    steps: [["website", "Website", "service page published"], ["ads", "Ads", "campaigns built, budget set"], ["social", "Social", "posts created and scheduled"], ["analytics", "Analytics", "spend and results reporting"]],
+    end: "Live.", status: "LIVE", route: "WEBSITE ▸ ADS ▸ SOCIAL ▸ ANALYTICS",
   },
   {
     req: "A new lead just came in from the website. Log it and get them a reply.",
@@ -336,14 +336,14 @@ export default function CommandStage({ children }) {
             <span className="chip"><i />AI agents<span className="sep">/</span>for small teams</span>
             <h1>AI agents for business, wired into <span className="hl">every system you run.</span></h1>
             <p className="sub">
-              Most people meet AI as a chat window that can&apos;t see anything about their business.
-              I build an operator that works inside your website, ads, social accounts, analytics,
-              CRM, ERP and email, and reaches all of them at once, so the operational work your team
-              does by hand gets done in a fraction of the time.
+              I install AI operators inside businesses. Each one is a single agent connected to your
+              website, ads, social accounts, analytics, CRM, ERP and email, so a request made in plain
+              English gets carried through every system it touches, on your accounts and with your
+              approval. The operational work across those systems gets done in a fraction of the time.
             </p>
             <p className="small">
-              Someone on your team pilots it. I stand it up inside your company, on your accounts,
-              and stay until your people run it without me.
+              Someone on your team pilots it. I set it up inside your company, the way I have at
+              several others, and stay until your people run it without me.
             </p>
             <div className="ctas">
               <Link className="btn btn-primary" href="/schedule">Book a growth audit<Arrow d="M2 7h9M7.5 3.5L11 7l-3.5 3.5" /></Link>
@@ -389,7 +389,7 @@ export default function CommandStage({ children }) {
               </div>
             </div>
             <div className="stage-foot">
-              <p className="cap"><b>FIG. 1</b><span>The operator. Sees the whole board. Executes what you say.</span></p>
+              <p className="cap"><b>FIG. 1</b><span>The operator is connected to every system and carries out what the pilot asks.</span></p>
               <div className="tabs" role="tablist" aria-label="Jobs">
                 {["New service", "New lead", "New pages"].map((label, i) => (
                   <button key={label} className={`tab${i === 0 ? " on" : ""}`} role="tab" data-i={i}>
@@ -412,7 +412,12 @@ export default function CommandStage({ children }) {
                 <div className="fig">FIG. 2 <span style={{ color: "var(--t3)" }}>/</span> Three jobs</div>
                 <h2>What it does</h2>
               </div>
-              <p className="what-lede">Three of the jobs it runs, and the systems each one passes through.</p>
+              <p className="what-lede">
+                Three of the jobs it runs at businesses where I&apos;ve installed it. Others include
+                filing documents into the ERP when someone asks for it in a sentence, turning sales
+                calls into to-dos in the job system, and a monthly site and search audit that runs on
+                its own schedule.
+              </p>
             </div>
             <div className="jobs">
               {JOB_CARDS.map((job, i) => (

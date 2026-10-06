@@ -32,14 +32,14 @@ const JOB_CARDS = [
   {
     title: "Answering a new lead",
     route: [["website", "Website"], ["crm", "CRM"], ["email", "Email + calendar"]],
-    what: "The lead comes in from a form or an ad, lands in the CRM with where it came from, and gets a reply from your business.",
+    what: "The lead comes in from a form, a call or an ad and lands in the CRM with its source. It gets a reply that answers what they actually asked, offers times from the right person's calendar, and books the call when they pick one.",
     outcome: "New leads hear back within five minutes.",
   },
   {
     title: "Publishing new pages on the website",
     route: [["search", "Search data"], ["website", "Website"]],
     what: "Choosing topics from search data, writing the page, building it into the site, checking it on a phone, and submitting it to Google for indexing.",
-    outcome: "Three or four new pages a day.",
+    outcome: "One founder now publishes three or four new pages a day.",
   },
 ];
 
@@ -52,10 +52,10 @@ const JOBS = [
     end: "Live.", status: "LIVE", route: "WEBSITE ▸ ADS ▸ SOCIAL ▸ ANALYTICS",
   },
   {
-    req: "A new lead just came in from the website. Log it and get them a reply.",
-    plan: "Capture the lead, log it in the CRM with its source, reply from your business.",
-    steps: [["website", "Website", "lead captured from the form"], ["crm", "CRM", "logged with its source"], ["email", "Email + calendar", "reply sent"]],
-    end: "Answered.", status: "ANSWERED", route: "WEBSITE ▸ CRM ▸ EMAIL",
+    req: "A new lead just came in from the website. Answer them and get a call booked.",
+    plan: "Log the lead in the CRM with its source, answer their question, offer times, book the call.",
+    steps: [["website", "Website", "lead captured from the form"], ["crm", "CRM", "logged with its source"], ["email", "Email + calendar", "answered, times offered"], ["email", "Email + calendar", "call booked"]],
+    end: "Booked.", status: "BOOKED", route: "WEBSITE ▸ CRM ▸ CALENDAR",
   },
   {
     req: "Write pages for the searches we're missing and get them on the site.",
@@ -84,7 +84,7 @@ const CANCEL = "cancel";
 
 function startStage(root) {
   const $ = (s) => root.querySelector(s);
-  const stage = $("#stage"), wrap = $("#stageWrap"), con = $("#console"), svg = $("#wires"), atmos = $("#atmos");
+  const stage = $("#stage"), wrap = $("#stageWrap"), con = $("#console"), svg = $("#wires");
   const reqEl = $("#req"), planEl = $("#plan"), stepsEl = $("#steps"), doneEl = $("#done"), wordEl = $("#doneWord"), routeEl = $("#doneRoute"), statusEl = $("#status"), bodyEl = $("#cbody"), caret = $("#caret");
   const tabs = Array.from(root.querySelectorAll(".tab")), cards = Array.from(root.querySelectorAll(".job"));
   const echoes = Array.from(stage.querySelectorAll(".echo"));
@@ -159,7 +159,7 @@ function startStage(root) {
       wires[k] = { g, pulse: p, amb: g.querySelector(".w-amb"), len: p.getTotalLength() };
       if (lit[k]) g.classList.add("on");
     });
-    atmos.style.left = f(cx) + "px"; atmos.style.top = f(cy) + "px";
+    // The glow (atmos) is placed by CSS at the console center so nothing moves after load.
     echoes.forEach((el) => { el.style.left = f(c.x) + "px"; el.style.top = f(c.y) + "px"; el.style.width = f(c.w) + "px"; el.style.height = f(c.h) + "px"; });
   }
 
@@ -365,7 +365,8 @@ export default function CommandStage({ children }) {
                 <div className="echo e1" /><div className="echo e2" />
 
                 {NODES.map((n) => (
-                  <div key={n.k} className={`node${n.cls ? ` ${n.cls}` : ""}`} data-sys={n.k}>
+                  // Desktop positions render with the page; the mobile grid overrides them in CSS.
+                  <div key={n.k} className={`node${n.cls ? ` ${n.cls}` : ""}`} data-sys={n.k} style={{ left: DESK[n.k].p[0], top: DESK[n.k].p[1] }}>
                     <span className="n-ico"><svg viewBox="0 0 16 16">{n.icon}</svg></span>
                     <span className="n-txt"><b>{n.name}</b><i>{n.detail}</i></span>
                     {n.idx && <span className="n-idx">{n.idx}</span>}

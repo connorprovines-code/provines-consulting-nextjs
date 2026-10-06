@@ -5,15 +5,15 @@ export const faqs = [
   {
     q: "What can an AI agent actually do for my business?",
     a: [
-      "The operational work that runs through your systems: building and adjusting campaigns, updating the website, keeping the CRM clean, chasing follow-ups, moving documents and data between systems, researching search terms and competitors, and putting together the reports. The work that crosses several systems is where it saves the most, because that's the work that takes longest by hand and is the easiest to drop.",
+      "The operational work that runs through your systems: building, budgeting and reporting on ad campaigns; writing and scheduling social posts; writing and publishing pages on the website; answering new leads and booking the calls; keeping the CRM clean and chasing follow-ups; filing documents and data into the ERP and accounting; researching search terms and competitors; and pulling the numbers into the reports you actually read. The work that crosses several systems is where it saves the most, because that's the work that takes longest by hand and is the easiest to drop.",
       "It doesn't decide what your business should do. Someone on your team does that, and the operator carries it out and flags what deserves their attention.",
     ],
   },
   {
     q: "Is ChatGPT an AI agent?",
     a: [
-      "In a narrow sense, yes. ChatGPT's agent mode can browse the web and take actions through the apps you connect to it.",
-      "An operator differs in where it lives. It runs on your company's accounts, on a machine you own, connected to your website, ad accounts, CRM, ERP and accounting at the same time, and it keeps standing instructions about how your business works. That's what lets a job move from one system to the next without anyone rebuilding the context.",
+      "Not in the sense that matters here. What most people use is the chat: a capable assistant that works from whatever you paste into it and hands the doing back to you. OpenAI has added an agent mode that can browse and click through a few connected apps, but it's still a session you start from a chat window and watch, working only from what you tell it in that moment. That's barely an agent in the way a business needs one.",
+      "An operator lives inside your business instead. It runs on your company's accounts, on a machine you own, connected to your website, ad accounts, CRM, ERP and accounting at the same time, and it keeps standing instructions about how your business works: your services, your pricing rules, who handles what, and what needs approval. That's what lets a job move from one system to the next without anyone rebuilding the context each time.",
     ],
   },
   {

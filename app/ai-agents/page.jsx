@@ -11,10 +11,12 @@ export const metadata = {
     title: "AI Agents for Business | Provines Consulting",
     description,
     url: "https://www.provinesconsulting.com/ai-agents",
+    images: [{ url: "/og/ai-agents.png", width: 1200, height: 630, alt: "An AI operator console wired to a business's website, ads, social, analytics, CRM, ERP and email" }],
   },
   twitter: {
     title: "AI Agents for Business | Provines Consulting",
     description,
+    images: ["/og/ai-agents.png"],
   },
 };
 

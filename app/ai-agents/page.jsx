@@ -1,4 +1,5 @@
 import PageContent, { faqs } from "./PageContent";
+import { agentsVideoJsonLd } from "@/components/AgentsVideo";
 
 const description =
   "AI agents for small business: one operator connected to your website, ads, CRM, ERP and email, installed by an AI consultant and directed by your own team.";
@@ -21,6 +22,7 @@ export const metadata = {
 };
 
 const jsonLd = [
+  agentsVideoJsonLd(),
   {
     "@context": "https://schema.org",
     "@type": "Service",

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import AgentsVideo from "@/components/AgentsVideo";
 
 export default function HomeContent() {
   return (
@@ -41,6 +42,13 @@ export default function HomeContent() {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </div>
+          </div>
+          <div className="max-w-5xl mx-auto mt-16 md:mt-20">
+            <AgentsVideo />
+            <p className="mt-4 font-[family-name:var(--font-geist-mono)] text-[11px] tracking-[0.04em] text-slate-500">
+              one operator connected to every system · directed in plain English ·{" "}
+              <Link href="/ai-agents" className="text-[var(--electric-blue)] hover:underline">AI agents for business ▸</Link>
+            </p>
           </div>
         </div>
       </section>

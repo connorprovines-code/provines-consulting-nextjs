@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CommandStage from "./CommandStage";
+import AgentsVideo from "@/components/AgentsVideo";
 
 export const faqs = [
   {
@@ -79,6 +80,18 @@ export default function AiAgentsContent() {
   return (
     <div className="aa">
       <CommandStage>
+        {/* The "what we do" video */}
+        <div className="aa-block grid md:grid-cols-[5fr_7fr] gap-8 md:gap-16 items-center">
+          <div>
+            <h2 style={H2_FLUSH}>Watch one operator run it, start to finish</h2>
+            <p className={`mt-6 ${PROSE}`}>
+              A request made in plain English, carried through the website, the ads, the CRM and
+              the calendar, with your approval wherever money or a customer is involved.
+            </p>
+          </div>
+          <AgentsVideo />
+        </div>
+
         {/* Kinds of agents, and why one connected operator */}
         <div className="aa-block grid md:grid-cols-[5fr_7fr] gap-8 md:gap-16">
           <h2 style={H2_FLUSH}>The kinds of AI agents a business can run</h2>

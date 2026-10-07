@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -52,9 +53,13 @@ export default function CaseStudyContent() {
             <div className="absolute top-3 left-3 bg-slate-800/80 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded z-10">
               Before
             </div>
-            <img
+            <Image
               src="/ts-before.png"
               alt="Legacy CMS website with dated styling"
+              width={1440}
+              height={575}
+              sizes="(max-width: 768px) 50vw, 600px"
+              priority
               className="w-full h-full object-cover"
             />
           </div>
@@ -62,9 +67,13 @@ export default function CaseStudyContent() {
             <div className="absolute top-3 left-3 bg-[var(--mint)] text-[var(--navy)] text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded z-10">
               After
             </div>
-            <img
+            <Image
               src="/ts-after.png"
               alt="Modern Next.js website"
+              width={1440}
+              height={595}
+              sizes="(max-width: 768px) 50vw, 600px"
+              priority
               className="w-full h-full object-cover"
             />
           </div>
@@ -263,6 +272,13 @@ export default function CaseStudyContent() {
               They manage their website through AI, their CRM fits their actual needs, and their digital
               presence belongs to them. The goal was never to become their agency. The goal was to make
               sure they never need one.
+            </p>
+            <p className="text-slate-600 leading-relaxed">
+              The operator on this team&apos;s day-to-day is one shape of a wider install. The{" "}
+              <Link href="/ai-agents/examples" className="text-[var(--electric-blue)] hover:underline">AI agent examples</Link> show the work it takes on
+              at other businesses, and{" "}
+              <Link href="/ai-consultant" className="text-[var(--electric-blue)] hover:underline">working with an AI consultant</Link> covers how an
+              engagement runs from the audit to the handover.
             </p>
           </div>
         </section>

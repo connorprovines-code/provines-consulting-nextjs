@@ -60,7 +60,7 @@ export default function HowItWorksContent() {
             </div>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
               Everything gets built, tested, and deployed in your environment.
-              Site migration, CRM setup, automation pipelines, the AI operator: nothing launches until you&apos;ve seen it working. Regular check-ins
+              Site migration, CRM setup, automation pipelines, <Link href="/ai-agents" className="text-[var(--electric-blue)] hover:underline">the AI operator</Link>: nothing launches until you&apos;ve seen it working. Regular check-ins
               throughout so there are no surprises.
             </p>
             <ul className="space-y-2 text-slate-600">
@@ -80,7 +80,9 @@ export default function HowItWorksContent() {
               I work alongside you 1:1, making sure everything runs, training you to
               direct the operator and every system underneath it, flagging what needs attention
               in your marketing. When you&apos;re comfortable, I step back. Stay independent
-              or keep me on light-touch, month to month, nothing locked in.
+              or keep me on light-touch, month to month, nothing locked in. If you&apos;re comparing
+              options, <Link href="/ai-consultant" className="text-[var(--electric-blue)] hover:underline">choosing an AI consultant</Link> covers what to
+              ask about this stretch.
             </p>
             <ul className="space-y-2 text-slate-600">
               <li className="flex items-start gap-3"><span className="text-[var(--electric-blue)] mt-0.5">&rarr;</span><span>Hands-on training for you and your team</span></li>

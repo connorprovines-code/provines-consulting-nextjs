@@ -2,6 +2,7 @@ import ScheduleContent from "./PageContent";
 
 export const metadata = {
   title: "Book a Growth Audit",
+  alternates: { canonical: "/schedule" },
   description:
     "30 minutes to kick off the audit. We walk through your site, CRM, and ad accounts and map what to build first.",
   openGraph: {

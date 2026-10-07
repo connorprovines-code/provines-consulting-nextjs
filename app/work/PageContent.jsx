@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -49,11 +50,13 @@ export default function WorkContent() {
             const content = (
               <>
                 {/* Image */}
-                {study.image && <div className="aspect-[2.4/1] overflow-hidden bg-slate-100">
-                  <img
+                {study.image && <div className="relative aspect-[2.4/1] overflow-hidden bg-slate-100">
+                  <Image
                     src={study.image}
                     alt={study.title}
-                    className={`w-full h-full object-cover object-top ${study.ready ? "group-hover:scale-[1.02]" : ""} transition-transform duration-500`}
+                    fill
+                    sizes="(max-width: 896px) 100vw, 832px"
+                    className={`object-cover object-top ${study.ready ? "group-hover:scale-[1.02]" : ""} transition-transform duration-500`}
                   />
                 </div>}
 

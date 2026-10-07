@@ -2,8 +2,10 @@
 // a panel showing which systems the topic runs through, then the light sheet with sections,
 // questions, related pages and the call to action. Each page supplies only its content.
 
+import Image from "next/image";
 import Link from "next/link";
 import { NODES, NODE_BY_KEY } from "./systems";
+import { ORG_ID, AREA_SERVED } from "@/lib/site";
 import "./command-stage.css";
 
 const NODE_LABEL = Object.fromEntries(Object.entries(NODE_BY_KEY).map(([k, n]) => [k, n.name]));
@@ -21,8 +23,8 @@ export function subpageJsonLd({ path, title, description, crumbs, faqs }) {
       serviceType: "AI agent implementation",
       description,
       url: `${SITE}${path}`,
-      areaServed: "US",
-      provider: { "@type": "ProfessionalService", name: "Provines Consulting", url: SITE },
+      areaServed: AREA_SERVED,
+      provider: { "@id": ORG_ID },
     },
     {
       "@context": "https://schema.org",
@@ -41,7 +43,7 @@ const Arrow = ({ d }) => (
   <svg viewBox="0 0 14 14" aria-hidden="true"><path d={d} /></svg>
 );
 
-export default function AgentsSubpage({ crumbs, h1, lede, small, systems, panelNote, sections, faqs, faqIntro, related, cta, jsonLd }) {
+export default function AgentsSubpage({ crumbs, h1, byline, lede, small, systems, panelNote, sections, faqs, faqIntro, related, cta, jsonLd }) {
   const lit = new Set(systems);
   const here = crumbs[crumbs.length - 1].label;
   return (
@@ -61,6 +63,12 @@ export default function AgentsSubpage({ crumbs, h1, lede, small, systems, panelN
               ))}
             </nav>
             <h1>{h1}</h1>
+            {byline && (
+              <p className="byline">
+                <Image src="/connor.jpg" alt="" width={80} height={80} sizes="40px" />
+                <span><Link href="/about">Connor Provines</Link>{byline}</span>
+              </p>
+            )}
             <p className="sub">{lede}</p>
             {small && <p className="small">{small}</p>}
             <div className="ctas">

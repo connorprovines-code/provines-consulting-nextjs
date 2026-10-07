@@ -8,14 +8,14 @@ import AgentsSubpage, { subpageJsonLd } from "../ai-agents/AgentsSubpage";
 
 const title = "AI Consultant for Small Business";
 const description =
-  "AI consultant for small business: I install one AI agent in your website, ads, CRM, ERP and email, on your own accounts, and stay until your team runs it.";
+  "San Jose AI consultant for small business: I install one AI agent in your website, ads, CRM, ERP and email, on your own accounts, and stay until your team runs it.";
 const path = "/ai-consultant";
 const url = `https://www.provinesconsulting.com${path}`;
-const ogTitle = `${title} | Provines Consulting`;
+const ogTitle = `${title} in San Jose | Provines Consulting`;
 const ogImage = "/og/ai-agents.png";
 
 export const metadata = {
-  title,
+  title: { absolute: ogTitle },
   description,
   alternates: { canonical: path },
   openGraph: {
@@ -157,8 +157,9 @@ export default function AiConsultant() {
     <AgentsSubpage
       crumbs={crumbs}
       h1="AI consultant for small businesses: one agent, installed in your systems"
+      byline=", AI consultant · San Jose, California"
       lede="I'm Connor Provines, an AI consultant for small businesses. I install one AI agent, which I call an operator, inside your company and connect it to your website, ads, social accounts, analytics, search data, CRM, ERP and accounting, and email and calendar. It runs on your accounts and a machine you own, someone on your team directs it in plain English, and I stay until they run it without me."
-      small="Before this work I spent 12 years in B2B SaaS demand generation, building demand gen programs and managing six-figure ad budgets."
+      small="I'm based in San Jose and work with owners across the Bay Area in person, and with businesses elsewhere remotely. Before this work I spent 12 years in B2B SaaS demand generation, building demand gen programs and managing six-figure ad budgets."
       systems={["website", "ads", "social", "analytics", "search", "crm", "erp", "email"]}
       panelNote="One operator, connected to every system below on your company's accounts, with a browser for anything that has no connection."
       sections={sections}

@@ -2,6 +2,7 @@ import HowItWorksContent from "./PageContent";
 
 export const metadata = {
   title: "How It Works",
+  alternates: { canonical: "/how-it-works" },
   description:
     "Growth audit, architecture, build, handover. Here's exactly what happens when you work with Provines Consulting, from first look to full ownership.",
   openGraph: {

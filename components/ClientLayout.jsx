@@ -28,7 +28,7 @@ export default function ClientLayout({ children }) {
 
   // Pages that open on a full-bleed dark stage: dark nav, no framed sheet (approved for /ai-agents and
   // the homepage, Oct 2026).
-  const darkStage = pathname === "/" || pathname === "/ai-agents" || pathname.startsWith("/ai-agents/") || pathname === "/ai-consultant";
+  const darkStage = pathname === "/" || pathname === "/about" || pathname === "/ai-agents" || pathname.startsWith("/ai-agents/") || pathname === "/ai-consultant";
 
   // A section stays active on its subpages (e.g. AI Agents on /ai-agents/examples).
   const isActive = (path) => pathname === path || (path !== "/" && pathname.startsWith(path + "/"));
@@ -152,6 +152,8 @@ export default function ClientLayout({ children }) {
             <button
               className={`md:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center ${darkStage ? "text-[#F8FAFC]" : "text-[var(--navy)]"}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -235,6 +237,15 @@ export default function ClientLayout({ children }) {
               <p className="text-slate-300 text-sm leading-relaxed">
                 Website, CRM, and ads you own, run by an AI operator you direct. 12 years of B2B SaaS experience. I build it, hand you the keys, and get out of the way.
               </p>
+              <p className="mt-4 text-slate-400 text-sm">San Jose, California</p>
+              <a
+                href="https://www.linkedin.com/company/provines-consulting"
+                target="_blank"
+                rel="noopener"
+                className="inline-block mt-2 text-slate-300 hover:text-[var(--mint)] transition-colors text-sm"
+              >
+                Provines Consulting on LinkedIn
+              </a>
             </div>
 
             <div>
@@ -244,7 +255,9 @@ export default function ClientLayout({ children }) {
                   { name: "Home", path: "/" },
                   { name: "AI Agents", path: "/ai-agents" },
                   { name: "AI Agent Examples", path: "/ai-agents/examples" },
+                  { name: "AI Chief of Staff", path: "/ai-agents/chief-of-staff" },
                   { name: "AI Consultant", path: "/ai-consultant" },
+                  { name: "About", path: "/about" },
                   { name: "Work", path: "/work" },
                   { name: "How It Works", path: "/how-it-works" },
                   { name: "Growth Audit", path: "/growth-audit" },

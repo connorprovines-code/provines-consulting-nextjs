@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
+import { SITE, ORG_ID, PERSON_ID, LINKEDIN_COMPANY, LINKEDIN_CONNOR, AREA_SERVED, ADDRESS } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Provines Consulting | The Owner-Operated Growth Stack",
-    description: "Replace your marketing agency with a stack you own: website, CRM, and ads, run by an AI operator you direct. Built and handed over — you own everything.",
+    description: "Replace your marketing agency with a stack you own: website, CRM, and ads, run by an AI operator you direct. Built and handed over, and you own everything.",
   },
   robots: {
     index: true,
@@ -53,15 +54,22 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": ORG_ID,
   name: "Provines Consulting",
   description: "Replaces your marketing agency with infrastructure you own: modern website, connected CRM, and ad campaigns, operated day-to-day by a dedicated AI. Built and handed over with full ownership.",
-  url: "https://www.provinesconsulting.com",
+  url: SITE,
+  logo: `${SITE}/icon.png`,
+  image: `${SITE}/connor.jpg`,
+  address: ADDRESS,
+  sameAs: [LINKEDIN_COMPANY, LINKEDIN_CONNOR],
   founder: {
     "@type": "Person",
+    "@id": PERSON_ID,
     name: "Connor Provines",
     jobTitle: "Founder",
+    sameAs: [LINKEDIN_CONNOR],
   },
-  areaServed: "US",
+  areaServed: AREA_SERVED,
   email: "connor@provinesconsulting.com",
   serviceType: [
     "Marketing Agency Replacement",

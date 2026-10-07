@@ -1,5 +1,6 @@
 import PageContent, { faqs } from "./PageContent";
 import { agentsVideoJsonLd } from "@/components/AgentsVideo";
+import { ORG_ID, AREA_SERVED } from "@/lib/site";
 
 const description =
   "AI agents for small business: one operator connected to your website, ads, CRM, ERP and email, installed by an AI consultant and directed by your own team.";
@@ -30,13 +31,8 @@ const jsonLd = [
     serviceType: "AI agent implementation",
     description,
     url: "https://www.provinesconsulting.com/ai-agents",
-    areaServed: "US",
-    provider: {
-      "@type": "ProfessionalService",
-      name: "Provines Consulting",
-      url: "https://www.provinesconsulting.com",
-      founder: { "@type": "Person", name: "Connor Provines", jobTitle: "Founder" },
-    },
+    areaServed: AREA_SERVED,
+    provider: { "@id": ORG_ID },
     audience: { "@type": "BusinessAudience", audienceType: "Owners and CEOs of small businesses" },
   },
   {

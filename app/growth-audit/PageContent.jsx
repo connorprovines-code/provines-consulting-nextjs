@@ -12,14 +12,11 @@ export default function GrowthAuditContent() {
       <section className="relative overflow-hidden border-b border-[var(--line)]">
                 <div className="relative z-10 max-w-3xl mx-auto px-6 sm:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
           <p className="text-[var(--electric-blue)] text-xs font-bold uppercase tracking-widest mb-5">
-            The Owner-Operated Growth Stack
+            The growth audit · marketing and operations
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[var(--navy)] leading-[1.04] tracking-tighter mb-6">
-            <span className="relative z-10">Stop renting your </span><span className="relative inline-block"><span className="relative z-10">marketing.</span><img src="/splash-green.png" alt="" aria-hidden="true" className="pointer-events-none absolute z-0 hidden md:block select-none max-w-none" style={{left:"3.5em",top:"-2.35em",width:"15em"}} /></span><br />
-            <span className="relative z-10">Start</span>{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10">owning it.</span>
-            </span>
+            <span className="relative z-10">A marketing audit </span><span className="relative inline-block"><span className="relative z-10">that</span><img src="/splash-green.png" alt="" aria-hidden="true" className="pointer-events-none absolute z-0 hidden md:block select-none max-w-none" style={{left:"1.6em",top:"-2.35em",width:"15em"}} /></span>
+            <span className="relative z-10"> shows what you own and what you rent.</span>
           </h1>
           <p className="relative z-10 text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
             A marketing department you own: website, CRM, and ads wired together in your
@@ -185,7 +182,7 @@ export default function GrowthAuditContent() {
             ad accounts can see your numbers and execute your decisions. The five weeks exist to do that wiring. By the end, one operator can see the whole board at once: the site, the CRM, the campaigns, the search data, with every path between them mapped. That&apos;s what makes the same-day launch real.
           </p>
 
-          <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-6">FIG. 1 — THE BUILD<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
+          <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-6">FIG. 1 · THE BUILD<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
           <div className="space-y-4 mb-12">
             {[
               {
@@ -272,6 +269,48 @@ export default function GrowthAuditContent() {
                 <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 04b — WHAT THE AUDIT COVERS                                   */}
+      {/* ============================================================ */}
+      <section className="py-16 md:py-24 border-t border-[var(--line)]">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8">
+          <p className="text-sm font-semibold text-[var(--electric-blue)] uppercase tracking-wide mb-3">The audit</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-6">
+            What the marketing audit covers
+          </h2>
+          <p className="text-slate-600 leading-relaxed text-lg max-w-2xl mb-10">
+            I read your systems from inside your own accounts, not from a questionnaire, and every
+            finding comes with what it&apos;s costing you. Four areas, because that&apos;s where an
+            owner-operated business loses leads and hours.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                area: "Your website",
+                looks: "How it performs on a phone, how form and call leads reach you, what's tracked and what isn't, what you can change without help, and where you show up in search against the competitors you lose work to.",
+              },
+              {
+                area: "Your CRM",
+                looks: "Where every lead lands, how long it waits for a first reply, which follow-up actually fires, and which records and automations nobody uses.",
+              },
+              {
+                area: "Your ad accounts",
+                looks: "Where the spend goes, which campaigns trace to booked revenue, and which keep running out of habit.",
+              },
+              {
+                area: "Where your team's hours go",
+                looks: "The recurring work that moves between these systems by hand, and the job an AI operator should take over first.",
+              },
+            ].map((row) => (
+              <div key={row.area} className="grid md:grid-cols-[1fr_1.3fr] gap-2 md:gap-8 border border-slate-200 p-6">
+                <p className="font-semibold text-[var(--navy)]">{row.area}</p>
+                <p className="text-slate-600">{row.looks}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

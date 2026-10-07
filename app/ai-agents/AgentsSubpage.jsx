@@ -12,13 +12,13 @@ const SITE = "https://www.provinesconsulting.com";
 const H2_FLUSH = { marginTop: 0 };
 const PROSE = "text-[16.5px] leading-[1.65] text-[var(--char)]";
 
-export function subpageJsonLd({ path, title, description, crumbs, faqs }) {
+export function subpageJsonLd({ path, title, description, crumbs, faqs, serviceType = "AI agent implementation" }) {
   return [
     {
       "@context": "https://schema.org",
       "@type": "Service",
       name: title,
-      serviceType: "AI agent implementation",
+      serviceType,
       description,
       url: `${SITE}${path}`,
       areaServed: "US",

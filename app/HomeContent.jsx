@@ -80,8 +80,8 @@ export default function HomeContent() {
               <span className="hl">Start <span className="own">owning<span className="dim" aria-hidden="true"><span className="dim-t" /></span></span> it.</span>
             </h1>
             <p className="sub">
-              I replace your marketing agency with a system you own: website, CRM, and ads,
-              all connected, run day-to-day by an AI operator you direct in plain English.
+              I replace your marketing agency with a system you own. Website, CRM, and ads,
+              all connected and run day-to-day by an AI operator you direct in plain English.
               I build it, hand you the keys, and get out of the way.
             </p>
             <p className="small">

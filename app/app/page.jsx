@@ -38,12 +38,11 @@ export default function AppHomePage() {
             Provines Consulting
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
-            Provines Consulting operates a marketing platform — <span className="font-semibold text-[var(--navy)]">Golden Kit</span> —
-            that helps a business see and run its entire marketing operation in one place. With the
-            business owner&apos;s permission, granted through Google&apos;s and Meta&apos;s own
-            sign-in screens, the platform securely connects to the marketing accounts they already
-            own and reads their performance data so an AI operator can report on results and manage
-            their campaigns. This page explains what the application accesses and why.
+            Provines Consulting runs <span className="font-semibold text-[var(--navy)]">Golden Kit</span>,
+            a marketing platform that puts a business&apos;s marketing results in one place. With the
+            owner&apos;s permission, given on Google&apos;s and Meta&apos;s own sign-in screens, it
+            reads performance data from the accounts they already own and turns it into automated
+            reports. Below is exactly what it accesses and why.
           </p>
         </div>
       </section>

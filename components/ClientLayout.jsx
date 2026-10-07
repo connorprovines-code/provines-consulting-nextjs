@@ -28,7 +28,7 @@ export default function ClientLayout({ children }) {
 
   // Pages that open on a full-bleed dark stage: dark nav, no framed sheet (approved for /ai-agents and
   // the homepage, Oct 2026).
-  const darkStage = pathname === "/" || pathname === "/about" || pathname === "/ai-agents" || pathname.startsWith("/ai-agents/") || pathname === "/ai-consultant";
+  const darkStage = pathname === "/" || pathname === "/about" || pathname === "/ai-agents" || pathname.startsWith("/ai-agents/") || pathname === "/ai-consultant" || pathname === "/ai-integration" || pathname === "/ai-automation";
 
   // A section stays active on its subpages (e.g. AI Agents on /ai-agents/examples).
   const isActive = (path) => pathname === path || (path !== "/" && pathname.startsWith(path + "/"));

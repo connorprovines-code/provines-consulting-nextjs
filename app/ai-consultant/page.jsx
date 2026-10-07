@@ -147,7 +147,7 @@ const sections = [
 ];
 
 const related = [
-  { href: "/ai-agents", title: "AI agents for business", text: "What the operator does once it's installed, and how one request moves through every system it touches." },
+  { href: "/ai-integration", title: "AI integration services", text: "What gets connected, how access works on your own accounts, and the browser path for systems with no connection." },
   { href: "/ai-agents/examples", title: "AI agent examples", text: "Real jobs operators run inside businesses and the systems each one crosses." },
   { href: "/work", title: "Case studies", text: "The 9-person builder whose CRM and website were migrated, and the owner who now runs his own marketing system." },
 ];

@@ -13,8 +13,8 @@ export const faqs = [
   {
     q: "Is ChatGPT an AI agent?",
     a: [
-      "Not in the sense that matters here. What most people use is the chat: a capable assistant that works from whatever you paste into it and hands the doing back to you. OpenAI has added an agent mode that can browse and click through a few connected apps, but it's still a session you start from a chat window and watch, working only from what you tell it in that moment. That's barely an agent in the way a business needs one.",
-      "An operator lives inside your business instead. It runs on your company's accounts, on a machine you own, connected to your website, ad accounts, CRM, ERP and accounting at the same time, and it keeps standing instructions about how your business works: your services, your pricing rules, who handles what, and what needs approval. That's what lets a job move from one system to the next without anyone rebuilding the context each time.",
+      "The chat most people use isn't. It's a capable assistant that works from whatever you paste into it and hands the doing back to you, which is barely an agent in the way a business needs one. OpenAI has been adding agent features around it, and on its business plans workspace agents can now connect to some workplace apps and run on a schedule. Those work inside the apps OpenAI connects and your admin switches on, on OpenAI's platform.",
+      "An operator lives inside your business instead. It runs on your company's accounts, on a machine you own, connected to your website, ad accounts, CRM, ERP and accounting at the same time, with a browser for anything that has no connection, and it keeps standing instructions about how your business works: your services, your pricing rules, who handles what, and what needs approval. That's what lets a job move from one system to the next without anyone rebuilding the context each time.",
     ],
   },
   {
@@ -97,10 +97,11 @@ export default function AiAgentsContent() {
           <h2 style={H2_FLUSH}>The kinds of AI agents a business can run</h2>
           <div className={`space-y-5 ${PROSE}`}>
             <p>
-              Most AI agents sold to businesses fall into a handful of kinds: chatbots that answer
+              Most AI agents sold to businesses fall into a handful of kinds:{" "}
+              <Link href="/ai-agents/agent-vs-chatbot" className="ilink">chatbots</Link> that answer
               customer questions on a website, sales agents that research prospects and draft
               outreach, inbox and scheduling assistants, support agents that sort and answer tickets,
-              and automations with an AI step in the middle. Each one works inside a single app and
+              and <Link href="/ai-automation" className="ilink">automations</Link> with an AI step in the middle. Each one works inside a single app and
               sees only what that app holds.
             </p>
             <p>
@@ -128,8 +129,9 @@ export default function AiAgentsContent() {
           <div className={`space-y-5 ${PROSE}`}>
             <p>
               An install starts with the <Link href="/growth-audit" className="ilink">growth audit</Link>,
-              which maps the systems your business runs on and picks the first job. I connect each of
-              those systems through its own sign-in screen, in your company&apos;s name, and write down
+              which maps the systems your business runs on and picks the first job.{" "}
+              <Link href="/ai-integration" className="ilink">I connect each of those systems</Link> through
+              its own sign-in screen, in your company&apos;s name, and write down
               how work moves between them: where a lead lands in the CRM, what turns it into a job,
               where documents get filed, and which actions need someone&apos;s approval. That becomes
               the standing instructions the operator works from, along with your services, your

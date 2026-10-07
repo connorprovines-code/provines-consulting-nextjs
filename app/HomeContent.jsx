@@ -245,8 +245,8 @@ export default function HomeContent() {
               Provines Consulting builds and runs a marketing platform, <b>Golden Kit</b>, for
               each client. With your permission, granted through the official Google and Meta sign-in
               screens one click each, Golden Kit securely connects to the marketing accounts you already
-              own and reads their performance data so your AI operator can report on results and manage
-              your campaigns in one place. We only request the access needed to do that, your data is
+              own and reads their performance data so your AI operator can report on results and make
+              the campaign changes you approve, all in one place. We only request the access needed to do that, your data is
               stored encrypted, it is never sold, and you can revoke the connection at any time.
             </p>
             <div className="ptiles">

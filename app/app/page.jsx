@@ -17,11 +17,11 @@ export const metadata = {
 };
 
 const CONNECTIONS = [
-  ["Google Ads", "Reads campaign spend, clicks, and conversions to report on and optimize paid search."],
+  ["Google Ads", "Reads campaign spend, clicks, and conversions, and makes the campaign changes you approve."],
   ["Google Analytics (GA4)", "Reads website traffic and conversion metrics to show what's driving results."],
   ["Google Search Console", "Reads organic search clicks, impressions, and rankings to guide SEO."],
   ["Google Business Profile", "Reads local-listing performance — profile views, calls, and direction requests."],
-  ["Meta Ads", "Reads Facebook and Instagram ad spend and results alongside Google spend."],
+  ["Meta Ads", "Reads Facebook and Instagram ad results alongside Google, and makes the campaign changes you approve."],
   ["Facebook & Instagram", "Reads Page and profile insights so social sits in the same report."],
 ];
 
@@ -38,11 +38,11 @@ export default function AppHomePage() {
             Provines Consulting
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
-            Provines Consulting runs <span className="font-semibold text-[var(--navy)]">Golden Kit</span>,
-            a marketing platform that puts a business&apos;s marketing results in one place. With the
+            Provines Consulting operates <span className="font-semibold text-[var(--navy)]">Golden Kit</span>,
+            a marketing platform that runs a business&apos;s marketing from one place. With the
             owner&apos;s permission, given on Google&apos;s and Meta&apos;s own sign-in screens, it
-            reads performance data from the accounts they already own and turns it into automated
-            reports. Below is exactly what it accesses and why.
+            connects to the accounts they already own so an AI operator can report on results and
+            make the campaign changes the owner approves. Below is exactly what it accesses and why.
           </p>
         </div>
       </section>
@@ -54,9 +54,9 @@ export default function AppHomePage() {
             What the application accesses
           </h2>
           <p className="text-slate-600 leading-relaxed max-w-2xl mb-10">
-            When a client connects an account, Provines Consulting requests read-only access to that
-            account&apos;s reporting data — never more than is needed to produce the client&apos;s
-            marketing reports and manage the campaigns they ask us to run.
+            When a client connects an account, Provines Consulting requests only the access needed to
+            produce that client&apos;s marketing reports and manage the campaigns they ask us to run.
+            Nothing in a connected account is changed without the owner&apos;s approval.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[var(--line)] border border-[var(--line)]">
             {CONNECTIONS.map(([name, desc]) => (
@@ -76,7 +76,7 @@ export default function AppHomePage() {
             How we handle your data
           </h2>
           <ul className="space-y-4 text-slate-600 leading-relaxed max-w-2xl">
-            <li><span className="font-semibold text-[var(--navy)]">Least access.</span> We request only the read-only permissions needed to build your reports and run the campaigns you approve.</li>
+            <li><span className="font-semibold text-[var(--navy)]">Least access.</span> We request only the permissions needed to build your reports and run the campaigns you approve. Nothing in your accounts changes without your approval.</li>
             <li><span className="font-semibold text-[var(--navy)]">Encrypted &amp; private.</span> Access tokens are stored encrypted. Your data is used only to provide your service — it is never sold or used for advertising.</li>
             <li><span className="font-semibold text-[var(--navy)]">Yours to revoke.</span> You can disconnect any account at any time from your Google or Meta security settings, and the access ends immediately.</li>
             <li><span className="font-semibold text-[var(--navy)]">Limited Use.</span> Our use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" className="text-[var(--electric-blue)] hover:underline" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>

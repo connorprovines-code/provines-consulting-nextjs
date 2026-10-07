@@ -1,107 +1,198 @@
-"use client";
-
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import AgentsVideo from "@/components/AgentsVideo";
+import { NODE_BY_KEY } from "./ai-agents/systems";
+import "./ai-agents/command-stage.css";
+import "./home.css";
+
+// The homepage runs on the /ai-agents command-stage system (Connor, 2026-10-06: the video's style
+// leads the homepage). Dark stage hero with the video as the operator console, then the light sheet.
+
+const Arrow = ({ d = "M2 7h9M7.5 3.5L11 7l-3.5 3.5" }) => (
+  <svg viewBox="0 0 14 14" aria-hidden="true"><path d={d} /></svg>
+);
+
+const Ico = ({ k, children }) => (
+  <span className="n-ico"><svg viewBox="0 0 16 16">{k ? NODE_BY_KEY[k].icon : children}</svg></span>
+);
+
+const STEPS = [
+  ["Audit", "I map your current stack, find where leads leak, and show you what you're overpaying for."],
+  ["Build", "The full stack in your environment: website, CRM, ads, automation. Every account and asset in your name."],
+  ["Your AI operator", "Trained on your business and wired into all of it. It runs the day-to-day: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English, it executes."],
+  ["Handover", "I train you until you don't need me, then step back. Month to month, nothing locked in."],
+];
+
+const MODULES = [
+  ["website", "Site", "Migrated. Same URLs, same rankings, zero lock-in."],
+  ["crm", "CRM", "Right-sized. Follow-up in minutes, not days."],
+  ["ads", "Ads", "Longtail, direct, tracked to booked revenue."],
+];
+
+const CASES = [
+  {
+    href: "/work/custom-home-builder",
+    img: "/ts-after.png",
+    alt: "Custom home builder website",
+    where: "Custom Home Builder, Oklahoma City",
+    title: "Legacy Lock-In to Full Control",
+    body: "A 9-person home builder paying over 90% more than they needed to in software costs, with a website trapped in a CMS nobody could edit. We migrated the CRM and the site, put an AI operator on the day-to-day, and trained the team. Under four weeks, start to finish.",
+  },
+  {
+    href: "/work/residential-construction",
+    img: "/creekside-after.png",
+    alt: "Residential construction website",
+    where: "Custom Home Builder, Oregon",
+    title: "The Bottleneck Was Never the Owner",
+    body: "An owner with the creative vision and marketing instincts was stuck on a Wix site he couldn't edit, with a CRM full of automations nobody had turned on. We migrated the platform, wired ads, landing pages, and the CRM into one connected system, and now he runs the whole thing himself.",
+  },
+];
+
+// Required for Google/Meta OAuth verification: the homepage must explain the purpose of the app
+// requesting account access.
+const PLATFORM = [
+  ["ads", "Google Ads", "Reads campaign spend, clicks, and conversions to report and optimize your paid search."],
+  ["analytics", "Google Analytics (GA4)", "Reads website traffic and conversion metrics to show what's working."],
+  ["search", "Google Search Console", "Reads organic search clicks, impressions, and rankings for your SEO."],
+  ["gbp", "Google Business Profile", "Reads local listing performance: views, calls, and direction requests."],
+  ["ads", "Meta Ads", "Reads Facebook and Instagram ad spend and results alongside your Google spend."],
+  ["social", "Facebook & Instagram", "Reads Page and profile insights so social sits in the same report."],
+];
+
+const PIN = <><path d="M8 14.5s-4.8-4.6-4.8-8.2a4.8 4.8 0 019.6 0c0 3.6-4.8 8.2-4.8 8.2z" /><circle cx="8" cy="6.3" r="1.7" /></>;
 
 export default function HomeContent() {
   return (
-    <div className="relative">
+    <div className="aa home">
       {/* ============================================================ */}
-      {/* HERO — navy, asymmetric: text left, scope card right         */}
+      {/* HERO: dark stage, copy left, the video as the operator console */}
       {/* ============================================================ */}
-      <section className="border-b border-[var(--line)]">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full pt-32 pb-16 md:pt-40 md:pb-24">
-          <div className="max-w-3xl mx-auto">
-            <p className="inline-block border border-[var(--line)] bg-white px-3 py-1.5 font-[family-name:var(--font-geist-mono)] text-[9.5px] sm:text-[11px] tracking-[0.06em] sm:tracking-[0.08em] text-slate-500 mb-8">THE OWNER-OPERATED GROWTH STACK · REV 2026.07</p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[var(--navy)] leading-[1.02] tracking-tighter mb-10">
-              Stop renting your marketing.<br />
-              Start <span className="relative whitespace-nowrap"><span className="border-b-4 border-[var(--electric-blue)]">owning</span><span className="absolute left-0 right-0 -bottom-8 text-center font-[family-name:var(--font-geist-mono)] text-[11px] font-normal tracking-[0.06em] text-[var(--electric-blue)]">|—— in your name ——|</span></span> it.
+      <section className="hero">
+        <div className="hero-bg" />
+        <div className="noise" />
+        <div className="hero-in">
+          <div className="hero-copy">
+            <span className="chip"><i />The owner-operated growth stack<span className="rev"><span className="sep">/</span>Rev 2026.10</span></span>
+            <h1>
+              Stop renting your marketing.{" "}
+              <span className="hl">Start <span className="own">owning<span className="dim" aria-hidden="true">in your name</span></span> it.</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-4 max-w-lg">
+            <p className="sub">
               I replace your marketing agency with a system you own: website, CRM, and ads,
               all connected, run day-to-day by an AI operator you direct in plain English.
               I build it, hand you the keys, and get out of the way.
             </p>
-            <p className="text-sm text-slate-500 mb-10 max-w-md">
+            <p className="small">
               12 years of B2B SaaS marketing. Now applied to business owners
               who need the same infrastructure without hiring a department.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/schedule"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[var(--navy)] text-white font-semibold text-lg hover:bg-[var(--electric-blue)] transition-colors"
-              >
-                Book a growth audit
-              </Link>
-              <Link
-                href="/work"
-                className="inline-flex items-center justify-center px-8 py-4 text-[var(--navy)] font-medium text-lg border-b border-slate-300 hover:border-[var(--navy)] transition-colors bg-transparent"
-              >
-                See the work
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+            <div className="ctas">
+              <Link className="btn btn-primary" href="/schedule">Book a growth audit<Arrow /></Link>
+              <Link className="btn btn-ghost" href="/work">See the work<Arrow /></Link>
             </div>
           </div>
-          <div className="max-w-5xl mx-auto mt-16 md:mt-20">
-            <AgentsVideo />
-            <p className="mt-4 font-[family-name:var(--font-geist-mono)] text-[11px] tracking-[0.04em] text-slate-500">
-              one operator connected to every system · directed in plain English ·{" "}
-              <Link href="/ai-agents" className="text-[var(--electric-blue)] hover:underline">AI agents for business ▸</Link>
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* ============================================================ */}
-      {/* HOW IT WORKS — 01→04, operator as the inverted centerpiece    */}
-      {/* ============================================================ */}
-      <section className="bg-[var(--off-white)] border-b border-[var(--line)]">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-14 md:py-16">
-          <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-8">THE ENGAGEMENT · STEP 01 &rarr; 04<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
-          <div className="grid md:grid-cols-[1fr_1fr_1.5fr_1fr] border border-[var(--line)] divide-y md:divide-y-0 md:divide-x divide-[var(--line)]">
-            <div className="bg-white px-6 py-6">
-              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 01</div>
-              <p className="font-bold text-[var(--navy)] text-sm mb-2">Audit</p>
-              <p className="text-slate-600 text-sm leading-relaxed">I map your current stack, find where leads leak, and show you what you&apos;re overpaying for.</p>
+          <div className="stage-wrap vid-wrap">
+            <div className="atmos" aria-hidden="true"><div className="agrid" /><div className="glow" /><div className="core" /></div>
+            <div className="vid-console">
+              <span className="crop tl" /><span className="crop tr" /><span className="crop bl" /><span className="crop br" />
+              <div className="c-head"><span className="c-mark" /><span className="c-title">OPERATOR</span><span className="c-status"><i />0:39</span></div>
+              <AgentsVideo className="vid" />
             </div>
-            <div className="bg-white px-6 py-6">
-              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 02</div>
-              <p className="font-bold text-[var(--navy)] text-sm mb-2">Build</p>
-              <p className="text-slate-600 text-sm leading-relaxed">The full stack in your environment: website, CRM, ads, automation. Every account and asset in your name.</p>
-            </div>
-            <div className="bg-[var(--navy)] px-6 py-6">
-              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-[var(--mint)] mb-2">STEP 03</div>
-              <p className="font-extrabold text-white text-lg tracking-tight mb-2.5">Your AI operator</p>
-              <p className="text-slate-300 text-sm leading-relaxed">Trained on your business and wired into all of it. It runs the day-to-day: follow-up, campaign adjustments, CRM upkeep, reporting. You direct it in plain English, it executes.</p>
-            </div>
-            <div className="bg-white px-6 py-6">
-              <div className="font-[family-name:var(--font-geist-mono)] text-[10px] tracking-[0.08em] text-slate-500 mb-2">STEP 04</div>
-              <p className="font-bold text-[var(--navy)] text-sm mb-2">Handover</p>
-              <p className="text-slate-600 text-sm leading-relaxed">I train you until you don&apos;t need me, then step back. Month to month, nothing locked in.</p>
+            <div className="stage-foot">
+              <p className="cap"><b>FIG. 1</b><span>One operator connected to every system, directed in plain English.</span></p>
+              <Link className="vid-link" href="/ai-agents">AI agents for business<Arrow /></Link>
             </div>
           </div>
         </div>
+        <div className="horizon" />
       </section>
 
-      {/* ============================================================ */}
-      {/* CONNOR — early, personal, photo left, text right             */}
-      {/* ============================================================ */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <div className="grid md:grid-cols-[220px_1fr] gap-10 md:gap-14 items-center">
-            <div>
-              <img
-                src="/connor.jpg"
-                alt="Connor Provines"
-                className="w-full border border-[var(--line)]"
-              />
+      <div className="ground">
+        <section className="sheet">
+          <span className="wire-in" aria-hidden="true" /><span className="wire-port top" aria-hidden="true" /><span className="wire-port" aria-hidden="true" />
+
+          {/* ============================================================ */}
+          {/* THE ENGAGEMENT: steps 01-04, operator as the lit centerpiece */}
+          {/* ============================================================ */}
+          <div className="sheet-in">
+            <div className="what-head">
+              <div>
+                <div className="fig">FIG. 2 <span className="slash">/</span> The engagement, step 01 ▸ 04</div>
+                <h2>I build it. An AI operator runs it. You own all of it.</h2>
+              </div>
+              <p className="what-lede">
+                The first thing I do is scope what you actually need versus what you&apos;re paying for.
+                Most owners I talk to are either paying an agency they can&apos;t see into, where the
+                accounts, the data, and the know-how all live on someone else&apos;s side of the
+                fence, or they&apos;re spread across tools that don&apos;t talk to each other.
+                I look at the whole picture and build a plan around what matters.
+              </p>
             </div>
+
+            <div className="steps">
+              {STEPS.map(([title, body], i) => (
+                <div key={title} className={`step${i === 2 ? " op" : ""}`}>
+                  <div className="job-top">
+                    <span>Step {String(i + 1).padStart(2, "0")}</span>
+                    {i === 2 && <span className="onstage"><i />Operator</span>}
+                  </div>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* What you own when we're done: the modules wired into the operator */}
+            <figure className="own-panel">
+              <figcaption className="own-head">
+                <span className="fig">FIG. 3 <span className="slash">/</span> What you own when we&apos;re done</span>
+              </figcaption>
+              <div className="mods">
+                {MODULES.map(([k, name, body], i) => (
+                  <div key={name} className="mod">
+                    <div className="mod-top"><Ico k={k} /><span className="mod-idx">MOD {String(i + 1).padStart(2, "0")}</span></div>
+                    <h3>{name}</h3>
+                    <p>{body}</p>
+                  </div>
+                ))}
+                <div className="mod op">
+                  <div className="mod-top"><Ico k="pilot" /><span className="mod-idx">MOD 04 · OPERATOR</span></div>
+                  <h3>Orchestrator</h3>
+                  <p>Sees the whole board. Executes what you say.</p>
+                </div>
+              </div>
+              <p className="own-cap"><span>every path between modules mapped at build</span> <i>·</i> <b>you direct it in plain English</b> <i>·</i> <span>nothing locked in</span></p>
+            </figure>
+
+            <div className="two">
+              <p>
+                Then I build the systems in your environment. Your website moves to a modern stack.
+                Your CRM gets right-sized. Your ads, email, and content tools get wired together.
+                And I stand up the operator: a dedicated AI, trained on your business, that manages
+                the site, follows up with leads, adjusts campaigns, and keeps the CRM clean. No
+                developer required.
+              </p>
+              <p>
+                We work together 1:1 until you&apos;re comfortable directing it. I train you on the
+                system, flag what needs attention, and make sure nothing falls through the cracks
+                during the transition. When you don&apos;t need me anymore, I step back. You own
+                everything: the code, the data, the accounts, the machine it all runs on.
+              </p>
+            </div>
+            <div className="links">
+              <Link href="/how-it-works" className="ilink">Full process breakdown<Arrow /></Link>
+              <Link href="/ai-agents" className="ilink">What the operator can do across your business<Arrow /></Link>
+            </div>
+          </div>
+
+          {/* ============================================================ */}
+          {/* CONNOR                                                       */}
+          {/* ============================================================ */}
+          <div className="aa-block about">
+            <img src="/connor.jpg" alt="Connor Provines" />
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-6">
-                Connor Provines
-              </h2>
-              <div className="space-y-5 text-slate-600 leading-relaxed max-w-xl">
+              <h2>Connor Provines</h2>
+              <div className="prose">
                 <p>
                   12 years in B2B SaaS building demand gen programs, managing six-figure
                   ad budgets, and scaling pipeline at companies where getting it wrong had real
@@ -117,211 +208,73 @@ export default function HomeContent() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ============================================================ */}
-      {/* CASE STUDIES — navy, alternating image/text                   */}
-      {/* ============================================================ */}
-      <section className="bg-[var(--off-white)] border-y border-[var(--line)]">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-16">
-            Every engagement ends the same way: the client owns everything.
-          </h2>
+          {/* ============================================================ */}
+          {/* CASE STUDIES                                                 */}
+          {/* ============================================================ */}
+          <div className="aa-block">
+            <h2 className="cases-h">Every engagement ends the same way: the client owns everything.</h2>
+            <div className="cases">
+              {CASES.map((c) => (
+                <article key={c.href} className="case">
+                  <Link href={c.href} className="case-img"><img src={c.img} alt={c.alt} /></Link>
+                  <div className="case-in">
+                    <div className="fig">{c.where}</div>
+                    <h3>{c.title}</h3>
+                    <p>{c.body}</p>
+                    <Link href={c.href} className="ilink case-link">Read the case study<Arrow /></Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
 
-          {/* Case Study 1 — T&S: image left, text right */}
-          <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-16 mb-20 items-start">
-            <div>
-              <Link href="/work/custom-home-builder" className="group">
-                <div className="overflow-hidden border border-[var(--line)]">
-                  <img
-                    src="/ts-after.png"
-                    alt="Custom home builder website"
-                    className="w-full group-hover:scale-[1.02] transition-transform duration-500"
-                  />
+          {/* ============================================================ */}
+          {/* THE PLATFORM: what the app connects to and does with it      */}
+          {/* ============================================================ */}
+          <div id="platform" className="aa-block platform">
+            <div className="fig">The platform <span className="slash">/</span> What it connects to</div>
+            <h2>One secure connection puts your whole marketing picture in one place.</h2>
+            <p className="plat-lede">
+              Provines Consulting builds and runs a marketing platform, <b>Golden Kit</b>, for
+              each client. With your permission, granted through the official Google and Meta sign-in
+              screens one click each, Golden Kit securely connects to the marketing accounts you already
+              own and reads their performance data so your AI operator can report on results and manage
+              your campaigns in one place. We only request the access needed to do that, your data is
+              stored encrypted, it is never sold, and you can revoke the connection at any time.
+            </p>
+            <div className="ptiles">
+              {PLATFORM.map(([k, name, desc]) => (
+                <div key={name} className="ptile">
+                  {k === "gbp" ? <Ico>{PIN}</Ico> : <Ico k={k} />}
+                  <div><h3>{name}</h3><p>{desc}</p></div>
                 </div>
-              </Link>
+              ))}
             </div>
-            <div className="md:pt-2">
-              <h3 className="text-2xl font-bold text-[var(--navy)] mb-2">Legacy Lock-In to Full Control</h3>
-              <p className="text-slate-500 text-sm mb-6">Custom Home Builder, Oklahoma City</p>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                A 9-person home builder paying over 90% more than they needed to in software costs, with a
-                website trapped in a CMS nobody could edit. We migrated the CRM and the site, put an AI operator on the day-to-day, and trained the team. Under four weeks, start to finish.
-              </p>
-              <Link
-                href="/work/custom-home-builder"
-                className="inline-flex items-center text-[var(--electric-blue)] font-medium text-sm hover:underline"
-              >
-                Read the case study
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Case Study 2 — Creekside: text left, image right */}
-          <div className="grid md:grid-cols-[1.2fr_1fr] gap-10 md:gap-16 items-start">
-            <div className="md:order-2">
-              <Link href="/work/residential-construction" className="group">
-                <div className="overflow-hidden border border-[var(--line)]">
-                  <img
-                    src="/creekside-after.png"
-                    alt="Residential construction website"
-                    className="w-full group-hover:scale-[1.02] transition-transform duration-500"
-                  />
-                </div>
-              </Link>
-            </div>
-            <div className="md:order-1 md:pt-2">
-              <h3 className="text-2xl font-bold text-[var(--navy)] mb-2">The Bottleneck Was Never the Owner</h3>
-              <p className="text-slate-500 text-sm mb-6">Custom Home Builder, Oregon</p>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                An owner with the creative vision and marketing instincts was stuck on a Wix site
-                he couldn&apos;t edit, with a CRM full of automations nobody had turned on. We migrated
-                the platform, wired ads, landing pages, and the CRM into one connected system,
-                and now he runs the whole thing himself.
-              </p>
-              <Link
-                href="/work/residential-construction"
-                className="inline-flex items-center text-[var(--electric-blue)] font-medium text-sm hover:underline"
-              >
-                Read the case study
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================ */}
-      {/* HOW IT WORKS — narrow column, paragraphs not steps           */}
-      {/* ============================================================ */}
-      <section className="py-20 md:py-28 border-t border-[var(--line)]">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-12">
-            I build it. An AI operator runs it. You own all of it.
-          </h2>
-          <div className="mb-14">
-            <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-slate-500 mb-7">FIG. 1 — WHAT YOU OWN WHEN WE&apos;RE DONE<span className="flex-1 border-b border-dotted border-slate-400/60"></span></p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 md:gap-y-0">
-              <div className="relative bg-white border border-[var(--navy)] p-5 md:mr-9"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-slate-500 mb-2.5">MOD 01</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">Site</h3><p className="text-[13px] leading-relaxed text-slate-600">Migrated. Same URLs, same rankings, zero lock-in.</p><span className="hidden md:block absolute -right-9 top-1/2 -translate-y-1/2 w-9 text-center font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500">——▸</span></div>
-              <div className="relative bg-white border border-[var(--navy)] p-5 md:mr-9"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-slate-500 mb-2.5">MOD 02</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">CRM</h3><p className="text-[13px] leading-relaxed text-slate-600">Right-sized. Follow-up in minutes, not days.</p><span className="hidden md:block absolute -right-9 top-1/2 -translate-y-1/2 w-9 text-center font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500">——▸</span></div>
-              <div className="relative bg-white border border-[var(--navy)] p-5 md:mr-9"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-slate-500 mb-2.5">MOD 03</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">Ads</h3><p className="text-[13px] leading-relaxed text-slate-600">Longtail, direct, tracked to booked revenue.</p><span className="hidden md:block absolute -right-9 top-1/2 -translate-y-1/2 w-9 text-center font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500">——▸</span></div>
-              <div className="relative bg-white border-2 border-[var(--electric-blue)] p-5"><div className="font-[family-name:var(--font-geist-mono)] text-[10px] text-[var(--electric-blue)] mb-2.5">MOD 04 · OPERATOR</div><h3 className="font-bold text-lg text-[var(--navy)] tracking-tight mb-1.5">Orchestrator</h3><p className="text-[13px] leading-relaxed text-slate-600">Sees the whole board. Executes what you say.</p></div>
-            </div>
-            <p className="font-[family-name:var(--font-geist-mono)] text-[11px] text-slate-500 mt-6">every path between modules mapped at build · <span className="text-[var(--electric-blue)]">you direct it in plain English</span> · nothing locked in</p>
-          </div>
-          <div className="max-w-2xl">
-          <div className="space-y-6 text-slate-600 leading-relaxed">
-            <p>
-              The first thing I do is scope what you actually need versus what you&apos;re paying for.
-              Most owners I talk to are either paying an agency they can&apos;t see into, where the
-              accounts, the data, and the know-how all live on someone else&apos;s side of the
-              fence, or they&apos;re spread across tools that don&apos;t talk to each other.
-              I look at the whole picture and build a plan around what matters.
-            </p>
-            <p>
-              Then I build the systems in your environment. Your website moves to a modern stack.
-              Your CRM gets right-sized. Your ads, email, and content tools get wired together.
-              And I stand up the operator: a dedicated AI, trained on your business, that manages
-              the site, follows up with leads, adjusts campaigns, and keeps the CRM clean. No
-              developer required.
-            </p>
-            <p>
-              We work together 1:1 until you&apos;re comfortable directing it. I train you on the
-              system, flag what needs attention, and make sure nothing falls through the cracks
-              during the transition. When you don&apos;t need me anymore, I step back. You own
-              everything: the code, the data, the accounts, the machine it all runs on.
+            <p className="plat-foot">
+              How we handle the data we access is described in our{" "}
+              <Link href="/legal">Privacy Policy</Link>.
             </p>
           </div>
-          </div>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-10">
-            <Link
-              href="/how-it-works"
-              className="inline-flex items-center text-[var(--electric-blue)] font-medium hover:underline"
-            >
-              Full process breakdown
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Link>
-            <Link
-              href="/ai-agents"
-              className="inline-flex items-center text-[var(--electric-blue)] font-medium hover:underline"
-            >
-              What the operator can do across your business
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Link>
-          </div>
-        </div>
-      </section>
 
-      {/* ============================================================ */}
-      {/* THE PLATFORM — what the app connects to and does with it.     */}
-      {/* Required for Google/Meta OAuth verification: the homepage must */}
-      {/* explain the purpose of the app requesting account access.     */}
-      {/* ============================================================ */}
-      <section id="platform" className="bg-[var(--navy)] border-t border-[var(--line)]">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <p className="flex items-baseline gap-3 font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.07em] text-[var(--mint)] mb-8">THE PLATFORM · WHAT IT CONNECTS TO<span className="flex-1 border-b border-dotted border-slate-600"></span></p>
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-white leading-tight mb-6 max-w-3xl">
-            One secure connection puts your whole marketing picture in one place.
-          </h2>
-          <p className="text-slate-300 leading-relaxed max-w-2xl mb-10">
-            Provines Consulting builds and runs a marketing platform — <span className="text-white font-semibold">Golden Kit</span> — for
-            each client. With your permission, granted through the official Google and Meta sign-in
-            screens one click each, Golden Kit securely connects to the marketing accounts you already
-            own and reads their performance data so your AI operator can report on results and manage
-            your campaigns in one place. We only request the access needed to do that, your data is
-            stored encrypted, it is never sold, and you can revoke the connection at any time.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-700 border border-slate-700 mb-8">
-            {[
-              ["Google Ads", "Reads campaign spend, clicks, and conversions to report and optimize your paid search."],
-              ["Google Analytics (GA4)", "Reads website traffic and conversion metrics to show what's working."],
-              ["Google Search Console", "Reads organic search clicks, impressions, and rankings for your SEO."],
-              ["Google Business Profile", "Reads local listing performance — views, calls, and direction requests."],
-              ["Meta Ads", "Reads Facebook and Instagram ad spend and results alongside your Google spend."],
-              ["Facebook & Instagram", "Reads Page and profile insights so social sits in the same report."],
-            ].map(([name, desc]) => (
-              <div key={name} className="bg-[var(--navy)] px-6 py-6">
-                <h3 className="font-bold text-white text-base tracking-tight mb-1.5">{name}</h3>
-                <p className="text-[13px] leading-relaxed text-slate-400">{desc}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-sm text-slate-400">
-            How we handle the data we access is described in our{" "}
-            <Link href="/legal" className="text-[var(--mint)] hover:underline">Privacy Policy</Link>.
-          </p>
-        </div>
-      </section>
-
-      {/* ============================================================ */}
-      {/* CTA — asymmetric, text left, button right                    */}
-      {/* ============================================================ */}
-      <section className="border-t border-slate-200 py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <div className="grid md:grid-cols-[1.5fr_1fr] gap-12 items-center">
+          {/* ============================================================ */}
+          {/* CTA                                                          */}
+          {/* ============================================================ */}
+          <div className="aa-block cta">
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-[var(--navy)] leading-tight mb-4">
-                Let&apos;s figure out what you need.
-              </h2>
-              <p className="text-lg text-slate-500 max-w-md">
-                The first step is a <Link href="/growth-audit" className="text-[var(--electric-blue)] hover:underline">growth audit</Link>. I go through your site, your CRM, and your
-                ad spend, show you where leads are leaking, and map what you&apos;ll own
-                when we&apos;re done.
+              <h2>Let&apos;s figure out what you need.</h2>
+              <p>
+                The first step is a <Link href="/growth-audit" className="ilink">growth audit</Link>. I go
+                through your site, your CRM, and your ad spend, show you where leads are leaking, and map
+                what you&apos;ll own when we&apos;re done.
               </p>
             </div>
-            <div className="md:text-right">
-              <Link
-                href="/schedule"
-                className="inline-flex items-center justify-center px-10 py-5 bg-[var(--navy)] text-white font-semibold text-lg hover:opacity-90 transition-opacity"
-              >
-                Book a growth audit
-              </Link>
+            <div className="cta-act">
+              <Link href="/schedule" className="btn btn-ink">Book a growth audit<Arrow /></Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

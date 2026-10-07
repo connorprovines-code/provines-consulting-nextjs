@@ -1,0 +1,170 @@
+/* Homepage on the command-stage system (Connor, 2026-10-06: the video's style leads the homepage).
+   Builds on app/ai-agents/command-stage.css. Every rule is scoped under .aa.home and every keyframe
+   is prefixed home- so nothing leaks into /ai-agents or the rest of the site. */
+
+/* ---------- HERO ---------- */
+.aa.home .hero-in{grid-template-columns:430px minmax(0,1fr);column-gap:56px;min-height:min(calc(100vh - 80px),900px)}
+.aa.home .chip .rev{display:inline-flex;align-items:center;gap:10px}
+.aa.home h1{font-size:clamp(38px,3.9vw,58px);padding-bottom:22px}
+/* .own is its own positioned box (for the dimension line), so it carries its own slice of the .hl gradient:
+   an inline-block child drops out of the parent's background-clip:text. */
+.aa.home h1 .own{position:relative;display:inline-block;background:linear-gradient(90deg,#D3ECFA 0%,#A9D7F3 55%,#8FC8EC 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.aa.home h1 .dim{position:absolute;left:-2px;right:-2px;top:100%;margin-top:4px;display:flex;align-items:center;gap:7px;
+  font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.08em;line-height:1;white-space:nowrap;
+  color:var(--tint);-webkit-text-fill-color:var(--tint)}
+.aa.home h1 .dim::before,.aa.home h1 .dim::after{content:'';flex:1;min-width:6px;height:7px;
+  background:linear-gradient(currentColor,currentColor) center/100% 1px no-repeat;opacity:.7}
+.aa.home h1 .dim::before{border-left:1px solid currentColor}
+.aa.home h1 .dim::after{border-right:1px solid currentColor}
+
+.aa.home .vid-wrap .atmos{left:50%;top:44%}
+.aa.home .vid-console{position:relative;z-index:3;background:linear-gradient(180deg,#121C31 0%,#0B1222 100%);
+  border:1px solid rgba(124,191,233,.34);
+  box-shadow:0 0 0 1px rgba(6,10,18,.85),0 50px 90px -30px rgba(0,0,0,.9),0 0 120px -18px rgba(3,105,161,.8),0 0 40px -14px rgba(124,191,233,.45)}
+.aa.home .vid-console::before{content:'';position:absolute;z-index:1;top:-1px;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--hi),transparent);opacity:.85}
+.aa.home .vid-console .c-status{color:var(--tint)}
+.aa.home .vid-console .c-status i{background:var(--tint);box-shadow:0 0 8px var(--tint)}
+.aa.home .vid-console > .vid{border:0;box-shadow:none;background:#060A12}
+.aa.home .vid-wrap .stage-foot{max-width:none}
+.aa.home .vid-link{display:inline-flex;align-items:center;gap:8px;flex:none;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--tint);white-space:nowrap}
+.aa.home .vid-link:hover{color:var(--hi)}
+.aa.home .vid-link svg,.aa.home .ilink svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:square}
+
+/* ---------- SHEET ---------- */
+.aa.home .slash{color:var(--t3)}
+.aa.home .ilink{display:inline-flex;align-items:center;gap:8px;font-weight:500}
+
+/* Steps 01-04: hairlines come from the 1px gaps, so any column count keeps clean borders. */
+.aa.home .steps{display:grid;grid-template-columns:1fr 1fr 1.45fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.aa.home .step{padding:24px 24px 28px;background:#fff}
+.aa.home .step h3{margin-top:16px;font-size:19px;line-height:1.2;font-weight:700;letter-spacing:-.02em;color:var(--ink2)}
+.aa.home .step p{margin-top:10px;font-size:14.5px;line-height:1.62;color:var(--t5)}
+.aa.home .step.op{position:relative;z-index:1;margin:-1px;padding:25px 26px 29px;border:1px solid rgba(124,191,233,.5);
+  background:linear-gradient(180deg,#121C31 0%,#0B1222 100%);
+  box-shadow:0 28px 60px -26px rgba(3,105,161,.85),0 0 44px -16px rgba(124,191,233,.55)}
+.aa.home .step.op::before{content:'';position:absolute;top:-1px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--hi),transparent)}
+.aa.home .step.op .job-top{color:var(--tint)}
+.aa.home .step.op .onstage{opacity:1;color:var(--tint)}
+.aa.home .step.op .onstage i{background:var(--tint);box-shadow:0 0 8px var(--tint)}
+.aa.home .step.op h3{font-size:23px;font-weight:800;letter-spacing:-.03em;color:var(--t1)}
+.aa.home .step.op p{color:var(--t2)}
+
+/* FIG. 3: the modules wired into the operator, drawn like the stage */
+.aa.home .own-panel{position:relative;margin-top:40px;padding:24px 28px 20px;background:linear-gradient(180deg,#0A1020 0%,#060A12 100%);border:1px solid var(--ink2);overflow:hidden;isolation:isolate}
+.aa.home .own-panel::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(124,191,233,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(124,191,233,.06) 1px,transparent 1px);background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(70% 90% at 80% 50%,#000,transparent);mask-image:radial-gradient(70% 90% at 80% 50%,#000,transparent)}
+.aa.home .own-panel::after{content:'';position:absolute;right:-10%;top:-40%;width:60%;height:180%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,rgba(3,105,161,.45),rgba(3,105,161,0))}
+.aa.home .own-head .fig{color:var(--tint)}
+.aa.home .own-head .slash{color:var(--t5)}
+.aa.home .mods{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px;margin-top:20px}
+.aa.home .mod{position:relative;padding:16px 16px 18px;background:linear-gradient(180deg,#0E1729 0%,#0A1220 100%);border:1px solid var(--hair2)}
+.aa.home .mod:not(:last-child)::after{content:'';position:absolute;top:50%;left:100%;width:40px;height:1px;
+  background:linear-gradient(90deg,rgba(124,191,233,.15),rgba(124,191,233,.15) 35%,#EAF6FE 50%,rgba(124,191,233,.15) 65%,rgba(124,191,233,.15)) 0 0/300% 100%;
+  animation:home-wire 2.6s linear infinite}
+.aa.home .mod:not(:last-child)::before{content:'';position:absolute;top:calc(50% - 2px);left:calc(100% + 35px);width:5px;height:5px;background:var(--tint);box-shadow:0 0 8px var(--tint)}
+.aa.home .mod-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.aa.home .mod-idx{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--t4);white-space:nowrap}
+.aa.home .mod h3{margin-top:14px;font-size:18px;line-height:1.2;font-weight:700;letter-spacing:-.02em;color:var(--t1)}
+.aa.home .mod p{margin-top:6px;font-size:13.5px;line-height:1.55;color:var(--t3)}
+.aa.home .mod.op{border-color:rgba(124,191,233,.6);background:linear-gradient(180deg,#112038 0%,#0B1424 100%);
+  box-shadow:0 0 0 1px rgba(124,191,233,.12),0 0 40px -6px rgba(3,105,161,.95),0 0 14px -6px rgba(124,191,233,.6)}
+.aa.home .mod.op::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:var(--tint)}
+.aa.home .mod.op .n-ico{color:var(--hi);border-color:rgba(124,191,233,.6);background:rgba(3,105,161,.28)}
+.aa.home .mod.op .mod-idx{color:var(--tint)}
+.aa.home .own-cap{margin-top:20px;padding-top:14px;border-top:1px solid var(--hair);font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;line-height:1.6;color:var(--t3)}
+.aa.home .own-cap i{font-style:normal;color:var(--t5);margin:0 4px}
+.aa.home .own-cap b{font-weight:500;color:var(--tint)}
+
+.aa.home .two{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:44px}
+.aa.home .two p,.aa.home .prose p{font-size:16.5px;line-height:1.65;color:var(--char)}
+.aa.home .links{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:28px;font-size:15px}
+
+/* Connor */
+.aa.home .about{display:grid;grid-template-columns:240px minmax(0,1fr);gap:56px;align-items:center}
+.aa.home .about img{width:100%;border:1px solid var(--line)}
+.aa.home .about h2{margin-top:0}
+.aa.home .prose{margin-top:22px;max-width:62ch}
+.aa.home .prose p + p{margin-top:18px}
+
+/* Case studies */
+.aa.home .cases-h{margin-top:0;max-width:22ch}
+.aa.home .cases{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+.aa.home .case{display:flex;flex-direction:column;background:#fff}
+.aa.home .case-img{display:block;overflow:hidden;border-bottom:1px solid var(--line);background:var(--off);aspect-ratio:1440/595}
+.aa.home .case-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s}
+.aa.home .case:hover .case-img img{transform:scale(1.02)}
+.aa.home .case-in{flex:1;display:flex;flex-direction:column;padding:24px 28px 28px}
+.aa.home .case h3{margin-top:14px;font-size:22px;line-height:1.2;font-weight:700;letter-spacing:-.025em;color:var(--ink2)}
+.aa.home .case p{margin-top:12px;font-size:15px;line-height:1.62;color:var(--t5)}
+.aa.home .case-link{margin-top:auto;padding-top:20px;font-size:15px}
+
+/* The platform: a dark band inside the sheet */
+.aa.home .platform{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,#0A1020 0%,#060A12 100%);border-top-color:var(--ink2);color:var(--t1)}
+.aa.home .platform::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(60% 70% at 85% 0%,rgba(3,105,161,.35),rgba(3,105,161,0))}
+.aa.home .platform .fig{color:var(--tint)}
+.aa.home .platform .slash{color:var(--t5)}
+.aa.home .platform h2{max-width:24ch;color:var(--t1)}
+.aa.home .plat-lede{margin-top:22px;max-width:68ch;font-size:16px;line-height:1.65;color:#A3B1C6}
+.aa.home .plat-lede b{color:var(--t1);font-weight:600}
+.aa.home .ptiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:36px}
+.aa.home .ptile{display:flex;align-items:flex-start;gap:12px;padding:18px 18px 20px;border:1px solid var(--hair2);background:linear-gradient(180deg,rgba(18,28,49,.85),rgba(11,18,34,.85));transition:border-color .3s}
+.aa.home .ptile:hover{border-color:rgba(124,191,233,.45)}
+.aa.home .ptile .n-ico{color:var(--tint);border-color:rgba(124,191,233,.35)}
+.aa.home .ptile h3{font-size:15.5px;line-height:1.25;font-weight:700;letter-spacing:-.015em;color:var(--t1)}
+.aa.home .ptile p{margin-top:6px;font-size:13.5px;line-height:1.55;color:var(--t3)}
+.aa.home .plat-foot{margin-top:24px;font-size:14px;color:var(--t3)}
+.aa.home .plat-foot a{color:var(--tint)}
+.aa.home .plat-foot a:hover{text-decoration:underline}
+
+/* CTA */
+.aa.home .cta{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;background:var(--off)}
+.aa.home .cta h2{margin-top:0}
+.aa.home .cta p{margin-top:20px;max-width:46ch;font-size:16.5px;line-height:1.65;color:var(--char)}
+.aa.home .cta-act{text-align:right}
+
+@keyframes home-wire{from{background-position:100% 0}to{background-position:0 0}}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1179px){
+  .aa.home .hero-in{grid-template-columns:minmax(0,1fr);min-height:0}
+}
+@media (max-width:1023px){
+  .aa.home .steps{grid-template-columns:1fr 1fr}
+  .aa.home .mods{grid-template-columns:1fr;gap:28px;max-width:520px}
+  .aa.home .mod:not(:last-child)::after{top:100%;left:50%;width:1px;height:28px;
+    background:linear-gradient(180deg,rgba(124,191,233,.15),rgba(124,191,233,.15) 35%,#EAF6FE 50%,rgba(124,191,233,.15) 65%,rgba(124,191,233,.15)) 0 0/100% 300%;
+    animation-name:home-wire-v}
+  .aa.home .mod:not(:last-child)::before{top:calc(100% + 23px);left:calc(50% - 2px)}
+  .aa.home .ptiles{grid-template-columns:1fr 1fr}
+}
+@keyframes home-wire-v{from{background-position:0 100%}to{background-position:0 0}}
+@media (max-width:859px){
+  .aa.home h1{font-size:36px;padding-bottom:20px}
+  .aa.home .chip .rev{display:none}
+  .aa.home .vid-console .crop{display:none}
+  .aa.home .vid-console .c-head{height:34px;padding:0 12px}
+  .aa.home .vid-wrap .atmos{top:40%}
+  .aa.home .vid-wrap .stage-foot{flex-direction:column;align-items:flex-start;gap:6px}
+  .aa.home .vid-wrap .cap{order:0}
+
+  .aa.home .steps{grid-template-columns:1fr}
+  .aa.home .step{padding:20px 18px 22px}
+  .aa.home .step.op{padding:21px 19px 23px}
+  .aa.home .own-panel{margin-top:32px;padding:18px 16px 16px}
+  .aa.home .own-cap span,.aa.home .own-cap b{display:block}
+  .aa.home .own-cap i{display:none}
+  .aa.home .two{grid-template-columns:1fr;gap:18px;margin-top:32px}
+  .aa.home .two p,.aa.home .prose p{font-size:15.5px}
+  .aa.home .links{flex-direction:column;gap:12px}
+
+  .aa.home .about{grid-template-columns:1fr;gap:28px}
+  .aa.home .about img{max-width:200px}
+  .aa.home .cases{grid-template-columns:1fr;margin-top:28px}
+  .aa.home .case-in{padding:20px 18px 24px}
+  .aa.home .case h3{font-size:20px}
+  .aa.home .ptiles{grid-template-columns:1fr;margin-top:28px}
+  .aa.home .cta{grid-template-columns:1fr;gap:24px}
+  .aa.home .cta-act{text-align:left}
+}

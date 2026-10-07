@@ -14,6 +14,8 @@
   color:var(--tint);-webkit-text-fill-color:var(--tint)}
 .aa.home h1 .dim::before,.aa.home h1 .dim::after{content:'';flex:1;min-width:6px;height:7px;
   background:linear-gradient(currentColor,currentColor) center/100% 1px no-repeat;opacity:.7}
+/* The label lives in CSS so the H1's text stays "Stop renting your marketing. Start owning it." */
+.aa.home h1 .dim-t::before{content:"in your name"}
 .aa.home h1 .dim::before{border-left:1px solid currentColor}
 .aa.home h1 .dim::after{border-right:1px solid currentColor}
 
@@ -82,7 +84,7 @@
 
 /* Connor */
 .aa.home .about{display:grid;grid-template-columns:240px minmax(0,1fr);gap:56px;align-items:center}
-.aa.home .about img{width:100%;border:1px solid var(--line)}
+.aa.home .about img{width:100%;height:auto;border:1px solid var(--line)}
 .aa.home .about h2{margin-top:0}
 .aa.home .prose{margin-top:22px;max-width:62ch}
 .aa.home .prose p + p{margin-top:18px}

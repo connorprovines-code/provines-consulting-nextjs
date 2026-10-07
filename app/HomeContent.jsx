@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import AgentsVideo from "@/components/AgentsVideo";
 import { NODE_BY_KEY } from "./ai-agents/systems";
@@ -32,6 +33,7 @@ const CASES = [
   {
     href: "/work/custom-home-builder",
     img: "/ts-after.png",
+    h: 595,
     alt: "Custom home builder website",
     where: "Custom Home Builder, Oklahoma City",
     title: "Legacy Lock-In to Full Control",
@@ -40,6 +42,7 @@ const CASES = [
   {
     href: "/work/residential-construction",
     img: "/creekside-after.png",
+    h: 900,
     alt: "Residential construction website",
     where: "Custom Home Builder, Oregon",
     title: "The Bottleneck Was Never the Owner",
@@ -74,7 +77,7 @@ export default function HomeContent() {
             <span className="chip"><i />The owner-operated growth stack<span className="rev"><span className="sep">/</span>Rev 2026.10</span></span>
             <h1>
               Stop renting your marketing.{" "}
-              <span className="hl">Start <span className="own">owning<span className="dim" aria-hidden="true">in your name</span></span> it.</span>
+              <span className="hl">Start <span className="own">owning<span className="dim" aria-hidden="true"><span className="dim-t" /></span></span> it.</span>
             </h1>
             <p className="sub">
               I replace your marketing agency with a system you own: website, CRM, and ads,
@@ -182,6 +185,9 @@ export default function HomeContent() {
             <div className="links">
               <Link href="/how-it-works" className="ilink">Full process breakdown<Arrow /></Link>
               <Link href="/ai-agents" className="ilink">What the operator can do across your business<Arrow /></Link>
+              <Link href="/ai-agents/examples" className="ilink">AI agent examples<Arrow /></Link>
+              <Link href="/ai-agents/chief-of-staff" className="ilink">AI chief of staff<Arrow /></Link>
+              <Link href="/ai-consultant" className="ilink">AI consultant for small business<Arrow /></Link>
             </div>
           </div>
 
@@ -189,7 +195,7 @@ export default function HomeContent() {
           {/* CONNOR                                                       */}
           {/* ============================================================ */}
           <div className="aa-block about">
-            <img src="/connor.jpg" alt="Connor Provines" />
+            <Image src="/connor.jpg" alt="Connor Provines" width={800} height={800} sizes="(max-width: 859px) 200px, 240px" />
             <div>
               <h2>Connor Provines</h2>
               <div className="prose">
@@ -217,7 +223,7 @@ export default function HomeContent() {
             <div className="cases">
               {CASES.map((c) => (
                 <article key={c.href} className="case">
-                  <Link href={c.href} className="case-img"><img src={c.img} alt={c.alt} /></Link>
+                  <Link href={c.href} className="case-img"><Image src={c.img} alt={c.alt} width={1440} height={c.h} sizes="(max-width: 859px) 100vw, 540px" /></Link>
                   <div className="case-in">
                     <div className="fig">{c.where}</div>
                     <h3>{c.title}</h3>

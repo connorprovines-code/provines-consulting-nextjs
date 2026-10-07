@@ -53,7 +53,7 @@ export default function Legal() {
             <strong> their own</strong> connected marketing accounts. We use that access for two purposes only:
             to read performance data and build automated reports for that client, and, where the client asks
             us to manage their campaigns, to make changes in those accounts. Golden Kit uses an AI operator,
-            software built on a third-party AI model, to analyze the data, prepare reports, and propose changes.
+            software built on third-party AI models, to analyze the data, prepare reports, and propose changes.
             We make changes <strong>only with the client&rsquo;s approval</strong>, given for the specific change
             or as part of a plan the client has approved.
           </p>
@@ -168,10 +168,10 @@ export default function Legal() {
               report data and connection tokens.
             </li>
             <li>
-              <strong>AI model provider</strong> &mdash; the third-party AI service that powers Golden Kit&rsquo;s
-              AI operator. It processes connected-account data only to perform tasks for the client who
-              authorized it, and we use it only under terms that do not allow it to train its models on that
-              data.
+              <strong>AI model providers</strong> &mdash; the third-party AI services that power Golden
+              Kit&rsquo;s AI operator. The provider used can vary. Each processes connected-account data
+              only to perform tasks for the client who authorized it, and we use only providers whose terms do
+              not allow them to train their models on that data.
             </li>
             <li>
               <strong>Platform APIs</strong> &mdash; Google and Meta, from which authorized data is retrieved and
@@ -295,7 +295,7 @@ export default function Legal() {
             Google Search Console, and Google Business Profile) and Meta (Facebook, Instagram, and Meta Ads).
             We read your marketing performance data to build automated reports for you and, where you ask us
             to manage your campaigns, make changes in those accounts with your approval. Golden Kit uses an AI
-            operator, software built on a third-party AI model, to analyze your data, prepare reports, and
+            operator, software built on third-party AI models, to analyze your data, prepare reports, and
             propose changes.
           </p>
 

@@ -98,7 +98,7 @@ export default function HomeContent() {
             <div className="atmos" aria-hidden="true"><div className="agrid" /><div className="glow" /><div className="core" /></div>
             <div className="vid-console">
               <span className="crop tl" /><span className="crop tr" /><span className="crop bl" /><span className="crop br" />
-              <div className="c-head"><span className="c-mark" /><span className="c-title">OPERATOR</span><span className="c-status"><i />0:39</span></div>
+              <div className="c-head"><span className="c-mark" /><span className="c-title">OPERATOR</span><span className="c-status"><i />0:45</span></div>
               <AgentsVideo className="vid" />
             </div>
             <div className="stage-foot">

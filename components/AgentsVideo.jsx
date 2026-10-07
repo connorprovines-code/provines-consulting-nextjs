@@ -1,4 +1,4 @@
-// The 39-second "what we do" video for the AI agents offer (music: Option A, Pixabay license, 2026-10-06).
+// The 45-second "what we do" video for the AI agents offer (music: Option A, Pixabay license, 2026-10-06).
 // Plays only when pressed: controls, poster frame, no autoplay. The 16:9 box reserves space so nothing shifts.
 
 export const AGENTS_VIDEO = {
@@ -8,7 +8,7 @@ export const AGENTS_VIDEO = {
   description:
     "One AI operator connected to a business's website, ads, social, analytics, CRM, ERP and email, carrying plain-English requests through every system it touches, with approval before anything spends or publishes.",
   uploadDate: "2026-10-06",
-  duration: "PT39S",
+  duration: "PT45S",
 };
 
 export function agentsVideoJsonLd() {

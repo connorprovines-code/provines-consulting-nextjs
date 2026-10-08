@@ -18,7 +18,7 @@ export default function Legal() {
               Privacy Policy and Terms of Service
             </p>
             <p className="text-sm text-slate-500 mt-4">
-              Effective date: July 30, 2026 &middot; Last updated: July 30, 2026
+              Effective date: July 30, 2026 &middot; Last updated: October 8, 2026
             </p>
           </FadeIn>
         </div>
@@ -48,12 +48,12 @@ export default function Legal() {
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">1. Who we are and what Golden Kit does</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Golden Kit is an automated marketing-reporting service operated by Provines Consulting. Each of
-            our clients grants us permission (&ldquo;OAuth authorization&rdquo;) to read the marketing performance
-            data in <strong>their own</strong> connected accounts. We use that data solely to build automated
-            reporting dashboards for that client. We access data on a <strong>read-only</strong> basis. We do
-            not create, modify, publish, or delete content, campaigns, or settings in a client&rsquo;s connected
-            accounts.
+            Golden Kit is an automated marketing reporting and campaign management service operated by
+            Provines Consulting. Each of our clients grants us permission (&ldquo;OAuth authorization&rdquo;) to
+            access the marketing data in <strong>their own</strong> connected accounts. We use that access
+            solely to build automated reporting dashboards for that client and, where the client asks us to
+            manage their campaigns, to make changes in those accounts. We make changes{' '}
+            <strong>only with the client&rsquo;s approval</strong>.
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">2. Information we collect</h3>
@@ -82,7 +82,8 @@ export default function Legal() {
           </ul>
           <p className="text-slate-700 leading-relaxed mb-4">
             We access this data through each platform&rsquo;s official API and only for accounts the client has
-            explicitly connected and authorized. We request <strong>read-only</strong> scopes.
+            explicitly connected and authorized. We request only the permissions needed for reporting and for
+            the campaign changes clients approve.
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
             <strong>Automatically collected information.</strong> When you visit our website, we (and our
@@ -92,17 +93,17 @@ export default function Legal() {
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">3. How we use information</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
-            We use the information described above <strong>solely</strong> to provide the Golden Kit reporting
-            service to the client who authorized the connection; to build, generate, and maintain automated
-            reporting dashboards for that client; to respond to inquiries, provide requested services, and
-            communicate about projects; and to operate, secure, and improve the reporting service.
+            We use the information described above <strong>solely</strong> to provide Golden Kit to the client
+            who authorized the connection; to build, generate, and maintain automated reporting dashboards for
+            that client; to make the campaign changes that client approves; to respond to inquiries, provide
+            requested services, and communicate about projects; and to operate, secure, and improve Golden Kit.
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
             We do <strong>not</strong> sell or rent your information or platform data to anyone; use platform
             data for advertising, ad targeting, or to build advertising or marketing profiles; use platform
             data to make credit, lending, insurance, or eligibility decisions; transfer platform data to data
             brokers or information-resale services; or use platform data for any purpose other than providing
-            the reporting service to the client who authorized it.
+            Golden Kit to the client who authorized it.
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">4. Google API Limited Use disclosure</h3>
@@ -116,7 +117,7 @@ export default function Legal() {
           <ul className="text-slate-700 leading-relaxed mb-4 list-disc pl-6 space-y-2">
             <li>
               We limit our use of data received from Google APIs to providing and improving the user-facing
-              reporting features that the connecting client requested;
+              reporting and campaign management features that the connecting client requested;
             </li>
             <li>
               We do not transfer Google user data except as necessary to provide or improve those features, to
@@ -139,8 +140,8 @@ export default function Legal() {
           <p className="text-slate-700 leading-relaxed mb-4">
             Our access to and use of data from Meta&rsquo;s platforms (Facebook, Instagram, and Meta Ads)
             complies with the Meta Platform Terms and Developer Policies. We process Meta Platform Data only to
-            provide the reporting service to the client who authorized the connection, we do not sell it, and
-            we do not use it for any purpose other than the client&rsquo;s own reporting. Clients may revoke
+            provide Golden Kit to the client who authorized the connection, we do not sell it, and we do not
+            use it for any purpose other than serving that client. Clients may revoke
             Golden Kit&rsquo;s access at any time (see Section 9).
           </p>
 
@@ -268,18 +269,19 @@ export default function Legal() {
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">1. The Service</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Golden Kit is an automated marketing-reporting service. With your authorization, we connect to
+            Golden Kit is an automated marketing reporting and campaign management service. With your
+            authorization, we connect to
             marketing platforms you use &mdash; including Google (Google Ads, Google Analytics / GA4, Google
             Search Console, and Google Business Profile) and Meta (Facebook, Instagram, and Meta Ads) &mdash;
-            and read your marketing performance data to build automated reporting dashboards for you. Our
-            access is <strong>read-only</strong>. We do not create, change, publish, or delete campaigns,
-            content, or settings in your connected accounts.
+            and read your marketing performance data to build automated reporting dashboards for you. Where
+            you ask us to manage your campaigns, we also make changes in those accounts, only with your
+            approval.
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">2. Authorization and your accounts</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             To use Golden Kit you must connect one or more marketing platform accounts and grant the requested
-            read-only permissions through the platform&rsquo;s official OAuth flow. You represent that you own
+            permissions through the platform&rsquo;s official OAuth flow. You represent that you own
             or are authorized to connect each account and to grant us access to its data. You are responsible
             for maintaining the security of your own platform accounts and credentials. You may revoke Golden
             Kit&rsquo;s access at any time through the relevant platform&rsquo;s settings, as described in our
@@ -392,7 +394,7 @@ export default function Legal() {
           </p>
 
           <p className="text-sm text-slate-500 mt-12">
-            Effective date: July 30, 2026 &middot; Last updated: July 30, 2026
+            Effective date: July 30, 2026 &middot; Last updated: October 8, 2026
           </p>
         </div>
       </section>

@@ -10,6 +10,13 @@ export const metadata = {
   openGraph: {
     title: "Growth Audit: Marketing and Operations Audit | Provines Consulting",
     description,
+    url: "https://www.provinesconsulting.com/growth-audit",
+    images: [{ url: "/og/growth-audit.png", width: 1200, height: 630, alt: "A marketing audit that shows what you own and what you rent." }],
+  },
+  twitter: {
+    title: "Growth Audit: Marketing and Operations Audit | Provines Consulting",
+    description,
+    images: ["/og/growth-audit.png"],
   },
 };
 

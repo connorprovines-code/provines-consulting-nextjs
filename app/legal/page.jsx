@@ -18,7 +18,7 @@ export default function Legal() {
               Privacy Policy and Terms of Service
             </p>
             <p className="text-sm text-slate-500 mt-4">
-              Effective date: July 30, 2026 &middot; Last updated: October 7, 2026
+              Effective date: July 30, 2026 &middot; Last updated: July 30, 2026
             </p>
           </FadeIn>
         </div>
@@ -33,11 +33,11 @@ export default function Legal() {
           <p className="text-slate-700 leading-relaxed mb-4">
             Provines Consulting (&ldquo;Provines Consulting,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is a
             California sole proprietorship operating under a registered fictitious business name (DBA),
-            run by Connor Provines. We provide marketing services, including a marketing reporting and
-            campaign management platform known as &ldquo;Golden Kit.&rdquo; This Privacy Policy explains what
+            run by Connor Provines. We provide marketing services, including an automated
+            marketing-reporting service known as &ldquo;Golden Kit.&rdquo; This Privacy Policy explains what
             information we collect, how we use it, how we store and protect it, who we share it with, and
             the rights and choices available to you. It applies to our website, provinesconsulting.com,
-            and to Golden Kit.
+            and to the Golden Kit reporting service.
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
             If you have any questions, contact us at{' '}
@@ -48,14 +48,12 @@ export default function Legal() {
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">1. Who we are and what Golden Kit does</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Golden Kit is a marketing reporting and campaign management platform operated by Provines
-            Consulting. Each of our clients grants us permission (&ldquo;OAuth authorization&rdquo;) to access
-            <strong> their own</strong> connected marketing accounts. We use that access for two purposes only:
-            to read performance data and build automated reports for that client, and, where the client asks
-            us to manage their campaigns, to make changes in those accounts. Golden Kit uses an AI operator,
-            software built on third-party AI models, to analyze the data, prepare reports, and propose changes.
-            We make changes <strong>only with the client&rsquo;s approval</strong>, given for the specific change
-            or as part of a plan the client has approved.
+            Golden Kit is an automated marketing-reporting service operated by Provines Consulting. Each of
+            our clients grants us permission (&ldquo;OAuth authorization&rdquo;) to read the marketing performance
+            data in <strong>their own</strong> connected accounts. We use that data solely to build automated
+            reporting dashboards for that client. We access data on a <strong>read-only</strong> basis. We do
+            not create, modify, publish, or delete content, campaigns, or settings in a client&rsquo;s connected
+            accounts.
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">2. Information we collect</h3>
@@ -72,22 +70,19 @@ export default function Legal() {
           <ul className="text-slate-700 leading-relaxed mb-4 list-disc pl-6 space-y-2">
             <li>
               <strong>Google</strong> &mdash; Google Ads (campaign, ad group, keyword, spend, and conversion
-              metrics, and campaign settings), Google Analytics / GA4 (traffic, engagement, and conversion metrics), Google Search
+              metrics), Google Analytics / GA4 (traffic, engagement, and conversion metrics), Google Search
               Console (search impressions, clicks, queries, and position data), and Google Business Profile
               (listing insights and performance metrics).
             </li>
             <li>
               <strong>Meta</strong> &mdash; Facebook and Instagram Page and account insights, and advertising
-              performance data and campaign settings from Meta Ads (reach, impressions, spend, results, and
-              related metrics) for the
+              performance data from Meta Ads (reach, impressions, spend, results, and related metrics) for the
               client&rsquo;s own ad accounts, Pages, and Instagram accounts.
             </li>
           </ul>
           <p className="text-slate-700 leading-relaxed mb-4">
             We access this data through each platform&rsquo;s official API and only for accounts the client has
-            explicitly connected and authorized. We request only the permissions these purposes need: read
-            access for reporting and, where a client asks us to manage their campaigns, permission to make the
-            changes they approve.
+            explicitly connected and authorized. We request <strong>read-only</strong> scopes.
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
             <strong>Automatically collected information.</strong> When you visit our website, we (and our
@@ -97,18 +92,17 @@ export default function Legal() {
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">3. How we use information</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
-            We use the information described above <strong>solely</strong> to provide Golden Kit to the client
-            who authorized the connection; to build, generate, and maintain automated reports for that client;
-            to propose changes to that client&rsquo;s campaigns and carry out the changes they approve; to
-            respond to inquiries, provide requested services, and communicate about projects; and to operate,
-            secure, and improve Golden Kit.
+            We use the information described above <strong>solely</strong> to provide the Golden Kit reporting
+            service to the client who authorized the connection; to build, generate, and maintain automated
+            reporting dashboards for that client; to respond to inquiries, provide requested services, and
+            communicate about projects; and to operate, secure, and improve the reporting service.
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
             We do <strong>not</strong> sell or rent your information or platform data to anyone; use platform
             data for advertising, ad targeting, or to build advertising or marketing profiles; use platform
             data to make credit, lending, insurance, or eligibility decisions; transfer platform data to data
             brokers or information-resale services; or use platform data for any purpose other than providing
-            Golden Kit to the client who authorized it.
+            the reporting service to the client who authorized it.
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">4. Google API Limited Use disclosure</h3>
@@ -122,7 +116,7 @@ export default function Legal() {
           <ul className="text-slate-700 leading-relaxed mb-4 list-disc pl-6 space-y-2">
             <li>
               We limit our use of data received from Google APIs to providing and improving the user-facing
-              reporting and campaign management features that the connecting client requested;
+              reporting features that the connecting client requested;
             </li>
             <li>
               We do not transfer Google user data except as necessary to provide or improve those features, to
@@ -131,11 +125,7 @@ export default function Legal() {
             </li>
             <li>
               We do not use or transfer Google user data for serving advertisements, and we do not sell Google
-              user data;
-            </li>
-            <li>
-              We do not use or transfer Google user data to develop, improve, or train generalized AI or
-              machine-learning models; and
+              user data; and
             </li>
             <li>
               We do not allow humans to read Google user data unless (i) we have the client&rsquo;s affirmative
@@ -149,16 +139,15 @@ export default function Legal() {
           <p className="text-slate-700 leading-relaxed mb-4">
             Our access to and use of data from Meta&rsquo;s platforms (Facebook, Instagram, and Meta Ads)
             complies with the Meta Platform Terms and Developer Policies. We process Meta Platform Data only to
-            provide Golden Kit&rsquo;s reporting and campaign management to the client who authorized the
-            connection, we do not sell it, and we do not use it for any purpose other than serving that
-            client. Clients may revoke
+            provide the reporting service to the client who authorized the connection, we do not sell it, and
+            we do not use it for any purpose other than the client&rsquo;s own reporting. Clients may revoke
             Golden Kit&rsquo;s access at any time (see Section 9).
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">6. How we share information &mdash; third parties and subprocessors</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             We do not sell your information. We share information only with service providers
-            (&ldquo;subprocessors&rdquo;) that help us operate Golden Kit, and only to the extent
+            (&ldquo;subprocessors&rdquo;) that help us operate the reporting service, and only to the extent
             necessary. Current categories of subprocessors include:
           </p>
           <ul className="text-slate-700 leading-relaxed mb-4 list-disc pl-6 space-y-2">
@@ -167,16 +156,7 @@ export default function Legal() {
               <strong>Cloud storage / database</strong> &mdash; the encrypted data store used to hold generated
               report data and connection tokens.
             </li>
-            <li>
-              <strong>AI model providers</strong> &mdash; the third-party AI services that power Golden
-              Kit&rsquo;s AI operator. The provider used can vary. Each processes connected-account data
-              only to perform tasks for the client who authorized it, and we use only providers whose terms do
-              not allow them to train their models on that data.
-            </li>
-            <li>
-              <strong>Platform APIs</strong> &mdash; Google and Meta, from which authorized data is retrieved and
-              through which approved changes are made.
-            </li>
+            <li><strong>Platform APIs</strong> &mdash; Google and Meta, from which authorized data is retrieved.</li>
           </ul>
           <p className="text-slate-700 leading-relaxed mb-4">
             We may also disclose information if required by law, to protect our legal rights, or in connection
@@ -187,15 +167,15 @@ export default function Legal() {
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">7. Data storage and security</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             Data is stored encrypted, both in transit (TLS) and at rest. Access to client data and to OAuth
-            tokens is restricted to authorized personnel and to the automated systems that provide Golden Kit.
+            tokens is restricted to authorized personnel and to the automated systems that generate reports.
             We implement administrative, technical, and organizational safeguards appropriate to the
             sensitivity of the data.
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">8. Data retention</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
-            We retain client marketing data only for as long as necessary to provide Golden Kit to that
-            client, or as required by law. When a client ends their engagement, revokes access, or
+            We retain client marketing data only for as long as necessary to provide the reporting service to
+            that client, or as required by law. When a client ends their engagement, revokes access, or
             requests deletion, we delete the associated platform data and OAuth tokens without undue delay,
             except where retention is required for a legitimate legal or accounting purpose.
           </p>
@@ -223,8 +203,7 @@ export default function Legal() {
             </li>
           </ul>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Revoking access immediately stops any further data collection from, and any further changes to,
-            that account.
+            Revoking access immediately stops any further data collection from that account.
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
             <strong>Requesting deletion.</strong> To request deletion of data we hold, email{' '}
@@ -275,8 +254,7 @@ export default function Legal() {
 
           <p className="text-slate-700 leading-relaxed mb-4">
             These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of the marketing
-            reporting and campaign management platform known as &ldquo;Golden Kit&rdquo; and the website
-            provinesconsulting.com (together,
+            reporting service known as &ldquo;Golden Kit&rdquo; and the website provinesconsulting.com (together,
             the &ldquo;Service&rdquo;), operated by Provines Consulting, a California sole proprietorship
             operating under a registered fictitious business name (DBA). By using the Service or authorizing
             Golden Kit to connect to your accounts, you agree to these Terms.
@@ -290,39 +268,26 @@ export default function Legal() {
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">1. The Service</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Golden Kit is a marketing reporting and campaign management platform. With your authorization, we
-            connect to the marketing platforms you use, including Google (Google Ads, Google Analytics / GA4,
-            Google Search Console, and Google Business Profile) and Meta (Facebook, Instagram, and Meta Ads).
-            We read your marketing performance data to build automated reports for you and, where you ask us
-            to manage your campaigns, make changes in those accounts with your approval. Golden Kit uses an AI
-            operator, software built on third-party AI models, to analyze your data, prepare reports, and
-            propose changes.
+            Golden Kit is an automated marketing-reporting service. With your authorization, we connect to
+            marketing platforms you use &mdash; including Google (Google Ads, Google Analytics / GA4, Google
+            Search Console, and Google Business Profile) and Meta (Facebook, Instagram, and Meta Ads) &mdash;
+            and read your marketing performance data to build automated reporting dashboards for you. Our
+            access is <strong>read-only</strong>. We do not create, change, publish, or delete campaigns,
+            content, or settings in your connected accounts.
           </p>
 
           <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">2. Authorization and your accounts</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             To use Golden Kit you must connect one or more marketing platform accounts and grant the requested
-            permissions through the platform&rsquo;s official OAuth flow. You represent that you own
+            read-only permissions through the platform&rsquo;s official OAuth flow. You represent that you own
             or are authorized to connect each account and to grant us access to its data. You are responsible
             for maintaining the security of your own platform accounts and credentials. You may revoke Golden
             Kit&rsquo;s access at any time through the relevant platform&rsquo;s settings, as described in our
-            Privacy Policy above. Revoking access will stop further data collection from, and any further
-            changes to, that account, and may end your ability to receive reports or campaign management.
+            Privacy Policy above. Revoking access will stop further data collection and may end your ability to
+            receive reports.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">3. Approvals and campaign changes</h3>
-          <p className="text-slate-700 leading-relaxed mb-4">
-            When you ask us to manage your campaigns, Golden Kit may propose changes such as new or edited
-            campaigns, ads, keywords, audiences, budgets, bids, and schedules. We make changes only with your
-            approval, given for the specific change or as part of a plan you have approved, and you may
-            withdraw approval for future changes at any time. Ad spend resulting from approved changes is
-            billed by the advertising platform to your account under your agreement with that platform, and
-            you are responsible for it. We carry out approved changes with reasonable care, but the
-            advertising platforms control delivery and results, and we do not guarantee any particular
-            outcome.
-          </p>
-
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">4. Acceptable use</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">3. Acceptable use</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             You agree not to use the Service to violate any law or any third-party platform&rsquo;s terms
             (including Google&rsquo;s and Meta&rsquo;s), to infringe others&rsquo; rights, or to attempt to gain
@@ -330,14 +295,14 @@ export default function Legal() {
             we reasonably believe violates these Terms or applicable platform policies.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">5. Fees and payment</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">4. Fees and payment</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             Fees, billing frequency, and scope are set out in the individual agreement, statement of work, or
             subscription plan applicable to you. Typical arrangements are project-based or monthly retainer.
             Fees are due as stated in that agreement.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">6. Data and privacy</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">5. Data and privacy</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             Our collection, use, storage, sharing, retention, and deletion of data &mdash; including data
             obtained through the Google and Meta APIs &mdash; are described in our Privacy Policy above, which
@@ -349,7 +314,7 @@ export default function Legal() {
             the Meta Platform Terms and Developer Policies.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">7. Intellectual property</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">6. Intellectual property</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             The Service, including its software, dashboards, and design, is owned by Provines Consulting. The
             underlying marketing data belongs to you (the client). We grant you a non-exclusive right to use
@@ -357,13 +322,13 @@ export default function Legal() {
             anonymized, aggregated results as case studies unless your agreement provides otherwise.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">8. Confidentiality</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">7. Confidentiality</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             We treat your business information, strategies, and connected-account data as strictly confidential
             and use it only to provide the Service. A non-disclosure agreement is available on request.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">9. Service availability and third-party platforms</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">8. Service availability and third-party platforms</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             The Service depends on third-party platforms (including Google and Meta) and their APIs. We are not
             responsible for changes, outages, rate limits, or discontinuations of those platforms, or for data
@@ -371,16 +336,15 @@ export default function Legal() {
             with reasonable notice.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">10. Disclaimers</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">9. Disclaimers</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             The Service is provided &ldquo;as is&rdquo; and &ldquo;as available.&rdquo; To the fullest extent
             permitted by law, we disclaim all warranties, express or implied, including merchantability,
-            fitness for a particular purpose, and non-infringement. Reports and recommendations are provided
-            for informational purposes, and you are responsible for your own business decisions, including the
-            changes you approve.
+            fitness for a particular purpose, and non-infringement. Reports are provided for informational
+            purposes; you are responsible for your own business decisions.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">11. Limitation of liability</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">10. Limitation of liability</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             To the fullest extent permitted by law, Provines Consulting will not be liable for any indirect,
             incidental, special, consequential, or punitive damages, or for lost profits or data, arising out
@@ -389,7 +353,7 @@ export default function Legal() {
             giving rise to the claim.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">12. Termination</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">11. Termination</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             Either party may terminate the engagement as provided in the applicable agreement, or you may stop
             using the Service and revoke access at any time. On termination, we will delete your
@@ -397,14 +361,14 @@ export default function Legal() {
             is required by law.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">13. Governing law</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">12. Governing law</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             These Terms are governed by the laws of the State of California, without regard to its
             conflict-of-laws rules. The exclusive venue for any dispute will be the state or federal courts
             located in California.
           </p>
 
-          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">14. Changes to these Terms</h3>
+          <h3 className="text-xl font-bold text-[var(--navy)] mt-8 mb-4">13. Changes to these Terms</h3>
           <p className="text-slate-700 leading-relaxed mb-4">
             We may update these Terms from time to time. Material changes will be reflected in the &ldquo;Last
             updated&rdquo; date, and where required we will notify affected clients. Continued use of the
@@ -428,7 +392,7 @@ export default function Legal() {
           </p>
 
           <p className="text-sm text-slate-500 mt-12">
-            Effective date: July 30, 2026 &middot; Last updated: October 7, 2026
+            Effective date: July 30, 2026 &middot; Last updated: July 30, 2026
           </p>
         </div>
       </section>
